@@ -2,7 +2,7 @@
   <article>
     <div class="mb-3">
       <div>
-        <h1 style="font-size: 3vw" class="d-flex justify-center">
+        <h1 :style="$vuetify.breakpoint.mobile ? 'font-size: 7vw' : 'font-size: 3vw'" class="d-flex justify-center">
           {{ article.title }}
         </h1>
       </div>
@@ -14,19 +14,44 @@
         />
       </div>
     </div>
-    <v-row v-if="wiki" justify="center" align="center">
-      <v-col>
-        <v-card>
-          <v-card-title>Wikipédia</v-card-title>
-          <v-card-text style="text-align: justify">
-            {{ getWiki() }}<span v-if="!more && wiki.slice(0, 600).length < wiki.length">...</span>
-            <span v-if="wiki.slice(0, 600).length < wiki.length" style="color: blue; cursor: pointer" @click="more = !more"> {{ more ? 'Voir moins' : 'Voir plus' }}</span>
-          </v-card-text>
-        </v-card>
-      </v-col>
-    </v-row>
 
-    <nuxt-content :document="article" />
+    <v-container>
+      <v-row>
+        <v-col
+          cols="12"
+          lg="8"
+          offset-lg="2"
+        >
+          <v-row v-if="wiki" justify="center" align="center" class="mb-3">
+            <v-col>
+              <v-card class="rounded-xl">
+                <v-card-title>Wikipédia</v-card-title>
+                <v-card-text style="text-align: justify">
+                  {{ getWiki() }}<span v-if="!more && wiki.slice(0, 600).length < wiki.length">...</span>
+                  <span v-if="wiki.slice(0, 600).length < wiki.length" style="color: blue; cursor: pointer" @click="more = !more"> {{ more ? 'Voir moins' : 'Voir plus' }}</span>
+                </v-card-text>
+              </v-card>
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
+    </v-container>
+
+    <v-container>
+      <v-row>
+        <v-col
+          cols="12"
+          lg="8"
+          offset-lg="2"
+        >
+          <v-card class="rounded-xl">
+            <v-card-text>
+              <nuxt-content style="color: black" :document="article" />
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
   </article>
 </template>
 
@@ -50,7 +75,7 @@ export default {
 
     return {
       article,
-      wiki: wiki && wiki.query.pages[id].extract
+      wiki: wiki && wiki.query && wiki.query.pages && wiki.query.pages[id] && wiki.query.pages[id].extract
     }
   },
   data () {
@@ -65,3 +90,9 @@ export default {
   }
 }
 </script>
+
+<style>
+.nuxt-content h1 {
+  margin-bottom: 7px;
+}
+</style>

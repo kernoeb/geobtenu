@@ -4,6 +4,7 @@
       v-model="drawer"
       app
       clipped
+      bottom
     >
       <v-list>
         <v-list-item
