@@ -74,7 +74,7 @@ export default {
     const id = wikipedia[article.slug].fr
     let wiki
     try {
-      wiki = await $axios.$get(`https://${lang}.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&pageids=${id}`)
+      wiki = await $axios.$get(`https://${lang}.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&pageids=${id}&origin=*`)
     } catch (e) {
     }
 
