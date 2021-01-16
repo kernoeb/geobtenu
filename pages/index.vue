@@ -1,5 +1,5 @@
 <template>
-  <v-row justify="center" align="center" :style="$vuetify.breakpoint.xlOnly ? `margin-left: 150px; margin-right: 150px` : null" style="transition: margin 500ms">
+  <v-row justify="center" align="center" :style="$vuetify.breakpoint.xlOnly ? `margin-left: 150px; margin-right: 150px` : null" style="transition: margin 500ms; justify-content: center">
     <v-col v-for="(value) in countries" :key="`flag_${value.id}`" cols="5" md="3">
       <v-lazy
         v-model="value.isActive"
