@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-row style="justify-content: center">
+    <v-row>
       <v-col
         cols="12"
         lg="8"
@@ -23,9 +23,6 @@
                   gradient="to top left, rgba(100,115,201,.33), rgba(25,32,72,.7)"
                   height="180"
                 >
-                  <template #placeholder>
-                    <v-skeleton-loader />
-                  </template>
                   <v-card-title style="color: white">
                     {{ value.country.split('|')[0] }}
                   </v-card-title>
