@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-row>
+    <v-row class="justifyCenter">
       <v-col
         cols="12"
         lg="8"
@@ -12,26 +12,30 @@
         <v-row
           align="center"
           justify="center"
-          style="justify-content: center"
         >
           <v-col v-for="value in countriesFiltered" :key="`flag_${value.id}`" cols="5" md="3" xl="3">
-            <nuxt-link :to="{name: 'flag-slug', params: {slug: value.id}}" style="text-decoration: none;">
-              <v-card>
-                <v-img
-                  :src="require(`../assets/flags/png/${value.id}.png`)"
-                  class="flag"
-                  gradient="to top left, rgba(100,115,201,.33), rgba(25,32,72,.7)"
-                  height="180"
-                >
-                  <v-card-title style="color: white">
-                    {{ value.country.split('|')[0] }}
-                  </v-card-title>
-                  <v-card-subtitle v-if="value.capital" style="color: white">
-                    {{ value.capital }}
-                  </v-card-subtitle>
-                </v-img>
-              </v-card>
-            </nuxt-link>
+            <v-lazy
+              v-model="value.isActive"
+              height="180"
+            >
+              <nuxt-link :to="{name: 'flag-slug', params: {slug: value.id}}" class="noDecoration">
+                <v-card>
+                  <v-img
+                    :src="require(`../assets/flags/png/${value.id}.png`)"
+                    class="flag"
+                    gradient="to top left, rgba(100,115,201,.33), rgba(25,32,72,.7)"
+                    height="180"
+                  >
+                    <v-card-title class="white--text">
+                      {{ value.country.split('|')[0] }}
+                    </v-card-title>
+                    <v-card-subtitle v-if="value.capital" class="white--text">
+                      {{ value.capital }}
+                    </v-card-subtitle>
+                  </v-img>
+                </v-card>
+              </nuxt-link>
+            </v-lazy>
           </v-col>
         </v-row>
       </v-col>
@@ -47,7 +51,6 @@ export default {
   data () {
     return {
       countries,
-      mounted: false,
       search: ''
     }
   },
@@ -61,9 +64,6 @@ export default {
           (country.capital && country.capital.toUpperCase().includes(this.search.toUpperCase())))
       }
     }
-  },
-  mounted () {
-    this.mounted = true
   }
 }
 </script>
@@ -71,5 +71,13 @@ export default {
 <style>
 .flag:hover {
   filter: brightness(110%);
+}
+
+.justifyCenter {
+  justify-content: center
+}
+
+.noDecoration {
+  text-decoration: none
 }
 </style>

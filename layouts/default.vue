@@ -5,6 +5,7 @@
       app
       bottom
       clipped
+      disable-resize-watcher
     >
       <v-list>
         <v-list-item
