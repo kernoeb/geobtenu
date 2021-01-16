@@ -47,7 +47,7 @@
       height=" 25"
     >
       <span>
-        GeoTool par <a href="https://t.me/kernoeb">kernoeb</a></span><v-spacer /><span>&copy; {{ new Date().getFullYear() }}
+        Géobtenu par <a href="https://t.me/kernoeb">kernoeb</a></span><v-spacer /><span>&copy; {{ new Date().getFullYear() }}
       </span>
     </v-footer>
   </v-app>
