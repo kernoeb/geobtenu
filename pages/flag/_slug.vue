@@ -9,13 +9,13 @@
       <div class="d-flex justify-center">
         <v-img
           class="rounded"
-          :src="require(`../../assets/flags/svg/${$route.params.slug}.svg`)"
+          :src="require(`../../assets/flags/png/${$route.params.slug}.png`)"
           max-width="200"
         />
       </div>
     </div>
-    <v-row justify="center" align="center">
-      <v-col v-if="wiki">
+    <v-row v-if="wiki" justify="center" align="center">
+      <v-col>
         <v-card>
           <v-card-title>Wikipédia</v-card-title>
           <v-card-text style="text-align: justify">
@@ -43,11 +43,14 @@ export default {
 
     const lang = 'fr'
     const id = wikipedia[article.slug].fr
-    const wiki = await $axios.$get(`https://${lang}.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&pageids=${id}`)
+    let wiki
+    try {
+      wiki = await $axios.$get(`https://${lang}.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&pageids=${id}`)
+    } catch (e) {}
 
     return {
       article,
-      wiki: wiki.query.pages[id].extract
+      wiki: wiki && wiki.query.pages[id].extract
     }
   },
   data () {

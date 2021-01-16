@@ -8,7 +8,7 @@
       <nuxt-link :to="{name: 'flag-slug', params: {slug: value.id}}" style="text-decoration: none;">
         <v-card>
           <v-img
-            :src="require(`../assets/flags/svg/${value.id}.svg`)"
+            :src="require(`../assets/flags/png/${value.id}.png`)"
             class="flag"
             gradient="to top left, rgba(100,115,201,.33), rgba(25,32,72,.7)"
             height="180"
