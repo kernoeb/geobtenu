@@ -1,4 +1,6 @@
 import colors from 'vuetify/es5/util/colors'
+const { NODE_ENV = 'production' } = process.env
+const isDev = NODE_ENV === 'development'
 
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
@@ -14,7 +16,11 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Secular%20One'
+      }
     ]
   },
 
@@ -72,5 +78,44 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+    extractCSS: true,
+
+    postcss:
+      {
+        // disable postcss plugins in development
+        plugins: isDev
+          ? {}
+          : {
+            '@fullhuman/postcss-purgecss': {
+              content: [
+                'components/**/*.vue',
+                'layouts/**/*.vue',
+                'pages/**/*.vue',
+                'plugins/**/*.js',
+                'node_modules/vuetify/src/**/*.ts'
+              ],
+              styleExtensions: ['.css'],
+              safelist: {
+                standard: [
+                  'body',
+                  'html',
+                  'nuxt-progress',
+                  /col-*/ // enable if using v-col for layout
+                ],
+                deep: [
+                  /page-enter/,
+                  /page-leave/,
+                  /transition/
+                ]
+              }
+
+            },
+            'css-byebye': {
+              rulesToRemove: [
+                /.*\.v-application--is-rtl.*/
+              ]
+            }
+          }
+      }
   }
 }

@@ -29,11 +29,10 @@
     <v-app-bar
       app
       clipped-left
-      flat
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-spacer />
-      <v-toolbar-title v-text="title" />
+      <v-toolbar-title style="font-family: Secular One, sans-serif; font-size: 30px; color: #725555; font-weight: bold" v-text="title" />
       <v-spacer />
     </v-app-bar>
     <v-main>
@@ -71,7 +70,7 @@ export default {
           to: '/inspire'
         }
       ],
-      title: 'GEOBTENU'
+      title: 'GÉOBTENU'
     }
   }
 }
