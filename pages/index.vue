@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-row>
+    <v-row style="justify-content: center">
       <v-col
         cols="12"
         lg="8"
