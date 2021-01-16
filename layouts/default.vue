@@ -4,7 +4,6 @@
       v-model="drawer"
       app
       clipped
-      disable-route-watcher
     >
       <v-list>
         <v-list-item

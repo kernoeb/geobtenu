@@ -8,6 +8,7 @@
       </div>
       <div class="d-flex justify-center">
         <v-img
+          class="rounded"
           :src="require(`../../assets/flags/svg/${$route.params.slug}.svg`)"
           max-width="200"
         />

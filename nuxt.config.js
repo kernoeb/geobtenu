@@ -86,36 +86,36 @@ export default {
         plugins: isDev
           ? {}
           : {
-            '@fullhuman/postcss-purgecss': {
-              content: [
-                'components/**/*.vue',
-                'layouts/**/*.vue',
-                'pages/**/*.vue',
-                'plugins/**/*.js',
-                'node_modules/vuetify/src/**/*.ts'
-              ],
-              styleExtensions: ['.css'],
-              safelist: {
-                standard: [
-                  'body',
-                  'html',
-                  'nuxt-progress',
-                  /col-*/ // enable if using v-col for layout
+              '@fullhuman/postcss-purgecss': {
+                content: [
+                  'components/**/*.vue',
+                  'layouts/**/*.vue',
+                  'pages/**/*.vue',
+                  'plugins/**/*.js',
+                  'node_modules/vuetify/src/**/*.ts'
                 ],
-                deep: [
-                  /page-enter/,
-                  /page-leave/,
-                  /transition/
+                styleExtensions: ['.css'],
+                safelist: {
+                  standard: [
+                    'body',
+                    'html',
+                    'nuxt-progress',
+                    /col-*/ // enable if using v-col for layout
+                  ],
+                  deep: [
+                    /page-enter/,
+                    /page-leave/,
+                    /transition/
+                  ]
+                }
+
+              },
+              'css-byebye': {
+                rulesToRemove: [
+                  /.*\.v-application--is-rtl.*/
                 ]
               }
-
-            },
-            'css-byebye': {
-              rulesToRemove: [
-                /.*\.v-application--is-rtl.*/
-              ]
             }
-          }
       }
   }
 }
