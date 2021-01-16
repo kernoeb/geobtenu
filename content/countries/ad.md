@@ -1,6 +1,6 @@
 ---
 title: Andorre
-description: Pays : Andorre
+description: 'Pays : Andorre'
 ---
 
 # Langue
