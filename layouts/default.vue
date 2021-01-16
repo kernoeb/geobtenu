@@ -57,7 +57,7 @@
 export default {
   data () {
     return {
-      drawer: true,
+      drawer: false,
       items: [
         {
           icon: 'mdi-apps',
