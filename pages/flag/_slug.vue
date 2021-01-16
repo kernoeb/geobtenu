@@ -16,13 +16,13 @@
     </div>
 
     <v-container>
-      <v-row>
+      <v-row style="justify-content: center">
         <v-col
           cols="12"
           lg="8"
           offset-lg="2"
         >
-          <v-row v-if="wiki" justify="center" align="center" class="mb-3">
+          <v-row v-if="wiki" justify="center" align="center" class="mb-3" style="justify-content: center">
             <v-col>
               <v-card class="rounded-xl">
                 <v-card-title>Wikipédia</v-card-title>
@@ -38,7 +38,7 @@
     </v-container>
 
     <v-container>
-      <v-row>
+      <v-row style="justify-content: center">
         <v-col
           cols="12"
           lg="8"
