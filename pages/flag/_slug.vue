@@ -8,8 +8,8 @@
       </div>
       <div class="d-flex justify-center">
         <v-img
-          class="rounded"
           :src="require(`../../assets/flags/png/${$route.params.slug}.png`)"
+          class="rounded"
           max-width="200"
         />
       </div>
@@ -22,13 +22,17 @@
           lg="8"
           offset-lg="2"
         >
-          <v-row v-if="wiki" justify="center" align="center" class="mb-3" style="justify-content: center">
+          <v-row v-if="wiki" align="center" class="mb-3" justify="center" style="justify-content: center">
             <v-col>
               <v-card class="rounded-xl">
                 <v-card-title>Wikipédia</v-card-title>
                 <v-card-text style="text-align: justify">
                   {{ getWiki() }}<span v-if="!more && wiki.slice(0, 600).length < wiki.length">...</span>
-                  <span v-if="wiki.slice(0, 600).length < wiki.length" style="color: blue; cursor: pointer" @click="more = !more"> {{ more ? 'Voir moins' : 'Voir plus' }}</span>
+                  <span
+                    v-if="wiki.slice(0, 600).length < wiki.length"
+                    style="color: blue; cursor: pointer"
+                    @click="more = !more"
+                  > {{ more ? 'Voir moins' : 'Voir plus' }}</span>
                 </v-card-text>
               </v-card>
             </v-col>
@@ -46,7 +50,7 @@
         >
           <v-card class="rounded-xl">
             <v-card-text>
-              <nuxt-content style="color: black" :document="article" />
+              <nuxt-content :document="article" style="color: black" />
             </v-card-text>
           </v-card>
         </v-col>
@@ -71,7 +75,8 @@ export default {
     let wiki
     try {
       wiki = await $axios.$get(`https://${lang}.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&pageids=${id}`)
-    } catch (e) {}
+    } catch (e) {
+    }
 
     return {
       article,
@@ -85,7 +90,11 @@ export default {
   },
   methods: {
     getWiki () {
-      if (this.more) { return this.wiki } else { return this.wiki.slice(0, 600) }
+      if (this.more) {
+        return this.wiki
+      } else {
+        return this.wiki.slice(0, 600)
+      }
     }
   }
 }

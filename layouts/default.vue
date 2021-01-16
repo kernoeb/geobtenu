@@ -3,8 +3,8 @@
     <v-navigation-drawer
       v-model="drawer"
       app
-      clipped
       bottom
+      clipped
     >
       <v-list>
         <v-list-item
@@ -29,7 +29,10 @@
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-spacer />
-      <v-toolbar-title style="font-family: Secular One, sans-serif; font-size: 30px; color: #725555; font-weight: bold" v-text="title" />
+      <v-toolbar-title
+        style="font-family: Secular One, sans-serif; font-size: 30px; color: #725555; font-weight: bold"
+        v-text="title"
+      />
       <v-spacer />
     </v-app-bar>
     <v-main>
@@ -38,13 +41,15 @@
       </v-container>
     </v-main>
     <v-footer
-      style="font-size: 10px"
       app
       fixed
       height=" 25"
+      style="font-size: 10px"
     >
       <span>
-        Géobtenu par <a href="https://t.me/kernoeb">kernoeb</a></span><v-spacer /><span>&copy; {{ new Date().getFullYear() }}
+        Géobtenu par <a href="https://t.me/kernoeb">kernoeb</a></span>
+      <v-spacer />
+      <span>&copy; {{ new Date().getFullYear() }}
       </span>
     </v-footer>
   </v-app>
