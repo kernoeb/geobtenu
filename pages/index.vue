@@ -1,6 +1,5 @@
 <template>
   <v-row
-    :style="$vuetify.breakpoint.xlOnly ? `margin-left: 150px; margin-right: 150px` : null"
     align="center"
     justify="center"
     style="transition: margin 500ms; justify-content: center"

@@ -4,10 +4,8 @@
       v-model="drawer"
       app
       clipped
-      mini-variant
       disable-resize-watcher
       disable-route-watcher
-      expand-on-hover
     >
       <v-list>
         <v-list-item
