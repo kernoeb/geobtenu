@@ -2,7 +2,7 @@
   <v-row
     align="center"
     justify="center"
-    style="transition: margin 500ms; justify-content: center"
+    style="justify-content: center"
   >
     <v-col v-for="value in countries" :key="`flag_${value.id}`" cols="5" md="3">
       <nuxt-link :to="`/flag/${value.id}`" style="text-decoration: none;">
