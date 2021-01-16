@@ -4,7 +4,6 @@
       v-model="drawer"
       app
       clipped
-      disable-resize-watcher
       disable-route-watcher
     >
       <v-list>
@@ -59,13 +58,8 @@ export default {
       items: [
         {
           icon: 'mdi-apps',
-          title: 'Welcome',
+          title: 'Accueil',
           to: '/'
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
         }
       ],
       title: 'GÉOBTENU'

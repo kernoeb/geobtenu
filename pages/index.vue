@@ -4,11 +4,11 @@
     justify="center"
     style="justify-content: center"
   >
-    <v-col v-for="value in countries" :key="`flag_${value.id}`" cols="5" md="3">
-      <nuxt-link :to="`/flag/${value.id}`" style="text-decoration: none;">
+    <v-col v-for="value in countries" :key="`flag_${value.id}`" cols="5" md="3" xl="2">
+      <nuxt-link :to="{name: 'flag-slug', params: {slug: value.id}}" style="text-decoration: none;">
         <v-card>
           <v-img
-            :src="require('../assets/flags/svg/' + value.id + '.svg')"
+            :src="require(`../assets/flags/svg/${value.id}.svg`)"
             class="flag"
             gradient="to top left, rgba(100,115,201,.33), rgba(25,32,72,.7)"
             height="180"
@@ -33,6 +33,7 @@
 import countries from '~/assets/countries.json'
 
 export default {
+  name: 'Index',
   data () {
     return {
       countries,
