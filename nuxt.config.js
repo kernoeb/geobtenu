@@ -4,7 +4,7 @@ const isDev = NODE_ENV === 'development'
 
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
-  target: 'server',
+  target: 'static',
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
