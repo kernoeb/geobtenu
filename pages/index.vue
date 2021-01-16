@@ -7,13 +7,16 @@
   >
     <v-col v-for="value in countries" :key="`flag_${value.id}`" cols="5" md="3">
       <nuxt-link :to="`/flag/${value.id}`" style="text-decoration: none;">
-        <v-card v-if="mounted">
+        <v-card>
           <v-img
             :src="require('../assets/flags/svg/' + value.id + '.svg')"
             class="flag"
             gradient="to top left, rgba(100,115,201,.33), rgba(25,32,72,.7)"
             height="180"
           >
+            <template v-slot:placeholder>
+              <v-skeleton-loader />
+            </template>
             <v-card-title style="color: white">
               {{ value.country.split('|')[0] }}
             </v-card-title>
@@ -22,12 +25,6 @@
             </v-card-subtitle>
           </v-img>
         </v-card>
-        <template v-else>
-          <v-skeleton-loader
-            class="mx-auto"
-            type="image"
-          />
-        </template>
       </nuxt-link>
     </v-col>
   </v-row>
