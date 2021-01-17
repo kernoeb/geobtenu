@@ -20,21 +20,7 @@
                 height="180"
               >
                 <nuxt-link :to="{name: 'flag-slug', params: {slug: value.id}}" class="noDecoration">
-                  <v-card>
-                    <v-img
-                      :src="require(`../assets/flags/png/${value.id}.png`)"
-                      class="flag"
-                      gradient="to top left, rgba(100,115,201,.33), rgba(25,32,72,.7)"
-                      height="180"
-                    >
-                      <v-card-title class="white--text">
-                        {{ value.country[lang].split('|')[0] }}
-                      </v-card-title>
-                      <v-card-subtitle v-if="value.capital[lang]" class="white--text">
-                        {{ value.capital[lang] }}
-                      </v-card-subtitle>
-                    </v-img>
-                  </v-card>
+                  <FlagCard :value="value" :lang="lang" />
                 </nuxt-link>
               </v-lazy>
             </v-col>
@@ -47,9 +33,11 @@
 
 <script>
 import countries from '~/assets/countries.json'
+import flagCard from '~/components/flag-card'
 
 export default {
   name: 'Index',
+  components: { flagCard },
   transition: 'page',
   data () {
     return {
