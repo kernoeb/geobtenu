@@ -30,10 +30,12 @@
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-spacer />
-      <v-toolbar-title
-        style="font-family: Secular One, sans-serif; font-size: 30px; color: #725555; font-weight: bold"
-        v-text="title"
-      />
+      <nuxt-link :to="{name: 'index'}" class="noDecoration">
+        <v-toolbar-title
+          style="font-family: Secular One, sans-serif; font-size: 30px; color: #725555; font-weight: bold"
+          v-text="title"
+        />
+      </nuxt-link>
       <v-spacer />
     </v-app-bar>
     <v-main>
@@ -73,3 +75,9 @@ export default {
   }
 }
 </script>
+
+<style>
+.noDecoration {
+  text-decoration: none
+}
+</style>
