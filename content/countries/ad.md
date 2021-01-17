@@ -1,6 +1,7 @@
 ---
 title: Andorre
 description: 'Pays : Andorre'
+wikipediaId_fr: 56
 ---
 
 # Langue
