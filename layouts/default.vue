@@ -20,7 +20,7 @@
             class="geoTitle"
             :class="!$vuetify.theme.dark ? 'geoTitleColor' : 'geoTitleColorDark'"
           >
-            Géobtenu
+            GÉOBTENU
           </v-list-item-title>
         </v-list-item>
 
@@ -117,7 +117,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .noDecoration {
   text-decoration: none
 }

@@ -5,7 +5,7 @@ WORKDIR /app
 ADD . /app/
 
 RUN yarn
-RUN yarn generate
+RUN yarn build
 
 # Add environment variables
 ENV HOST 0.0.0.0

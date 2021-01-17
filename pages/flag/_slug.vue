@@ -104,7 +104,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .nuxt-content h1 {
   margin-bottom: 7px;
 }

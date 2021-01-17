@@ -13,30 +13,32 @@
           align="center"
           justify="center"
         >
-          <v-col v-for="value in countriesFiltered" :key="`flag_${value.id}`" cols="5" md="3" xl="3">
-            <v-lazy
-              v-model="value.isActive"
-              height="180"
-            >
-              <nuxt-link :to="{name: 'flag-slug', params: {slug: value.id}}" class="noDecoration">
-                <v-card>
-                  <v-img
-                    :src="require(`../assets/flags/png/${value.id}.png`)"
-                    class="flag"
-                    gradient="to top left, rgba(100,115,201,.33), rgba(25,32,72,.7)"
-                    height="180"
-                  >
-                    <v-card-title class="white--text">
-                      {{ value.country[lang].split('|')[0] }}
-                    </v-card-title>
-                    <v-card-subtitle v-if="value.capital[lang]" class="white--text">
-                      {{ value.capital[lang] }}
-                    </v-card-subtitle>
-                  </v-img>
-                </v-card>
-              </nuxt-link>
-            </v-lazy>
-          </v-col>
+          <transition-group name="flip-list" class="row justifyCenter">
+            <v-col v-for="value in countriesFiltered" :key="`flag_${value.id}`" cols="5" md="3" xl="3">
+              <v-lazy
+                v-model="value.isActive"
+                height="180"
+              >
+                <nuxt-link :to="{name: 'flag-slug', params: {slug: value.id}}" class="noDecoration">
+                  <v-card>
+                    <v-img
+                      :src="require(`../assets/flags/png/${value.id}.png`)"
+                      class="flag"
+                      gradient="to top left, rgba(100,115,201,.33), rgba(25,32,72,.7)"
+                      height="180"
+                    >
+                      <v-card-title class="white--text">
+                        {{ value.country[lang].split('|')[0] }}
+                      </v-card-title>
+                      <v-card-subtitle v-if="value.capital[lang]" class="white--text">
+                        {{ value.capital[lang] }}
+                      </v-card-subtitle>
+                    </v-img>
+                  </v-card>
+                </nuxt-link>
+              </v-lazy>
+            </v-col>
+          </transition-group>
         </v-row>
       </v-col>
     </v-row>
@@ -69,7 +71,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .flag:hover {
   filter: brightness(110%);
 }
@@ -80,5 +82,14 @@ export default {
 
 .noDecoration {
   text-decoration: none
+}
+
+.flip-list-move {
+  transition: transform 1s;
+}
+
+.flip-list-enter, .flip-list-leave-to {
+  transition: all 0.5s;
+  opacity: 0;
 }
 </style>
