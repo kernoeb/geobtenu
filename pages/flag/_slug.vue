@@ -50,7 +50,7 @@
         >
           <v-card class="rounded-xl">
             <v-card-text>
-              <nuxt-content :document="article" style="color: black" />
+              <nuxt-content :document="article" :style="$vuetify.theme.dark ? 'color: white' : 'color: black'" />
             </v-card-text>
           </v-card>
         </v-col>

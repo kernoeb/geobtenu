@@ -3,11 +3,28 @@
     <v-navigation-drawer
       v-model="drawer"
       app
-      bottom
       clipped
       disable-resize-watcher
+      absolute
+      temporary
     >
       <v-list>
+        <v-list-item class="px-2">
+          <v-btn
+            icon
+            @click.stop="drawer = !drawer"
+          >
+            <v-icon>mdi-window-close</v-icon>
+          </v-btn>
+          <v-list-item-title
+            class="geoTitle"
+            :class="!$vuetify.theme.dark ? 'geoTitleColor' : 'geoTitleColorDark'"
+          >
+            Géobtenu
+          </v-list-item-title>
+        </v-list-item>
+
+        <v-divider />
         <v-list-item
           v-for="(item, i) in items"
           :key="i"
@@ -23,6 +40,16 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
+      <template #append>
+        <div class="pa-2">
+          <v-btn @click="$vuetify.theme.dark = !$vuetify.theme.dark">
+            <v-icon left>
+              mdi-theme-light-dark
+            </v-icon>
+            Changer le thème
+          </v-btn>
+        </div>
+      </template>
     </v-navigation-drawer>
     <v-app-bar
       app
@@ -32,7 +59,8 @@
       <v-spacer />
       <nuxt-link :to="{name: 'index'}" class="noDecoration">
         <v-toolbar-title
-          style="font-family: Secular One, sans-serif; font-size: 30px; color: #725555; font-weight: bold"
+          class="geoTitle"
+          :class="!$vuetify.theme.dark ? 'geoTitleColor' : 'geoTitleColorDark'"
           v-text="title"
         />
       </nuxt-link>
@@ -60,6 +88,7 @@
 
 <script>
 export default {
+  middleware: 'vuetify-theme',
   data () {
     return {
       drawer: false,
@@ -72,6 +101,18 @@ export default {
       ],
       title: 'GÉOBTENU'
     }
+  },
+  watch: {
+    '$vuetify.theme.dark' () {
+      this.$cookies.set('theme', this.$vuetify.theme.dark ? 'true' : 'false', { maxAge: 2147483646 })
+    }
+  },
+  mounted () {
+    try {
+      this.$vuetify.theme.dark = JSON.parse(this.$cookies.get('theme'))
+    } catch (e) {
+      this.$vuetify.theme.dark = true
+    }
   }
 }
 </script>
@@ -79,5 +120,19 @@ export default {
 <style>
 .noDecoration {
   text-decoration: none
+}
+
+.geoTitle {
+  font-family: Secular One, sans-serif;
+  font-size: 30px;
+  font-weight: bold
+}
+
+.geoTitleColor {
+  color: #725555;
+}
+
+.geoTitleColorDark {
+  color: white;
 }
 </style>
