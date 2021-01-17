@@ -13,7 +13,7 @@
           align="center"
           justify="center"
         >
-          <transition-group name="flip-list" class="row justifyCenter">
+          <transition-group class="row justifyCenter" name="flip-list">
             <v-col v-for="value in countriesFiltered" :key="`flag_${value.id}`" cols="5" md="3" xl="3">
               <v-lazy
                 v-model="value.isActive"
@@ -50,6 +50,7 @@ import countries from '~/assets/countries.json'
 
 export default {
   name: 'Index',
+  transition: 'page',
   data () {
     return {
       lang: 'fr',
@@ -90,6 +91,14 @@ export default {
 
 .flip-list-enter, .flip-list-leave-to {
   transition: all 0.5s;
+  opacity: 0;
+}
+
+.page-enter-active, .page-leave-active {
+  transition: opacity .2s;
+}
+
+.page-enter, .page-leave-active {
   opacity: 0;
 }
 </style>

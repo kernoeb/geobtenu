@@ -5,7 +5,6 @@
       app
       clipped
       disable-resize-watcher
-      absolute
       temporary
     >
       <v-list>
@@ -17,8 +16,8 @@
             <v-icon>mdi-window-close</v-icon>
           </v-btn>
           <v-list-item-title
-            class="geoTitle"
             :class="!$vuetify.theme.dark ? 'geoTitleColor' : 'geoTitleColorDark'"
+            class="geoTitle"
           >
             GÉOBTENU
           </v-list-item-title>
@@ -59,8 +58,8 @@
       <v-spacer />
       <nuxt-link :to="{name: 'index'}" class="noDecoration">
         <v-toolbar-title
-          class="geoTitle"
           :class="!$vuetify.theme.dark ? 'geoTitleColor' : 'geoTitleColorDark'"
+          class="geoTitle"
           v-text="title"
         />
       </nuxt-link>
