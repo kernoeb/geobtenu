@@ -27,10 +27,10 @@
                     height="180"
                   >
                     <v-card-title class="white--text">
-                      {{ value.country.split('|')[0] }}
+                      {{ value.country[lang].split('|')[0] }}
                     </v-card-title>
-                    <v-card-subtitle v-if="value.capital" class="white--text">
-                      {{ value.capital }}
+                    <v-card-subtitle v-if="value.capital[lang]" class="white--text">
+                      {{ value.capital[lang] }}
                     </v-card-subtitle>
                   </v-img>
                 </v-card>
@@ -50,6 +50,7 @@ export default {
   name: 'Index',
   data () {
     return {
+      lang: 'fr',
       countries,
       search: ''
     }
@@ -60,8 +61,8 @@ export default {
         return this.countries
       } else {
         return this.countries.filter(country =>
-          country.country.toUpperCase().includes(this.search.toUpperCase()) ||
-          (country.capital && country.capital.toUpperCase().includes(this.search.toUpperCase())))
+          country.country[this.lang].toUpperCase().includes(this.search.toUpperCase()) ||
+          (country.capital[this.lang] && country.capital[this.lang].toUpperCase().includes(this.search.toUpperCase())))
       }
     }
   }

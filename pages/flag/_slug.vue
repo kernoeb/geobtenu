@@ -60,9 +60,10 @@
 </template>
 
 <script>
-const wikipedia = require('~/assets/wikipedia.json')
+const wikipedia = require('~/assets/countries.json')
 
 export default {
+  transition: 'page',
   async asyncData ({
     $content,
     params,
@@ -71,20 +72,23 @@ export default {
     const article = await $content('countries', params.slug).fetch()
 
     const lang = 'fr'
-    const id = wikipedia[article.slug].fr
+    const id = wikipedia.find(el => el.id === article.slug).wikipedia[lang]
     let wiki
     try {
-      wiki = await $axios.$get(`https://${lang}.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&pageids=${id}&origin=*`)
+      if (id) {
+        wiki = await $axios.$get(`https://${lang}.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&pageids=${id}&origin=*`)
+      }
     } catch (e) {
     }
 
     return {
       article,
-      wiki: wiki && wiki.query && wiki.query.pages && wiki.query.pages[id] && wiki.query.pages[id].extract
+      wiki: id && wiki && wiki.query && wiki.query.pages && wiki.query.pages[id] && wiki.query.pages[id].extract
     }
   },
   data () {
     return {
+      lang: 'fr',
       more: false
     }
   },
@@ -103,5 +107,13 @@ export default {
 <style>
 .nuxt-content h1 {
   margin-bottom: 7px;
+}
+
+.page-enter-active, .page-leave-active {
+  transition: opacity .5s;
+}
+
+.page-enter, .page-leave-active {
+  opacity: 0;
 }
 </style>

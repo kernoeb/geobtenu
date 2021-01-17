@@ -1,1216 +1,2922 @@
 [
   {
     "id": "ad",
-    "country": "Andorre",
-    "capital": "Andorre-la-Vieille"
+    "country": {
+      "fr": "Andorre"
+    },
+    "capital": {
+      "fr": "Andorre-la-Vieille"
+    },
+    "wikipedia": {
+      "fr": 56
+    }
   },
   {
     "id": "ae",
-    "country": "Émirats Arabes Unis",
-    "capital": "Abou Dabi"
+    "country": {
+      "fr": "Émirats Arabes Unis"
+    },
+    "capital": {
+      "fr": "Abou Dabi"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "af",
-    "country": "Afghanistan",
-    "capital": "Kaboul"
+    "country": {
+      "fr": "Afghanistan"
+    },
+    "capital": {
+      "fr": "Kaboul"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ag",
-    "country": "Antigua-Et-Barbuda",
-    "capital": "Saint John's"
+    "country": {
+      "fr": "Antigua-Et-Barbuda"
+    },
+    "capital": {
+      "fr": "Saint John's"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ai",
-    "country": "Anguilla",
-    "capital": "The Valley"
+    "country": {
+      "fr": "Anguilla"
+    },
+    "capital": {
+      "fr": "The Valley"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "al",
-    "country": "Albanie",
-    "capital": "Tirana"
+    "country": {
+      "fr": "Albanie"
+    },
+    "capital": {
+      "fr": "Tirana"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "am",
-    "country": "Arménie",
-    "capital": "Erevan"
+    "country": {
+      "fr": "Arménie"
+    },
+    "capital": {
+      "fr": "Erevan"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ao",
-    "country": "Angola",
-    "capital": "Luanda"
+    "country": {
+      "fr": "Angola"
+    },
+    "capital": {
+      "fr": "Luanda"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "aq",
-    "country": "Antarctique"
+    "country": {
+      "fr": "Antarctique"
+    },
+    "capital": {},
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ar",
-    "country": "Argentine",
-    "capital": "Buenos Aires"
+    "country": {
+      "fr": "Argentine"
+    },
+    "capital": {
+      "fr": "Buenos Aires"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "as",
-    "country": "Samoa Américaines",
-    "capital": "Pago Pago"
+    "country": {
+      "fr": "Samoa Américaines"
+    },
+    "capital": {
+      "fr": "Pago Pago"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "at",
-    "country": "Autriche",
-    "capital": "Vienne"
+    "country": {
+      "fr": "Autriche"
+    },
+    "capital": {
+      "fr": "Vienne"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "au",
-    "country": "Australie",
-    "capital": "Canberra"
+    "country": {
+      "fr": "Australie"
+    },
+    "capital": {
+      "fr": "Canberra"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "aw",
-    "country": "Aruba",
-    "capital": "Oranjestad"
+    "country": {
+      "fr": "Aruba"
+    },
+    "capital": {
+      "fr": "Oranjestad"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ax",
-    "country": "Îles Åland",
-    "capital": "Mariehamn"
+    "country": {
+      "fr": "Îles Åland"
+    },
+    "capital": {
+      "fr": "Mariehamn"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "az",
-    "country": "Azerbaïdjan",
-    "capital": "Bakou"
+    "country": {
+      "fr": "Azerbaïdjan"
+    },
+    "capital": {
+      "fr": "Bakou"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ba",
-    "country": "Bosnie-Herzégovine",
-    "capital": "Sarajevo"
+    "country": {
+      "fr": "Bosnie-Herzégovine"
+    },
+    "capital": {
+      "fr": "Sarajevo"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "bb",
-    "country": "Barbade",
-    "capital": "Bridgetown"
+    "country": {
+      "fr": "Barbade"
+    },
+    "capital": {
+      "fr": "Bridgetown"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "bd",
-    "country": "Bangladesh",
-    "capital": "Dacca"
+    "country": {
+      "fr": "Bangladesh"
+    },
+    "capital": {
+      "fr": "Dacca"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "be",
-    "country": "Belgique",
-    "capital": "Bruxelles"
+    "country": {
+      "fr": "Belgique"
+    },
+    "capital": {
+      "fr": "Bruxelles"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "bf",
-    "country": "Burkina Faso",
-    "capital": "Ouagadougou"
+    "country": {
+      "fr": "Burkina Faso"
+    },
+    "capital": {
+      "fr": "Ouagadougou"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "bg",
-    "country": "Bulgarie",
-    "capital": "Sofia"
+    "country": {
+      "fr": "Bulgarie"
+    },
+    "capital": {
+      "fr": "Sofia"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "bh",
-    "country": "Bahreïn",
-    "capital": "Manama"
+    "country": {
+      "fr": "Bahreïn"
+    },
+    "capital": {
+      "fr": "Manama"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "bi",
-    "country": "Burundi",
-    "capital": "Gitega"
+    "country": {
+      "fr": "Burundi"
+    },
+    "capital": {
+      "fr": "Gitega"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "bj",
-    "country": "Bénin",
-    "capital": "Porto-Novo"
+    "country": {
+      "fr": "Bénin"
+    },
+    "capital": {
+      "fr": "Porto-Novo"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "bl",
-    "country": "Saint-Barthélemy",
-    "capital": "Gustavia"
+    "country": {
+      "fr": "Saint-Barthélemy"
+    },
+    "capital": {
+      "fr": "Gustavia"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "bm",
-    "country": "Bermudes",
-    "capital": "Hamilton"
+    "country": {
+      "fr": "Bermudes"
+    },
+    "capital": {
+      "fr": "Hamilton"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "bn",
-    "country": "Brunéi",
-    "capital": "Bandar Seri Begawan"
+    "country": {
+      "fr": "Brunéi"
+    },
+    "capital": {
+      "fr": "Bandar Seri Begawan"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "bo",
-    "country": "Bolivie",
-    "capital": "Sucre"
+    "country": {
+      "fr": "Bolivie"
+    },
+    "capital": {
+      "fr": "Sucre"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "bq",
-    "country": "Bonaire",
-    "capital": "Kralendijk"
+    "country": {
+      "fr": "Bonaire"
+    },
+    "capital": {
+      "fr": "Kralendijk"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "br",
-    "country": "Brésil",
-    "capital": "Brasilia"
+    "country": {
+      "fr": "Brésil"
+    },
+    "capital": {
+      "fr": "Brasilia"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "bs",
-    "country": "Bahamas",
-    "capital": "Nassau"
+    "country": {
+      "fr": "Bahamas"
+    },
+    "capital": {
+      "fr": "Nassau"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "bt",
-    "country": "Bhoutan",
-    "capital": "Thimphou"
+    "country": {
+      "fr": "Bhoutan"
+    },
+    "capital": {
+      "fr": "Thimphou"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "bw",
-    "country": "Botswana",
-    "capital": "Gaborone"
+    "country": {
+      "fr": "Botswana"
+    },
+    "capital": {
+      "fr": "Gaborone"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "by",
-    "country": "Biélorussie",
-    "capital": "Minsk"
+    "country": {
+      "fr": "Biélorussie"
+    },
+    "capital": {
+      "fr": "Minsk"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "bz",
-    "country": "Belize",
-    "capital": "Belmopan"
+    "country": {
+      "fr": "Belize"
+    },
+    "capital": {
+      "fr": "Belmopan"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ca",
-    "country": "Canada",
-    "capital": "Ottawa"
+    "country": {
+      "fr": "Canada"
+    },
+    "capital": {
+      "fr": "Ottawa"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "cc",
-    "country": "Îles Cocos",
-    "capital": "West Island"
+    "country": {
+      "fr": "Îles Cocos"
+    },
+    "capital": {
+      "fr": "West Island"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "cd",
-    "country": "Congo-Kinshasa|République démocratique du Congo",
-    "capital": "Kinshasa"
+    "country": {
+      "fr": "Congo-Kinshasa|République démocratique du Congo"
+    },
+    "capital": {
+      "fr": "Kinshasa"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "cf",
-    "country": "République Centrafricaine",
-    "capital": "Bangui"
+    "country": {
+      "fr": "République Centrafricaine"
+    },
+    "capital": {
+      "fr": "Bangui"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "cg",
-    "country": "Congo-Brazzaville|République du Congo",
-    "capital": "Brazzaville"
+    "country": {
+      "fr": "Congo-Brazzaville|République du Congo"
+    },
+    "capital": {
+      "fr": "Brazzaville"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ch",
-    "country": "Suisse",
-    "capital": "Berne"
+    "country": {
+      "fr": "Suisse"
+    },
+    "capital": {
+      "fr": "Berne"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ci",
-    "country": "Côte d'Ivoire",
-    "capital": "Yamoussoukro"
+    "country": {
+      "fr": "Côte d'Ivoire"
+    },
+    "capital": {
+      "fr": "Yamoussoukro"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ck",
-    "country": "Îles Cook",
-    "capital": "Avarua"
+    "country": {
+      "fr": "Îles Cook"
+    },
+    "capital": {
+      "fr": "Avarua"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "cl",
-    "country": "Chili",
-    "capital": "Santiago"
+    "country": {
+      "fr": "Chili"
+    },
+    "capital": {
+      "fr": "Santiago"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "cm",
-    "country": "Cameroun",
-    "capital": "Yaoundé"
+    "country": {
+      "fr": "Cameroun"
+    },
+    "capital": {
+      "fr": "Yaoundé"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "cn",
-    "country": "Chine",
-    "capital": "Pékin"
+    "country": {
+      "fr": "Chine"
+    },
+    "capital": {
+      "fr": "Pékin"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "co",
-    "country": "Colombie",
-    "capital": "Bogota"
+    "country": {
+      "fr": "Colombie"
+    },
+    "capital": {
+      "fr": "Bogota"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "cr",
-    "country": "Costa Rica",
-    "capital": "San José"
+    "country": {
+      "fr": "Costa Rica"
+    },
+    "capital": {
+      "fr": "San José"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "cu",
-    "country": "Cuba",
-    "capital": "La Havane"
+    "country": {
+      "fr": "Cuba"
+    },
+    "capital": {
+      "fr": "La Havane"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "cv",
-    "country": "Cap-Vert",
-    "capital": "Praia"
+    "country": {
+      "fr": "Cap-Vert"
+    },
+    "capital": {
+      "fr": "Praia"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "cw",
-    "country": "Curaçao",
-    "capital": "Willemstad"
+    "country": {
+      "fr": "Curaçao"
+    },
+    "capital": {
+      "fr": "Willemstad"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "cx",
-    "country": "Île Christmas",
-    "capital": "Flying Fish Cove"
+    "country": {
+      "fr": "Île Christmas"
+    },
+    "capital": {
+      "fr": "Flying Fish Cove"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "cy",
-    "country": "Chypre",
-    "capital": "Nicosie"
+    "country": {
+      "fr": "Chypre"
+    },
+    "capital": {
+      "fr": "Nicosie"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "cz",
-    "country": "Tchéquie",
-    "capital": "Prague"
+    "country": {
+      "fr": "Tchéquie"
+    },
+    "capital": {
+      "fr": "Prague"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "de",
-    "country": "Allemagne",
-    "capital": "Berlin"
+    "country": {
+      "fr": "Allemagne"
+    },
+    "capital": {
+      "fr": "Berlin"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "dj",
-    "country": "Djibouti",
-    "capital": "Djibouti"
+    "country": {
+      "fr": "Djibouti"
+    },
+    "capital": {
+      "fr": "Djibouti"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "dk",
-    "country": "Danemark",
-    "capital": "Copenhague"
+    "country": {
+      "fr": "Danemark"
+    },
+    "capital": {
+      "fr": "Copenhague"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "dm",
-    "country": "Dominique",
-    "capital": "Roseau"
+    "country": {
+      "fr": "Dominique"
+    },
+    "capital": {
+      "fr": "Roseau"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "do",
-    "country": "République dominicaine",
-    "capital": "Saint-Domingue"
+    "country": {
+      "fr": "République dominicaine"
+    },
+    "capital": {
+      "fr": "Saint-Domingue"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "dz",
-    "country": "Algérie",
-    "capital": "Alger"
+    "country": {
+      "fr": "Algérie"
+    },
+    "capital": {
+      "fr": "Alger"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ec",
-    "country": "Équateur",
-    "capital": "Quito"
+    "country": {
+      "fr": "Équateur"
+    },
+    "capital": {
+      "fr": "Quito"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ee",
-    "country": "Estonie",
-    "capital": "Tallinn"
+    "country": {
+      "fr": "Estonie"
+    },
+    "capital": {
+      "fr": "Tallinn"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "eg",
-    "country": "Égypte",
-    "capital": "Le Caire"
+    "country": {
+      "fr": "Égypte"
+    },
+    "capital": {
+      "fr": "Le Caire"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "eh",
-    "country": "Sahara Occidental",
-    "capital": "Laâyoune"
+    "country": {
+      "fr": "Sahara Occidental"
+    },
+    "capital": {
+      "fr": "Laâyoune"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "er",
-    "country": "Érythrée",
-    "capital": "Asmara"
+    "country": {
+      "fr": "Érythrée"
+    },
+    "capital": {
+      "fr": "Asmara"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "es",
-    "country": "Espagne",
-    "capital": "Madrid"
+    "country": {
+      "fr": "Espagne"
+    },
+    "capital": {
+      "fr": "Madrid"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "et",
-    "country": "Éthiopie",
-    "capital": "Addis-Abeba"
+    "country": {
+      "fr": "Éthiopie"
+    },
+    "capital": {
+      "fr": "Addis-Abeba"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "fi",
-    "country": "Finlande",
-    "capital": "Helsinki"
+    "country": {
+      "fr": "Finlande"
+    },
+    "capital": {
+      "fr": "Helsinki"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "fj",
-    "country": "Fidji",
-    "capital": "Suva"
+    "country": {
+      "fr": "Fidji"
+    },
+    "capital": {
+      "fr": "Suva"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "fk",
-    "country": "Îles Malouines",
-    "capital": "Port Stanley"
+    "country": {
+      "fr": "Îles Malouines"
+    },
+    "capital": {
+      "fr": "Port Stanley"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "fm",
-    "country": "Micronésie|États fédérés de Micronésie",
-    "capital": "Palikir"
+    "country": {
+      "fr": "Micronésie|États fédérés de Micronésie"
+    },
+    "capital": {
+      "fr": "Palikir"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "fo",
-    "country": "Îles Féroé",
-    "capital": "Tórshavn"
+    "country": {
+      "fr": "Îles Féroé"
+    },
+    "capital": {
+      "fr": "Tórshavn"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "fr",
-    "country": "France",
-    "capital": "Paris"
+    "country": {
+      "fr": "France"
+    },
+    "capital": {
+      "fr": "Paris"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ga",
-    "country": "Gabon",
-    "capital": "Libreville"
+    "country": {
+      "fr": "Gabon"
+    },
+    "capital": {
+      "fr": "Libreville"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "gb",
-    "country": "Royaume-Uni",
-    "capital": "Londres"
+    "country": {
+      "fr": "Royaume-Uni"
+    },
+    "capital": {
+      "fr": "Londres"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "gd",
-    "country": "Grenade",
-    "capital": "Saint-Georges"
+    "country": {
+      "fr": "Grenade"
+    },
+    "capital": {
+      "fr": "Saint-Georges"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ge",
-    "country": "Géorgie",
-    "capital": "Tbilissi"
+    "country": {
+      "fr": "Géorgie"
+    },
+    "capital": {
+      "fr": "Tbilissi"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "gf",
-    "country": "Guyane Française"
+    "country": {
+      "fr": "Guyane Française"
+    },
+    "capital": {},
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "gg",
-    "country": "Guernesey",
-    "capital": "Saint-Pierre-Port"
+    "country": {
+      "fr": "Guernesey"
+    },
+    "capital": {
+      "fr": "Saint-Pierre-Port"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "gh",
-    "country": "Ghana",
-    "capital": "Accra"
+    "country": {
+      "fr": "Ghana"
+    },
+    "capital": {
+      "fr": "Accra"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "gi",
-    "country": "Gibraltar",
-    "capital": "Gibraltar"
+    "country": {
+      "fr": "Gibraltar"
+    },
+    "capital": {
+      "fr": "Gibraltar"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "gl",
-    "country": "Groenland",
-    "capital": "Nuuk"
+    "country": {
+      "fr": "Groenland"
+    },
+    "capital": {
+      "fr": "Nuuk"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "gm",
-    "country": "Gambie",
-    "capital": "Banjul"
+    "country": {
+      "fr": "Gambie"
+    },
+    "capital": {
+      "fr": "Banjul"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "gn",
-    "country": "Guinée",
-    "capital": "Conakry"
+    "country": {
+      "fr": "Guinée"
+    },
+    "capital": {
+      "fr": "Conakry"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "gp",
-    "country": "Guadeloupe",
-    "capital": "Basse-Terre"
+    "country": {
+      "fr": "Guadeloupe"
+    },
+    "capital": {
+      "fr": "Basse-Terre"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "gq",
-    "country": "Guinée équatoriale",
-    "capital": "Malabo"
+    "country": {
+      "fr": "Guinée équatoriale"
+    },
+    "capital": {
+      "fr": "Malabo"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "gr",
-    "country": "Grèce",
-    "capital": "Athènes"
+    "country": {
+      "fr": "Grèce"
+    },
+    "capital": {
+      "fr": "Athènes"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "gt",
-    "country": "Guatemala",
-    "capital": "Guatemala"
+    "country": {
+      "fr": "Guatemala"
+    },
+    "capital": {
+      "fr": "Guatemala"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "gu",
-    "country": "Guam",
-    "capital": "Hagåtña"
+    "country": {
+      "fr": "Guam"
+    },
+    "capital": {
+      "fr": "Hagåtña"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "gw",
-    "country": "Guinée-Bissau",
-    "capital": "Bissau"
+    "country": {
+      "fr": "Guinée-Bissau"
+    },
+    "capital": {
+      "fr": "Bissau"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "gy",
-    "country": "Guyana",
-    "capital": "Georgetown"
+    "country": {
+      "fr": "Guyana"
+    },
+    "capital": {
+      "fr": "Georgetown"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "hk",
-    "country": "Hong Kong"
+    "country": {
+      "fr": "Hong Kong"
+    },
+    "capital": {},
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "hn",
-    "country": "Honduras",
-    "capital": "Tegucigalpa"
+    "country": {
+      "fr": "Honduras"
+    },
+    "capital": {
+      "fr": "Tegucigalpa"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "hr",
-    "country": "Croatie",
-    "capital": "Zagreb"
+    "country": {
+      "fr": "Croatie"
+    },
+    "capital": {
+      "fr": "Zagreb"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ht",
-    "country": "Haïti",
-    "capital": "Port-au-Prince"
+    "country": {
+      "fr": "Haïti"
+    },
+    "capital": {
+      "fr": "Port-au-Prince"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "hu",
-    "country": "Hongrie",
-    "capital": "Budapest"
+    "country": {
+      "fr": "Hongrie"
+    },
+    "capital": {
+      "fr": "Budapest"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "id",
-    "country": "Indonésie",
-    "capital": "Jakarta"
+    "country": {
+      "fr": "Indonésie"
+    },
+    "capital": {
+      "fr": "Jakarta"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ie",
-    "country": "Irlande",
-    "capital": "Dublin"
+    "country": {
+      "fr": "Irlande"
+    },
+    "capital": {
+      "fr": "Dublin"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "il",
-    "country": "Israël",
-    "capital": "Jérusalem"
+    "country": {
+      "fr": "Israël"
+    },
+    "capital": {
+      "fr": "Jérusalem"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "im",
-    "country": "Île de Man",
-    "capital": "Douglas"
+    "country": {
+      "fr": "Île de Man"
+    },
+    "capital": {
+      "fr": "Douglas"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "in",
-    "country": "Inde",
-    "capital": "New Delhi"
+    "country": {
+      "fr": "Inde"
+    },
+    "capital": {
+      "fr": "New Delhi"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "io",
-    "country": "Territoire Britannique De L'océan Indien"
+    "country": {
+      "fr": "Territoire Britannique De L'océan Indien"
+    },
+    "capital": {},
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "iq",
-    "country": "Irak",
-    "capital": "Bagdad"
+    "country": {
+      "fr": "Irak"
+    },
+    "capital": {
+      "fr": "Bagdad"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ir",
-    "country": "Iran",
-    "capital": "Téhéran"
+    "country": {
+      "fr": "Iran"
+    },
+    "capital": {
+      "fr": "Téhéran"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "is",
-    "country": "Islande",
-    "capital": "Reykjavik"
+    "country": {
+      "fr": "Islande"
+    },
+    "capital": {
+      "fr": "Reykjavik"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "it",
-    "country": "Italie",
-    "capital": "Rome"
+    "country": {
+      "fr": "Italie"
+    },
+    "capital": {
+      "fr": "Rome"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "je",
-    "country": "Jersey",
-    "capital": "Saint-Helier"
+    "country": {
+      "fr": "Jersey"
+    },
+    "capital": {
+      "fr": "Saint-Helier"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "jm",
-    "country": "Jamaïque",
-    "capital": "Kingston"
+    "country": {
+      "fr": "Jamaïque"
+    },
+    "capital": {
+      "fr": "Kingston"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "jo",
-    "country": "Jordanie",
-    "capital": "Amman"
+    "country": {
+      "fr": "Jordanie"
+    },
+    "capital": {
+      "fr": "Amman"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "jp",
-    "country": "Japon",
-    "capital": "Tokyo"
+    "country": {
+      "fr": "Japon"
+    },
+    "capital": {
+      "fr": "Tokyo"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ke",
-    "country": "Kenya",
-    "capital": "Nairobi"
+    "country": {
+      "fr": "Kenya"
+    },
+    "capital": {
+      "fr": "Nairobi"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "kg",
-    "country": "Kirghizistan",
-    "capital": "Bichkek"
+    "country": {
+      "fr": "Kirghizistan"
+    },
+    "capital": {
+      "fr": "Bichkek"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "kh",
-    "country": "Cambodge",
-    "capital": "Phnom Penh"
+    "country": {
+      "fr": "Cambodge"
+    },
+    "capital": {
+      "fr": "Phnom Penh"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ki",
-    "country": "Kiribati",
-    "capital": "Tarawa-Sud"
+    "country": {
+      "fr": "Kiribati"
+    },
+    "capital": {
+      "fr": "Tarawa-Sud"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "km",
-    "country": "Comores",
-    "capital": "Moroni"
+    "country": {
+      "fr": "Comores"
+    },
+    "capital": {
+      "fr": "Moroni"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "kn",
-    "country": "Saint-Christophe-et-Niévès|Saint-Kitts-et-Nevis|Fédération de Saint-Christophe-et-Niévès",
-    "capital": "Basseterre"
+    "country": {
+      "fr": "Saint-Christophe-et-Niévès|Saint-Kitts-et-Nevis|Fédération de Saint-Christophe-et-Niévès"
+    },
+    "capital": {
+      "fr": "Basseterre"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "kp",
-    "country": "Corée du Nord",
-    "capital": "Pyongyang"
+    "country": {
+      "fr": "Corée du Nord"
+    },
+    "capital": {
+      "fr": "Pyongyang"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "kr",
-    "country": "Corée du Sud",
-    "capital": "Séoul"
+    "country": {
+      "fr": "Corée du Sud"
+    },
+    "capital": {
+      "fr": "Séoul"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "kw",
-    "country": "Koweït",
-    "capital": "Koweït"
+    "country": {
+      "fr": "Koweït"
+    },
+    "capital": {
+      "fr": "Koweït"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ky",
-    "country": "Îles Caïmans",
-    "capital": "George Town"
+    "country": {
+      "fr": "Îles Caïmans"
+    },
+    "capital": {
+      "fr": "George Town"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "kz",
-    "country": "Kazakhstan",
-    "capital": "Noursoultan"
+    "country": {
+      "fr": "Kazakhstan"
+    },
+    "capital": {
+      "fr": "Noursoultan"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "la",
-    "country": "Laos",
-    "capital": "Vientiane"
+    "country": {
+      "fr": "Laos"
+    },
+    "capital": {
+      "fr": "Vientiane"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "lb",
-    "country": "Liban",
-    "capital": "Beyrouth"
+    "country": {
+      "fr": "Liban"
+    },
+    "capital": {
+      "fr": "Beyrouth"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "lc",
-    "country": "Sainte-Lucie",
-    "capital": "Castries"
+    "country": {
+      "fr": "Sainte-Lucie"
+    },
+    "capital": {
+      "fr": "Castries"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "li",
-    "country": "Liechtenstein",
-    "capital": "Vaduz"
+    "country": {
+      "fr": "Liechtenstein"
+    },
+    "capital": {
+      "fr": "Vaduz"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "lk",
-    "country": "Sri Lanka",
-    "capital": "Sri Jayawardenapura Kotte"
+    "country": {
+      "fr": "Sri Lanka"
+    },
+    "capital": {
+      "fr": "Sri Jayawardenapura Kotte"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "lr",
-    "country": "Libéria",
-    "capital": "Monrovia"
+    "country": {
+      "fr": "Libéria"
+    },
+    "capital": {
+      "fr": "Monrovia"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ls",
-    "country": "Lesotho",
-    "capital": "Maseru"
+    "country": {
+      "fr": "Lesotho"
+    },
+    "capital": {
+      "fr": "Maseru"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "lt",
-    "country": "Lituanie",
-    "capital": "Vilnius"
+    "country": {
+      "fr": "Lituanie"
+    },
+    "capital": {
+      "fr": "Vilnius"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "lu",
-    "country": "Luxembourg",
-    "capital": "Luxembourg"
+    "country": {
+      "fr": "Luxembourg"
+    },
+    "capital": {
+      "fr": "Luxembourg"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "lv",
-    "country": "Lettonie",
-    "capital": "Riga"
+    "country": {
+      "fr": "Lettonie"
+    },
+    "capital": {
+      "fr": "Riga"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ly",
-    "country": "Libye",
-    "capital": "Tripoli"
+    "country": {
+      "fr": "Libye"
+    },
+    "capital": {
+      "fr": "Tripoli"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ma",
-    "country": "Maroc",
-    "capital": "Rabat"
+    "country": {
+      "fr": "Maroc"
+    },
+    "capital": {
+      "fr": "Rabat"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "mc",
-    "country": "Monaco",
-    "capital": "Monaco"
+    "country": {
+      "fr": "Monaco"
+    },
+    "capital": {
+      "fr": "Monaco"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "md",
-    "country": "Moldavie",
-    "capital": "Chisinau"
+    "country": {
+      "fr": "Moldavie"
+    },
+    "capital": {
+      "fr": "Chisinau"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "me",
-    "country": "Monténégro",
-    "capital": "Podgorica"
+    "country": {
+      "fr": "Monténégro"
+    },
+    "capital": {
+      "fr": "Podgorica"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "mf",
-    "country": "Saint-Martin"
+    "country": {
+      "fr": "Saint-Martin"
+    },
+    "capital": {},
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "mg",
-    "country": "Madagascar",
-    "capital": "Antananarivo"
+    "country": {
+      "fr": "Madagascar"
+    },
+    "capital": {
+      "fr": "Antananarivo"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "mh",
-    "country": "Îles Marshall",
-    "capital": "Delap-Uliga-Darrit"
+    "country": {
+      "fr": "Îles Marshall"
+    },
+    "capital": {
+      "fr": "Delap-Uliga-Darrit"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "mk",
-    "country": "Macédoine Du Nord",
-    "capital": "Skopje"
+    "country": {
+      "fr": "Macédoine Du Nord"
+    },
+    "capital": {
+      "fr": "Skopje"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ml",
-    "country": "Mali",
-    "capital": "Bamako"
+    "country": {
+      "fr": "Mali"
+    },
+    "capital": {
+      "fr": "Bamako"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "mm",
-    "country": "Myanmar|Birmanie",
-    "capital": "Naypyidaw"
+    "country": {
+      "fr": "Myanmar|Birmanie"
+    },
+    "capital": {
+      "fr": "Naypyidaw"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "mn",
-    "country": "Mongolie",
-    "capital": "Oulan-Bator"
+    "country": {
+      "fr": "Mongolie"
+    },
+    "capital": {
+      "fr": "Oulan-Bator"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "mo",
-    "country": "Macao"
+    "country": {
+      "fr": "Macao"
+    },
+    "capital": {},
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "mp",
-    "country": "Mariannes du Nord"
+    "country": {
+      "fr": "Mariannes du Nord"
+    },
+    "capital": {},
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "mq",
-    "country": "Martinique"
+    "country": {
+      "fr": "Martinique"
+    },
+    "capital": {},
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "mr",
-    "country": "Mauritanie",
-    "capital": "Nouakchott"
+    "country": {
+      "fr": "Mauritanie"
+    },
+    "capital": {
+      "fr": "Nouakchott"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ms",
-    "country": "Montserrat"
+    "country": {
+      "fr": "Montserrat"
+    },
+    "capital": {},
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "mt",
-    "country": "Malte",
-    "capital": "La Valette"
+    "country": {
+      "fr": "Malte"
+    },
+    "capital": {
+      "fr": "La Valette"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "mu",
-    "country": "Maurice",
-    "capital": "Port-Louis"
+    "country": {
+      "fr": "Maurice"
+    },
+    "capital": {
+      "fr": "Port-Louis"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "mv",
-    "country": "Maldives",
-    "capital": "Malé"
+    "country": {
+      "fr": "Maldives"
+    },
+    "capital": {
+      "fr": "Malé"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "mw",
-    "country": "Malawi",
-    "capital": "Lilongwe"
+    "country": {
+      "fr": "Malawi"
+    },
+    "capital": {
+      "fr": "Lilongwe"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "mx",
-    "country": "Mexique",
-    "capital": "Mexico"
+    "country": {
+      "fr": "Mexique"
+    },
+    "capital": {
+      "fr": "Mexico"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "my",
-    "country": "Malaisie",
-    "capital": "Putrajaya"
+    "country": {
+      "fr": "Malaisie"
+    },
+    "capital": {
+      "fr": "Putrajaya"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "mz",
-    "country": "Mozambique",
-    "capital": "Maputo"
+    "country": {
+      "fr": "Mozambique"
+    },
+    "capital": {
+      "fr": "Maputo"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "na",
-    "country": "Namibie",
-    "capital": "Windhoek"
+    "country": {
+      "fr": "Namibie"
+    },
+    "capital": {
+      "fr": "Windhoek"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "nc",
-    "country": "Nouvelle-Calédonie"
+    "country": {
+      "fr": "Nouvelle-Calédonie"
+    },
+    "capital": {},
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ne",
-    "country": "Niger",
-    "capital": "Niamey"
+    "country": {
+      "fr": "Niger"
+    },
+    "capital": {
+      "fr": "Niamey"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "nf",
-    "country": "Île Norfolk",
-    "capital": "Kingston"
+    "country": {
+      "fr": "Île Norfolk"
+    },
+    "capital": {
+      "fr": "Kingston"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ng",
-    "country": "Nigéria",
-    "capital": "Abuja"
+    "country": {
+      "fr": "Nigéria"
+    },
+    "capital": {
+      "fr": "Abuja"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ni",
-    "country": "Nicaragua",
-    "capital": "Managua"
+    "country": {
+      "fr": "Nicaragua"
+    },
+    "capital": {
+      "fr": "Managua"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "nl",
-    "country": "Pays-Bas",
-    "capital": "Amsterdam"
+    "country": {
+      "fr": "Pays-Bas"
+    },
+    "capital": {
+      "fr": "Amsterdam"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "no",
-    "country": "Norvège",
-    "capital": "Oslo"
+    "country": {
+      "fr": "Norvège"
+    },
+    "capital": {
+      "fr": "Oslo"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "np",
-    "country": "Népal",
-    "capital": "Katmandou"
+    "country": {
+      "fr": "Népal"
+    },
+    "capital": {
+      "fr": "Katmandou"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "nr",
-    "country": "Nauru",
-    "capital": "Yaren"
+    "country": {
+      "fr": "Nauru"
+    },
+    "capital": {
+      "fr": "Yaren"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "nu",
-    "country": "Niue",
-    "capital": "Alofi"
+    "country": {
+      "fr": "Niue"
+    },
+    "capital": {
+      "fr": "Alofi"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "nz",
-    "country": "Nouvelle-Zélande",
-    "capital": "Wellington"
+    "country": {
+      "fr": "Nouvelle-Zélande"
+    },
+    "capital": {
+      "fr": "Wellington"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "om",
-    "country": "Oman",
-    "capital": "Mascate"
+    "country": {
+      "fr": "Oman"
+    },
+    "capital": {
+      "fr": "Mascate"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "pa",
-    "country": "Panama",
-    "capital": "Panama"
+    "country": {
+      "fr": "Panama"
+    },
+    "capital": {
+      "fr": "Panama"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "pe",
-    "country": "Pérou",
-    "capital": "Lima"
+    "country": {
+      "fr": "Pérou"
+    },
+    "capital": {
+      "fr": "Lima"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "pf",
-    "country": "Polynésie Française",
-    "capital": "Papeete"
+    "country": {
+      "fr": "Polynésie Française"
+    },
+    "capital": {
+      "fr": "Papeete"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "pg",
-    "country": "Papouasie-Nouvelle-Guinée",
-    "capital": "Port Moresby"
+    "country": {
+      "fr": "Papouasie-Nouvelle-Guinée"
+    },
+    "capital": {
+      "fr": "Port Moresby"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ph",
-    "country": "Philippines",
-    "capital": "Manille"
+    "country": {
+      "fr": "Philippines"
+    },
+    "capital": {
+      "fr": "Manille"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "pk",
-    "country": "Pakistan",
-    "capital": "Islamabad"
+    "country": {
+      "fr": "Pakistan"
+    },
+    "capital": {
+      "fr": "Islamabad"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "pl",
-    "country": "Pologne",
-    "capital": "Varsovie"
+    "country": {
+      "fr": "Pologne"
+    },
+    "capital": {
+      "fr": "Varsovie"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "pm",
-    "country": "Saint-Pierre-et-Miquelon"
+    "country": {
+      "fr": "Saint-Pierre-et-Miquelon"
+    },
+    "capital": {},
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "pn",
-    "country": "Îles Pitcairn",
-    "capital": "Adamstown"
+    "country": {
+      "fr": "Îles Pitcairn"
+    },
+    "capital": {
+      "fr": "Adamstown"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "pr",
-    "country": "Porto Rico",
-    "capital": "San Juan"
+    "country": {
+      "fr": "Porto Rico"
+    },
+    "capital": {
+      "fr": "San Juan"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ps",
-    "country": "Palestine",
-    "capital": "Jérusalem-Est"
+    "country": {
+      "fr": "Palestine"
+    },
+    "capital": {
+      "fr": "Jérusalem-Est"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "pt",
-    "country": "Portugal",
-    "capital": "Lisbonne"
+    "country": {
+      "fr": "Portugal"
+    },
+    "capital": {
+      "fr": "Lisbonne"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "pw",
-    "country": "Palaos",
-    "capital": "Melekeok"
+    "country": {
+      "fr": "Palaos"
+    },
+    "capital": {
+      "fr": "Melekeok"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "py",
-    "country": "Paraguay",
-    "capital": "Asuncion"
+    "country": {
+      "fr": "Paraguay"
+    },
+    "capital": {
+      "fr": "Asuncion"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "qa",
-    "country": "Qatar",
-    "capital": "Doha"
+    "country": {
+      "fr": "Qatar"
+    },
+    "capital": {
+      "fr": "Doha"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "re",
-    "country": "La Réunion",
-    "capital": "Saint-Denis"
+    "country": {
+      "fr": "La Réunion"
+    },
+    "capital": {
+      "fr": "Saint-Denis"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ro",
-    "country": "Roumanie",
-    "capital": "Bucarest"
+    "country": {
+      "fr": "Roumanie"
+    },
+    "capital": {
+      "fr": "Bucarest"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "rs",
-    "country": "Serbie",
-    "capital": "Belgrade"
+    "country": {
+      "fr": "Serbie"
+    },
+    "capital": {
+      "fr": "Belgrade"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ru",
-    "country": "Russie",
-    "capital": "Moscou"
+    "country": {
+      "fr": "Russie"
+    },
+    "capital": {
+      "fr": "Moscou"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "rw",
-    "country": "Rwanda",
-    "capital": "Kigali"
+    "country": {
+      "fr": "Rwanda"
+    },
+    "capital": {
+      "fr": "Kigali"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "sa",
-    "country": "Arabie Saoudite",
-    "capital": "Riyad"
+    "country": {
+      "fr": "Arabie Saoudite"
+    },
+    "capital": {
+      "fr": "Riyad"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "sb",
-    "country": "Îles Salomon",
-    "capital": "Honiara"
+    "country": {
+      "fr": "Îles Salomon"
+    },
+    "capital": {
+      "fr": "Honiara"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "sc",
-    "country": "Seychelles",
-    "capital": "Victoria"
+    "country": {
+      "fr": "Seychelles"
+    },
+    "capital": {
+      "fr": "Victoria"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "sd",
-    "country": "Soudan",
-    "capital": "Khartoum"
+    "country": {
+      "fr": "Soudan"
+    },
+    "capital": {
+      "fr": "Khartoum"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "se",
-    "country": "Suède",
-    "capital": "Stockholm"
+    "country": {
+      "fr": "Suède"
+    },
+    "capital": {
+      "fr": "Stockholm"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "sg",
-    "country": "Singapour",
-    "capital": "Singapour"
+    "country": {
+      "fr": "Singapour"
+    },
+    "capital": {
+      "fr": "Singapour"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "sh",
-    "country": "Sainte-Hélène",
-    "capital": "Jamestown"
+    "country": {
+      "fr": "Sainte-Hélène"
+    },
+    "capital": {
+      "fr": "Jamestown"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "si",
-    "country": "Slovénie",
-    "capital": "Ljubljana"
+    "country": {
+      "fr": "Slovénie"
+    },
+    "capital": {
+      "fr": "Ljubljana"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "sj",
-    "country": "Svalbard et Jan Mayen"
+    "country": {
+      "fr": "Svalbard et Jan Mayen"
+    },
+    "capital": {},
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "sk",
-    "country": "Slovaquie",
-    "capital": "Bratislava"
+    "country": {
+      "fr": "Slovaquie"
+    },
+    "capital": {
+      "fr": "Bratislava"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "sl",
-    "country": "Sierra Leone",
-    "capital": "Freetown"
+    "country": {
+      "fr": "Sierra Leone"
+    },
+    "capital": {
+      "fr": "Freetown"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "sm",
-    "country": "Saint-Marin",
-    "capital": "Saint-Marin"
+    "country": {
+      "fr": "Saint-Marin"
+    },
+    "capital": {
+      "fr": "Saint-Marin"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "sn",
-    "country": "Sénégal",
-    "capital": "Dakar"
+    "country": {
+      "fr": "Sénégal"
+    },
+    "capital": {
+      "fr": "Dakar"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "so",
-    "country": "Somalie",
-    "capital": "Mogadiscio"
+    "country": {
+      "fr": "Somalie"
+    },
+    "capital": {
+      "fr": "Mogadiscio"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "sr",
-    "country": "Suriname",
-    "capital": "Paramaribo"
+    "country": {
+      "fr": "Suriname"
+    },
+    "capital": {
+      "fr": "Paramaribo"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ss",
-    "country": "Soudan du Sud",
-    "capital": "Djouba"
+    "country": {
+      "fr": "Soudan du Sud"
+    },
+    "capital": {
+      "fr": "Djouba"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "st",
-    "country": "Sao Tomé-et-Principe",
-    "capital": "São Tomé"
+    "country": {
+      "fr": "Sao Tomé-et-Principe"
+    },
+    "capital": {
+      "fr": "São Tomé"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "sv",
-    "country": "Salvador",
-    "capital": "San Salvador"
+    "country": {
+      "fr": "Salvador"
+    },
+    "capital": {
+      "fr": "San Salvador"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "sy",
-    "country": "Syrie",
-    "capital": "Damas"
+    "country": {
+      "fr": "Syrie"
+    },
+    "capital": {
+      "fr": "Damas"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "sz",
-    "country": "Eswatini",
-    "capital": "Mbabane"
+    "country": {
+      "fr": "Eswatini"
+    },
+    "capital": {
+      "fr": "Mbabane"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "tc",
-    "country": "Îles Turques-et-Caïques",
-    "capital": "Cockburn Town"
+    "country": {
+      "fr": "Îles Turques-et-Caïques"
+    },
+    "capital": {
+      "fr": "Cockburn Town"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "td",
-    "country": "Tchad",
-    "capital": "N'Djaména"
+    "country": {
+      "fr": "Tchad"
+    },
+    "capital": {
+      "fr": "N'Djaména"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "tf",
-    "country": "Terres Australes Françaises"
+    "country": {
+      "fr": "Terres Australes Françaises"
+    },
+    "capital": {},
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "tg",
-    "country": "Togo",
-    "capital": "Lomé"
+    "country": {
+      "fr": "Togo"
+    },
+    "capital": {
+      "fr": "Lomé"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "th",
-    "country": "Thaïlande",
-    "capital": "Bangkok"
+    "country": {
+      "fr": "Thaïlande"
+    },
+    "capital": {
+      "fr": "Bangkok"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "tj",
-    "country": "Tadjikistan",
-    "capital": "Douchanbé"
+    "country": {
+      "fr": "Tadjikistan"
+    },
+    "capital": {
+      "fr": "Douchanbé"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "tk",
-    "country": "Tokelau"
+    "country": {
+      "fr": "Tokelau"
+    },
+    "capital": {},
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "tl",
-    "country": "Timor Oriental",
-    "capital": "Díli"
+    "country": {
+      "fr": "Timor Oriental"
+    },
+    "capital": {
+      "fr": "Díli"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "tm",
-    "country": "Turkménistan",
-    "capital": "Achgabat"
+    "country": {
+      "fr": "Turkménistan"
+    },
+    "capital": {
+      "fr": "Achgabat"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "tn",
-    "country": "Tunisie",
-    "capital": "Tunis"
+    "country": {
+      "fr": "Tunisie"
+    },
+    "capital": {
+      "fr": "Tunis"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "to",
-    "country": "Tonga",
-    "capital": "Nuku'alofa"
+    "country": {
+      "fr": "Tonga"
+    },
+    "capital": {
+      "fr": "Nuku'alofa"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "tr",
-    "country": "Turquie",
-    "capital": "Ankara"
+    "country": {
+      "fr": "Turquie"
+    },
+    "capital": {
+      "fr": "Ankara"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "tt",
-    "country": "Trinité-et-Tobago",
-    "capital": "Port-d'Espagne"
+    "country": {
+      "fr": "Trinité-et-Tobago"
+    },
+    "capital": {
+      "fr": "Port-d'Espagne"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "tv",
-    "country": "Tuvalu",
-    "capital": "Funafuti"
+    "country": {
+      "fr": "Tuvalu"
+    },
+    "capital": {
+      "fr": "Funafuti"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "tw",
-    "country": "Taiwan",
-    "capital": "Taipei"
+    "country": {
+      "fr": "Taiwan"
+    },
+    "capital": {
+      "fr": "Taipei"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "tz",
-    "country": "Tanzanie",
-    "capital": "Dodoma"
+    "country": {
+      "fr": "Tanzanie"
+    },
+    "capital": {
+      "fr": "Dodoma"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ua",
-    "country": "Ukraine",
-    "capital": "Kiev"
+    "country": {
+      "fr": "Ukraine"
+    },
+    "capital": {
+      "fr": "Kiev"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ug",
-    "country": "Ouganda",
-    "capital": "Kampala"
+    "country": {
+      "fr": "Ouganda"
+    },
+    "capital": {
+      "fr": "Kampala"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "um",
-    "country": "Îles Mineures éloignées des États-Unis"
+    "country": {
+      "fr": "Îles Mineures éloignées des États-Unis"
+    },
+    "capital": {},
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "us",
-    "country": "États-Unis",
-    "capital": "Washington D.C."
+    "country": {
+      "fr": "États-Unis"
+    },
+    "capital": {
+      "fr": "Washington D.C."
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "uy",
-    "country": "Uruguay",
-    "capital": "Montevideo"
+    "country": {
+      "fr": "Uruguay"
+    },
+    "capital": {
+      "fr": "Montevideo"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "uz",
-    "country": "Ouzbékistan",
-    "capital": "Tachkent"
+    "country": {
+      "fr": "Ouzbékistan"
+    },
+    "capital": {
+      "fr": "Tachkent"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "va",
-    "country": "Vatican",
-    "capital": "Cité du Vatican"
+    "country": {
+      "fr": "Vatican"
+    },
+    "capital": {
+      "fr": "Cité du Vatican"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "vc",
-    "country": "Saint-Vincent-et-les-Grenadines",
-    "capital": "Kingstown"
+    "country": {
+      "fr": "Saint-Vincent-et-les-Grenadines"
+    },
+    "capital": {
+      "fr": "Kingstown"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ve",
-    "country": "Venezuela",
-    "capital": "Caracas"
+    "country": {
+      "fr": "Venezuela"
+    },
+    "capital": {
+      "fr": "Caracas"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "vg",
-    "country": "Îles Vierges Britanniques",
-    "capital": "Road Town"
+    "country": {
+      "fr": "Îles Vierges Britanniques"
+    },
+    "capital": {
+      "fr": "Road Town"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "vi",
-    "country": "Îles Vierges des États-Unis",
-    "capital": "Charlotte Amélie"
+    "country": {
+      "fr": "Îles Vierges des États-Unis"
+    },
+    "capital": {
+      "fr": "Charlotte Amélie"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "vn",
-    "country": "Vietnam",
-    "capital": "Hanoï"
+    "country": {
+      "fr": "Vietnam"
+    },
+    "capital": {
+      "fr": "Hanoï"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "vu",
-    "country": "Vanuatu",
-    "capital": "Port-Vila"
+    "country": {
+      "fr": "Vanuatu"
+    },
+    "capital": {
+      "fr": "Port-Vila"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "wf",
-    "country": "Wallis-Et-Futuna"
+    "country": {
+      "fr": "Wallis-Et-Futuna"
+    },
+    "capital": {},
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ws",
-    "country": "Samoa",
-    "capital": "Apia"
+    "country": {
+      "fr": "Samoa"
+    },
+    "capital": {
+      "fr": "Apia"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "xk",
-    "country": "Kosovo",
-    "capital": "Pristina"
+    "country": {
+      "fr": "Kosovo"
+    },
+    "capital": {
+      "fr": "Pristina"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "ye",
-    "country": "Yémen",
-    "capital": "Sanaa"
+    "country": {
+      "fr": "Yémen"
+    },
+    "capital": {
+      "fr": "Sanaa"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "yt",
-    "country": "Mayotte",
-    "capital": "Mamoudzou"
+    "country": {
+      "fr": "Mayotte"
+    },
+    "capital": {
+      "fr": "Mamoudzou"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "za",
-    "country": "Afrique du Sud",
-    "capital": "Pretoria"
+    "country": {
+      "fr": "Afrique du Sud"
+    },
+    "capital": {
+      "fr": "Pretoria"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "zm",
-    "country": "Zambie",
-    "capital": "Lusaka"
+    "country": {
+      "fr": "Zambie"
+    },
+    "capital": {
+      "fr": "Lusaka"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   },
   {
     "id": "zw",
-    "country": "Zimbabwe",
-    "capital": "Harare"
+    "country": {
+      "fr": "Zimbabwe"
+    },
+    "capital": {
+      "fr": "Harare"
+    },
+    "wikipedia": {
+      "fr": null
+    }
   }
 ]
