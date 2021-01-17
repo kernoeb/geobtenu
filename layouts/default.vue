@@ -40,12 +40,12 @@
         </v-list-item>
       </v-list>
       <template #append>
-        <div class="pa-2">
-          <v-btn @click="$vuetify.theme.dark = !$vuetify.theme.dark">
+        <div class="pa-2 d-flex align-center justify-center">
+          <v-btn :dark="!$vuetify.theme.dark" :light="$vuetify.theme.dark" @click="$vuetify.theme.dark = !$vuetify.theme.dark">
             <v-icon left>
               mdi-theme-light-dark
             </v-icon>
-            Changer le thème
+            {{ $vuetify.theme.dark ? 'Thème blanc' : 'Thème noir' }}
           </v-btn>
         </div>
       </template>
@@ -86,6 +86,8 @@
 </template>
 
 <script>
+import countries from '~/assets/countries.json'
+
 export default {
   middleware: 'vuetify-theme',
   data () {
@@ -93,15 +95,23 @@ export default {
       drawer: false,
       items: [
         {
-          icon: 'mdi-apps',
+          icon: 'mdi-home',
           title: 'Accueil',
           to: '/'
+        },
+        {
+          icon: 'mdi-map-marker-circle',
+          title: 'Pays aléatoire',
+          to: { name: 'flag-slug', params: { slug: this.randomCountry() } }
         }
       ],
       title: 'GÉOBTENU'
     }
   },
   watch: {
+    '$route' () {
+      this.items[1].to.params.slug = this.randomCountry()
+    },
     '$vuetify.theme.dark' () {
       this.$cookies.set('theme', this.$vuetify.theme.dark ? 'true' : 'false', { maxAge: 2147483646 })
     }
@@ -111,6 +121,11 @@ export default {
       this.$vuetify.theme.dark = JSON.parse(this.$cookies.get('theme'))
     } catch (e) {
       this.$vuetify.theme.dark = true
+    }
+  },
+  methods: {
+    randomCountry () {
+      return countries[Math.floor(Math.random() * countries.length)].id
     }
   }
 }

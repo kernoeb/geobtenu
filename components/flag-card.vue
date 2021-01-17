@@ -33,5 +33,7 @@ export default {
 </script>
 
 <style scoped>
-
+.flag:hover {
+  filter: brightness(110%);
+}
 </style>

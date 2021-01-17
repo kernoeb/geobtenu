@@ -7,20 +7,20 @@
         offset-lg="2"
       >
         <v-row>
-          <v-text-field v-model="search" placeholder="Rechercher un pays ou une capitale" />
+          <v-text-field v-model="search" autofocus placeholder="Rechercher un pays ou une capitale" />
         </v-row>
         <v-row
           align="center"
           justify="center"
         >
           <transition-group class="row justifyCenter" name="flip-list">
-            <v-col v-for="value in countriesFiltered" :key="`flag_${value.id}`" cols="5" md="3" xl="3">
+            <v-col v-for="value in countriesFiltered" :key="`flag_${value.id}`" cols="5" md="4" xl="3">
               <v-lazy
                 v-model="value.isActive"
                 height="180"
               >
                 <nuxt-link :to="{name: 'flag-slug', params: {slug: value.id}}" class="noDecoration">
-                  <FlagCard :value="value" :lang="lang" />
+                  <FlagCard :lang="lang" :value="value" />
                 </nuxt-link>
               </v-lazy>
             </v-col>
@@ -43,17 +43,24 @@ export default {
     return {
       lang: 'fr',
       countries,
-      search: ''
+      search: null,
+      started: false
     }
   },
   computed: {
     countriesFiltered () {
-      if (!this.search.length) {
-        return this.countries
+      if (!this.search) {
+        const c = this.countries
+        for (let i = 0; i < 16; i++) {
+          c[i].isActive = true
+        }
+        return Object.freeze(c)
+      } else if (!this.search.length) {
+        return Object.freeze(this.countries)
       } else {
-        return this.countries.filter(country =>
+        return Object.freeze(this.countries.filter(country =>
           country.country[this.lang].toUpperCase().includes(this.search.toUpperCase()) ||
-          (country.capital[this.lang] && country.capital[this.lang].toUpperCase().includes(this.search.toUpperCase())))
+          (country.capital[this.lang] && country.capital[this.lang].toUpperCase().includes(this.search.toUpperCase()))))
       }
     }
   }
@@ -61,10 +68,6 @@ export default {
 </script>
 
 <style scoped>
-.flag:hover {
-  filter: brightness(110%);
-}
-
 .justifyCenter {
   justify-content: center
 }
