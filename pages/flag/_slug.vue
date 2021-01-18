@@ -60,7 +60,7 @@
           >
             <v-card class="rounded-xl">
               <v-card-text>
-                <nuxt-content :document="article" :style="$vuetify.theme.dark ? 'color: white' : 'color: black'" />
+                <nuxt-content :class="$vuetify.theme.dark ? 'blockquoteDark' : 'blockquoteLight'" :document="article" :style="$vuetify.theme.dark ? 'color: white' : 'color: black'" />
               </v-card-text>
             </v-card>
           </v-col>
@@ -110,11 +110,42 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .nuxt-content h1 {
   margin-bottom: 7px;
 }
 
+.nuxt-content hr {
+  margin-bottom: 9px;
+}
+
+.nuxt-content img {
+  max-width: 60%;
+}
+
+.blockquoteDark pre {
+  background: #333;
+  color: #ddd;
+}
+
+.blockquoteLight pre {
+  background: #ddd;
+  color: #333;
+}
+
+.nuxt-content pre {
+  border-radius: 10px;
+  text-shadow: none;
+  white-space: pre-wrap;
+}
+
+.nuxt-content code {
+  background-color: transparent!important;
+  padding: unset;
+}
+</style>
+
+<style scoped>
 .slugTitle {
   font-size: 3vw;
 }
