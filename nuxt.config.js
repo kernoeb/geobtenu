@@ -57,6 +57,15 @@ export default {
     '@nuxtjs/pwa'
   ],
 
+  pwa: {
+    meta: {
+      name: 'Géobtenu',
+      description: 'Un outil simple et efficace pour obtenir des informations sur un pays !',
+      lang: 'fr',
+      author: 'kernoeb'
+    }
+  },
+
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     '@nuxtjs/component-cache',
