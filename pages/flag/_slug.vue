@@ -25,6 +25,44 @@
         </div>
       </div>
 
+      <v-container v-if="article">
+        <v-row style="justify-content: center">
+          <v-col
+            cols="12"
+            lg="8"
+            offset-lg="2"
+          >
+            <v-row align="center" class="mb-3" justify="center" style="justify-content: center">
+              <v-col>
+                <v-card class="rounded-xl">
+                  <v-card-title>Informations sur le pays</v-card-title>
+                  <v-card-text style="text-align: justify; font-size: 15px">
+                    <div v-if="article.domain">
+                      <b>Domaine :</b> .{{ article.domain }}
+                    </div>
+                    <div v-if="article.continent">
+                      <b>Continent :</b> {{ getContinent(article.continent) }}
+                    </div>
+                    <div v-if="article.hemisphere">
+                      <b>Hémisphère :</b> {{ getHemisphere(article.hemisphere) }}
+                    </div>
+                    <div v-if="article.languages">
+                      <b>Langues :</b> {{ getLanguage(article.languages) }}
+                    </div>
+                    <div v-if="article.alphabet">
+                      <b>Alphabet :</b> {{ getAlphabet(article.alphabet) }}
+                    </div>
+                    <div v-if="!(article.domain || article.continent || article.hemisphere || article.languages || article.alphabet)">
+                      Aucune donnée n'a été saisie
+                    </div>
+                  </v-card-text>
+                </v-card>
+              </v-col>
+            </v-row>
+          </v-col>
+        </v-row>
+      </v-container>
+
       <v-container v-if="wiki">
         <v-row style="justify-content: center">
           <v-col
@@ -60,7 +98,11 @@
           >
             <v-card class="rounded-xl">
               <v-card-text>
-                <nuxt-content :class="$vuetify.theme.dark ? 'blockquoteDark' : 'blockquoteLight'" :document="article" :style="$vuetify.theme.dark ? 'color: white' : 'color: black'" />
+                <nuxt-content
+                  :class="$vuetify.theme.dark ? 'blockquoteDark' : 'blockquoteLight'"
+                  :document="article"
+                  :style="$vuetify.theme.dark ? 'color: white' : 'color: black'"
+                />
               </v-card-text>
             </v-card>
           </v-col>
@@ -71,6 +113,9 @@
 </template>
 
 <script>
+const countries = require('~/assets/countries.json')
+const content = require('~/assets/content.json')
+
 export default {
   transition: 'page',
   data () {
@@ -83,18 +128,16 @@ export default {
     }
   },
   async fetch () {
-    const lang = this.$cookies.get('lang') // Before nuxt-i18n
-    if (lang) {
-      this.lang = lang
-    }
-
     this.article = await this.$content('countries', this.$route.params.slug).fetch()
 
-    if (this.article['wikipediaId_' + this.lang]) {
-      try {
-        this.wiki = (await this.$axios.$get(`https://${this.lang}.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&pageids=${this.article['wikipediaId_' + this.lang]}&origin=*`))
-          .query.pages[this.article['wikipediaId_' + this.lang]].extract
-      } catch (e) {
+    const c = countries.find(c => c.id === this.article.id)
+    if (c) {
+      const id = c.wikipedia && c.wikipedia[this.lang]
+
+      if (id) {
+        this.wiki = (await this.$axios.$get(`https://${this.lang}.wikipedia.org/w/api.php?format=json` +
+          `&prop=extracts&action=query&exintro&explaintext&redirects=1&pageids=${id}&origin=*`))
+          .query.pages[id].extract
       }
     }
   },
@@ -105,6 +148,18 @@ export default {
       } else {
         return this.wiki.slice(0, this.length)
       }
+    },
+    getContinent (continent) {
+      return content.continent[continent][this.lang] + ' (' + continent + ')'
+    },
+    getHemisphere (hemisphere) {
+      return content.hemisphere[hemisphere][this.lang]
+    },
+    getLanguage (language) {
+      return content.languages[language][this.lang]
+    },
+    getAlphabet (alphabet) {
+      return content.alphabet[alphabet][this.lang]
     }
   }
 }
@@ -150,7 +205,7 @@ export default {
 }
 
 .nuxt-content code {
-  background-color: transparent!important;
+  background-color: transparent !important;
   padding: unset;
 }
 </style>

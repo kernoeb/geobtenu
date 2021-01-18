@@ -1,0 +1,22 @@
+{
+  "continent": {
+    "EU": {
+      "fr": "Europe"
+    }
+  },
+  "hemisphere": {
+    "N": {
+      "fr": "Nord"
+    }
+  },
+  "languages": {
+    "cat": {
+      "fr": "Catalan"
+    }
+  },
+  "alphabet": {
+    "lat": {
+      "fr": "Latin"
+    }
+  }
+}
