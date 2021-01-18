@@ -3,8 +3,8 @@
     <article v-if="article">
       <div class="mb-3">
         <div>
-          <h1 :style="$vuetify.breakpoint.mobile ? 'font-size: 7vw' : 'font-size: 3vw'" class="d-flex justify-center">
-            {{ article.title }}
+          <h1 class="slugTitle d-flex justify-center">
+            {{ article.title.split('|')[0] }}
           </h1>
         </div>
         <div class="d-flex justify-center">
@@ -17,41 +17,39 @@
             <template #placeholder>
               <v-skeleton-loader
                 height="140"
-                width="200"
                 type="image"
+                width="200"
               />
             </template>
           </v-img>
         </div>
       </div>
 
-      <transition name="fade">
-        <v-container v-if="wiki">
-          <v-row style="justify-content: center">
-            <v-col
-              cols="12"
-              lg="8"
-              offset-lg="2"
-            >
-              <v-row align="center" class="mb-3" justify="center" style="justify-content: center">
-                <v-col>
-                  <v-card class="rounded-xl">
-                    <v-card-title>Wikipédia</v-card-title>
-                    <v-card-text style="text-align: justify">
-                      {{ getWiki() }}<span v-if="!more && wiki.slice(0, length).length < wiki.length">...</span>
-                      <span
-                        v-if="wiki.slice(0, length).length < wiki.length"
-                        style="color: blue; cursor: pointer"
-                        @click="more = !more"
-                      > {{ more ? 'Voir moins' : 'Voir plus' }}</span>
-                    </v-card-text>
-                  </v-card>
-                </v-col>
-              </v-row>
-            </v-col>
-          </v-row>
-        </v-container>
-      </transition>
+      <v-container v-if="wiki">
+        <v-row style="justify-content: center">
+          <v-col
+            cols="12"
+            lg="8"
+            offset-lg="2"
+          >
+            <v-row align="center" class="mb-3" justify="center" style="justify-content: center">
+              <v-col>
+                <v-card class="rounded-xl">
+                  <v-card-title>Wikipédia</v-card-title>
+                  <v-card-text style="text-align: justify">
+                    {{ getWiki() }}<span v-if="!more && wiki.slice(0, length).length < wiki.length">...</span>
+                    <span
+                      v-if="wiki.slice(0, length).length < wiki.length"
+                      style="color: blue; cursor: pointer"
+                      @click="more = !more"
+                    > {{ more ? 'Voir moins' : 'Voir plus' }}</span>
+                  </v-card-text>
+                </v-card>
+              </v-col>
+            </v-row>
+          </v-col>
+        </v-row>
+      </v-container>
 
       <v-container v-if="article">
         <v-row style="justify-content: center">
@@ -115,6 +113,16 @@ export default {
 <style scoped>
 .nuxt-content h1 {
   margin-bottom: 7px;
+}
+
+.slugTitle {
+  font-size: 3vw;
+}
+
+@media only screen and (max-width: 1000px) {
+  .slugTitle {
+    font-size: 7vw;
+  }
 }
 
 .page-enter-active, .page-leave-active {
