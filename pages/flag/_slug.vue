@@ -115,6 +115,14 @@ export default {
   margin-bottom: 7px;
 }
 
+.nuxt-content h2 {
+  margin-bottom: 7px;
+}
+
+.nuxt-content h3 {
+  margin-bottom: 7px;
+}
+
 .nuxt-content hr {
   margin-bottom: 9px;
 }
@@ -137,6 +145,8 @@ export default {
   border-radius: 10px;
   text-shadow: none;
   white-space: pre-wrap;
+  padding: 8px;
+  margin-bottom: 7px;
 }
 
 .nuxt-content code {
