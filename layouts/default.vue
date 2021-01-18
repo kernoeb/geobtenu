@@ -19,7 +19,7 @@
             :class="!$vuetify.theme.dark ? 'geoTitleColor' : 'geoTitleColorDark'"
             class="geoTitle"
           >
-            GÉOBTENU
+            {{ title }}
           </v-list-item-title>
         </v-list-item>
 
@@ -41,7 +41,11 @@
       </v-list>
       <template #append>
         <div class="pa-2 d-flex align-center justify-center">
-          <v-btn :dark="!$vuetify.theme.dark" :light="$vuetify.theme.dark" @click="$vuetify.theme.dark = !$vuetify.theme.dark">
+          <v-btn
+            :dark="!$vuetify.theme.dark"
+            :light="$vuetify.theme.dark"
+            @click="$vuetify.theme.dark = !$vuetify.theme.dark"
+          >
             <v-icon left>
               mdi-theme-light-dark
             </v-icon>
@@ -53,6 +57,7 @@
     <v-app-bar
       app
       clipped-left
+      dense
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-spacer />
@@ -101,7 +106,10 @@ export default {
         {
           icon: 'mdi-map-marker-circle',
           title: 'Pays aléatoire',
-          to: { name: 'flag-slug', params: { slug: this.randomCountry() } }
+          to: {
+            name: 'flag-slug',
+            params: { slug: this.randomCountry() }
+          }
         }
       ],
       title: 'GÉOBTENU'
@@ -110,21 +118,20 @@ export default {
   watch: {
     '$route' () {
       this.items[1].to.params.slug = this.randomCountry()
-    },
-    '$vuetify.theme.dark' () {
-      this.$cookies.set('theme', this.$vuetify.theme.dark ? 'true' : 'false', { maxAge: 2147483646 })
     }
   },
   mounted () {
-    try {
+    if (this.$cookies.get('theme') !== undefined) {
       this.$vuetify.theme.dark = this.$cookies.get('theme')
-    } catch (e) {
-      this.$vuetify.theme.dark = true
     }
+    this.$watch('$vuetify.theme.dark', this.watchTheme)
   },
   methods: {
     randomCountry () {
       return countries[Math.floor(Math.random() * countries.length)].id
+    },
+    watchTheme () {
+      this.$cookies.set('theme', this.$vuetify.theme.dark)
     }
   }
 }
@@ -137,7 +144,7 @@ export default {
 
 .geoTitle {
   font-family: Secular One, sans-serif;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold
 }
 

@@ -1,6 +1,7 @@
 import colors from 'vuetify/es5/util/colors'
 const { NODE_ENV = 'production' } = process.env
 const isDev = NODE_ENV === 'development'
+// eslint-disable-next-line nuxt/no-cjs-in-config
 const countries = require('./assets/countries.json')
 
 const t = []
