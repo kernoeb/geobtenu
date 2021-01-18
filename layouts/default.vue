@@ -89,7 +89,6 @@
 import countries from '~/assets/countries.json'
 
 export default {
-  middleware: 'vuetify-theme',
   data () {
     return {
       drawer: false,
@@ -118,7 +117,7 @@ export default {
   },
   mounted () {
     try {
-      this.$vuetify.theme.dark = JSON.parse(this.$cookies.get('theme'))
+      this.$vuetify.theme.dark = this.$cookies.get('theme')
     } catch (e) {
       this.$vuetify.theme.dark = true
     }

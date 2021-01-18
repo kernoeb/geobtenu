@@ -1,12 +1,20 @@
 import colors from 'vuetify/es5/util/colors'
 const { NODE_ENV = 'production' } = process.env
 const isDev = NODE_ENV === 'development'
+const countries = require('./assets/countries.json')
+
+const t = []
+for (const i of countries) {
+  t.push('/flag/' + i.id)
+}
 
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
-  target: 'server',
+  target: 'static',
+  ssr: true,
 
   generate: {
+    routes: t,
     fallback: true
   },
 
