@@ -1,23 +1,5 @@
 [
   {
-    "id": "ad",
-    "country": {
-      "fr": "Andorre"
-    },
-    "capital": {
-      "fr": "Andorre-la-Vieille"
-    }
-  },
-  {
-    "id": "ae",
-    "country": {
-      "fr": "Émirats Arabes Unis"
-    },
-    "capital": {
-      "fr": "Abou Dabi"
-    }
-  },
-  {
     "id": "af",
     "country": {
       "fr": "Afghanistan"
@@ -27,21 +9,12 @@
     }
   },
   {
-    "id": "ag",
+    "id": "za",
     "country": {
-      "fr": "Antigua-Et-Barbuda"
+      "fr": "Afrique du Sud"
     },
     "capital": {
-      "fr": "Saint John's"
-    }
-  },
-  {
-    "id": "ai",
-    "country": {
-      "fr": "Anguilla"
-    },
-    "capital": {
-      "fr": "The Valley"
+      "fr": "Pretoria"
     }
   },
   {
@@ -54,12 +27,30 @@
     }
   },
   {
-    "id": "am",
+    "id": "dz",
     "country": {
-      "fr": "Arménie"
+      "fr": "Algérie"
     },
     "capital": {
-      "fr": "Erevan"
+      "fr": "Alger"
+    }
+  },
+  {
+    "id": "de",
+    "country": {
+      "fr": "Allemagne"
+    },
+    "capital": {
+      "fr": "Berlin"
+    }
+  },
+  {
+    "id": "ad",
+    "country": {
+      "fr": "Andorre"
+    },
+    "capital": {
+      "fr": "Andorre-la-Vieille"
     }
   },
   {
@@ -72,11 +63,38 @@
     }
   },
   {
+    "id": "ai",
+    "country": {
+      "fr": "Anguilla"
+    },
+    "capital": {
+      "fr": "The Valley"
+    }
+  },
+  {
     "id": "aq",
     "country": {
       "fr": "Antarctique"
     },
     "capital": {}
+  },
+  {
+    "id": "ag",
+    "country": {
+      "fr": "Antigua-Et-Barbuda"
+    },
+    "capital": {
+      "fr": "Saint John's"
+    }
+  },
+  {
+    "id": "sa",
+    "country": {
+      "fr": "Arabie Saoudite"
+    },
+    "capital": {
+      "fr": "Riyad"
+    }
   },
   {
     "id": "ar",
@@ -88,30 +106,12 @@
     }
   },
   {
-    "id": "as",
+    "id": "am",
     "country": {
-      "fr": "Samoa Américaines"
+      "fr": "Arménie"
     },
     "capital": {
-      "fr": "Pago Pago"
-    }
-  },
-  {
-    "id": "at",
-    "country": {
-      "fr": "Autriche"
-    },
-    "capital": {
-      "fr": "Vienne"
-    }
-  },
-  {
-    "id": "au",
-    "country": {
-      "fr": "Australie"
-    },
-    "capital": {
-      "fr": "Canberra"
+      "fr": "Erevan"
     }
   },
   {
@@ -124,12 +124,21 @@
     }
   },
   {
-    "id": "ax",
+    "id": "au",
     "country": {
-      "fr": "Îles Åland"
+      "fr": "Australie"
     },
     "capital": {
-      "fr": "Mariehamn"
+      "fr": "Canberra"
+    }
+  },
+  {
+    "id": "at",
+    "country": {
+      "fr": "Autriche"
+    },
+    "capital": {
+      "fr": "Vienne"
     }
   },
   {
@@ -142,57 +151,12 @@
     }
   },
   {
-    "id": "ba",
+    "id": "bs",
     "country": {
-      "fr": "Bosnie-Herzégovine"
+      "fr": "Bahamas"
     },
     "capital": {
-      "fr": "Sarajevo"
-    }
-  },
-  {
-    "id": "bb",
-    "country": {
-      "fr": "Barbade"
-    },
-    "capital": {
-      "fr": "Bridgetown"
-    }
-  },
-  {
-    "id": "bd",
-    "country": {
-      "fr": "Bangladesh"
-    },
-    "capital": {
-      "fr": "Dacca"
-    }
-  },
-  {
-    "id": "be",
-    "country": {
-      "fr": "Belgique"
-    },
-    "capital": {
-      "fr": "Bruxelles"
-    }
-  },
-  {
-    "id": "bf",
-    "country": {
-      "fr": "Burkina Faso"
-    },
-    "capital": {
-      "fr": "Ouagadougou"
-    }
-  },
-  {
-    "id": "bg",
-    "country": {
-      "fr": "Bulgarie"
-    },
-    "capital": {
-      "fr": "Sofia"
+      "fr": "Nassau"
     }
   },
   {
@@ -205,30 +169,39 @@
     }
   },
   {
-    "id": "bi",
+    "id": "bd",
     "country": {
-      "fr": "Burundi"
+      "fr": "Bangladesh"
     },
     "capital": {
-      "fr": "Gitega"
+      "fr": "Dacca"
     }
   },
   {
-    "id": "bj",
+    "id": "bb",
     "country": {
-      "fr": "Bénin"
+      "fr": "Barbade"
     },
     "capital": {
-      "fr": "Porto-Novo"
+      "fr": "Bridgetown"
     }
   },
   {
-    "id": "bl",
+    "id": "be",
     "country": {
-      "fr": "Saint-Barthélemy"
+      "fr": "Belgique"
     },
     "capital": {
-      "fr": "Gustavia"
+      "fr": "Bruxelles"
+    }
+  },
+  {
+    "id": "bz",
+    "country": {
+      "fr": "Belize"
+    },
+    "capital": {
+      "fr": "Belmopan"
     }
   },
   {
@@ -241,12 +214,21 @@
     }
   },
   {
-    "id": "bn",
+    "id": "bt",
     "country": {
-      "fr": "Brunéi"
+      "fr": "Bhoutan"
     },
     "capital": {
-      "fr": "Bandar Seri Begawan"
+      "fr": "Thimphou"
+    }
+  },
+  {
+    "id": "by",
+    "country": {
+      "fr": "Biélorussie"
+    },
+    "capital": {
+      "fr": "Minsk"
     }
   },
   {
@@ -268,30 +250,12 @@
     }
   },
   {
-    "id": "br",
+    "id": "ba",
     "country": {
-      "fr": "Brésil"
+      "fr": "Bosnie-Herzégovine"
     },
     "capital": {
-      "fr": "Brasilia"
-    }
-  },
-  {
-    "id": "bs",
-    "country": {
-      "fr": "Bahamas"
-    },
-    "capital": {
-      "fr": "Nassau"
-    }
-  },
-  {
-    "id": "bt",
-    "country": {
-      "fr": "Bhoutan"
-    },
-    "capital": {
-      "fr": "Thimphou"
+      "fr": "Sarajevo"
     }
   },
   {
@@ -304,708 +268,57 @@
     }
   },
   {
-    "id": "by",
+    "id": "bn",
     "country": {
-      "fr": "Biélorussie"
+      "fr": "Brunéi"
     },
     "capital": {
-      "fr": "Minsk"
+      "fr": "Bandar Seri Begawan"
     }
   },
   {
-    "id": "bz",
+    "id": "br",
     "country": {
-      "fr": "Belize"
+      "fr": "Brésil"
     },
     "capital": {
-      "fr": "Belmopan"
+      "fr": "Brasilia"
     }
   },
   {
-    "id": "ca",
+    "id": "bg",
     "country": {
-      "fr": "Canada"
+      "fr": "Bulgarie"
     },
     "capital": {
-      "fr": "Ottawa"
+      "fr": "Sofia"
     }
   },
   {
-    "id": "cc",
+    "id": "bf",
     "country": {
-      "fr": "Îles Cocos"
+      "fr": "Burkina Faso"
     },
     "capital": {
-      "fr": "West Island"
+      "fr": "Ouagadougou"
     }
   },
   {
-    "id": "cd",
+    "id": "bi",
     "country": {
-      "fr": "Congo-Kinshasa|République démocratique du Congo"
+      "fr": "Burundi"
     },
     "capital": {
-      "fr": "Kinshasa"
+      "fr": "Gitega"
     }
   },
   {
-    "id": "cf",
+    "id": "bj",
     "country": {
-      "fr": "République Centrafricaine"
+      "fr": "Bénin"
     },
     "capital": {
-      "fr": "Bangui"
-    }
-  },
-  {
-    "id": "cg",
-    "country": {
-      "fr": "Congo-Brazzaville|République du Congo"
-    },
-    "capital": {
-      "fr": "Brazzaville"
-    }
-  },
-  {
-    "id": "ch",
-    "country": {
-      "fr": "Suisse"
-    },
-    "capital": {
-      "fr": "Berne"
-    }
-  },
-  {
-    "id": "ci",
-    "country": {
-      "fr": "Côte d'Ivoire"
-    },
-    "capital": {
-      "fr": "Yamoussoukro"
-    }
-  },
-  {
-    "id": "ck",
-    "country": {
-      "fr": "Îles Cook"
-    },
-    "capital": {
-      "fr": "Avarua"
-    }
-  },
-  {
-    "id": "cl",
-    "country": {
-      "fr": "Chili"
-    },
-    "capital": {
-      "fr": "Santiago"
-    }
-  },
-  {
-    "id": "cm",
-    "country": {
-      "fr": "Cameroun"
-    },
-    "capital": {
-      "fr": "Yaoundé"
-    }
-  },
-  {
-    "id": "cn",
-    "country": {
-      "fr": "Chine"
-    },
-    "capital": {
-      "fr": "Pékin"
-    }
-  },
-  {
-    "id": "co",
-    "country": {
-      "fr": "Colombie"
-    },
-    "capital": {
-      "fr": "Bogota"
-    }
-  },
-  {
-    "id": "cr",
-    "country": {
-      "fr": "Costa Rica"
-    },
-    "capital": {
-      "fr": "San José"
-    }
-  },
-  {
-    "id": "cu",
-    "country": {
-      "fr": "Cuba"
-    },
-    "capital": {
-      "fr": "La Havane"
-    }
-  },
-  {
-    "id": "cv",
-    "country": {
-      "fr": "Cap-Vert"
-    },
-    "capital": {
-      "fr": "Praia"
-    }
-  },
-  {
-    "id": "cw",
-    "country": {
-      "fr": "Curaçao"
-    },
-    "capital": {
-      "fr": "Willemstad"
-    }
-  },
-  {
-    "id": "cx",
-    "country": {
-      "fr": "Île Christmas"
-    },
-    "capital": {
-      "fr": "Flying Fish Cove"
-    }
-  },
-  {
-    "id": "cy",
-    "country": {
-      "fr": "Chypre"
-    },
-    "capital": {
-      "fr": "Nicosie"
-    }
-  },
-  {
-    "id": "cz",
-    "country": {
-      "fr": "Tchéquie"
-    },
-    "capital": {
-      "fr": "Prague"
-    }
-  },
-  {
-    "id": "de",
-    "country": {
-      "fr": "Allemagne"
-    },
-    "capital": {
-      "fr": "Berlin"
-    }
-  },
-  {
-    "id": "dj",
-    "country": {
-      "fr": "Djibouti"
-    },
-    "capital": {
-      "fr": "Djibouti"
-    }
-  },
-  {
-    "id": "dk",
-    "country": {
-      "fr": "Danemark"
-    },
-    "capital": {
-      "fr": "Copenhague"
-    }
-  },
-  {
-    "id": "dm",
-    "country": {
-      "fr": "Dominique"
-    },
-    "capital": {
-      "fr": "Roseau"
-    }
-  },
-  {
-    "id": "do",
-    "country": {
-      "fr": "République dominicaine"
-    },
-    "capital": {
-      "fr": "Saint-Domingue"
-    }
-  },
-  {
-    "id": "dz",
-    "country": {
-      "fr": "Algérie"
-    },
-    "capital": {
-      "fr": "Alger"
-    }
-  },
-  {
-    "id": "ec",
-    "country": {
-      "fr": "Équateur"
-    },
-    "capital": {
-      "fr": "Quito"
-    }
-  },
-  {
-    "id": "ee",
-    "country": {
-      "fr": "Estonie"
-    },
-    "capital": {
-      "fr": "Tallinn"
-    }
-  },
-  {
-    "id": "eg",
-    "country": {
-      "fr": "Égypte"
-    },
-    "capital": {
-      "fr": "Le Caire"
-    }
-  },
-  {
-    "id": "eh",
-    "country": {
-      "fr": "Sahara Occidental"
-    },
-    "capital": {
-      "fr": "Laâyoune"
-    }
-  },
-  {
-    "id": "er",
-    "country": {
-      "fr": "Érythrée"
-    },
-    "capital": {
-      "fr": "Asmara"
-    }
-  },
-  {
-    "id": "es",
-    "country": {
-      "fr": "Espagne"
-    },
-    "capital": {
-      "fr": "Madrid"
-    }
-  },
-  {
-    "id": "et",
-    "country": {
-      "fr": "Éthiopie"
-    },
-    "capital": {
-      "fr": "Addis-Abeba"
-    }
-  },
-  {
-    "id": "fi",
-    "country": {
-      "fr": "Finlande"
-    },
-    "capital": {
-      "fr": "Helsinki"
-    }
-  },
-  {
-    "id": "fj",
-    "country": {
-      "fr": "Fidji"
-    },
-    "capital": {
-      "fr": "Suva"
-    }
-  },
-  {
-    "id": "fk",
-    "country": {
-      "fr": "Îles Malouines"
-    },
-    "capital": {
-      "fr": "Port Stanley"
-    }
-  },
-  {
-    "id": "fm",
-    "country": {
-      "fr": "Micronésie|États fédérés de Micronésie"
-    },
-    "capital": {
-      "fr": "Palikir"
-    }
-  },
-  {
-    "id": "fo",
-    "country": {
-      "fr": "Îles Féroé"
-    },
-    "capital": {
-      "fr": "Tórshavn"
-    }
-  },
-  {
-    "id": "fr",
-    "country": {
-      "fr": "France"
-    },
-    "capital": {
-      "fr": "Paris"
-    }
-  },
-  {
-    "id": "ga",
-    "country": {
-      "fr": "Gabon"
-    },
-    "capital": {
-      "fr": "Libreville"
-    }
-  },
-  {
-    "id": "gb",
-    "country": {
-      "fr": "Royaume-Uni"
-    },
-    "capital": {
-      "fr": "Londres"
-    }
-  },
-  {
-    "id": "gd",
-    "country": {
-      "fr": "Grenade"
-    },
-    "capital": {
-      "fr": "Saint-Georges"
-    }
-  },
-  {
-    "id": "ge",
-    "country": {
-      "fr": "Géorgie"
-    },
-    "capital": {
-      "fr": "Tbilissi"
-    }
-  },
-  {
-    "id": "gf",
-    "country": {
-      "fr": "Guyane Française"
-    },
-    "capital": {}
-  },
-  {
-    "id": "gg",
-    "country": {
-      "fr": "Guernesey"
-    },
-    "capital": {
-      "fr": "Saint-Pierre-Port"
-    }
-  },
-  {
-    "id": "gh",
-    "country": {
-      "fr": "Ghana"
-    },
-    "capital": {
-      "fr": "Accra"
-    }
-  },
-  {
-    "id": "gi",
-    "country": {
-      "fr": "Gibraltar"
-    },
-    "capital": {
-      "fr": "Gibraltar"
-    }
-  },
-  {
-    "id": "gl",
-    "country": {
-      "fr": "Groenland"
-    },
-    "capital": {
-      "fr": "Nuuk"
-    }
-  },
-  {
-    "id": "gm",
-    "country": {
-      "fr": "Gambie"
-    },
-    "capital": {
-      "fr": "Banjul"
-    }
-  },
-  {
-    "id": "gn",
-    "country": {
-      "fr": "Guinée"
-    },
-    "capital": {
-      "fr": "Conakry"
-    }
-  },
-  {
-    "id": "gp",
-    "country": {
-      "fr": "Guadeloupe"
-    },
-    "capital": {
-      "fr": "Basse-Terre"
-    }
-  },
-  {
-    "id": "gq",
-    "country": {
-      "fr": "Guinée équatoriale"
-    },
-    "capital": {
-      "fr": "Malabo"
-    }
-  },
-  {
-    "id": "gr",
-    "country": {
-      "fr": "Grèce"
-    },
-    "capital": {
-      "fr": "Athènes"
-    }
-  },
-  {
-    "id": "gt",
-    "country": {
-      "fr": "Guatemala"
-    },
-    "capital": {
-      "fr": "Guatemala"
-    }
-  },
-  {
-    "id": "gu",
-    "country": {
-      "fr": "Guam"
-    },
-    "capital": {
-      "fr": "Hagåtña"
-    }
-  },
-  {
-    "id": "gw",
-    "country": {
-      "fr": "Guinée-Bissau"
-    },
-    "capital": {
-      "fr": "Bissau"
-    }
-  },
-  {
-    "id": "gy",
-    "country": {
-      "fr": "Guyana"
-    },
-    "capital": {
-      "fr": "Georgetown"
-    }
-  },
-  {
-    "id": "hk",
-    "country": {
-      "fr": "Hong Kong"
-    },
-    "capital": {}
-  },
-  {
-    "id": "hn",
-    "country": {
-      "fr": "Honduras"
-    },
-    "capital": {
-      "fr": "Tegucigalpa"
-    }
-  },
-  {
-    "id": "hr",
-    "country": {
-      "fr": "Croatie"
-    },
-    "capital": {
-      "fr": "Zagreb"
-    }
-  },
-  {
-    "id": "ht",
-    "country": {
-      "fr": "Haïti"
-    },
-    "capital": {
-      "fr": "Port-au-Prince"
-    }
-  },
-  {
-    "id": "hu",
-    "country": {
-      "fr": "Hongrie"
-    },
-    "capital": {
-      "fr": "Budapest"
-    }
-  },
-  {
-    "id": "id",
-    "country": {
-      "fr": "Indonésie"
-    },
-    "capital": {
-      "fr": "Jakarta"
-    }
-  },
-  {
-    "id": "ie",
-    "country": {
-      "fr": "Irlande"
-    },
-    "capital": {
-      "fr": "Dublin"
-    }
-  },
-  {
-    "id": "il",
-    "country": {
-      "fr": "Israël"
-    },
-    "capital": {
-      "fr": "Jérusalem"
-    }
-  },
-  {
-    "id": "im",
-    "country": {
-      "fr": "Île de Man"
-    },
-    "capital": {
-      "fr": "Douglas"
-    }
-  },
-  {
-    "id": "in",
-    "country": {
-      "fr": "Inde"
-    },
-    "capital": {
-      "fr": "New Delhi"
-    }
-  },
-  {
-    "id": "io",
-    "country": {
-      "fr": "Territoire Britannique De L'océan Indien"
-    },
-    "capital": {}
-  },
-  {
-    "id": "iq",
-    "country": {
-      "fr": "Irak"
-    },
-    "capital": {
-      "fr": "Bagdad"
-    }
-  },
-  {
-    "id": "ir",
-    "country": {
-      "fr": "Iran"
-    },
-    "capital": {
-      "fr": "Téhéran"
-    }
-  },
-  {
-    "id": "is",
-    "country": {
-      "fr": "Islande"
-    },
-    "capital": {
-      "fr": "Reykjavik"
-    }
-  },
-  {
-    "id": "it",
-    "country": {
-      "fr": "Italie"
-    },
-    "capital": {
-      "fr": "Rome"
-    }
-  },
-  {
-    "id": "je",
-    "country": {
-      "fr": "Jersey"
-    },
-    "capital": {
-      "fr": "Saint-Helier"
-    }
-  },
-  {
-    "id": "jm",
-    "country": {
-      "fr": "Jamaïque"
-    },
-    "capital": {
-      "fr": "Kingston"
-    }
-  },
-  {
-    "id": "jo",
-    "country": {
-      "fr": "Jordanie"
-    },
-    "capital": {
-      "fr": "Amman"
-    }
-  },
-  {
-    "id": "jp",
-    "country": {
-      "fr": "Japon"
-    },
-    "capital": {
-      "fr": "Tokyo"
-    }
-  },
-  {
-    "id": "ke",
-    "country": {
-      "fr": "Kenya"
-    },
-    "capital": {
-      "fr": "Nairobi"
-    }
-  },
-  {
-    "id": "kg",
-    "country": {
-      "fr": "Kirghizistan"
-    },
-    "capital": {
-      "fr": "Bichkek"
+      "fr": "Porto-Novo"
     }
   },
   {
@@ -1018,12 +331,66 @@
     }
   },
   {
-    "id": "ki",
+    "id": "cm",
     "country": {
-      "fr": "Kiribati"
+      "fr": "Cameroun"
     },
     "capital": {
-      "fr": "Tarawa-Sud"
+      "fr": "Yaoundé"
+    }
+  },
+  {
+    "id": "ca",
+    "country": {
+      "fr": "Canada"
+    },
+    "capital": {
+      "fr": "Ottawa"
+    }
+  },
+  {
+    "id": "cv",
+    "country": {
+      "fr": "Cap-Vert"
+    },
+    "capital": {
+      "fr": "Praia"
+    }
+  },
+  {
+    "id": "cl",
+    "country": {
+      "fr": "Chili"
+    },
+    "capital": {
+      "fr": "Santiago"
+    }
+  },
+  {
+    "id": "cn",
+    "country": {
+      "fr": "Chine"
+    },
+    "capital": {
+      "fr": "Pékin"
+    }
+  },
+  {
+    "id": "cy",
+    "country": {
+      "fr": "Chypre"
+    },
+    "capital": {
+      "fr": "Nicosie"
+    }
+  },
+  {
+    "id": "co",
+    "country": {
+      "fr": "Colombie"
+    },
+    "capital": {
+      "fr": "Bogota"
     }
   },
   {
@@ -1036,12 +403,21 @@
     }
   },
   {
-    "id": "kn",
+    "id": "cg",
     "country": {
-      "fr": "Saint-Christophe-et-Niévès|Saint-Kitts-et-Nevis|Fédération de Saint-Christophe-et-Niévès"
+      "fr": "Congo-Brazzaville|République du Congo"
     },
     "capital": {
-      "fr": "Basseterre"
+      "fr": "Brazzaville"
+    }
+  },
+  {
+    "id": "cd",
+    "country": {
+      "fr": "Congo-Kinshasa|République démocratique du Congo"
+    },
+    "capital": {
+      "fr": "Kinshasa"
     }
   },
   {
@@ -1063,21 +439,422 @@
     }
   },
   {
-    "id": "kw",
+    "id": "cr",
     "country": {
-      "fr": "Koweït"
+      "fr": "Costa Rica"
     },
     "capital": {
-      "fr": "Koweït"
+      "fr": "San José"
     }
   },
   {
-    "id": "ky",
+    "id": "hr",
     "country": {
-      "fr": "Îles Caïmans"
+      "fr": "Croatie"
     },
     "capital": {
-      "fr": "George Town"
+      "fr": "Zagreb"
+    }
+  },
+  {
+    "id": "cu",
+    "country": {
+      "fr": "Cuba"
+    },
+    "capital": {
+      "fr": "La Havane"
+    }
+  },
+  {
+    "id": "cw",
+    "country": {
+      "fr": "Curaçao"
+    },
+    "capital": {
+      "fr": "Willemstad"
+    }
+  },
+  {
+    "id": "ci",
+    "country": {
+      "fr": "Côte d'Ivoire"
+    },
+    "capital": {
+      "fr": "Yamoussoukro"
+    }
+  },
+  {
+    "id": "dk",
+    "country": {
+      "fr": "Danemark"
+    },
+    "capital": {
+      "fr": "Copenhague"
+    }
+  },
+  {
+    "id": "dj",
+    "country": {
+      "fr": "Djibouti"
+    },
+    "capital": {
+      "fr": "Djibouti"
+    }
+  },
+  {
+    "id": "dm",
+    "country": {
+      "fr": "Dominique"
+    },
+    "capital": {
+      "fr": "Roseau"
+    }
+  },
+  {
+    "id": "es",
+    "country": {
+      "fr": "Espagne"
+    },
+    "capital": {
+      "fr": "Madrid"
+    }
+  },
+  {
+    "id": "ee",
+    "country": {
+      "fr": "Estonie"
+    },
+    "capital": {
+      "fr": "Tallinn"
+    }
+  },
+  {
+    "id": "sz",
+    "country": {
+      "fr": "Eswatini"
+    },
+    "capital": {
+      "fr": "Mbabane"
+    }
+  },
+  {
+    "id": "fj",
+    "country": {
+      "fr": "Fidji"
+    },
+    "capital": {
+      "fr": "Suva"
+    }
+  },
+  {
+    "id": "fi",
+    "country": {
+      "fr": "Finlande"
+    },
+    "capital": {
+      "fr": "Helsinki"
+    }
+  },
+  {
+    "id": "fr",
+    "country": {
+      "fr": "France"
+    },
+    "capital": {
+      "fr": "Paris"
+    }
+  },
+  {
+    "id": "ga",
+    "country": {
+      "fr": "Gabon"
+    },
+    "capital": {
+      "fr": "Libreville"
+    }
+  },
+  {
+    "id": "gm",
+    "country": {
+      "fr": "Gambie"
+    },
+    "capital": {
+      "fr": "Banjul"
+    }
+  },
+  {
+    "id": "gh",
+    "country": {
+      "fr": "Ghana"
+    },
+    "capital": {
+      "fr": "Accra"
+    }
+  },
+  {
+    "id": "gi",
+    "country": {
+      "fr": "Gibraltar"
+    },
+    "capital": {
+      "fr": "Gibraltar"
+    }
+  },
+  {
+    "id": "gd",
+    "country": {
+      "fr": "Grenade"
+    },
+    "capital": {
+      "fr": "Saint-Georges"
+    }
+  },
+  {
+    "id": "gl",
+    "country": {
+      "fr": "Groenland"
+    },
+    "capital": {
+      "fr": "Nuuk"
+    }
+  },
+  {
+    "id": "gr",
+    "country": {
+      "fr": "Grèce"
+    },
+    "capital": {
+      "fr": "Athènes"
+    }
+  },
+  {
+    "id": "gp",
+    "country": {
+      "fr": "Guadeloupe"
+    },
+    "capital": {
+      "fr": "Basse-Terre"
+    }
+  },
+  {
+    "id": "gu",
+    "country": {
+      "fr": "Guam"
+    },
+    "capital": {
+      "fr": "Hagåtña"
+    }
+  },
+  {
+    "id": "gt",
+    "country": {
+      "fr": "Guatemala"
+    },
+    "capital": {
+      "fr": "Guatemala"
+    }
+  },
+  {
+    "id": "gg",
+    "country": {
+      "fr": "Guernesey"
+    },
+    "capital": {
+      "fr": "Saint-Pierre-Port"
+    }
+  },
+  {
+    "id": "gn",
+    "country": {
+      "fr": "Guinée"
+    },
+    "capital": {
+      "fr": "Conakry"
+    }
+  },
+  {
+    "id": "gq",
+    "country": {
+      "fr": "Guinée équatoriale"
+    },
+    "capital": {
+      "fr": "Malabo"
+    }
+  },
+  {
+    "id": "gw",
+    "country": {
+      "fr": "Guinée-Bissau"
+    },
+    "capital": {
+      "fr": "Bissau"
+    }
+  },
+  {
+    "id": "gy",
+    "country": {
+      "fr": "Guyana"
+    },
+    "capital": {
+      "fr": "Georgetown"
+    }
+  },
+  {
+    "id": "gf",
+    "country": {
+      "fr": "Guyane Française"
+    },
+    "capital": {}
+  },
+  {
+    "id": "ge",
+    "country": {
+      "fr": "Géorgie"
+    },
+    "capital": {
+      "fr": "Tbilissi"
+    }
+  },
+  {
+    "id": "ht",
+    "country": {
+      "fr": "Haïti"
+    },
+    "capital": {
+      "fr": "Port-au-Prince"
+    }
+  },
+  {
+    "id": "hn",
+    "country": {
+      "fr": "Honduras"
+    },
+    "capital": {
+      "fr": "Tegucigalpa"
+    }
+  },
+  {
+    "id": "hk",
+    "country": {
+      "fr": "Hong Kong"
+    },
+    "capital": {}
+  },
+  {
+    "id": "hu",
+    "country": {
+      "fr": "Hongrie"
+    },
+    "capital": {
+      "fr": "Budapest"
+    }
+  },
+  {
+    "id": "in",
+    "country": {
+      "fr": "Inde"
+    },
+    "capital": {
+      "fr": "New Delhi"
+    }
+  },
+  {
+    "id": "id",
+    "country": {
+      "fr": "Indonésie"
+    },
+    "capital": {
+      "fr": "Jakarta"
+    }
+  },
+  {
+    "id": "iq",
+    "country": {
+      "fr": "Irak"
+    },
+    "capital": {
+      "fr": "Bagdad"
+    }
+  },
+  {
+    "id": "ir",
+    "country": {
+      "fr": "Iran"
+    },
+    "capital": {
+      "fr": "Téhéran"
+    }
+  },
+  {
+    "id": "ie",
+    "country": {
+      "fr": "Irlande"
+    },
+    "capital": {
+      "fr": "Dublin"
+    }
+  },
+  {
+    "id": "is",
+    "country": {
+      "fr": "Islande"
+    },
+    "capital": {
+      "fr": "Reykjavik"
+    }
+  },
+  {
+    "id": "il",
+    "country": {
+      "fr": "Israël"
+    },
+    "capital": {
+      "fr": "Jérusalem"
+    }
+  },
+  {
+    "id": "it",
+    "country": {
+      "fr": "Italie"
+    },
+    "capital": {
+      "fr": "Rome"
+    }
+  },
+  {
+    "id": "jm",
+    "country": {
+      "fr": "Jamaïque"
+    },
+    "capital": {
+      "fr": "Kingston"
+    }
+  },
+  {
+    "id": "jp",
+    "country": {
+      "fr": "Japon"
+    },
+    "capital": {
+      "fr": "Tokyo"
+    }
+  },
+  {
+    "id": "je",
+    "country": {
+      "fr": "Jersey"
+    },
+    "capital": {
+      "fr": "Saint-Helier"
+    }
+  },
+  {
+    "id": "jo",
+    "country": {
+      "fr": "Jordanie"
+    },
+    "capital": {
+      "fr": "Amman"
     }
   },
   {
@@ -1090,12 +867,84 @@
     }
   },
   {
+    "id": "ke",
+    "country": {
+      "fr": "Kenya"
+    },
+    "capital": {
+      "fr": "Nairobi"
+    }
+  },
+  {
+    "id": "kg",
+    "country": {
+      "fr": "Kirghizistan"
+    },
+    "capital": {
+      "fr": "Bichkek"
+    }
+  },
+  {
+    "id": "ki",
+    "country": {
+      "fr": "Kiribati"
+    },
+    "capital": {
+      "fr": "Tarawa-Sud"
+    }
+  },
+  {
+    "id": "xk",
+    "country": {
+      "fr": "Kosovo"
+    },
+    "capital": {
+      "fr": "Pristina"
+    }
+  },
+  {
+    "id": "kw",
+    "country": {
+      "fr": "Koweït"
+    },
+    "capital": {
+      "fr": "Koweït"
+    }
+  },
+  {
+    "id": "re",
+    "country": {
+      "fr": "La Réunion"
+    },
+    "capital": {
+      "fr": "Saint-Denis"
+    }
+  },
+  {
     "id": "la",
     "country": {
       "fr": "Laos"
     },
     "capital": {
       "fr": "Vientiane"
+    }
+  },
+  {
+    "id": "ls",
+    "country": {
+      "fr": "Lesotho"
+    },
+    "capital": {
+      "fr": "Maseru"
+    }
+  },
+  {
+    "id": "lv",
+    "country": {
+      "fr": "Lettonie"
+    },
+    "capital": {
+      "fr": "Riga"
     }
   },
   {
@@ -1108,30 +957,12 @@
     }
   },
   {
-    "id": "lc",
+    "id": "ly",
     "country": {
-      "fr": "Sainte-Lucie"
+      "fr": "Libye"
     },
     "capital": {
-      "fr": "Castries"
-    }
-  },
-  {
-    "id": "li",
-    "country": {
-      "fr": "Liechtenstein"
-    },
-    "capital": {
-      "fr": "Vaduz"
-    }
-  },
-  {
-    "id": "lk",
-    "country": {
-      "fr": "Sri Lanka"
-    },
-    "capital": {
-      "fr": "Sri Jayawardenapura Kotte"
+      "fr": "Tripoli"
     }
   },
   {
@@ -1144,12 +975,12 @@
     }
   },
   {
-    "id": "ls",
+    "id": "li",
     "country": {
-      "fr": "Lesotho"
+      "fr": "Liechtenstein"
     },
     "capital": {
-      "fr": "Maseru"
+      "fr": "Vaduz"
     }
   },
   {
@@ -1171,83 +1002,11 @@
     }
   },
   {
-    "id": "lv",
+    "id": "mo",
     "country": {
-      "fr": "Lettonie"
-    },
-    "capital": {
-      "fr": "Riga"
-    }
-  },
-  {
-    "id": "ly",
-    "country": {
-      "fr": "Libye"
-    },
-    "capital": {
-      "fr": "Tripoli"
-    }
-  },
-  {
-    "id": "ma",
-    "country": {
-      "fr": "Maroc"
-    },
-    "capital": {
-      "fr": "Rabat"
-    }
-  },
-  {
-    "id": "mc",
-    "country": {
-      "fr": "Monaco"
-    },
-    "capital": {
-      "fr": "Monaco"
-    }
-  },
-  {
-    "id": "md",
-    "country": {
-      "fr": "Moldavie"
-    },
-    "capital": {
-      "fr": "Chisinau"
-    }
-  },
-  {
-    "id": "me",
-    "country": {
-      "fr": "Monténégro"
-    },
-    "capital": {
-      "fr": "Podgorica"
-    }
-  },
-  {
-    "id": "mf",
-    "country": {
-      "fr": "Saint-Martin"
+      "fr": "Macao"
     },
     "capital": {}
-  },
-  {
-    "id": "mg",
-    "country": {
-      "fr": "Madagascar"
-    },
-    "capital": {
-      "fr": "Antananarivo"
-    }
-  },
-  {
-    "id": "mh",
-    "country": {
-      "fr": "Îles Marshall"
-    },
-    "capital": {
-      "fr": "Delap-Uliga-Darrit"
-    }
   },
   {
     "id": "mk",
@@ -1259,112 +1018,12 @@
     }
   },
   {
-    "id": "ml",
+    "id": "mg",
     "country": {
-      "fr": "Mali"
+      "fr": "Madagascar"
     },
     "capital": {
-      "fr": "Bamako"
-    }
-  },
-  {
-    "id": "mm",
-    "country": {
-      "fr": "Myanmar|Birmanie"
-    },
-    "capital": {
-      "fr": "Naypyidaw"
-    }
-  },
-  {
-    "id": "mn",
-    "country": {
-      "fr": "Mongolie"
-    },
-    "capital": {
-      "fr": "Oulan-Bator"
-    }
-  },
-  {
-    "id": "mo",
-    "country": {
-      "fr": "Macao"
-    },
-    "capital": {}
-  },
-  {
-    "id": "mp",
-    "country": {
-      "fr": "Mariannes du Nord"
-    },
-    "capital": {}
-  },
-  {
-    "id": "mq",
-    "country": {
-      "fr": "Martinique"
-    },
-    "capital": {}
-  },
-  {
-    "id": "mr",
-    "country": {
-      "fr": "Mauritanie"
-    },
-    "capital": {
-      "fr": "Nouakchott"
-    }
-  },
-  {
-    "id": "ms",
-    "country": {
-      "fr": "Montserrat"
-    },
-    "capital": {}
-  },
-  {
-    "id": "mt",
-    "country": {
-      "fr": "Malte"
-    },
-    "capital": {
-      "fr": "La Valette"
-    }
-  },
-  {
-    "id": "mu",
-    "country": {
-      "fr": "Maurice"
-    },
-    "capital": {
-      "fr": "Port-Louis"
-    }
-  },
-  {
-    "id": "mv",
-    "country": {
-      "fr": "Maldives"
-    },
-    "capital": {
-      "fr": "Malé"
-    }
-  },
-  {
-    "id": "mw",
-    "country": {
-      "fr": "Malawi"
-    },
-    "capital": {
-      "fr": "Lilongwe"
-    }
-  },
-  {
-    "id": "mx",
-    "country": {
-      "fr": "Mexique"
-    },
-    "capital": {
-      "fr": "Mexico"
+      "fr": "Antananarivo"
     }
   },
   {
@@ -1377,12 +1036,168 @@
     }
   },
   {
+    "id": "mw",
+    "country": {
+      "fr": "Malawi"
+    },
+    "capital": {
+      "fr": "Lilongwe"
+    }
+  },
+  {
+    "id": "mv",
+    "country": {
+      "fr": "Maldives"
+    },
+    "capital": {
+      "fr": "Malé"
+    }
+  },
+  {
+    "id": "ml",
+    "country": {
+      "fr": "Mali"
+    },
+    "capital": {
+      "fr": "Bamako"
+    }
+  },
+  {
+    "id": "mt",
+    "country": {
+      "fr": "Malte"
+    },
+    "capital": {
+      "fr": "La Valette"
+    }
+  },
+  {
+    "id": "mp",
+    "country": {
+      "fr": "Mariannes du Nord"
+    },
+    "capital": {}
+  },
+  {
+    "id": "ma",
+    "country": {
+      "fr": "Maroc"
+    },
+    "capital": {
+      "fr": "Rabat"
+    }
+  },
+  {
+    "id": "mq",
+    "country": {
+      "fr": "Martinique"
+    },
+    "capital": {}
+  },
+  {
+    "id": "mu",
+    "country": {
+      "fr": "Maurice"
+    },
+    "capital": {
+      "fr": "Port-Louis"
+    }
+  },
+  {
+    "id": "mr",
+    "country": {
+      "fr": "Mauritanie"
+    },
+    "capital": {
+      "fr": "Nouakchott"
+    }
+  },
+  {
+    "id": "yt",
+    "country": {
+      "fr": "Mayotte"
+    },
+    "capital": {
+      "fr": "Mamoudzou"
+    }
+  },
+  {
+    "id": "mx",
+    "country": {
+      "fr": "Mexique"
+    },
+    "capital": {
+      "fr": "Mexico"
+    }
+  },
+  {
+    "id": "fm",
+    "country": {
+      "fr": "Micronésie|États fédérés de Micronésie"
+    },
+    "capital": {
+      "fr": "Palikir"
+    }
+  },
+  {
+    "id": "md",
+    "country": {
+      "fr": "Moldavie"
+    },
+    "capital": {
+      "fr": "Chisinau"
+    }
+  },
+  {
+    "id": "mc",
+    "country": {
+      "fr": "Monaco"
+    },
+    "capital": {
+      "fr": "Monaco"
+    }
+  },
+  {
+    "id": "mn",
+    "country": {
+      "fr": "Mongolie"
+    },
+    "capital": {
+      "fr": "Oulan-Bator"
+    }
+  },
+  {
+    "id": "ms",
+    "country": {
+      "fr": "Montserrat"
+    },
+    "capital": {}
+  },
+  {
+    "id": "me",
+    "country": {
+      "fr": "Monténégro"
+    },
+    "capital": {
+      "fr": "Podgorica"
+    }
+  },
+  {
     "id": "mz",
     "country": {
       "fr": "Mozambique"
     },
     "capital": {
       "fr": "Maputo"
+    }
+  },
+  {
+    "id": "mm",
+    "country": {
+      "fr": "Myanmar|Birmanie"
+    },
+    "capital": {
+      "fr": "Naypyidaw"
     }
   },
   {
@@ -1395,37 +1210,12 @@
     }
   },
   {
-    "id": "nc",
+    "id": "nr",
     "country": {
-      "fr": "Nouvelle-Calédonie"
-    },
-    "capital": {}
-  },
-  {
-    "id": "ne",
-    "country": {
-      "fr": "Niger"
+      "fr": "Nauru"
     },
     "capital": {
-      "fr": "Niamey"
-    }
-  },
-  {
-    "id": "nf",
-    "country": {
-      "fr": "Île Norfolk"
-    },
-    "capital": {
-      "fr": "Kingston"
-    }
-  },
-  {
-    "id": "ng",
-    "country": {
-      "fr": "Nigéria"
-    },
-    "capital": {
-      "fr": "Abuja"
+      "fr": "Yaren"
     }
   },
   {
@@ -1438,39 +1228,21 @@
     }
   },
   {
-    "id": "nl",
+    "id": "ne",
     "country": {
-      "fr": "Pays-Bas"
+      "fr": "Niger"
     },
     "capital": {
-      "fr": "Amsterdam"
+      "fr": "Niamey"
     }
   },
   {
-    "id": "no",
+    "id": "ng",
     "country": {
-      "fr": "Norvège"
+      "fr": "Nigéria"
     },
     "capital": {
-      "fr": "Oslo"
-    }
-  },
-  {
-    "id": "np",
-    "country": {
-      "fr": "Népal"
-    },
-    "capital": {
-      "fr": "Katmandou"
-    }
-  },
-  {
-    "id": "nr",
-    "country": {
-      "fr": "Nauru"
-    },
-    "capital": {
-      "fr": "Yaren"
+      "fr": "Abuja"
     }
   },
   {
@@ -1483,12 +1255,37 @@
     }
   },
   {
+    "id": "no",
+    "country": {
+      "fr": "Norvège"
+    },
+    "capital": {
+      "fr": "Oslo"
+    }
+  },
+  {
+    "id": "nc",
+    "country": {
+      "fr": "Nouvelle-Calédonie"
+    },
+    "capital": {}
+  },
+  {
     "id": "nz",
     "country": {
       "fr": "Nouvelle-Zélande"
     },
     "capital": {
       "fr": "Wellington"
+    }
+  },
+  {
+    "id": "np",
+    "country": {
+      "fr": "Népal"
+    },
+    "capital": {
+      "fr": "Katmandou"
     }
   },
   {
@@ -1501,48 +1298,21 @@
     }
   },
   {
-    "id": "pa",
+    "id": "ug",
     "country": {
-      "fr": "Panama"
+      "fr": "Ouganda"
     },
     "capital": {
-      "fr": "Panama"
+      "fr": "Kampala"
     }
   },
   {
-    "id": "pe",
+    "id": "uz",
     "country": {
-      "fr": "Pérou"
+      "fr": "Ouzbékistan"
     },
     "capital": {
-      "fr": "Lima"
-    }
-  },
-  {
-    "id": "pf",
-    "country": {
-      "fr": "Polynésie Française"
-    },
-    "capital": {
-      "fr": "Papeete"
-    }
-  },
-  {
-    "id": "pg",
-    "country": {
-      "fr": "Papouasie-Nouvelle-Guinée"
-    },
-    "capital": {
-      "fr": "Port Moresby"
-    }
-  },
-  {
-    "id": "ph",
-    "country": {
-      "fr": "Philippines"
-    },
-    "capital": {
-      "fr": "Manille"
+      "fr": "Tachkent"
     }
   },
   {
@@ -1555,37 +1325,12 @@
     }
   },
   {
-    "id": "pl",
+    "id": "pw",
     "country": {
-      "fr": "Pologne"
+      "fr": "Palaos"
     },
     "capital": {
-      "fr": "Varsovie"
-    }
-  },
-  {
-    "id": "pm",
-    "country": {
-      "fr": "Saint-Pierre-et-Miquelon"
-    },
-    "capital": {}
-  },
-  {
-    "id": "pn",
-    "country": {
-      "fr": "Îles Pitcairn"
-    },
-    "capital": {
-      "fr": "Adamstown"
-    }
-  },
-  {
-    "id": "pr",
-    "country": {
-      "fr": "Porto Rico"
-    },
-    "capital": {
-      "fr": "San Juan"
+      "fr": "Melekeok"
     }
   },
   {
@@ -1598,21 +1343,21 @@
     }
   },
   {
-    "id": "pt",
+    "id": "pa",
     "country": {
-      "fr": "Portugal"
+      "fr": "Panama"
     },
     "capital": {
-      "fr": "Lisbonne"
+      "fr": "Panama"
     }
   },
   {
-    "id": "pw",
+    "id": "pg",
     "country": {
-      "fr": "Palaos"
+      "fr": "Papouasie-Nouvelle-Guinée"
     },
     "capital": {
-      "fr": "Melekeok"
+      "fr": "Port Moresby"
     }
   },
   {
@@ -1625,21 +1370,75 @@
     }
   },
   {
+    "id": "nl",
+    "country": {
+      "fr": "Pays-Bas"
+    },
+    "capital": {
+      "fr": "Amsterdam"
+    }
+  },
+  {
+    "id": "ph",
+    "country": {
+      "fr": "Philippines"
+    },
+    "capital": {
+      "fr": "Manille"
+    }
+  },
+  {
+    "id": "pl",
+    "country": {
+      "fr": "Pologne"
+    },
+    "capital": {
+      "fr": "Varsovie"
+    }
+  },
+  {
+    "id": "pf",
+    "country": {
+      "fr": "Polynésie Française"
+    },
+    "capital": {
+      "fr": "Papeete"
+    }
+  },
+  {
+    "id": "pr",
+    "country": {
+      "fr": "Porto Rico"
+    },
+    "capital": {
+      "fr": "San Juan"
+    }
+  },
+  {
+    "id": "pt",
+    "country": {
+      "fr": "Portugal"
+    },
+    "capital": {
+      "fr": "Lisbonne"
+    }
+  },
+  {
+    "id": "pe",
+    "country": {
+      "fr": "Pérou"
+    },
+    "capital": {
+      "fr": "Lima"
+    }
+  },
+  {
     "id": "qa",
     "country": {
       "fr": "Qatar"
     },
     "capital": {
       "fr": "Doha"
-    }
-  },
-  {
-    "id": "re",
-    "country": {
-      "fr": "La Réunion"
-    },
-    "capital": {
-      "fr": "Saint-Denis"
     }
   },
   {
@@ -1652,12 +1451,12 @@
     }
   },
   {
-    "id": "rs",
+    "id": "gb",
     "country": {
-      "fr": "Serbie"
+      "fr": "Royaume-Uni"
     },
     "capital": {
-      "fr": "Belgrade"
+      "fr": "Londres"
     }
   },
   {
@@ -1679,100 +1478,48 @@
     }
   },
   {
-    "id": "sa",
+    "id": "cf",
     "country": {
-      "fr": "Arabie Saoudite"
+      "fr": "République Centrafricaine"
     },
     "capital": {
-      "fr": "Riyad"
+      "fr": "Bangui"
     }
   },
   {
-    "id": "sb",
+    "id": "do",
     "country": {
-      "fr": "Îles Salomon"
+      "fr": "République dominicaine"
     },
     "capital": {
-      "fr": "Honiara"
+      "fr": "Saint-Domingue"
     }
   },
   {
-    "id": "sc",
+    "id": "eh",
     "country": {
-      "fr": "Seychelles"
+      "fr": "Sahara Occidental"
     },
     "capital": {
-      "fr": "Victoria"
+      "fr": "Laâyoune"
     }
   },
   {
-    "id": "sd",
+    "id": "bl",
     "country": {
-      "fr": "Soudan"
+      "fr": "Saint-Barthélemy"
     },
     "capital": {
-      "fr": "Khartoum"
+      "fr": "Gustavia"
     }
   },
   {
-    "id": "se",
+    "id": "kn",
     "country": {
-      "fr": "Suède"
+      "fr": "Saint-Christophe-et-Niévès|Saint-Kitts-et-Nevis|Fédération de Saint-Christophe-et-Niévès"
     },
     "capital": {
-      "fr": "Stockholm"
-    }
-  },
-  {
-    "id": "sg",
-    "country": {
-      "fr": "Singapour"
-    },
-    "capital": {
-      "fr": "Singapour"
-    }
-  },
-  {
-    "id": "sh",
-    "country": {
-      "fr": "Sainte-Hélène"
-    },
-    "capital": {
-      "fr": "Jamestown"
-    }
-  },
-  {
-    "id": "si",
-    "country": {
-      "fr": "Slovénie"
-    },
-    "capital": {
-      "fr": "Ljubljana"
-    }
-  },
-  {
-    "id": "sj",
-    "country": {
-      "fr": "Svalbard et Jan Mayen"
-    },
-    "capital": {}
-  },
-  {
-    "id": "sk",
-    "country": {
-      "fr": "Slovaquie"
-    },
-    "capital": {
-      "fr": "Bratislava"
-    }
-  },
-  {
-    "id": "sl",
-    "country": {
-      "fr": "Sierra Leone"
-    },
-    "capital": {
-      "fr": "Freetown"
+      "fr": "Basseterre"
     }
   },
   {
@@ -1785,48 +1532,44 @@
     }
   },
   {
-    "id": "sn",
+    "id": "mf",
     "country": {
-      "fr": "Sénégal"
+      "fr": "Saint-Martin"
+    },
+    "capital": {}
+  },
+  {
+    "id": "pm",
+    "country": {
+      "fr": "Saint-Pierre-et-Miquelon"
+    },
+    "capital": {}
+  },
+  {
+    "id": "vc",
+    "country": {
+      "fr": "Saint-Vincent-et-les-Grenadines"
     },
     "capital": {
-      "fr": "Dakar"
+      "fr": "Kingstown"
     }
   },
   {
-    "id": "so",
+    "id": "sh",
     "country": {
-      "fr": "Somalie"
+      "fr": "Sainte-Hélène"
     },
     "capital": {
-      "fr": "Mogadiscio"
+      "fr": "Jamestown"
     }
   },
   {
-    "id": "sr",
+    "id": "lc",
     "country": {
-      "fr": "Suriname"
+      "fr": "Sainte-Lucie"
     },
     "capital": {
-      "fr": "Paramaribo"
-    }
-  },
-  {
-    "id": "ss",
-    "country": {
-      "fr": "Soudan du Sud"
-    },
-    "capital": {
-      "fr": "Djouba"
-    }
-  },
-  {
-    "id": "st",
-    "country": {
-      "fr": "Sao Tomé-et-Principe"
-    },
-    "capital": {
-      "fr": "São Tomé"
+      "fr": "Castries"
     }
   },
   {
@@ -1839,6 +1582,157 @@
     }
   },
   {
+    "id": "ws",
+    "country": {
+      "fr": "Samoa"
+    },
+    "capital": {
+      "fr": "Apia"
+    }
+  },
+  {
+    "id": "as",
+    "country": {
+      "fr": "Samoa Américaines"
+    },
+    "capital": {
+      "fr": "Pago Pago"
+    }
+  },
+  {
+    "id": "st",
+    "country": {
+      "fr": "Sao Tomé-et-Principe"
+    },
+    "capital": {
+      "fr": "São Tomé"
+    }
+  },
+  {
+    "id": "rs",
+    "country": {
+      "fr": "Serbie"
+    },
+    "capital": {
+      "fr": "Belgrade"
+    }
+  },
+  {
+    "id": "sc",
+    "country": {
+      "fr": "Seychelles"
+    },
+    "capital": {
+      "fr": "Victoria"
+    }
+  },
+  {
+    "id": "sl",
+    "country": {
+      "fr": "Sierra Leone"
+    },
+    "capital": {
+      "fr": "Freetown"
+    }
+  },
+  {
+    "id": "sg",
+    "country": {
+      "fr": "Singapour"
+    },
+    "capital": {
+      "fr": "Singapour"
+    }
+  },
+  {
+    "id": "sk",
+    "country": {
+      "fr": "Slovaquie"
+    },
+    "capital": {
+      "fr": "Bratislava"
+    }
+  },
+  {
+    "id": "si",
+    "country": {
+      "fr": "Slovénie"
+    },
+    "capital": {
+      "fr": "Ljubljana"
+    }
+  },
+  {
+    "id": "so",
+    "country": {
+      "fr": "Somalie"
+    },
+    "capital": {
+      "fr": "Mogadiscio"
+    }
+  },
+  {
+    "id": "sd",
+    "country": {
+      "fr": "Soudan"
+    },
+    "capital": {
+      "fr": "Khartoum"
+    }
+  },
+  {
+    "id": "ss",
+    "country": {
+      "fr": "Soudan du Sud"
+    },
+    "capital": {
+      "fr": "Djouba"
+    }
+  },
+  {
+    "id": "lk",
+    "country": {
+      "fr": "Sri Lanka"
+    },
+    "capital": {
+      "fr": "Sri Jayawardenapura Kotte"
+    }
+  },
+  {
+    "id": "ch",
+    "country": {
+      "fr": "Suisse"
+    },
+    "capital": {
+      "fr": "Berne"
+    }
+  },
+  {
+    "id": "sr",
+    "country": {
+      "fr": "Suriname"
+    },
+    "capital": {
+      "fr": "Paramaribo"
+    }
+  },
+  {
+    "id": "se",
+    "country": {
+      "fr": "Suède"
+    },
+    "capital": {
+      "fr": "Stockholm"
+    }
+  },
+  {
+    "id": "sj",
+    "country": {
+      "fr": "Svalbard et Jan Mayen"
+    },
+    "capital": {}
+  },
+  {
     "id": "sy",
     "country": {
       "fr": "Syrie"
@@ -1848,55 +1742,12 @@
     }
   },
   {
-    "id": "sz",
+    "id": "sn",
     "country": {
-      "fr": "Eswatini"
+      "fr": "Sénégal"
     },
     "capital": {
-      "fr": "Mbabane"
-    }
-  },
-  {
-    "id": "tc",
-    "country": {
-      "fr": "Îles Turques-et-Caïques"
-    },
-    "capital": {
-      "fr": "Cockburn Town"
-    }
-  },
-  {
-    "id": "td",
-    "country": {
-      "fr": "Tchad"
-    },
-    "capital": {
-      "fr": "N'Djaména"
-    }
-  },
-  {
-    "id": "tf",
-    "country": {
-      "fr": "Terres Australes Françaises"
-    },
-    "capital": {}
-  },
-  {
-    "id": "tg",
-    "country": {
-      "fr": "Togo"
-    },
-    "capital": {
-      "fr": "Lomé"
-    }
-  },
-  {
-    "id": "th",
-    "country": {
-      "fr": "Thaïlande"
-    },
-    "capital": {
-      "fr": "Bangkok"
+      "fr": "Dakar"
     }
   },
   {
@@ -1906,76 +1757,6 @@
     },
     "capital": {
       "fr": "Douchanbé"
-    }
-  },
-  {
-    "id": "tk",
-    "country": {
-      "fr": "Tokelau"
-    },
-    "capital": {}
-  },
-  {
-    "id": "tl",
-    "country": {
-      "fr": "Timor Oriental"
-    },
-    "capital": {
-      "fr": "Díli"
-    }
-  },
-  {
-    "id": "tm",
-    "country": {
-      "fr": "Turkménistan"
-    },
-    "capital": {
-      "fr": "Achgabat"
-    }
-  },
-  {
-    "id": "tn",
-    "country": {
-      "fr": "Tunisie"
-    },
-    "capital": {
-      "fr": "Tunis"
-    }
-  },
-  {
-    "id": "to",
-    "country": {
-      "fr": "Tonga"
-    },
-    "capital": {
-      "fr": "Nuku'alofa"
-    }
-  },
-  {
-    "id": "tr",
-    "country": {
-      "fr": "Turquie"
-    },
-    "capital": {
-      "fr": "Ankara"
-    }
-  },
-  {
-    "id": "tt",
-    "country": {
-      "fr": "Trinité-et-Tobago"
-    },
-    "capital": {
-      "fr": "Port-d'Espagne"
-    }
-  },
-  {
-    "id": "tv",
-    "country": {
-      "fr": "Tuvalu"
-    },
-    "capital": {
-      "fr": "Funafuti"
     }
   },
   {
@@ -1997,37 +1778,132 @@
     }
   },
   {
+    "id": "td",
+    "country": {
+      "fr": "Tchad"
+    },
+    "capital": {
+      "fr": "N'Djaména"
+    }
+  },
+  {
+    "id": "cz",
+    "country": {
+      "fr": "Tchéquie"
+    },
+    "capital": {
+      "fr": "Prague"
+    }
+  },
+  {
+    "id": "tf",
+    "country": {
+      "fr": "Terres Australes Françaises"
+    },
+    "capital": {}
+  },
+  {
+    "id": "io",
+    "country": {
+      "fr": "Territoire Britannique De L'océan Indien"
+    },
+    "capital": {}
+  },
+  {
+    "id": "th",
+    "country": {
+      "fr": "Thaïlande"
+    },
+    "capital": {
+      "fr": "Bangkok"
+    }
+  },
+  {
+    "id": "tl",
+    "country": {
+      "fr": "Timor Oriental"
+    },
+    "capital": {
+      "fr": "Díli"
+    }
+  },
+  {
+    "id": "tg",
+    "country": {
+      "fr": "Togo"
+    },
+    "capital": {
+      "fr": "Lomé"
+    }
+  },
+  {
+    "id": "tk",
+    "country": {
+      "fr": "Tokelau"
+    },
+    "capital": {}
+  },
+  {
+    "id": "to",
+    "country": {
+      "fr": "Tonga"
+    },
+    "capital": {
+      "fr": "Nuku'alofa"
+    }
+  },
+  {
+    "id": "tt",
+    "country": {
+      "fr": "Trinité-et-Tobago"
+    },
+    "capital": {
+      "fr": "Port-d'Espagne"
+    }
+  },
+  {
+    "id": "tn",
+    "country": {
+      "fr": "Tunisie"
+    },
+    "capital": {
+      "fr": "Tunis"
+    }
+  },
+  {
+    "id": "tm",
+    "country": {
+      "fr": "Turkménistan"
+    },
+    "capital": {
+      "fr": "Achgabat"
+    }
+  },
+  {
+    "id": "tr",
+    "country": {
+      "fr": "Turquie"
+    },
+    "capital": {
+      "fr": "Ankara"
+    }
+  },
+  {
+    "id": "tv",
+    "country": {
+      "fr": "Tuvalu"
+    },
+    "capital": {
+      "fr": "Funafuti"
+    }
+  },
+  {
     "id": "ua",
     "country": {
       "fr": "Ukraine"
     },
     "capital": {
       "fr": "Kiev"
-    }
-  },
-  {
-    "id": "ug",
-    "country": {
-      "fr": "Ouganda"
-    },
-    "capital": {
-      "fr": "Kampala"
-    }
-  },
-  {
-    "id": "um",
-    "country": {
-      "fr": "Îles Mineures éloignées des États-Unis"
-    },
-    "capital": {}
-  },
-  {
-    "id": "us",
-    "country": {
-      "fr": "États-Unis"
-    },
-    "capital": {
-      "fr": "Washington D.C."
     }
   },
   {
@@ -2040,12 +1916,12 @@
     }
   },
   {
-    "id": "uz",
+    "id": "vu",
     "country": {
-      "fr": "Ouzbékistan"
+      "fr": "Vanuatu"
     },
     "capital": {
-      "fr": "Tachkent"
+      "fr": "Port-Vila"
     }
   },
   {
@@ -2058,21 +1934,224 @@
     }
   },
   {
-    "id": "vc",
-    "country": {
-      "fr": "Saint-Vincent-et-les-Grenadines"
-    },
-    "capital": {
-      "fr": "Kingstown"
-    }
-  },
-  {
     "id": "ve",
     "country": {
       "fr": "Venezuela"
     },
     "capital": {
       "fr": "Caracas"
+    }
+  },
+  {
+    "id": "vn",
+    "country": {
+      "fr": "Vietnam"
+    },
+    "capital": {
+      "fr": "Hanoï"
+    }
+  },
+  {
+    "id": "wf",
+    "country": {
+      "fr": "Wallis-Et-Futuna"
+    },
+    "capital": {}
+  },
+  {
+    "id": "ye",
+    "country": {
+      "fr": "Yémen"
+    },
+    "capital": {
+      "fr": "Sanaa"
+    }
+  },
+  {
+    "id": "zm",
+    "country": {
+      "fr": "Zambie"
+    },
+    "capital": {
+      "fr": "Lusaka"
+    }
+  },
+  {
+    "id": "zw",
+    "country": {
+      "fr": "Zimbabwe"
+    },
+    "capital": {
+      "fr": "Harare"
+    }
+  },
+  {
+    "id": "eg",
+    "country": {
+      "fr": "Égypte"
+    },
+    "capital": {
+      "fr": "Le Caire"
+    }
+  },
+  {
+    "id": "ae",
+    "country": {
+      "fr": "Émirats Arabes Unis"
+    },
+    "capital": {
+      "fr": "Abou Dabi"
+    }
+  },
+  {
+    "id": "ec",
+    "country": {
+      "fr": "Équateur"
+    },
+    "capital": {
+      "fr": "Quito"
+    }
+  },
+  {
+    "id": "er",
+    "country": {
+      "fr": "Érythrée"
+    },
+    "capital": {
+      "fr": "Asmara"
+    }
+  },
+  {
+    "id": "us",
+    "country": {
+      "fr": "États-Unis"
+    },
+    "capital": {
+      "fr": "Washington D.C."
+    }
+  },
+  {
+    "id": "et",
+    "country": {
+      "fr": "Éthiopie"
+    },
+    "capital": {
+      "fr": "Addis-Abeba"
+    }
+  },
+  {
+    "id": "cx",
+    "country": {
+      "fr": "Île Christmas"
+    },
+    "capital": {
+      "fr": "Flying Fish Cove"
+    }
+  },
+  {
+    "id": "nf",
+    "country": {
+      "fr": "Île Norfolk"
+    },
+    "capital": {
+      "fr": "Kingston"
+    }
+  },
+  {
+    "id": "im",
+    "country": {
+      "fr": "Île de Man"
+    },
+    "capital": {
+      "fr": "Douglas"
+    }
+  },
+  {
+    "id": "ky",
+    "country": {
+      "fr": "Îles Caïmans"
+    },
+    "capital": {
+      "fr": "George Town"
+    }
+  },
+  {
+    "id": "cc",
+    "country": {
+      "fr": "Îles Cocos"
+    },
+    "capital": {
+      "fr": "West Island"
+    }
+  },
+  {
+    "id": "ck",
+    "country": {
+      "fr": "Îles Cook"
+    },
+    "capital": {
+      "fr": "Avarua"
+    }
+  },
+  {
+    "id": "fo",
+    "country": {
+      "fr": "Îles Féroé"
+    },
+    "capital": {
+      "fr": "Tórshavn"
+    }
+  },
+  {
+    "id": "fk",
+    "country": {
+      "fr": "Îles Malouines"
+    },
+    "capital": {
+      "fr": "Port Stanley"
+    }
+  },
+  {
+    "id": "mh",
+    "country": {
+      "fr": "Îles Marshall"
+    },
+    "capital": {
+      "fr": "Delap-Uliga-Darrit"
+    }
+  },
+  {
+    "id": "um",
+    "country": {
+      "fr": "Îles Mineures éloignées des États-Unis"
+    },
+    "capital": {}
+  },
+  {
+    "id": "pn",
+    "country": {
+      "fr": "Îles Pitcairn"
+    },
+    "capital": {
+      "fr": "Adamstown"
+    }
+  },
+  {
+    "id": "sb",
+    "country": {
+      "fr": "Îles Salomon"
+    },
+    "capital": {
+      "fr": "Honiara"
+    }
+  },
+  {
+    "id": "tc",
+    "country": {
+      "fr": "Îles Turques-et-Caïques"
+    },
+    "capital": {
+      "fr": "Cockburn Town"
     }
   },
   {
@@ -2094,91 +2173,12 @@
     }
   },
   {
-    "id": "vn",
+    "id": "ax",
     "country": {
-      "fr": "Vietnam"
+      "fr": "Îles Åland"
     },
     "capital": {
-      "fr": "Hanoï"
-    }
-  },
-  {
-    "id": "vu",
-    "country": {
-      "fr": "Vanuatu"
-    },
-    "capital": {
-      "fr": "Port-Vila"
-    }
-  },
-  {
-    "id": "wf",
-    "country": {
-      "fr": "Wallis-Et-Futuna"
-    },
-    "capital": {}
-  },
-  {
-    "id": "ws",
-    "country": {
-      "fr": "Samoa"
-    },
-    "capital": {
-      "fr": "Apia"
-    }
-  },
-  {
-    "id": "xk",
-    "country": {
-      "fr": "Kosovo"
-    },
-    "capital": {
-      "fr": "Pristina"
-    }
-  },
-  {
-    "id": "ye",
-    "country": {
-      "fr": "Yémen"
-    },
-    "capital": {
-      "fr": "Sanaa"
-    }
-  },
-  {
-    "id": "yt",
-    "country": {
-      "fr": "Mayotte"
-    },
-    "capital": {
-      "fr": "Mamoudzou"
-    }
-  },
-  {
-    "id": "za",
-    "country": {
-      "fr": "Afrique du Sud"
-    },
-    "capital": {
-      "fr": "Pretoria"
-    }
-  },
-  {
-    "id": "zm",
-    "country": {
-      "fr": "Zambie"
-    },
-    "capital": {
-      "fr": "Lusaka"
-    }
-  },
-  {
-    "id": "zw",
-    "country": {
-      "fr": "Zimbabwe"
-    },
-    "capital": {
-      "fr": "Harare"
+      "fr": "Mariehamn"
     }
   }
 ]
