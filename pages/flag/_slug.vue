@@ -2,10 +2,13 @@
   <transition name="fade">
     <article v-if="article">
       <div class="mb-3">
-        <div>
+        <div style="text-align: center">
           <h1 class="slugTitle d-flex justify-center">
             {{ article.title.split('|')[0] }}
           </h1>
+          <h5 v-if="article.title.split('|').length > 1" class="d-flex mb-2 justify-center grey--text">
+            {{ article.title.split('|').slice(1).join(', ') }}
+          </h5>
           <h4 class="d-flex justify-center mb-2">
             {{ getCapital() }}
           </h4>
@@ -176,7 +179,11 @@ export default {
     },
     getCapital () {
       const tmp = countries.find(c => c.id === this.$route.params.slug).capital[this.lang]
-      if (tmp) { return tmp.split('|').join(', ') } else { return 'Aucune capitale' }
+      if (tmp) {
+        return tmp.split('|').join(', ')
+      } else {
+        return 'Aucune capitale'
+      }
     }
   }
 }
