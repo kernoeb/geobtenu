@@ -175,7 +175,8 @@ export default {
       return tmp.join(', ')
     },
     getCapital () {
-      return countries.find(c => c.id === this.$route.params.slug).capital[this.lang].split('|').join(', ')
+      const tmp = countries.find(c => c.id === this.$route.params.slug).capital[this.lang]
+      if (tmp) { return tmp.split('|').join(', ') } else { return 'Aucune capitale' }
     }
   }
 }
