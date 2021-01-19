@@ -6,6 +6,9 @@
           <h1 class="slugTitle d-flex justify-center">
             {{ article.title.split('|')[0] }}
           </h1>
+          <h4 class="d-flex justify-center mb-2">
+            {{ getCapital() }}
+          </h4>
         </div>
         <div class="d-flex justify-center">
           <v-img
@@ -52,7 +55,9 @@
                     <div v-if="article.alphabet">
                       <b>Alphabet :</b> {{ getAlphabet(article.alphabet) }}
                     </div>
-                    <div v-if="!(article.domain || article.continent || article.hemisphere || article.languages || article.alphabet)">
+                    <div
+                      v-if="!(article.domain || article.continent || article.hemisphere || article.languages || article.alphabet)"
+                    >
                       Aucune donnée n'a été saisie
                     </div>
                   </v-card-text>
@@ -89,7 +94,7 @@
         </v-row>
       </v-container>
 
-      <v-container v-if="article">
+      <v-container v-if="article && article.body && article.body.children && article.body.children.length">
         <v-row style="justify-content: center">
           <v-col
             cols="12"
@@ -130,7 +135,9 @@ export default {
   async fetch () {
     this.article = await this.$content('countries', this.$route.params.slug).fetch()
 
-    const c = countries.find(c => c.id === this.article.id)
+    console.log(this.article)
+
+    const c = countries.find(c => c.id === this.$route.params.slug)
     if (c) {
       const id = c.wikipedia && c.wikipedia[this.lang]
 
@@ -163,7 +170,14 @@ export default {
       return tmp.join(', ')
     },
     getAlphabet (alphabet) {
-      return content.alphabet[alphabet][this.lang]
+      const tmp = []
+      for (const i of alphabet.split(',')) {
+        tmp.push(content.alphabet[i.trim()][this.lang])
+      }
+      return tmp.join(', ')
+    },
+    getCapital () {
+      return countries.find(c => c.id === this.$route.params.slug).capital[this.lang].split('|').join(', ')
     }
   }
 }
