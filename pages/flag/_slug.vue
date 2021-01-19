@@ -156,7 +156,11 @@ export default {
       return content.hemisphere[hemisphere][this.lang]
     },
     getLanguage (language) {
-      return content.languages[language][this.lang]
+      const tmp = []
+      for (const i of language.split(',')) {
+        tmp.push(content.languages[i.trim()][this.lang])
+      }
+      return tmp.join(', ')
     },
     getAlphabet (alphabet) {
       return content.alphabet[alphabet][this.lang]

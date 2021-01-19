@@ -12,6 +12,18 @@
   "languages": {
     "cat": {
       "fr": "Catalan"
+    },
+    "fra": {
+      "fr": "Français"
+    },
+    "ger": {
+      "fr": "Allemand"
+    },
+    "roh": {
+      "fr": "Romanche"
+    },
+    "ita": {
+      "fr": "Italien"
     }
   },
   "alphabet": {
