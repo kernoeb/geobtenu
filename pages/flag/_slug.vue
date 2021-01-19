@@ -135,8 +135,6 @@ export default {
   async fetch () {
     this.article = await this.$content('countries', this.$route.params.slug).fetch()
 
-    console.log(this.article)
-
     const c = countries.find(c => c.id === this.$route.params.slug)
     if (c) {
       const id = c.wikipedia && c.wikipedia[this.lang]
