@@ -33,16 +33,19 @@ Aéroport : Aeroporti
 
 # Reconnaître le pays / Métas
 
-- Plaques d’immatriculation européennes de taille normale avec 2 liserés bleus aux extrémités 
-  (Existe aussi en Italie, mais les plaques italiennes sont plus étroites en règle générale)
+- Plaques d’immatriculation européennes de taille normale avec 2 **liserés bleus aux extrémités** 
+  _(Aussi en Italie, mais plaques plus étroites)_
 
 ![meta](/images/al_geoguessr2.png)
 
-- Plaques d'immatriculation avec un liséré rouge à gauche
+- Plaques d'immatriculation avec un liséré **rouge** à gauche
 
 ![meta](/images/al_geoguessr3.png)
 
 - Rue : Rruga
-- Glitch dans le ciel (pas systématique, aussi présent au Monténégro) 
+
+![meta](/images/al_geoguessr4.png)
+
+- **Glitch** dans le ciel (pas systématique, aussi présent au Monténégro) 
 
 ![meta](/images/al_geoguessr.png)
