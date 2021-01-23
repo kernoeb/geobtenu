@@ -42,16 +42,16 @@ Aéroport : Aeroporti
 - Plaques d’immatriculation européennes de taille normale avec 2 **liserés bleus aux extrémités** 
   _(Aussi en Italie, mais plaques plus étroites)_
 
-![meta](/images/al_geoguessr2.png)
+![meta1](/images/al_geoguessr2.png)
 
 - Plaques d'immatriculation avec un liséré **rouge** à gauche
 
-![meta](/images/al_geoguessr3.png)
+![meta2](/images/al_geoguessr3.png)
 
 - Rue : Rruga
 
-![meta](/images/al_geoguessr4.png)
+![meta3](/images/al_geoguessr4.png)
 
 - **Glitch** dans le ciel (pas systématique, aussi présent au [Monténégro](/flag/me)) 
 
-![meta](/images/al_geoguessr.png)
+![meta4](/images/al_geoguessr.png)

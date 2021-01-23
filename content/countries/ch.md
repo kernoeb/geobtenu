@@ -4,8 +4,9 @@ id: ch
 domain: ch
 continent: EU
 hemisphere: N
-languages: "fra, ger, ita, roh"
+languages: "fra, deu, ita, roh"
 alphabet: lat
+traffic: D
 ---
 # Emplacement
 
