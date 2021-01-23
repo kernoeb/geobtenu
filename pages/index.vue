@@ -17,7 +17,7 @@
             <v-col v-for="value in countriesFiltered" :key="`flag_${value.id}`" cols="5" md="4" xl="3">
               <v-lazy
                 v-model="value.isActive"
-                height="180"
+                height="170"
               >
                 <nuxt-link :to="{name: 'flag-slug', params: {slug: value.id}}" class="noDecoration">
                   <FlagCard :lang="lang" :value="value" />

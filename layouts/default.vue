@@ -54,6 +54,14 @@
             <v-list-item-title v-text="'Générations de caméras'" />
           </v-list-item-content>
         </v-list-item>
+        <v-list-item to="/credits">
+          <v-list-item-action>
+            <v-icon>mdi-information</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title v-text="'Crédits'" />
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
       <template #append>
         <div class="pa-2 d-flex align-center justify-center">
