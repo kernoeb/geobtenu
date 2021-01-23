@@ -13,6 +13,21 @@
     },
     "AF": {
       "fr": "Afrique"
+    },
+    "SA": {
+      "fr": "Amérique du Sud"
+    },
+    "OC": {
+      "fr": "Océanie"
+    },
+    "NA": {
+      "fr": "Amérique du Nord"
+    },
+    "AS": {
+      "fr": "Asie"
+    },
+    "AN": {
+      "fr": "Antarctique"
     }
   },
   "hemisphere": {
@@ -47,6 +62,9 @@
     },
     "alb": {
       "fr": "Albanais"
+    },
+    "spa": {
+      "fr": "Espagnol"
     }
   },
   "alphabet": {
