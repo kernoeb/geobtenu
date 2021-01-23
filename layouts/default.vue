@@ -38,6 +38,14 @@
             <v-list-item-title v-text="item.title" />
           </v-list-item-content>
         </v-list-item>
+        <v-list-item href="https://fr.wikipedia.org/wiki/Sens_de_circulation_(route)" target="_blank">
+          <v-list-item-action>
+            <v-icon>mdi-road</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title v-text="'Sens de circulation (W)'" />
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
       <template #append>
         <div class="pa-2 d-flex align-center justify-center">
