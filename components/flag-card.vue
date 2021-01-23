@@ -10,7 +10,7 @@
         {{ value.country[lang].split('|')[0] }}
       </v-card-title>
       <v-card-subtitle v-if="value.capital[lang]" class="white--text">
-        {{ value.capital[lang] }}
+        {{ value.capital[lang].split('|')[0] }}
       </v-card-subtitle>
     </v-img>
   </v-card>
