@@ -141,7 +141,7 @@ export default {
       if (workbox) {
         workbox.addEventListener('installed', (event) => {
           if (event.isUpdate) {
-            location.reload()
+            window.location.reload(true)
           }
         })
       }
