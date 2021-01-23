@@ -32,5 +32,14 @@ Sortie : Sortida
 Ville : Ciutat/Població
 Gare : Estació
 Aéroport : Aeroport
-Rue : // TODO
 ```
+
+# Reconnaître le pays / Métas
+
+- Paysages montagneux
+
+![meta1](/images/ad_geoguessr.png)
+
+- Plaques d’immatriculations sans liseré européen avec un petit carré jaune (les armoiries) en haut à gauche
+
+![meta2](/images/ad_geoguessr2.png)
