@@ -223,6 +223,7 @@ export default {
 
 .nuxt-content img {
   max-width: 60%;
+  margin-top: 5px;
 }
 
 .blockquoteDark pre {
