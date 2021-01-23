@@ -18,6 +18,11 @@ alphabet: lat
 
 # Langue
 
+##### Ressources :
+[Wikipédia : Langues en Albanie](https://fr.wikipedia.org/wiki/Langues_en_Albanie)  
+[Wikipédia : Albanais](https://fr.wikipedia.org/wiki/Albanais)  
+[ulaval.ca : Albanais](http://www.axl.cefan.ulaval.ca/monde/langue_albanaise.htm)
+
 ```
 Bienvenue : Mirësevini
 Bonjour : Mirëdita
@@ -46,6 +51,6 @@ Aéroport : Aeroporti
 
 ![meta](/images/al_geoguessr4.png)
 
-- **Glitch** dans le ciel (pas systématique, aussi présent au Monténégro) 
+- **Glitch** dans le ciel (pas systématique, aussi présent au [Monténégro](/flag/me)) 
 
 ![meta](/images/al_geoguessr.png)
