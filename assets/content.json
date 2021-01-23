@@ -1,12 +1,26 @@
 {
+  "traffic": {
+    "L": {
+      "fr": "Gauche"
+    },
+    "R": {
+      "fr": "Droite"
+    }
+  },
   "continent": {
     "EU": {
       "fr": "Europe"
+    },
+    "AF": {
+      "fr": "Afrique"
     }
   },
   "hemisphere": {
     "N": {
       "fr": "Nord"
+    },
+    "S": {
+      "fr": "Sud"
     }
   },
   "languages": {
@@ -24,6 +38,12 @@
     },
     "ita": {
       "fr": "Italien"
+    },
+    "afr": {
+      "fr": "Afrikaans"
+    },
+    "eng": {
+      "fr": "Anglais"
     }
   },
   "alphabet": {

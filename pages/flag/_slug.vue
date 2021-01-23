@@ -58,8 +58,11 @@
                     <div v-if="article.alphabet">
                       <b>Alphabet :</b> {{ getAlphabet(article.alphabet) }}
                     </div>
+                    <div v-if="article.traffic">
+                      <b>Sens de circulation :</b> {{ getTraffic(article.traffic) }}
+                    </div>
                     <div
-                      v-if="!(article.domain || article.continent || article.hemisphere || article.languages || article.alphabet)"
+                      v-if="!(article.domain || article.continent || article.hemisphere || article.languages || article.alphabet || article.traffic)"
                     >
                       Aucune donnée n'a été saisie
                     </div>
@@ -81,7 +84,14 @@
             <v-row align="center" class="mb-3" justify="center" style="justify-content: center">
               <v-col>
                 <v-card class="rounded-xl">
-                  <v-card-title>Wikipédia</v-card-title>
+                  <v-card-title>
+                    <span>Wikipédia </span>
+                    <v-btn v-if="link" target="_blank" icon :href="link" class="ml-1">
+                      <v-icon color="blue">
+                        mdi-open-in-new
+                      </v-icon>
+                    </v-btn>
+                  </v-card-title>
                   <v-card-text style="text-align: justify">
                     {{ getWiki() }}<span v-if="!more && wiki.slice(0, length).length < wiki.length">...</span>
                     <span
@@ -131,6 +141,7 @@ export default {
       lang: 'fr',
       more: false,
       wiki: null,
+      link: null,
       article: null,
       length: 450
     }
@@ -146,6 +157,7 @@ export default {
         this.wiki = (await this.$axios.$get(`https://${this.lang}.wikipedia.org/w/api.php?format=json` +
           `&prop=extracts&action=query&exintro&explaintext&redirects=1&pageids=${id}&origin=*`))
           .query.pages[id].extract
+        this.link = (await this.$axios.$get(`https://${this.lang}.wikipedia.org/w/api.php?action=query&prop=info&pageids=${id}&inprop=url&format=json`)).query.pages[id].fullurl
       }
     }
   },
@@ -162,6 +174,9 @@ export default {
     },
     getHemisphere (hemisphere) {
       return content.hemisphere[hemisphere][this.lang]
+    },
+    getTraffic (traffic) {
+      return content.traffic[traffic][this.lang]
     },
     getLanguage (language) {
       const tmp = []
