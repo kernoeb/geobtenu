@@ -6,7 +6,7 @@ continent: EU
 hemisphere: N
 languages: "fra, deu, ita, roh"
 alphabet: lat
-traffic: D
+traffic: R
 ---
 # Emplacement
 
