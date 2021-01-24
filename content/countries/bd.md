@@ -1,5 +1,5 @@
 ---
-title: Bandladesh
+title: Bangladesh
 id: bd
 domain: bd
 continent: AS
