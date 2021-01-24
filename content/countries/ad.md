@@ -12,7 +12,7 @@ traffic: R
 
 ![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Location_Andorra_Europe.png/1024px-Location_Andorra_Europe.png)
 
-----
+<br/>
 
 # Langue
 
@@ -34,6 +34,8 @@ Ville : Ciutat/Població
 Gare : Estació
 Aéroport : Aeroport
 ```
+
+<br/>
 
 # Reconnaître le pays / Métas
 

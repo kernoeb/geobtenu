@@ -87,7 +87,7 @@
                   <v-card-title>
                     <span>Wikipédia </span>
                     <v-btn v-if="link" target="_blank" icon :href="link" class="ml-1">
-                      <v-icon color="blue">
+                      <v-icon color="#00bfff">
                         mdi-open-in-new
                       </v-icon>
                     </v-btn>
@@ -96,7 +96,7 @@
                     {{ getWiki() }}<span v-if="!more && wiki.slice(0, length).length < wiki.length">...</span>
                     <span
                       v-if="wiki.slice(0, length).length < wiki.length"
-                      style="color: blue; cursor: pointer"
+                      style="color: #00bfff; cursor: pointer"
                       @click="more = !more"
                     > {{ more ? 'Voir moins' : 'Voir plus' }}</span>
                   </v-card-text>
@@ -205,6 +205,10 @@ export default {
 </script>
 
 <style>
+.nuxt-content a {
+  color: #00bfff;
+}
+
 .nuxt-content h1 {
   margin-bottom: 7px;
 }
@@ -244,9 +248,16 @@ export default {
   margin-bottom: 7px;
 }
 
-.nuxt-content code {
+.nuxt-content pre > code {
   background-color: transparent !important;
   padding: unset;
+}
+
+.nuxt-content:not(pre) > code {
+  color: #111010 !important;
+  border-radius: 5px;
+  padding: 2px;
+  background-color: #eeeeee !important;
 }
 </style>
 

@@ -12,7 +12,7 @@ traffic: R
 
 ![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Mapadefrancia.svg/langfr-800px-Mapadefrancia.svg.png)
 
-----
+<br/>
 
 # Langue
 
@@ -21,3 +21,17 @@ Le français est une langue indo-européenne de la famille des langues romanes d
 ```
 
 ![francais](https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/New-Map-Francophone_World.PNG/1920px-New-Map-Francophone_World.PNG)
+
+<br/>
+
+# Reconnaître le pays / Métas
+
+- Délinéateurs gros et cylindriques
+
+<p></p>
+
+[Wikipédia : délinéateurs en France](https://fr.wikipedia.org/wiki/D%C3%A9lin%C3%A9ateur_en_France)
+
+![delinateurs_france1](https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/D%C3%A9lin%C3%A9ateurs.JPG/1200px-D%C3%A9lin%C3%A9ateurs.JPG)
+[![delinateurs_france2](https://images.prismic.io/ornikar/4f02ae7fc415138dff86ef8a0eb817940643ed8e_balise-signalisation-bord-route.jpg?auto=compress,format)](https://www.ornikar.com/code/cours/signalisation/verticale/balise-signalisation)  
+*Source : ornikar.com*
