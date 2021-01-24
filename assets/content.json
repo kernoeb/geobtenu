@@ -71,6 +71,9 @@
     },
     "nld": {
       "fr": "Néerlandais"
+    },
+    "dzo": {
+      "fr": "Dzongkha"
     }
   },
   "alphabet": {
@@ -79,6 +82,9 @@
     },
     "san": {
       "fr": "Sanskrit"
+    },
+    "tibt": {
+      "fr": "Tibétain"
     }
   }
 }
