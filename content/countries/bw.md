@@ -8,13 +8,6 @@ languages: "tsn,eng"
 traffic: L
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Bolivia_%28orthographic_projection%29.svg/200px-Bolivia_%28orthographic_projection%29.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/2/2a/Bolivie_carte.png)
-
-<br/>
-
 # Langue
 
 ##### Ressources :
