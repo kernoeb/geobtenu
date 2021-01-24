@@ -65,11 +65,17 @@
     },
     "spa": {
       "fr": "Espagnol"
+    },
+    "ben": {
+      "fr": "Bengali"
     }
   },
   "alphabet": {
     "lat": {
       "fr": "Latin"
+    },
+    "san": {
+      "fr": "Sanskrit"
     }
   }
 }
