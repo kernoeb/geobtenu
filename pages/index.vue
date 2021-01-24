@@ -8,13 +8,27 @@
       >
         <v-row>
           <v-text-field v-model="search" placeholder="Rechercher un pays ou une capitale" />
+          <v-btn
+            class="mt-4"
+            icon
+            @click="finishedCountries = !finishedCountries"
+          >
+            <v-icon>{{ finishedCountries ? 'mdi-filter-off' : 'mdi-filter' }}</v-icon>
+          </v-btn>
         </v-row>
         <v-row
           align="center"
           justify="center"
         >
           <transition-group class="row justifyCenter" name="flip-list">
-            <v-col v-for="value in countriesFiltered" :key="`flag_${value.id}`" cols="5" md="4" xl="3">
+            <v-col
+              v-for="value in countriesFiltered"
+              :key="`flag_${value.id}`"
+              cols="5"
+              md="4"
+              xl="3"
+              class="flip-list-item"
+            >
               <v-lazy
                 v-model="value.isActive"
                 height="170"
@@ -33,6 +47,7 @@
 
 <script>
 import countries from '~/assets/countries.json'
+import finished from '~/assets/finished.json'
 import flagCard from '~/components/flag-card'
 
 export default {
@@ -44,7 +59,7 @@ export default {
       lang: 'fr',
       countries,
       search: null,
-      started: false
+      finishedCountries: false
     }
   },
   computed: {
@@ -54,14 +69,20 @@ export default {
         for (let i = 0; i < 16; i++) {
           c[i].isActive = true
         }
-        return Object.freeze(c)
+        return this.filterFinish(c)
       } else if (!this.search.length) {
-        return Object.freeze(this.countries)
+        return this.filterFinish(this.countries)
       } else {
-        return Object.freeze(this.countries.filter(country =>
+        const tmp = this.countries.filter(country =>
           country.country[this.lang].toUpperCase().includes(this.search.toUpperCase()) ||
-          (country.capital[this.lang] && country.capital[this.lang].toUpperCase().includes(this.search.toUpperCase()))))
+          (country.capital[this.lang] && country.capital[this.lang].toUpperCase().includes(this.search.toUpperCase())))
+        return this.filterFinish(tmp)
       }
+    }
+  },
+  methods: {
+    filterFinish (d) {
+      if (this.finishedCountries) { return d.filter(c => finished.includes(c.id)) } else { return d }
     }
   }
 }
@@ -76,13 +97,21 @@ export default {
   text-decoration: none
 }
 
-.flip-list-move {
-  transition: transform 1s;
+.flip-list-item {
+  transition: all 1s;
 }
 
-.flip-list-enter, .flip-list-leave-to {
-  transition: all 0.5s;
+.flip-list-leave-active {
+  position: absolute;
+}
+
+.flip-list-enter {
   opacity: 0;
+}
+
+.flip-list-leave-to {
+  opacity: 0;
+  transform: translateY(100vh);
 }
 
 .page-enter-active, .page-leave-active {
