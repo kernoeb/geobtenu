@@ -7,7 +7,7 @@
         offset-lg="2"
       >
         <v-row>
-          <v-text-field v-model="search" autofocus placeholder="Rechercher un pays ou une capitale" />
+          <v-text-field v-model="search" placeholder="Rechercher un pays ou une capitale" />
         </v-row>
         <v-row
           align="center"
