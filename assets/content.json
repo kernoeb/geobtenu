@@ -83,6 +83,9 @@
     },
     "bul": {
       "fr": "Bulgare"
+    },
+    "khm": {
+      "fr": "Khmer"
     }
   },
   "alphabet": {
@@ -97,6 +100,9 @@
     },
     "cyrl": {
       "fr": "Cyrillique"
+    },
+    "khm": {
+      "fr": "Khmer"
     }
   }
 }
