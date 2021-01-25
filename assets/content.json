@@ -80,6 +80,9 @@
     },
     "por": {
       "fr": "Portugal"
+    },
+    "bul": {
+      "fr": "Bulgare"
     }
   },
   "alphabet": {
@@ -91,6 +94,9 @@
     },
     "tibt": {
       "fr": "Tibétain"
+    },
+    "cyrl": {
+      "fr": "Cyrillique"
     }
   }
 }
