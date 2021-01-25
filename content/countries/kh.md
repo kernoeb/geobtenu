@@ -50,5 +50,5 @@ traffic: R
 - [Cambodian People Party](https://fr.wikipedia.org/wiki/Parti_du_peuple_cambodgien)
 
 ![meta3](https://tomsnik.files.wordpress.com/2011/01/cambodianpeoplesparty.jpg)  
-*Source : tomsnik*
+*Source : [tomsnik](https://tomsnik.wordpress.com/)*
 
