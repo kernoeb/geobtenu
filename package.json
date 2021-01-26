@@ -16,7 +16,8 @@
     "@nuxtjs/component-cache": "^1.1.6",
     "cookie-universal-nuxt": "^2.1.4",
     "core-js": "^3.8.3",
-    "nuxt": "^2.14.12"
+    "nuxt": "^2.14.12",
+    "remove-accents": "^0.4.2"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "3.1.3",

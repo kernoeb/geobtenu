@@ -50,6 +50,8 @@ import countries from '~/assets/countries.json'
 import finished from '~/assets/finished.json'
 import flagCard from '~/components/flag-card'
 
+const removeAccents = require('remove-accents')
+
 export default {
   name: 'Index',
   components: { flagCard },
@@ -74,8 +76,8 @@ export default {
         return this.filterFinish(this.countries)
       } else {
         const tmp = this.countries.filter(country =>
-          country.country[this.lang].toUpperCase().includes(this.search.toUpperCase()) ||
-          (country.capital[this.lang] && country.capital[this.lang].toUpperCase().includes(this.search.toUpperCase())))
+          this.sanitize(country.country[this.lang]).includes(this.sanitize(this.search)) ||
+          (country.capital[this.lang] && this.sanitize(country.capital[this.lang]).includes(this.sanitize(this.search))))
         return this.filterFinish(tmp)
       }
     }
@@ -83,6 +85,9 @@ export default {
   methods: {
     filterFinish (d) {
       if (this.finishedCountries) { return d.filter(c => finished.includes(c.id)) } else { return d }
+    },
+    sanitize (text) {
+      return removeAccents(text).replace(/[-‘’']/g, ' ').replace(/[.*?!]/g, '').toUpperCase().trim()
     }
   }
 }
