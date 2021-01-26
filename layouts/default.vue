@@ -2,6 +2,7 @@
   <v-app dark>
     <v-navigation-drawer
       v-model="drawer"
+      width="300"
       app
       clipped
       disable-resize-watcher
@@ -35,31 +36,61 @@
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title v-text="item.title" />
+            <v-list-item-title
+              style="font-size: 13px"
+              v-text="item.title"
+            />
           </v-list-item-content>
         </v-list-item>
+        <v-divider />
         <v-list-item href="https://fr.wikipedia.org/wiki/Sens_de_circulation_(route)" target="_blank">
           <v-list-item-action>
             <v-icon>mdi-road</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title v-text="'Sens de circulation (W)'" />
+            <v-list-item-title style="font-size: 13px" v-text="'Sens de circulation (W)'" />
           </v-list-item-content>
         </v-list-item>
+        <v-divider />
         <v-list-item href="https://docs.google.com/spreadsheets/d/1SUcuQkmDgVZMqNLe7XuNEhmJulonpnSQuSiJAOqfhtY" target="_blank">
           <v-list-item-action>
             <v-icon>mdi-camera</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title v-text="'Générations de caméras'" />
+            <v-list-item-title style="font-size: 13px" v-text="'Générations de caméras'" />
           </v-list-item-content>
         </v-list-item>
+        <v-list-item href="https://docs.google.com/spreadsheets/d/1x7SfoMvNILkkzT8feYqgku0qaiI-UcVvC2YfPIIvG-g" target="_blank">
+          <v-list-item-action>
+            <v-icon>mdi-google-spreadsheet</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title style="font-size: 13px" v-text="'Geo-Astuces par Redneho'" />
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item href="https://docs.google.com/document/d/1mkof2V97hVqlDsG0NrJKOJLMC40-5BHvMVDQgj4Qvu8" target="_blank">
+          <v-list-item-action>
+            <v-icon>mdi-google-spreadsheet</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title style="font-size: 13px" v-text="'\'La Méta\' par Armire'" />
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item href="https://docs.google.com/spreadsheets/d/1eN1X7fa-zjR2AR2CUbb_KCjGfSWS2PZZocIqn_wtnxs" target="_blank">
+          <v-list-item-action>
+            <v-icon>mdi-google-spreadsheet</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title style="font-size: 13px" v-text="'Guess the country par Takamari'" />
+          </v-list-item-content>
+        </v-list-item>
+        <v-divider />
         <v-list-item to="/credits">
           <v-list-item-action>
             <v-icon>mdi-information</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title v-text="'Crédits'" />
+            <v-list-item-title style="font-size: 13px" v-text="'Crédits'" />
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -180,7 +211,8 @@ export default {
 .geoTitle {
   font-family: Secular One, sans-serif;
   font-size: 24px;
-  font-weight: bold
+  font-weight: bold;
+  text-align: center;
 }
 
 .geoTitleColor {
