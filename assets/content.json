@@ -92,6 +92,12 @@
     },
     "dan": {
       "fr": "Danois"
+    },
+    "ara": {
+      "fr": "Arabe"
+    },
+    "arb": {
+      "fr": "Arabe Standard Moderne"
     }
   },
   "alphabet": {
@@ -109,6 +115,9 @@
     },
     "khm": {
       "fr": "Khmer"
+    },
+    "ara": {
+      "fr": "Arabe"
     }
   }
 }
