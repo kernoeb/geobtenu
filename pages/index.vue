@@ -33,9 +33,9 @@
                 v-model="value.isActive"
                 height="170"
               >
-                <nuxt-link :to="`/flag/${value.id}/`" class="noDecoration">
+                <a :href="`/flag/${value.id}/`" class="noDecoration">
                   <FlagCard :lang="lang" :value="value" />
-                </nuxt-link>
+                </a>
               </v-lazy>
             </v-col>
           </transition-group>
