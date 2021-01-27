@@ -158,7 +158,7 @@
     "capital": {
       "fr": "Vienne"
     },
-    "wikipedia":  {
+    "wikipedia": {
       "fr": "15"
     }
   },
@@ -226,6 +226,15 @@
     },
     "capital": {
       "fr": "Belmopan"
+    }
+  },
+  {
+    "id": "bj",
+    "country": {
+      "fr": "Bénin"
+    },
+    "capital": {
+      "fr": "Porto-Novo"
     }
   },
   {
@@ -301,15 +310,6 @@
     }
   },
   {
-    "id": "bn",
-    "country": {
-      "fr": "Brunéi"
-    },
-    "capital": {
-      "fr": "Bandar Seri Begawan"
-    }
-  },
-  {
     "id": "br",
     "country": {
       "fr": "Brésil"
@@ -319,6 +319,15 @@
     },
     "wikipedia": {
       "fr": "398"
+    }
+  },
+  {
+    "id": "bn",
+    "country": {
+      "fr": "Brunéi"
+    },
+    "capital": {
+      "fr": "Bandar Seri Begawan"
     }
   },
   {
@@ -349,15 +358,6 @@
     },
     "capital": {
       "fr": "Gitega"
-    }
-  },
-  {
-    "id": "bj",
-    "country": {
-      "fr": "Bénin"
-    },
-    "capital": {
-      "fr": "Porto-Novo"
     }
   },
   {
@@ -499,6 +499,15 @@
     }
   },
   {
+    "id": "ci",
+    "country": {
+      "fr": "Côte d'Ivoire"
+    },
+    "capital": {
+      "fr": "Yamoussoukro"
+    }
+  },
+  {
     "id": "hr",
     "country": {
       "fr": "Croatie"
@@ -529,15 +538,6 @@
     }
   },
   {
-    "id": "ci",
-    "country": {
-      "fr": "Côte d'Ivoire"
-    },
-    "capital": {
-      "fr": "Yamoussoukro"
-    }
-  },
-  {
     "id": "dk",
     "country": {
       "fr": "Danemark"
@@ -565,6 +565,48 @@
     },
     "capital": {
       "fr": "Roseau"
+    }
+  },
+  {
+    "id": "eg",
+    "country": {
+      "fr": "Égypte"
+    },
+    "capital": {
+      "fr": "Le Caire"
+    },
+    "wikipedia": {
+      "fr": "4011"
+    }
+  },
+  {
+    "id": "ae",
+    "country": {
+      "fr": "Émirats Arabes Unis"
+    },
+    "capital": {
+      "fr": "Abou Dabi"
+    }
+  },
+  {
+    "id": "ec",
+    "country": {
+      "fr": "Équateur"
+    },
+    "capital": {
+      "fr": "Quito"
+    },
+    "wikipedia": {
+      "fr": "98103"
+    }
+  },
+  {
+    "id": "er",
+    "country": {
+      "fr": "Érythrée"
+    },
+    "capital": {
+      "fr": "Asmara"
     }
   },
   {
@@ -601,6 +643,24 @@
     },
     "wikipedia": {
       "fr": "9439"
+    }
+  },
+  {
+    "id": "us",
+    "country": {
+      "fr": "États-Unis"
+    },
+    "capital": {
+      "fr": "Washington D.C."
+    }
+  },
+  {
+    "id": "et",
+    "country": {
+      "fr": "Éthiopie"
+    },
+    "capital": {
+      "fr": "Addis-Abeba"
     }
   },
   {
@@ -649,6 +709,15 @@
     }
   },
   {
+    "id": "ge",
+    "country": {
+      "fr": "Géorgie"
+    },
+    "capital": {
+      "fr": "Tbilissi"
+    }
+  },
+  {
     "id": "gh",
     "country": {
       "fr": "Ghana"
@@ -667,6 +736,15 @@
     }
   },
   {
+    "id": "gr",
+    "country": {
+      "fr": "Grèce"
+    },
+    "capital": {
+      "fr": "Athènes"
+    }
+  },
+  {
     "id": "gd",
     "country": {
       "fr": "Grenade"
@@ -682,15 +760,6 @@
     },
     "capital": {
       "fr": "Nuuk"
-    }
-  },
-  {
-    "id": "gr",
-    "country": {
-      "fr": "Grèce"
-    },
-    "capital": {
-      "fr": "Athènes"
     }
   },
   {
@@ -773,15 +842,6 @@
     "capital": {}
   },
   {
-    "id": "ge",
-    "country": {
-      "fr": "Géorgie"
-    },
-    "capital": {
-      "fr": "Tbilissi"
-    }
-  },
-  {
     "id": "ht",
     "country": {
       "fr": "Haïti"
@@ -813,6 +873,148 @@
     },
     "capital": {
       "fr": "Budapest"
+    }
+  },
+  {
+    "id": "cx",
+    "country": {
+      "fr": "Île Christmas"
+    },
+    "capital": {
+      "fr": "Flying Fish Cove"
+    }
+  },
+  {
+    "id": "nf",
+    "country": {
+      "fr": "Île Norfolk"
+    },
+    "capital": {
+      "fr": "Kingston"
+    }
+  },
+  {
+    "id": "im",
+    "country": {
+      "fr": "Île de Man"
+    },
+    "capital": {
+      "fr": "Douglas"
+    }
+  },
+  {
+    "id": "ax",
+    "country": {
+      "fr": "Îles Åland"
+    },
+    "capital": {
+      "fr": "Mariehamn"
+    }
+  },
+  {
+    "id": "ky",
+    "country": {
+      "fr": "Îles Caïmans"
+    },
+    "capital": {
+      "fr": "George Town"
+    }
+  },
+  {
+    "id": "cc",
+    "country": {
+      "fr": "Îles Cocos"
+    },
+    "capital": {
+      "fr": "West Island"
+    }
+  },
+  {
+    "id": "ck",
+    "country": {
+      "fr": "Îles Cook"
+    },
+    "capital": {
+      "fr": "Avarua"
+    }
+  },
+  {
+    "id": "fo",
+    "country": {
+      "fr": "Îles Féroé"
+    },
+    "capital": {
+      "fr": "Tórshavn"
+    }
+  },
+  {
+    "id": "fk",
+    "country": {
+      "fr": "Îles Malouines"
+    },
+    "capital": {
+      "fr": "Port Stanley"
+    }
+  },
+  {
+    "id": "mh",
+    "country": {
+      "fr": "Îles Marshall"
+    },
+    "capital": {
+      "fr": "Delap-Uliga-Darrit"
+    }
+  },
+  {
+    "id": "um",
+    "country": {
+      "fr": "Îles Mineures éloignées des États-Unis"
+    },
+    "capital": {}
+  },
+  {
+    "id": "pn",
+    "country": {
+      "fr": "Îles Pitcairn"
+    },
+    "capital": {
+      "fr": "Adamstown"
+    }
+  },
+  {
+    "id": "sb",
+    "country": {
+      "fr": "Îles Salomon"
+    },
+    "capital": {
+      "fr": "Honiara"
+    }
+  },
+  {
+    "id": "tc",
+    "country": {
+      "fr": "Îles Turques-et-Caïques"
+    },
+    "capital": {
+      "fr": "Cockburn Town"
+    }
+  },
+  {
+    "id": "vg",
+    "country": {
+      "fr": "Îles Vierges Britanniques"
+    },
+    "capital": {
+      "fr": "Road Town"
+    }
+  },
+  {
+    "id": "vi",
+    "country": {
+      "fr": "Îles Vierges des États-Unis"
+    },
+    "capital": {
+      "fr": "Charlotte Amélie"
     }
   },
   {
@@ -1023,21 +1225,21 @@
     }
   },
   {
-    "id": "ly",
-    "country": {
-      "fr": "Libye"
-    },
-    "capital": {
-      "fr": "Tripoli"
-    }
-  },
-  {
     "id": "lr",
     "country": {
       "fr": "Libéria"
     },
     "capital": {
       "fr": "Monrovia"
+    }
+  },
+  {
+    "id": "ly",
+    "country": {
+      "fr": "Libye"
+    },
+    "capital": {
+      "fr": "Tripoli"
     }
   },
   {
@@ -1233,13 +1435,6 @@
     }
   },
   {
-    "id": "ms",
-    "country": {
-      "fr": "Montserrat"
-    },
-    "capital": {}
-  },
-  {
     "id": "me",
     "country": {
       "fr": "Monténégro"
@@ -1247,6 +1442,13 @@
     "capital": {
       "fr": "Podgorica"
     }
+  },
+  {
+    "id": "ms",
+    "country": {
+      "fr": "Montserrat"
+    },
+    "capital": {}
   },
   {
     "id": "mz",
@@ -1282,6 +1484,15 @@
     },
     "capital": {
       "fr": "Yaren"
+    }
+  },
+  {
+    "id": "np",
+    "country": {
+      "fr": "Népal"
+    },
+    "capital": {
+      "fr": "Katmandou"
     }
   },
   {
@@ -1343,15 +1554,6 @@
     },
     "capital": {
       "fr": "Wellington"
-    }
-  },
-  {
-    "id": "np",
-    "country": {
-      "fr": "Népal"
-    },
-    "capital": {
-      "fr": "Katmandou"
     }
   },
   {
@@ -1445,6 +1647,15 @@
     }
   },
   {
+    "id": "pe",
+    "country": {
+      "fr": "Pérou"
+    },
+    "capital": {
+      "fr": "Lima"
+    }
+  },
+  {
     "id": "ph",
     "country": {
       "fr": "Philippines"
@@ -1490,21 +1701,30 @@
     }
   },
   {
-    "id": "pe",
-    "country": {
-      "fr": "Pérou"
-    },
-    "capital": {
-      "fr": "Lima"
-    }
-  },
-  {
     "id": "qa",
     "country": {
       "fr": "Qatar"
     },
     "capital": {
       "fr": "Doha"
+    }
+  },
+  {
+    "id": "cf",
+    "country": {
+      "fr": "République Centrafricaine"
+    },
+    "capital": {
+      "fr": "Bangui"
+    }
+  },
+  {
+    "id": "do",
+    "country": {
+      "fr": "République dominicaine"
+    },
+    "capital": {
+      "fr": "Saint-Domingue"
     }
   },
   {
@@ -1541,24 +1761,6 @@
     },
     "capital": {
       "fr": "Kigali"
-    }
-  },
-  {
-    "id": "cf",
-    "country": {
-      "fr": "République Centrafricaine"
-    },
-    "capital": {
-      "fr": "Bangui"
-    }
-  },
-  {
-    "id": "do",
-    "country": {
-      "fr": "République dominicaine"
-    },
-    "capital": {
-      "fr": "Saint-Domingue"
     }
   },
   {
@@ -1675,6 +1877,15 @@
     }
   },
   {
+    "id": "sn",
+    "country": {
+      "fr": "Sénégal"
+    },
+    "capital": {
+      "fr": "Dakar"
+    }
+  },
+  {
     "id": "rs",
     "country": {
       "fr": "Serbie"
@@ -1768,6 +1979,15 @@
     }
   },
   {
+    "id": "se",
+    "country": {
+      "fr": "Suède"
+    },
+    "capital": {
+      "fr": "Stockholm"
+    }
+  },
+  {
     "id": "ch",
     "country": {
       "fr": "Suisse"
@@ -1786,15 +2006,6 @@
     }
   },
   {
-    "id": "se",
-    "country": {
-      "fr": "Suède"
-    },
-    "capital": {
-      "fr": "Stockholm"
-    }
-  },
-  {
     "id": "sj",
     "country": {
       "fr": "Svalbard et Jan Mayen"
@@ -1808,15 +2019,6 @@
     },
     "capital": {
       "fr": "Damas"
-    }
-  },
-  {
-    "id": "sn",
-    "country": {
-      "fr": "Sénégal"
-    },
-    "capital": {
-      "fr": "Dakar"
     }
   },
   {
@@ -2052,205 +2254,6 @@
     },
     "capital": {
       "fr": "Harare"
-    }
-  },
-  {
-    "id": "eg",
-    "country": {
-      "fr": "Égypte"
-    },
-    "capital": {
-      "fr": "Le Caire"
-    },
-    "wikipedia": {
-      "fr": "4011"
-    }
-  },
-  {
-    "id": "ae",
-    "country": {
-      "fr": "Émirats Arabes Unis"
-    },
-    "capital": {
-      "fr": "Abou Dabi"
-    }
-  },
-  {
-    "id": "ec",
-    "country": {
-      "fr": "Équateur"
-    },
-    "capital": {
-      "fr": "Quito"
-    }
-  },
-  {
-    "id": "er",
-    "country": {
-      "fr": "Érythrée"
-    },
-    "capital": {
-      "fr": "Asmara"
-    }
-  },
-  {
-    "id": "us",
-    "country": {
-      "fr": "États-Unis"
-    },
-    "capital": {
-      "fr": "Washington D.C."
-    }
-  },
-  {
-    "id": "et",
-    "country": {
-      "fr": "Éthiopie"
-    },
-    "capital": {
-      "fr": "Addis-Abeba"
-    }
-  },
-  {
-    "id": "cx",
-    "country": {
-      "fr": "Île Christmas"
-    },
-    "capital": {
-      "fr": "Flying Fish Cove"
-    }
-  },
-  {
-    "id": "nf",
-    "country": {
-      "fr": "Île Norfolk"
-    },
-    "capital": {
-      "fr": "Kingston"
-    }
-  },
-  {
-    "id": "im",
-    "country": {
-      "fr": "Île de Man"
-    },
-    "capital": {
-      "fr": "Douglas"
-    }
-  },
-  {
-    "id": "ky",
-    "country": {
-      "fr": "Îles Caïmans"
-    },
-    "capital": {
-      "fr": "George Town"
-    }
-  },
-  {
-    "id": "cc",
-    "country": {
-      "fr": "Îles Cocos"
-    },
-    "capital": {
-      "fr": "West Island"
-    }
-  },
-  {
-    "id": "ck",
-    "country": {
-      "fr": "Îles Cook"
-    },
-    "capital": {
-      "fr": "Avarua"
-    }
-  },
-  {
-    "id": "fo",
-    "country": {
-      "fr": "Îles Féroé"
-    },
-    "capital": {
-      "fr": "Tórshavn"
-    }
-  },
-  {
-    "id": "fk",
-    "country": {
-      "fr": "Îles Malouines"
-    },
-    "capital": {
-      "fr": "Port Stanley"
-    }
-  },
-  {
-    "id": "mh",
-    "country": {
-      "fr": "Îles Marshall"
-    },
-    "capital": {
-      "fr": "Delap-Uliga-Darrit"
-    }
-  },
-  {
-    "id": "um",
-    "country": {
-      "fr": "Îles Mineures éloignées des États-Unis"
-    },
-    "capital": {}
-  },
-  {
-    "id": "pn",
-    "country": {
-      "fr": "Îles Pitcairn"
-    },
-    "capital": {
-      "fr": "Adamstown"
-    }
-  },
-  {
-    "id": "sb",
-    "country": {
-      "fr": "Îles Salomon"
-    },
-    "capital": {
-      "fr": "Honiara"
-    }
-  },
-  {
-    "id": "tc",
-    "country": {
-      "fr": "Îles Turques-et-Caïques"
-    },
-    "capital": {
-      "fr": "Cockburn Town"
-    }
-  },
-  {
-    "id": "vg",
-    "country": {
-      "fr": "Îles Vierges Britanniques"
-    },
-    "capital": {
-      "fr": "Road Town"
-    }
-  },
-  {
-    "id": "vi",
-    "country": {
-      "fr": "Îles Vierges des États-Unis"
-    },
-    "capital": {
-      "fr": "Charlotte Amélie"
-    }
-  },
-  {
-    "id": "ax",
-    "country": {
-      "fr": "Îles Åland"
-    },
-    "capital": {
-      "fr": "Mariehamn"
     }
   }
 ]
