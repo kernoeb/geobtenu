@@ -94,7 +94,7 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
-      <template #append>
+      <!--      <template #append>
         <div class="pa-2 d-flex align-center justify-center">
           <v-btn
             :dark="!$vuetify.theme.dark"
@@ -107,7 +107,7 @@
             {{ $vuetify.theme.dark ? 'Thème blanc' : 'Thème noir' }}
           </v-btn>
         </div>
-      </template>
+      </template>-->
     </v-navigation-drawer>
     <v-app-bar
       app
@@ -176,18 +176,18 @@ export default {
     }
   },
   mounted () {
-    if (this.$cookies.get('theme') !== undefined) {
+    /* if (this.$cookies.get('theme') !== undefined) {
       this.$vuetify.theme.dark = this.$cookies.get('theme')
-    }
-    this.$watch('$vuetify.theme.dark', this.watchTheme)
+    } */
+    // this.$watch('$vuetify.theme.dark', this.watchTheme)
   },
   methods: {
     randomCountry () {
       return countries[Math.floor(Math.random() * countries.length)].id
-    },
-    watchTheme () {
-      this.$cookies.set('theme', this.$vuetify.theme.dark)
     }
+    /* watchTheme () {
+      this.$cookies.set('theme', this.$vuetify.theme.dark)
+    } */
   }
 }
 </script>
