@@ -173,7 +173,11 @@ export default {
       return content.continent[continent][this.lang] + ' (' + continent + ')'
     },
     getHemisphere (hemisphere) {
-      return content.hemisphere[hemisphere][this.lang]
+      const tmp = []
+      for (const i of hemisphere.split(',')) {
+        tmp.push(content.hemisphere[i.trim()][this.lang])
+      }
+      return tmp.join(', ')
     },
     getTraffic (traffic) {
       return content.traffic[traffic][this.lang]
