@@ -176,23 +176,12 @@ export default {
     }
   },
   mounted () {
-    this.checkUpdate()
     if (this.$cookies.get('theme') !== undefined) {
       this.$vuetify.theme.dark = this.$cookies.get('theme')
     }
     this.$watch('$vuetify.theme.dark', this.watchTheme)
   },
   methods: {
-    async checkUpdate () {
-      const workbox = await window.$workbox
-      if (workbox) {
-        workbox.addEventListener('installed', (event) => {
-          if (event.isUpdate) {
-            window.location.reload(true)
-          }
-        })
-      }
-    },
     randomCountry () {
       return countries[Math.floor(Math.random() * countries.length)].id
     },
