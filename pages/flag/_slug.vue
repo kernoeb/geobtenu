@@ -14,20 +14,14 @@
           </h4>
         </div>
         <div class="d-flex justify-center">
-          <v-img
-            :src="require(`../../assets/flags/png/${$route.params.slug}.png`)"
-            class="rounded"
-            max-width="200"
-            min-height="140"
-          >
-            <template #placeholder>
-              <v-skeleton-loader
-                height="140"
-                type="image"
-                width="200"
-              />
-            </template>
-          </v-img>
+          <div style="display: inline-block; max-width: 200px; max-height: 200px;">
+            <v-img
+              :src="require(`../../assets/flags/png/${$route.params.slug}.png`)"
+              class="rounded"
+              max-width="100%"
+              height="auto"
+            />
+          </div>
         </div>
       </div>
 
