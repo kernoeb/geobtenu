@@ -35,3 +35,9 @@ Le français est une langue indo-européenne de la famille des langues romanes d
 ![delinateurs_france1](https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/D%C3%A9lin%C3%A9ateurs.JPG/1200px-D%C3%A9lin%C3%A9ateurs.JPG)
 [![delinateurs_france2](https://images.prismic.io/ornikar/4f02ae7fc415138dff86ef8a0eb817940643ed8e_balise-signalisation-bord-route.jpg?auto=compress,format)](https://www.ornikar.com/code/cours/signalisation/verticale/balise-signalisation)  
 *Source : ornikar.com*
+
+#### Ressources vidéos (par Amire)
+
+<iframe width="400" height="225" src="https://www.youtube-nocookie.com/embed/H5eHL35DbNk" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+<iframe width="400" height="225" src="https://www.youtube-nocookie.com/embed/30p7YN0Cn4w" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+<iframe width="400" height="225" src="https://www.youtube-nocookie.com/embed/-qB3n3GPZ0w" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

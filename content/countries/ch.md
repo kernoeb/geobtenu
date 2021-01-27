@@ -17,10 +17,11 @@ traffic: R
 # Langue
 
 [Page wikipédia : Langues en Suisse](https://fr.wikipedia.org/wiki/Langues_en_Suisse)  
-[YouTube / Le Grand JD (0:28)](https://youtu.be/BJEXZlLhJTU?t=28)
 
-[![langues_suisse](https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Carte_zones_linguistiques_en_suisse.png/1920px-Carte_zones_linguistiques_en_suisse.png)](https://fr.wikipedia.org/wiki/Langues_en_Suisse)
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BJEXZlLhJTU?start=29" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<br/>
+<br/>
 
 # Reconnaître le pays / Métas
 
