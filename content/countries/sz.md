@@ -34,8 +34,9 @@ Le swati (appelé siSwati dans la langue elle-même, isiSwazi en zoulou) est une
 # Reconnaître le pays / Métas
 
 - Soleil au nord + anglais + roule à gauche  
-  *(Valide aussi pour [Afrique du Sud](/flag/za), [Botswana](/flag/bw), [Lesotho](/flag/ls), [Australie](/flag/au) et [Nouvelle Zélande](/flag/nz)*
+  *(Valide aussi pour [Afrique du Sud](/flag/za), [Botswana](/flag/bw), [Lesotho](/flag/ls), [Australie](/flag/au) et [Nouvelle Zélande](/flag/nz))*
 - Petites collines enherbées  
   ![meta1](/images/sz_geoguessr.png)
 - Arrière de la Google car blanche pas nette  
-  *(comme au [Botswana](/flag/bw) et [Lesotho](/flag/ls))*
+  *(comme au [Botswana](/flag/bw) et [Lesotho](/flag/ls))*  
+  ![meta2](/images/sz_geoguessr2.png)
