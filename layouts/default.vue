@@ -42,6 +42,14 @@
             />
           </v-list-item-content>
         </v-list-item>
+        <v-list-item :href="`/flag/${randomCountry()}/`">
+          <v-list-item-action>
+            <v-icon>mdi-map-marker-circle</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title style="font-size: 13px" v-text="'Pays aléatoire'" />
+          </v-list-item-content>
+        </v-list-item>
         <v-divider />
         <v-list-item href="https://fr.wikipedia.org/wiki/Sens_de_circulation_(route)" target="_blank">
           <v-list-item-action>
@@ -52,36 +60,12 @@
           </v-list-item-content>
         </v-list-item>
         <v-divider />
-        <v-list-item href="https://docs.google.com/spreadsheets/d/1SUcuQkmDgVZMqNLe7XuNEhmJulonpnSQuSiJAOqfhtY" target="_blank">
+        <v-list-item v-for="(d, index) in itemsMenu" :key="`itemsmenu_${index}`" :href="d.href" target="_blank">
           <v-list-item-action>
-            <v-icon>mdi-camera</v-icon>
+            <v-icon>{{ d.icon }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title style="font-size: 13px" v-text="'Générations de caméras'" />
-          </v-list-item-content>
-        </v-list-item>
-        <v-list-item href="https://docs.google.com/spreadsheets/d/1x7SfoMvNILkkzT8feYqgku0qaiI-UcVvC2YfPIIvG-g" target="_blank">
-          <v-list-item-action>
-            <v-icon>mdi-google-spreadsheet</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title style="font-size: 13px" v-text="'Geo-Astuces par Redneho'" />
-          </v-list-item-content>
-        </v-list-item>
-        <v-list-item href="https://docs.google.com/document/d/1mkof2V97hVqlDsG0NrJKOJLMC40-5BHvMVDQgj4Qvu8" target="_blank">
-          <v-list-item-action>
-            <v-icon>mdi-google-spreadsheet</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title style="font-size: 13px" v-text="'\'La Méta\' par Armire'" />
-          </v-list-item-content>
-        </v-list-item>
-        <v-list-item href="https://docs.google.com/spreadsheets/d/1eN1X7fa-zjR2AR2CUbb_KCjGfSWS2PZZocIqn_wtnxs" target="_blank">
-          <v-list-item-action>
-            <v-icon>mdi-google-spreadsheet</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title style="font-size: 13px" v-text="'Guess the country par Takamari'" />
+            <v-list-item-title style="font-size: 13px" v-text="d.text" />
           </v-list-item-content>
         </v-list-item>
         <v-divider />
@@ -152,27 +136,36 @@ export default {
   data () {
     return {
       drawer: false,
+      itemsMenu: [
+        {
+          href: 'https://docs.google.com/spreadsheets/d/1SUcuQkmDgVZMqNLe7XuNEhmJulonpnSQuSiJAOqfhtY',
+          icon: 'mdi-camera',
+          text: 'Générations de caméras'
+        },
+        {
+          href: 'https://docs.google.com/spreadsheets/d/1x7SfoMvNILkkzT8feYqgku0qaiI-UcVvC2YfPIIvG-g',
+          icon: 'mdi-google-spreadsheet',
+          text: 'Geo-Astuces (Redneho)'
+        },
+        {
+          href: 'https://docs.google.com/document/d/1mkof2V97hVqlDsG0NrJKOJLMC40-5BHvMVDQgj4Qvu8',
+          icon: 'mdi-google-spreadsheet',
+          text: 'La Méta (Armire)'
+        },
+        {
+          href: 'https://docs.google.com/spreadsheets/d/1eN1X7fa-zjR2AR2CUbb_KCjGfSWS2PZZocIqn_wtnxs',
+          icon: 'mdi-google-spreadsheet',
+          text: 'Guess The Country (LeTakamari)'
+        }
+      ],
       items: [
         {
           icon: 'mdi-home',
           title: 'Accueil',
           to: '/'
-        },
-        {
-          icon: 'mdi-map-marker-circle',
-          title: 'Pays aléatoire',
-          to: {
-            name: 'flag-slug',
-            params: { slug: this.randomCountry() }
-          }
         }
       ],
       title: 'GÉOBTENU'
-    }
-  },
-  watch: {
-    '$route' () {
-      this.items[1].to.params.slug = this.randomCountry()
     }
   },
   mounted () {
