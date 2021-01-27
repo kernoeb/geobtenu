@@ -130,7 +130,7 @@
 </template>
 
 <script>
-import countries from '~/assets/countries.json'
+import finished from '~/assets/finished.json'
 
 export default {
   data () {
@@ -176,7 +176,7 @@ export default {
   },
   methods: {
     randomCountry () {
-      return countries[Math.floor(Math.random() * countries.length)].id
+      return finished[Math.floor(Math.random() * finished.length)]
     }
     /* watchTheme () {
       this.$cookies.set('theme', this.$vuetify.theme.dark)
