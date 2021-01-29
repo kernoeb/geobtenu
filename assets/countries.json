@@ -94,7 +94,10 @@
     "country": {
       "fr": "Antarctique"
     },
-    "capital": {}
+    "capital": {},
+    "wikipedia": {
+      "fr": "3028510"
+    }
   },
   {
     "id": "ag",
