@@ -34,7 +34,7 @@
                 height="170"
               >
                 <a :href="`/flag/${value.id}/`" class="noDecoration">
-                  <FlagCard :lang="lang" :value="value" />
+                  <FlagCard :lang="lang" :value="value" :finished="isFinished(value.id)" />
                 </a>
               </v-lazy>
             </v-col>
@@ -83,6 +83,9 @@ export default {
     }
   },
   methods: {
+    isFinished (id) {
+      return finished.includes(id)
+    },
     filterFinish (d) {
       if (this.finishedCountries) { return d.filter(c => finished.includes(c.id)) } else { return d }
     },

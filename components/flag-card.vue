@@ -1,6 +1,7 @@
 <template>
   <v-card v-if="value">
     <v-img
+      :style="!finished ? 'opacity: 0.5' : null"
       :src="require(`~/assets/flags/png/${value.id}.png`)"
       class="flag"
       gradient="to top left, rgba(100,115,201,.33), rgba(25,32,72,.7)"
@@ -27,6 +28,10 @@ export default {
     lang: {
       type: String,
       default: 'fr'
+    },
+    finished: {
+      type: Boolean,
+      default: true
     }
   }
 }
