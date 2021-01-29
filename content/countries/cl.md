@@ -33,6 +33,7 @@ Et = y
 
 # Reconnaître le pays / Métas
 
+- Les routes sont classées dans l'ordre alphabétique + numéro croissant
 - Soleil au nord + parle espagnol  
   *(Valable pour tous les pays d’Amérique du Sud sous l’équateur, sauf le Brésil)*
 - Plaques de rues noires. Flèches indiquant les sens de circulation à gauche dans un cadre distinct de celui du nom de la rue.  
