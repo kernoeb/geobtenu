@@ -38,25 +38,21 @@ Et = y
 
 # Reconnaître le pays / Métas
 
-- **Plaques d’immatriculations avec un point noir central (plaques noires floutées)**
+- **Plaques d’immatriculations avec un point noir central (plaques noires floutées)**  
+  ![meta1](/images/ar_geoguessr.png)  
+  ![meta1.1](/images/ar_geoguessr2.png)
 
-![meta1](/images/ar_geoguessr.png)  
-![meta1.1](/images/ar_geoguessr2.png)
+- **Buenos Aires**  
+  ![meta2](/images/ar_geoguessr3.png)
 
-- **Buenos Aires**
-
-```
-Panneaux de rue noirs en un seul bloc avec :
+**Panneaux de rue noirs en un seul bloc avec :**
 1) Le nom de la rue en première ligne
 2) Des numéros en dernière ligne
-3) (optionnel) un nom de "Comuna" en dessous
-```
+3) *(optionnel)* un nom de "Comuna" en dessous
 
-![meta2](/images/ar_geoguessr3.png)
+<br/>
 
-- **Arrière** de la Google Car **noire** (majoritaire) ou **bleue** (minoritaire)
-  
-![meta2](/images/ar_geoguessr4.png)  
-_Note : Arrière noir aussi en [Uruguay](/flag/uy)_
-
-![meta2](/images/ar_geoguessr5.png)  
+- **Arrière** de la Google Car **noire** (majoritaire) ou **bleue** (minoritaire)  
+  ![meta2](/images/ar_geoguessr4.png)  
+  _Note : Arrière noir aussi en [Uruguay](/flag/uy)_  
+  ![meta2](/images/ar_geoguessr5.png)  
