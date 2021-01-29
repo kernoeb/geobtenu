@@ -39,10 +39,8 @@ Aéroport : Aeroport
 
 # Reconnaître le pays / Métas
 
-- Paysages montagneux
+- Paysages montagneux  
+  ![meta1](/images/ad_geoguessr.png)
 
-![meta1](/images/ad_geoguessr.png)
-
-- [Plaques d’immatriculations](https://fr.wikipedia.org/wiki/Plaque_d%27immatriculation_andorrane) sans liseré européen avec un petit carré jaune (les armoiries) en haut à gauche
-
-![meta2](/images/ad_geoguessr2.png)
+- [Plaques d’immatriculations](https://fr.wikipedia.org/wiki/Plaque_d%27immatriculation_andorrane) sans liseré européen avec un petit carré jaune (les armoiries) en haut à gauche  
+  ![meta2](/images/ad_geoguessr2.png)
