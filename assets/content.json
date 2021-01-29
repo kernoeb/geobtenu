@@ -113,6 +113,9 @@
     },
     "swe": {
       "fr": "Suédois"
+    },
+    "gre": {
+      "fr": "Grec"
     }
   },
   "alphabet": {
@@ -133,6 +136,9 @@
     },
     "ara": {
       "fr": "Arabe"
+    },
+    "gre": {
+      "fr": "Grec"
     }
   }
 }
