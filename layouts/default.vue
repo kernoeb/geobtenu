@@ -69,7 +69,7 @@
           </v-list-item-content>
         </v-list-item>
         <v-divider />
-        <v-list-item to="/credits">
+        <v-list-item to="/credits/">
           <v-list-item-action>
             <v-icon>mdi-information</v-icon>
           </v-list-item-action>
