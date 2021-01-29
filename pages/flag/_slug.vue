@@ -4,7 +4,7 @@
       <div class="mb-3">
         <div style="text-align: center">
           <h1 class="slugTitle d-flex justify-center">
-            {{ article.title.split('|')[0] }}
+            {{ article && article.title && article.title.split('|')[0] }}
           </h1>
           <h5 v-if="article.title.split('|').length > 1" class="d-flex mb-2 justify-center grey--text">
             {{ article.title.split('|').slice(1).join(', ') }}

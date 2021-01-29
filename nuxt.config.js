@@ -23,6 +23,10 @@ export default {
     fallback: false
   },
 
+  plausible: {
+    apiHost: 'https://plausible.noewen.com'
+  },
+
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     titleTemplate: '%s - Géobtenu',
