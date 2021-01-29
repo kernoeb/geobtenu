@@ -1,7 +1,7 @@
 <template>
   <v-card v-if="value">
     <v-img
-      :src="require(`../assets/flags/png/${value.id}.png`)"
+      :src="require(`~/assets/flags/png/${value.id}.png`)"
       class="flag"
       gradient="to top left, rgba(100,115,201,.33), rgba(25,32,72,.7)"
       height="180"

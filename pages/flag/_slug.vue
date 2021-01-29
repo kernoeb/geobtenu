@@ -15,12 +15,13 @@
         </div>
         <div class="d-flex justify-center">
           <div style="display: inline-block; max-width: 200px; max-height: 200px;">
-            <v-img
-              :src="require(`../../assets/flags/png/${$route.params.slug}.png`)"
+            <img
+              :src="require(`~/assets/flags/png/${$route.params.slug}.png`)"
               class="rounded"
-              max-width="100%"
+              style="max-width: 100%"
               height="auto"
-            />
+              alt="flag"
+            >
           </div>
         </div>
       </div>

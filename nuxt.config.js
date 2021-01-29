@@ -20,7 +20,7 @@ export default {
 
   generate: {
     routes: t,
-    fallback: true
+    fallback: false
   },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
