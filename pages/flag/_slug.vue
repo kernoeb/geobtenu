@@ -120,7 +120,7 @@
         </v-col>
       </v-row>
     </v-container>
-    <v-speed-dial
+    <!--    <v-speed-dial
       v-model="fab"
       style="margin-bottom: 22px"
       fixed
@@ -176,7 +176,7 @@
       right
     >
       Copié dans le presse-papier avec succès !
-    </v-snackbar>
+    </v-snackbar>-->
   </article>
 </template>
 
@@ -211,10 +211,12 @@ export default {
       const id = c.wikipedia && c.wikipedia[this.lang]
 
       if (id) {
-        this.wiki = (await this.$axios.$get(`https://${this.lang}.wikipedia.org/w/api.php?format=json` +
-          `&prop=extracts&action=query&exintro&explaintext&redirects=1&pageids=${id}&origin=*`))
+        const url = `https://${this.lang}.wikipedia.org/w/api.php?format=json&action=query`
+        const pageId = `&pageids=${id}`
+        this.wiki = (await this.$axios.$get(`${url}&prop=extracts&exintro&explaintext&redirects=1${pageId}`))
           .query.pages[id].extract
-        this.link = (await this.$axios.$get(`https://${this.lang}.wikipedia.org/w/api.php?action=query&prop=info&pageids=${id}&inprop=url&format=json`)).query.pages[id].fullurl
+        this.link = (await this.$axios.$get(`${url}&prop=info&inprop=url${pageId}`))
+          .query.pages[id].fullurl
       }
     }
   },
