@@ -1,4 +1,7 @@
 {
+  "urls": {
+    "maps": "https://www.google.com/maps/place/"
+  },
   "traffic": {
     "L": {
       "fr": "Gauche"
@@ -131,6 +134,9 @@
     },
     "hun": {
       "fr": "Hongrois"
+    },
+    "ind": {
+      "fr": "Indonésien"
     }
   },
   "alphabet": {

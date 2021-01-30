@@ -1,128 +1,183 @@
 <template>
-  <transition name="fade">
-    <article v-if="article">
-      <div class="mb-3">
-        <div style="text-align: center">
-          <h1 class="slugTitle d-flex justify-center">
-            {{ article && article.title && article.title.split('|')[0] }}
-          </h1>
-          <h5 v-if="article.title.split('|').length > 1" class="d-flex mb-2 justify-center grey--text">
-            {{ article.title.split('|').slice(1).join(', ') }}
-          </h5>
-          <h4 class="d-flex justify-center mb-2">
-            {{ getCapital() }}
-          </h4>
-        </div>
-        <div class="d-flex justify-center">
-          <div style="display: inline-block; max-width: 200px; max-height: 200px;">
-            <img
-              :src="require(`~/assets/flags/png/${$route.params.slug}.png`)"
-              class="rounded"
-              style="max-width: 100%"
-              height="auto"
-              alt="flag"
-            >
-          </div>
+  <article v-if="article">
+    <div class="mb-3">
+      <div style="text-align: center">
+        <h1 class="slugTitle d-flex justify-center">
+          {{ article && article.title && article.title.split('|')[0] }}
+        </h1>
+        <h5 v-if="article.title.split('|').length > 1" class="d-flex mb-2 justify-center grey--text">
+          {{ article.title.split('|').slice(1).join(', ') }}
+        </h5>
+        <h4 class="d-flex justify-center mb-2">
+          {{ getCapital() }}
+        </h4>
+      </div>
+      <div class="d-flex justify-center">
+        <div style="display: inline-block; max-width: 200px; max-height: 200px;">
+          <img
+            :src="require(`~/assets/flags/png/${$route.params.slug}.png`)"
+            class="rounded"
+            style="max-width: 100%"
+            height="auto"
+            alt="flag"
+          >
         </div>
       </div>
+    </div>
 
-      <v-container v-if="article">
-        <v-row style="justify-content: center">
-          <v-col
-            cols="12"
-            lg="8"
-            offset-lg="2"
-          >
-            <v-row align="center" class="mb-3" justify="center" style="justify-content: center">
-              <v-col>
-                <v-card class="rounded-xl">
-                  <v-card-title>Informations sur le pays</v-card-title>
-                  <v-card-text style="text-align: justify; font-size: 15px">
-                    <div v-if="article.domain">
-                      <b>Domaine :</b> .{{ article.domain }}
-                    </div>
-                    <div v-if="article.continent">
-                      <b>Continent :</b> {{ getContinent(article.continent) }}
-                    </div>
-                    <div v-if="article.hemisphere">
-                      <b>Hémisphère :</b> {{ getHemisphere(article.hemisphere) }}
-                    </div>
-                    <div v-if="article.languages">
-                      <b>Langues :</b> {{ getLanguage(article.languages) }}
-                    </div>
-                    <div v-if="article.alphabet">
-                      <b>Alphabet :</b> {{ getAlphabet(article.alphabet) }}
-                    </div>
-                    <div v-if="article.traffic">
-                      <b>Sens de circulation :</b> {{ getTraffic(article.traffic) }}
-                    </div>
-                    <div
-                      v-if="!(article.domain || article.continent || article.hemisphere || article.languages || article.alphabet || article.traffic)"
-                    >
-                      Aucune donnée n'a été saisie
-                    </div>
-                  </v-card-text>
-                </v-card>
-              </v-col>
-            </v-row>
-          </v-col>
-        </v-row>
-      </v-container>
+    <v-container v-if="article">
+      <v-row style="justify-content: center">
+        <v-col
+          cols="12"
+          lg="8"
+          offset-lg="2"
+        >
+          <v-row align="center" class="mb-3" justify="center" style="justify-content: center">
+            <v-col>
+              <v-card class="rounded-xl">
+                <v-card-title>Informations sur le pays</v-card-title>
+                <v-card-text style="text-align: justify; font-size: 15px">
+                  <div v-if="article.domain">
+                    <b>Domaine :</b> .{{ article.domain }}
+                  </div>
+                  <div v-if="article.continent">
+                    <b>Continent :</b> {{ getContinent(article.continent) }}
+                  </div>
+                  <div v-if="article.hemisphere">
+                    <b>Hémisphère :</b> {{ getHemisphere(article.hemisphere) }}
+                  </div>
+                  <div v-if="article.languages">
+                    <b>Langues :</b> {{ getLanguage(article.languages) }}
+                  </div>
+                  <div v-if="article.alphabet">
+                    <b>Alphabet :</b> {{ getAlphabet(article.alphabet) }}
+                  </div>
+                  <div v-if="article.traffic">
+                    <b>Sens de circulation :</b> {{ getTraffic(article.traffic) }}
+                  </div>
+                  <div
+                    v-if="!(article.domain || article.continent || article.hemisphere || article.languages || article.alphabet || article.traffic)"
+                  >
+                    Aucune donnée n'a été saisie
+                  </div>
+                </v-card-text>
+              </v-card>
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
+    </v-container>
 
-      <v-container v-if="wiki">
-        <v-row style="justify-content: center">
-          <v-col
-            cols="12"
-            lg="8"
-            offset-lg="2"
-          >
-            <v-row align="center" class="mb-3" justify="center" style="justify-content: center">
-              <v-col>
-                <v-card class="rounded-xl">
-                  <v-card-title>
-                    <span>Wikipédia </span>
-                    <v-btn v-if="link" target="_blank" icon :href="link" class="ml-1">
-                      <v-icon color="#00bfff">
-                        mdi-open-in-new
-                      </v-icon>
-                    </v-btn>
-                  </v-card-title>
-                  <v-card-text style="text-align: justify">
-                    {{ getWiki() }}<span v-if="!more && wiki.slice(0, length).length < wiki.length">...</span>
-                    <span
-                      v-if="wiki.slice(0, length).length < wiki.length"
-                      style="color: #00bfff; cursor: pointer"
-                      @click="more = !more"
-                    > {{ more ? 'Voir moins' : 'Voir plus' }}</span>
-                  </v-card-text>
-                </v-card>
-              </v-col>
-            </v-row>
-          </v-col>
-        </v-row>
-      </v-container>
+    <v-container v-if="wiki">
+      <v-row style="justify-content: center">
+        <v-col
+          cols="12"
+          lg="8"
+          offset-lg="2"
+        >
+          <v-row align="center" class="mb-3" justify="center" style="justify-content: center">
+            <v-col>
+              <v-card class="rounded-xl">
+                <v-card-title>
+                  <span>Wikipédia </span>
+                  <v-btn v-if="link" target="_blank" icon :href="link" class="ml-1">
+                    <v-icon color="#00bfff">
+                      mdi-open-in-new
+                    </v-icon>
+                  </v-btn>
+                </v-card-title>
+                <v-card-text style="text-align: justify">
+                  {{ getWiki() }}<span v-if="!more && wiki.slice(0, length).length < wiki.length">...</span>
+                  <span
+                    v-if="wiki.slice(0, length).length < wiki.length"
+                    style="color: #00bfff; cursor: pointer"
+                    @click="more = !more"
+                  > {{ more ? 'Voir moins' : 'Voir plus' }}</span>
+                </v-card-text>
+              </v-card>
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
+    </v-container>
 
-      <v-container v-if="article && article.body && article.body.children && article.body.children.length">
-        <v-row style="justify-content: center">
-          <v-col
-            cols="12"
-            lg="8"
-            offset-lg="2"
-          >
-            <v-card class="rounded-xl">
-              <v-card-text>
-                <nuxt-content
-                  :class="$vuetify.theme.dark ? 'blockquoteDark' : 'blockquoteLight'"
-                  :document="article"
-                  :style="$vuetify.theme.dark ? 'color: white' : 'color: black'"
-                />
-              </v-card-text>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-container>
-    </article>
-  </transition>
+    <v-container v-if="article && article.body && article.body.children && article.body.children.length">
+      <v-row style="justify-content: center">
+        <v-col
+          cols="12"
+          lg="8"
+          offset-lg="2"
+        >
+          <v-card class="rounded-xl">
+            <v-card-text>
+              <nuxt-content
+                :class="$vuetify.theme.dark ? 'blockquoteDark' : 'blockquoteLight'"
+                :document="article"
+                :style="$vuetify.theme.dark ? 'color: white' : 'color: black'"
+              />
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+    <v-speed-dial
+      v-model="fab"
+      style="margin-bottom: 22px"
+      fixed
+      absolute
+      bottom
+      right
+      direction="top"
+      open-on-hover
+      transition="slide-y-reverse-transition"
+    >
+      <template #activator>
+        <v-btn
+          v-model="fab"
+          color="blue darken-2"
+          dark
+          fab
+        >
+          <v-icon v-if="fab">
+            mdi-close
+          </v-icon>
+          <v-icon v-else>
+            mdi-tools
+          </v-icon>
+        </v-btn>
+      </template>
+      <v-btn
+        fab
+        dark
+        small
+        color="green"
+        @click="copyUrl()"
+      >
+        <v-icon>mdi-content-copy</v-icon>
+      </v-btn>
+      <v-btn
+        v-if="maps"
+        :href="maps"
+        target="_blank"
+        fab
+        dark
+        small
+        color="#4285f4"
+      >
+        <v-icon>mdi-google-maps</v-icon>
+      </v-btn>
+    </v-speed-dial>
+    <v-snackbar
+      :value="copied"
+      absolute
+      top
+      text
+      color="success"
+      right
+    >
+      Copié dans le presse-papier avec succès !
+    </v-snackbar>
+  </article>
 </template>
 
 <script>
@@ -138,7 +193,10 @@ export default {
       wiki: null,
       link: null,
       article: null,
-      length: 450
+      length: 450,
+      fab: false,
+      copied: false,
+      maps: null
     }
   },
   async fetch () {
@@ -146,6 +204,10 @@ export default {
 
     const c = countries.find(c => c.id === this.$route.params.slug)
     if (c) {
+      if (c.maps) {
+        this.maps = content.urls.maps + c.maps
+      }
+
       const id = c.wikipedia && c.wikipedia[this.lang]
 
       if (id) {
@@ -157,6 +219,20 @@ export default {
     }
   },
   methods: {
+    copyUrl () {
+      const dummy = document.createElement('input')
+      const text = window.location.href
+
+      document.body.appendChild(dummy)
+      dummy.value = text
+      dummy.select()
+      document.execCommand('copy')
+      document.body.removeChild(dummy)
+      this.copied = true
+      setTimeout(() => {
+        this.copied = false
+      }, 2500)
+    },
     getWiki () {
       if (this.more) {
         return this.wiki
