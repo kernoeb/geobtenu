@@ -220,6 +220,14 @@ export default {
       }
     }
   },
+  mounted () {
+    if (location.href.endsWith('/')) {
+      const tmp = this.$route.params.slug
+      this.$router.replace({ name: 'flag' }).then(() => {
+        this.$router.replace(`/flag/${tmp}`)
+      })
+    }
+  },
   methods: {
     copyUrl () {
       const dummy = document.createElement('input')
