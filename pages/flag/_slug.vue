@@ -120,7 +120,7 @@
         </v-col>
       </v-row>
     </v-container>
-    <!--    <v-speed-dial
+    <v-speed-dial
       v-model="fab"
       style="margin-bottom: 22px"
       fixed
@@ -176,7 +176,7 @@
       right
     >
       Copié dans le presse-papier avec succès !
-    </v-snackbar>-->
+    </v-snackbar>
   </article>
 </template>
 

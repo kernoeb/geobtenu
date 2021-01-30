@@ -14,13 +14,9 @@ export default {
   target: 'static',
   ssr: true,
 
-  router: {
-    trailingSlash: true
-  },
-
   generate: {
     routes: t,
-    fallback: false
+    fallback: true
   },
 
   plausible: {
@@ -124,7 +120,8 @@ export default {
                     'body',
                     'html',
                     'nuxt-progress',
-                    /col-*/ // enable if using v-col for layout
+                    /col-*/, // enable if using v-col for layout,
+                    /v-speed/
                   ],
                   deep: [
                     /page-enter/,
