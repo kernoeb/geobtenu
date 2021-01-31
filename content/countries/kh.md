@@ -30,7 +30,7 @@ traffic: R
 # Reconnaître le pays / Métas
 
 - Au milieu de rien, mais terre rouge  
-  *(Aussi au [Brésil](/flag/br), présence moindre en [Thaïlande](/flag/th) et dans les pays d’Afrique équatoriale)*
+  *(Aussi au [Brésil](/flag/br), présence moindre en [Thaïlande](/flag/th) et dans les pays d'Afrique équatoriale)*
 - Asie + Plaques blanches + Circule à droite
   
 ![meta1](/images/kh_geoguessr.png)

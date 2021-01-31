@@ -43,5 +43,5 @@ A a, Á á, B b, C c, Cs cs, D d, Dz dz, Dzs dzs, E e, É é, F f, G g, Gy gy, H
 
 - Pylônes électriques larges et troués  
   *(Vu aussi en Roumanie et en Pologne)*
-- Petit scotch noir sur l’antenne  
+- Petit scotch noir sur l'antenne  
   *(pas systématique, aussi en Roumanie, Pologne et Bulgarie)*

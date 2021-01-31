@@ -41,8 +41,8 @@ Vert clair : Pays où il n'a pas de statut officiel
 
 ![meta1](/images/bg_geoguessr3.png)
 
-- Drapeau de l’union européenne + **cyrillique** = Bulgarie  
-  *(Seul pays de l’UE à utiliser l’alphabet cyrillique)*
+- Drapeau de l'union européenne + **cyrillique** = Bulgarie  
+  *(Seul pays de l'UE à utiliser l'alphabet cyrillique)*
 
 ![meta2](/images/bg_geoguessr2.png) 
 

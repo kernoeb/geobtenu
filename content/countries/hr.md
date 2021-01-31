@@ -30,9 +30,9 @@ traffic: R
 
 - Reliefs au nord
 - Street view ancienne sans plaques européennes (vieilles voitures)  
-  *(Note : la Croatie est récemment entrée dans l’Union Européenne, donc méta peut-être temporaire)*
+  *(Note : la Croatie est récemment entrée dans l'Union Européenne, donc méta peut-être temporaire)*
   
 <br/>
 
 #### Zagreb :
-- Plaques d’immatriculations qui commencent par ZG (mais les plaques sont floutées 99 % du temps donc bon)
+- Plaques d'immatriculations qui commencent par ZG (mais les plaques sont floutées 99 % du temps donc bon)

@@ -39,7 +39,7 @@ Aéroport : Aeroporti
 
 # Reconnaître le pays / Métas
 
-- Plaques d’immatriculation européennes de taille normale avec 2 **liserés bleus aux extrémités** 
+- Plaques d'immatriculation européennes de taille normale avec 2 **liserés bleus aux extrémités** 
   _(Aussi en Italie, mais plaques plus étroites)_
 
 ![meta1](/images/al_geoguessr2.png)

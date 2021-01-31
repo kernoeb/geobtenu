@@ -33,7 +33,7 @@ Et = y
 # Reconnaître le pays / Métas
 
 - Soleil au nord + parle espagnol  
-  *(Valable pour tous les pays d’Amérique du Sud sous l’équateur, sauf le Brésil)*
+  *(Valable pour tous les pays d'Amérique du Sud sous l'équateur, sauf le Brésil)*
 - Grosses briques rouges  
   *(Aussi au Pérou)*
 - Pylônes de panneaux de signalisation : Base bleue, corps blanc

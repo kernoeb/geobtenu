@@ -49,7 +49,7 @@ traffic: R
 ![meta2.2](/images/es_geoguessr3.png)
 
 - Rue = Calle (aussi en Amérique Latine où l'Espagnol est la langue officielle)
-- Plaques d’immatriculation Européennes + Espagnol = Espagne
+- Plaques d'immatriculation Européennes + Espagnol = Espagne
 
   <br/>
 

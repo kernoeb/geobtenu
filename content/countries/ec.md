@@ -45,5 +45,5 @@ Et = y
   ![meta4.2](/images/ec_geoguessr2.png)
 
 #### Quito
-- Montagne à l’ouest
+- Montagne à l'ouest
 

@@ -38,7 +38,7 @@ Et = y
 
 # Reconnaître le pays / Métas
 
-- **Plaques d’immatriculations avec un point noir central (plaques noires floutées)**  
+- **Plaques d'immatriculations avec un point noir central (plaques noires floutées)**  
   ![meta1](/images/ar_geoguessr.png)  
   ![meta1.1](/images/ar_geoguessr2.png)
 
