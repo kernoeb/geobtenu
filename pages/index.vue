@@ -94,13 +94,13 @@ export default {
       return this.getCountries()
     }
   },
-  watch: {
-    search () {
-      window.scrollTo({ top: 0, behavior: 'smooth' })
-    }
-  },
   mounted () {
-    this.onResize()
+    setTimeout(() => {
+      this.onResize()
+      this.$watch('search', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      })
+    }, 15)
   },
   methods: {
     onResize () {
