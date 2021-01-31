@@ -318,6 +318,10 @@ export default {
   max-width: none !important;
 }
 
+.nuxt-content ol {
+  padding: revert;
+}
+
 .nuxt-content a {
   color: #00bfff;
 }
