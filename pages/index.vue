@@ -13,13 +13,17 @@
               class="d-block"
               color="green"
               overlap
+              offset-x="18"
             >
               <v-text-field
                 v-model="search"
+                clearable
+                clear-icon="mdi-close-circle"
                 hide-details
                 :append-icon="finishedCountries ? 'mdi-filter-off' : 'mdi-filter'"
                 outlined
                 placeholder="Rechercher un pays ou une capitale"
+                @click:click:clear="search = ''"
                 @click:append="finishedCountries = !finishedCountries"
               />
             </v-badge>

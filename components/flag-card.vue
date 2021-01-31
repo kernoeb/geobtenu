@@ -7,7 +7,7 @@
       gradient="to top left, rgba(100,115,201,.33), rgba(25,32,72,.7)"
       height="180"
     >
-      <v-card-title class="white--text">
+      <v-card-title class="white--text" style="word-break: break-word;">
         {{ value.country[lang].split('|')[0] }}
       </v-card-title>
       <v-card-subtitle v-if="value.capital[lang]" class="white--text">
