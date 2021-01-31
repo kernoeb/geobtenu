@@ -42,7 +42,7 @@
             />
           </v-list-item-content>
         </v-list-item>
-        <v-list-item :href="`/flag/${randomCountry()}`">
+        <v-list-item :href="`/flag/${randomCountry()}/`">
           <v-list-item-action>
             <v-icon>mdi-map-marker-circle</v-icon>
           </v-list-item-action>

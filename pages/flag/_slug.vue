@@ -185,7 +185,17 @@ const countries = require('~/assets/countries.json')
 const content = require('~/assets/content.json')
 
 export default {
-  transition: 'page',
+  transition (to, from) {
+    return 'page'
+    /* if ((to && to.params && to.params.noTransition) || (from && from.params && from.params.noTransition)) {
+      return {
+        name: 'noTransition',
+        duration: 0
+      }
+    } else {
+      return 'page'
+    } */
+  },
   data () {
     return {
       lang: 'fr',
@@ -220,12 +230,10 @@ export default {
       }
     }
   },
-  mounted () {
-    if (location.href.endsWith('/')) {
+  created () {
+    if (this.$route.path.endsWith('/')) {
       const tmp = this.$route.params.slug
-      this.$router.replace({ name: 'flag' }).then(() => {
-        this.$router.replace(`/flag/${tmp}`)
-      })
+      this.$router.replace({ path: `/flag/${tmp}#`, params: { noTransition: 'true' } })
     }
   },
   methods: {
@@ -364,6 +372,20 @@ export default {
 .page-enter, .page-leave-active {
   opacity: 0;
 }
+
+/*.noTransition-enter-active, .noTransition-leave-active {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+.noTransition-enter, .noTransition-leave-active {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}*/
 
 .fade-enter-active {
   transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
