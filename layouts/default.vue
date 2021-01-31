@@ -42,7 +42,7 @@
             />
           </v-list-item-content>
         </v-list-item>
-        <v-list-item :href="`/flag/${randomCountry()}/`">
+        <v-list-item :to="{name: 'flag-slug', params: {slug: randomCountryElement}}">
           <v-list-item-action>
             <v-icon>mdi-map-marker-circle</v-icon>
           </v-list-item-action>
@@ -165,7 +165,13 @@ export default {
           to: '/'
         }
       ],
-      title: 'GÉOBTENU'
+      title: 'GÉOBTENU',
+      randomCountryElement: this.randomCountry()
+    }
+  },
+  watch: {
+    '$route' () {
+      this.randomCountryElement = this.randomCountry()
     }
   },
   mounted () {
@@ -176,7 +182,11 @@ export default {
   },
   methods: {
     randomCountry () {
-      return finished[Math.floor(Math.random() * finished.length)]
+      let tmp = finished[Math.floor(Math.random() * finished.length)]
+      while (tmp === this.randomCountryElement) {
+        tmp = finished[Math.floor(Math.random() * finished.length)]
+      }
+      return tmp
     }
     /* watchTheme () {
       this.$cookies.set('theme', this.$vuetify.theme.dark)
