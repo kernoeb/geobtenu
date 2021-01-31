@@ -18,6 +18,14 @@ hemisphere: S
 
 #### Ressources vidéos
 
+<div class="video-responsive">
+<div>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bXBfuukv904" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
 
+<div class="video-responsive">
+<div>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7lAU8deAlJo" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>

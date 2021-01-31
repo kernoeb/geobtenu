@@ -298,6 +298,26 @@ export default {
 </script>
 
 <style>
+.video-responsive {
+  max-width: 560px;
+  margin-bottom: 5px;
+}
+
+.video-responsive div {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none !important;
+}
+
 .nuxt-content a {
   color: #00bfff;
 }
@@ -372,20 +392,6 @@ export default {
 .page-enter, .page-leave-active {
   opacity: 0;
 }
-
-/*.noTransition-enter-active, .noTransition-leave-active {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -o-transition: none !important;
-  transition: none !important;
-}
-
-.noTransition-enter, .noTransition-leave-active {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -o-transition: none !important;
-  transition: none !important;
-}*/
 
 .fade-enter-active {
   transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
