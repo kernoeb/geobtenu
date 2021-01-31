@@ -7,14 +7,23 @@
         offset-lg="2"
       >
         <v-row>
-          <v-text-field v-model="search" placeholder="Rechercher un pays ou une capitale" />
-          <v-btn
-            class="mt-4"
-            icon
-            @click="finishedCountries = !finishedCountries"
-          >
-            <v-icon>{{ finishedCountries ? 'mdi-filter-off' : 'mdi-filter' }}</v-icon>
-          </v-btn>
+          <v-col>
+            <v-badge
+              :content="countriesFiltered.length"
+              class="d-block"
+              color="green"
+              overlap
+            >
+              <v-text-field
+                v-model="search"
+                hide-details
+                :append-icon="finishedCountries ? 'mdi-filter-off' : 'mdi-filter'"
+                outlined
+                placeholder="Rechercher un pays ou une capitale"
+                @click:append="finishedCountries = !finishedCountries"
+              />
+            </v-badge>
+          </v-col>
         </v-row>
         <v-row
           align="center"
@@ -66,6 +75,11 @@ export default {
   },
   computed: {
     countriesFiltered () {
+      return this.getCountries()
+    }
+  },
+  methods: {
+    getCountries () {
       if (!this.search) {
         const c = this.countries
         for (let i = 0; i < 16; i++) {
@@ -80,9 +94,7 @@ export default {
           (country.capital[this.lang] && this.sanitize(country.capital[this.lang]).includes(this.sanitize(this.search))))
         return this.filterFinish(tmp)
       }
-    }
-  },
-  methods: {
+    },
     isFinished (id) {
       return finished.includes(id)
     },
