@@ -5,12 +5,13 @@
         cols="12"
         lg="8"
         offset-lg="2"
+        class="mt-5"
       >
         <v-row
           align="center"
           justify="center"
         >
-          Merci à&nbsp;<a target="_blank" href="https://www.twitch.tv/armire37">Armire</a>,&nbsp;<a target="_blank" href="https://www.twitch.tv/letakamari">Takamari</a>,&nbsp;<a target="_blank" href="https://www.twitch.tv/jussetain">Jussetain</a>, Google et Wikipédia
+          Merci à&nbsp;<a target="_blank" href="https://www.twitch.tv/armire37">Armire</a>,&nbsp;<a target="_blank" href="https://www.twitch.tv/letakamari">Takamari</a>,&nbsp;<a target="_blank" href="https://www.twitch.tv/jussetain">Jussetain</a>, Google et Wikipédia pour les informations et métas !
         </v-row>
         <v-row align="center" justify="center" class="title mb-3">
           Réalisé par&nbsp;<a target="_blank" href="https://www.twitter.com/kernoeb">@kernoeb</a>

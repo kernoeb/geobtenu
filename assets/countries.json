@@ -969,7 +969,11 @@
     },
     "capital": {
       "fr": "Tórshavn"
-    }
+    },
+    "wikipedia": {
+      "fr": "71906"
+    },
+    "maps": "Faroe+Islands/@62.0697675,-6.9653959,9z"
   },
   {
     "id": "fk",
@@ -1181,7 +1185,11 @@
     },
     "capital": {
       "fr": "Nairobi"
-    }
+    },
+    "wikipedia": {
+      "fr": "1693"
+    },
+    "maps": "Kenya/@0.1544419,35.6644088,7z"
   },
   {
     "id": "kg",
