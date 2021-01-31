@@ -8,26 +8,29 @@
       >
         <v-row>
           <v-col style="position: fixed; z-index: 50;" :style="width">
-            <v-badge
-              :content="countriesFiltered.length"
-              class="d-block"
-              color="green"
-              overlap
-              offset-x="18"
-            >
-              <v-text-field
-                v-model="search"
-                background-color="#121212"
-                clearable
-                clear-icon="mdi-close-circle"
-                hide-details
-                :append-icon="finishedCountries ? 'mdi-filter-off' : 'mdi-filter'"
-                outlined
-                placeholder="Rechercher un pays ou une capitale"
-                @click:click:clear="search = ''"
-                @click:append="finishedCountries = !finishedCountries"
-              />
-            </v-badge>
+            <transition name="fade">
+              <v-badge
+                v-if="width"
+                :content="countriesFiltered.length"
+                class="d-block"
+                color="green"
+                overlap
+                offset-x="18"
+              >
+                <v-text-field
+                  v-model="search"
+                  background-color="#121212"
+                  clearable
+                  clear-icon="mdi-close-circle"
+                  hide-details
+                  :append-icon="finishedCountries ? 'mdi-filter-off' : 'mdi-filter'"
+                  outlined
+                  placeholder="Rechercher un pays ou une capitale"
+                  @click:click:clear="search = ''"
+                  @click:append="finishedCountries = !finishedCountries"
+                />
+              </v-badge>
+            </transition>
           </v-col>
         </v-row>
         <v-row
@@ -78,7 +81,7 @@ export default {
       countries,
       search: null,
       finishedCountries: false,
-      width: 0
+      width: null
     }
   },
   head: {
@@ -139,6 +142,13 @@ export default {
 </style>
 
 <style scoped>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
 .justifyCenter {
   justify-content: center
 }
