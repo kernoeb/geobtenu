@@ -7,7 +7,7 @@
         offset-lg="2"
       >
         <v-row>
-          <v-col>
+          <v-col style="position: fixed; z-index: 50;" :style="width">
             <v-badge
               :content="countriesFiltered.length"
               class="d-block"
@@ -17,6 +17,7 @@
             >
               <v-text-field
                 v-model="search"
+                background-color="#121212"
                 clearable
                 clear-icon="mdi-close-circle"
                 hide-details
@@ -30,10 +31,12 @@
           </v-col>
         </v-row>
         <v-row
+          v-resize="onResize"
+          style="margin-top: 100px;"
           align="center"
           justify="center"
         >
-          <transition-group class="row justifyCenter" name="flip-list">
+          <transition-group id="vRowFlags" class="row justifyCenter" name="flip-list">
             <v-col
               v-for="value in countriesFiltered"
               :key="`flag_${value.id}`"
@@ -74,7 +77,13 @@ export default {
       lang: 'fr',
       countries,
       search: null,
-      finishedCountries: false
+      finishedCountries: false,
+      width: 0
+    }
+  },
+  head: {
+    bodyAttrs: {
+      class: 'bgColor'
     }
   },
   computed: {
@@ -82,7 +91,18 @@ export default {
       return this.getCountries()
     }
   },
+  watch: {
+    search () {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  },
+  mounted () {
+    this.onResize()
+  },
   methods: {
+    onResize () {
+      this.width = `width: ${document.getElementById('vRowFlags').offsetWidth - 30}px`
+    },
     getCountries () {
       if (!this.search) {
         const c = this.countries
@@ -111,6 +131,12 @@ export default {
   }
 }
 </script>
+
+<style>
+.bgColor {
+  background-color: #121212;
+}
+</style>
 
 <style scoped>
 .justifyCenter {

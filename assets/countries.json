@@ -1389,7 +1389,11 @@
     },
     "capital": {
       "fr": "La Valette"
-    }
+    },
+    "wikipedia": {
+      "fr": "2995456"
+    },
+    "maps": "Malta/@35.9421244,14.098163,10z"
   },
   {
     "id": "mp",

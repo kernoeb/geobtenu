@@ -343,8 +343,14 @@ export default {
 }
 
 .nuxt-content img {
-  max-width: 60%;
+  max-width: 70%;
   margin-top: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .nuxt-content img {
+    max-width: 85%;
+  }
 }
 
 .blockquoteDark pre {
