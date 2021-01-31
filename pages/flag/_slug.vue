@@ -128,7 +128,7 @@
       bottom
       right
       direction="top"
-      open-on-hover
+      :open-on-hover="!$vuetify.breakpoint.mobile"
       transition="slide-y-reverse-transition"
     >
       <template #activator>
