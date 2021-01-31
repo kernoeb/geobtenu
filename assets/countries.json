@@ -1088,7 +1088,11 @@
     },
     "capital": {
       "fr": "Dublin"
-    }
+    },
+    "wikipedia": {
+      "fr": "14241"
+    },
+    "maps": "Ireland/@53.3623926,-10.4597321,7z"
   },
   {
     "id": "is",
