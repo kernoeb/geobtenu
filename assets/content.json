@@ -140,6 +140,9 @@
     },
     "gle": {
       "fr": "Irlandais"
+    },
+    "jpn": {
+      "fr": "Japonais"
     }
   },
   "alphabet": {
@@ -163,6 +166,9 @@
     },
     "gre": {
       "fr": "Grec"
+    },
+    "jpn": {
+      "fr": "Japonais"
     }
   }
 }
