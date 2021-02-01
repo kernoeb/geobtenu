@@ -32,6 +32,7 @@ Letton :
 
 # Reconnaître le pays / Métas
 
+- LV : Latvija (rip le V)
 - Rue = **iela**  
   ![meta](/images/lv_geoguessr.png)
   
