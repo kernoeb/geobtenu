@@ -2,6 +2,7 @@
   <v-app dark>
     <v-navigation-drawer
       v-model="drawer"
+      style="z-index: 100"
       width="300"
       app
       clipped
@@ -69,7 +70,7 @@
           </v-list-item-content>
         </v-list-item>
         <v-divider />
-        <v-list-item to="/credits/">
+        <v-list-item to="/credits">
           <v-list-item-action>
             <v-icon>mdi-information</v-icon>
           </v-list-item-action>
