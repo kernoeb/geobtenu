@@ -1,5 +1,20 @@
 <template>
   <v-container>
+    <transition name="fade">
+      <v-btn
+        v-if="showS2T"
+        absolute
+        fixed
+        small
+        style="margin-bottom: 58px"
+        bottom
+        right
+        fab
+        @click="scrollToTop()"
+      >
+        <v-icon>mdi-arrow-up</v-icon>
+      </v-btn>
+    </transition>
     <v-row :class="productionMode ? 'justifyCenter' : null">
       <v-col
         cols="12"
@@ -27,7 +42,7 @@
                   outlined
                   placeholder="Rechercher un pays ou une capitale"
                   @click:click:clear="search = ''"
-                  @click:append="finishedCountries = !finishedCountries"
+                  @click:append="finishedCountries = !finishedCountries; scrollToTop()"
                 />
               </v-badge>
             </transition>
@@ -81,7 +96,8 @@ export default {
       countries,
       search: null,
       finishedCountries: false,
-      width: null
+      width: null,
+      showS2T: false
     }
   },
   head: {
@@ -97,15 +113,21 @@ export default {
       return process.env.NODE_ENV === 'production'
     }
   },
+  watch: {
+    search () {
+      this.scrollToTop()
+    }
+  },
   mounted () {
-    setTimeout(() => {
-      this.onResize()
-      this.$watch('search', function () {
-        window.scrollTo({ top: 0, behavior: 'smooth' })
-      })
-    }, 15)
+    window.onscroll = () => {
+      this.showS2T = document.documentElement.scrollTop > 240
+    }
+    this.onResize()
   },
   methods: {
+    scrollToTop () {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    },
     onResize () {
       this.width = `width: ${document.getElementById('vRowFlags').offsetWidth - 30}px`
     },
