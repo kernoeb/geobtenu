@@ -142,9 +142,17 @@ export default {
 .bgColor {
   background-color: #121212;
 }
+
+.v-input__icon--append > .v-icon {
+  color: purple;
+}
+.v-input__icon--append > .v-icon:hover {
+  color: deeppink;
+}
 </style>
 
 <style scoped>
+
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
 }

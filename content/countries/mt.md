@@ -24,7 +24,7 @@ traffic: L
 [Wikipédia : Maltais](https://fr.wikipedia.org/wiki/Maltais)  
 [Wikipédia : Alphabet Maltais](https://fr.wikipedia.org/wiki/Alphabet_maltais)
 
-<table>
+<table style="overflow-x: auto; max-width: 100%; display: inline-block; margin-bottom: 5px;">
 <tbody><tr>
 <td>A</td>
 <td>B</td>

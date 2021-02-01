@@ -1,6 +1,6 @@
 {
   "urls": {
-    "maps": "https://www.google.com/maps/place/"
+    "maps": "https://www.google.com/maps/search/?api=1&query="
   },
   "traffic": {
     "L": {
@@ -161,6 +161,12 @@
     },
     "mlt": {
       "fr": "Maltais"
+    },
+    "lav": {
+      "fr": "Letton"
+    },
+    "lit": {
+      "fr": "Lituanien"
     }
   },
   "alphabet": {

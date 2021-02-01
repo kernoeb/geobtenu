@@ -1,6 +1,6 @@
 <template>
   <article v-if="article">
-    <div class="mb-3">
+    <div class="mb-0">
       <div style="text-align: center">
         <h1 class="slugTitle d-flex justify-center">
           {{ article && article.title && article.title.split('|')[0] }}
@@ -32,7 +32,7 @@
           lg="8"
           offset-lg="2"
         >
-          <v-row align="center" class="mb-3" justify="center" :style="productionMode ? 'justify-content: center' : null">
+          <v-row align="center" class="mb-0" justify="center" :style="productionMode ? 'justify-content: center' : null">
             <v-col>
               <v-card class="rounded-xl">
                 <v-card-title>Informations sur le pays</v-card-title>
@@ -75,7 +75,7 @@
           lg="8"
           offset-lg="2"
         >
-          <v-row align="center" class="mb-3" justify="center" :style="productionMode ? 'justify-content: center' : null">
+          <v-row align="center" class="mb-0" justify="center" :style="productionMode ? 'justify-content: center' : null">
             <v-col>
               <v-card class="rounded-xl">
                 <v-card-title>
@@ -128,7 +128,7 @@
       bottom
       right
       direction="top"
-      :open-on-hover="!$vuetify.breakpoint.mobile"
+      :open-on-hover="!$vuetify.breakpoint.xsOnly"
       transition="slide-y-reverse-transition"
     >
       <template #activator>
@@ -185,17 +185,7 @@ const countries = require('~/assets/countries.json')
 const content = require('~/assets/content.json')
 
 export default {
-  transition (to, from) {
-    return 'page'
-    /* if ((to && to.params && to.params.noTransition) || (from && from.params && from.params.noTransition)) {
-      return {
-        name: 'noTransition',
-        duration: 0
-      }
-    } else {
-      return 'page'
-    } */
-  },
+  transition: 'page',
   data () {
     return {
       lang: 'fr',
@@ -214,9 +204,7 @@ export default {
 
     const c = countries.find(c => c.id === this.$route.params.slug)
     if (c) {
-      if (c.maps) {
-        this.maps = content.urls.maps + c.maps
-      }
+      this.maps = content.urls.maps + encodeURIComponent(c.country[this.lang])
 
       const id = c.wikipedia && c.wikipedia[this.lang]
 

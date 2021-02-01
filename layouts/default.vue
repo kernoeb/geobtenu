@@ -215,4 +215,8 @@ export default {
 .geoTitleColorDark {
   color: white;
 }
+
+.geoTitleColorDark:hover {
+  color: lightgray;
+}
 </style>
