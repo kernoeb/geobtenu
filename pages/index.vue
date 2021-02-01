@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-row class="justifyCenter">
+    <v-row :class="productionMode ? 'justifyCenter' : null">
       <v-col
         cols="12"
         lg="8"
@@ -39,7 +39,7 @@
           align="center"
           justify="center"
         >
-          <transition-group id="vRowFlags" class="row justifyCenter" name="flip-list">
+          <transition-group id="vRowFlags" class="row" :class="productionMode ? 'justifyCenter' : null" name="flip-list">
             <v-col
               v-for="value in countriesFiltered"
               :key="`flag_${value.id}`"
@@ -92,6 +92,9 @@ export default {
   computed: {
     countriesFiltered () {
       return this.getCountries()
+    },
+    productionMode () {
+      return process.env.NODE_ENV === 'production'
     }
   },
   mounted () {

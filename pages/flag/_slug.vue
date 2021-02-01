@@ -26,13 +26,13 @@
     </div>
 
     <v-container v-if="article">
-      <v-row style="justify-content: center">
+      <v-row :style="productionMode ? 'justify-content: center' : null">
         <v-col
           cols="12"
           lg="8"
           offset-lg="2"
         >
-          <v-row align="center" class="mb-3" justify="center" style="justify-content: center">
+          <v-row align="center" class="mb-3" justify="center" :style="productionMode ? 'justify-content: center' : null">
             <v-col>
               <v-card class="rounded-xl">
                 <v-card-title>Informations sur le pays</v-card-title>
@@ -69,13 +69,13 @@
     </v-container>
 
     <v-container v-if="wiki">
-      <v-row style="justify-content: center">
+      <v-row :style="productionMode ? 'justify-content: center' : null">
         <v-col
           cols="12"
           lg="8"
           offset-lg="2"
         >
-          <v-row align="center" class="mb-3" justify="center" style="justify-content: center">
+          <v-row align="center" class="mb-3" justify="center" :style="productionMode ? 'justify-content: center' : null">
             <v-col>
               <v-card class="rounded-xl">
                 <v-card-title>
@@ -102,7 +102,7 @@
     </v-container>
 
     <v-container v-if="article && article.body && article.body.children && article.body.children.length">
-      <v-row style="justify-content: center">
+      <v-row :style="productionMode ? 'justify-content: center' : null">
         <v-col
           cols="12"
           lg="8"
@@ -228,6 +228,11 @@ export default {
         this.link = (await this.$axios.$get(`${url}&prop=info&inprop=url${pageId}`))
           .query.pages[id].fullurl
       }
+    }
+  },
+  computed: {
+    productionMode () {
+      return process.env.NODE_ENV === 'production'
     }
   },
   created () {
