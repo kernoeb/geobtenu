@@ -10,10 +10,11 @@
         <v-row
           align="center"
           justify="center"
+          style="word-break: break-word;"
         >
-          Merci à&nbsp;<a target="_blank" href="https://www.twitch.tv/armire37">Armire</a>,&nbsp;<a target="_blank" href="https://www.twitch.tv/letakamari">Takamari</a>,&nbsp;<a target="_blank" href="https://www.twitch.tv/jussetain">Jussetain</a>, Google et Wikipédia pour les informations et métas !
+          Merci à&nbsp;<a target="_blank" href="https://www.twitch.tv/armire37">Armire</a>,&nbsp;<a target="_blank" href="https://www.twitch.tv/letakamari">Takamari</a>,&nbsp;<a target="_blank" href="https://www.twitch.tv/jussetain">Jussetain</a>&nbsp;pour les informations et métas !
         </v-row>
-        <v-row align="center" justify="center" class="title mb-3">
+        <v-row align="center" justify="center" class="title mb-3" style="color: #f693b4;">
           Réalisé par&nbsp;<a target="_blank" href="https://www.twitter.com/kernoeb">@kernoeb</a>
         </v-row>
         <v-row align="center" justify="center" class="d-flex justify-center flex-column">

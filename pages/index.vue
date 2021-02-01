@@ -39,7 +39,7 @@
           align="center"
           justify="center"
         >
-          <transition-group id="vRowFlags" class="row" :class="productionMode ? 'justifyCenter' : null" name="flip-list">
+          <transition-group id="vRowFlags" class="row justifyCenter" name="flip-list">
             <v-col
               v-for="value in countriesFiltered"
               :key="`flag_${value.id}`"

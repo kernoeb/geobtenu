@@ -122,7 +122,7 @@
       style="font-size: 10px"
     >
       <span>
-        Géobtenu par <a href="https://t.me/kernoeb">kernoeb</a></span>
+        Géobtenu | <a style="color: #00ACEE" href="https://twitter.com/kernoeb">@kernoeb</a></span>
       <v-spacer />
       <span>&copy; {{ new Date().getFullYear() }}
       </span>
