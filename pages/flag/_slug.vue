@@ -16,10 +16,10 @@
         <div style="display: inline-block; max-width: 200px; max-height: 200px;">
           <img
             :src="require(`~/assets/flags/png/${$route.params.slug}.png`)"
-            class="rounded"
-            style="max-width: 100%"
-            height="auto"
             alt="flag"
+            class="rounded"
+            height="auto"
+            style="max-width: 100%"
           >
         </div>
       </div>
@@ -32,7 +32,12 @@
           lg="8"
           offset-lg="2"
         >
-          <v-row align="center" class="mb-0" justify="center" :style="productionMode ? 'justify-content: center' : null">
+          <v-row
+            :style="productionMode ? 'justify-content: center' : null"
+            align="center"
+            class="mb-0"
+            justify="center"
+          >
             <v-col>
               <v-card class="rounded-xl">
                 <v-card-title>Informations sur le pays</v-card-title>
@@ -75,12 +80,17 @@
           lg="8"
           offset-lg="2"
         >
-          <v-row align="center" class="mb-0" justify="center" :style="productionMode ? 'justify-content: center' : null">
+          <v-row
+            :style="productionMode ? 'justify-content: center' : null"
+            align="center"
+            class="mb-0"
+            justify="center"
+          >
             <v-col>
               <v-card class="rounded-xl">
                 <v-card-title>
                   <span>Wikipédia </span>
-                  <v-btn v-if="link" target="_blank" icon :href="link" class="ml-1">
+                  <v-btn v-if="link" :href="link" class="ml-1" icon target="_blank">
                     <v-icon color="#00bfff">
                       mdi-open-in-new
                     </v-icon>
@@ -122,13 +132,13 @@
     </v-container>
     <v-speed-dial
       v-model="fab"
-      style="margin-bottom: 22px"
-      fixed
+      :open-on-hover="!$vuetify.breakpoint.xsOnly"
       absolute
       bottom
-      right
       direction="top"
-      :open-on-hover="!$vuetify.breakpoint.xsOnly"
+      fixed
+      right
+      style="margin-bottom: 22px"
       transition="slide-y-reverse-transition"
     >
       <template #activator>
@@ -147,10 +157,10 @@
         </v-btn>
       </template>
       <v-btn
-        fab
-        dark
-        small
         color="green"
+        dark
+        fab
+        small
         @click="copyUrl()"
       >
         <v-icon>mdi-content-copy</v-icon>
@@ -158,11 +168,11 @@
       <v-btn
         v-if="maps"
         :href="maps"
-        target="_blank"
-        fab
-        dark
-        small
         color="#4285f4"
+        dark
+        fab
+        small
+        target="_blank"
       >
         <v-icon>mdi-google-maps</v-icon>
       </v-btn>
@@ -170,10 +180,10 @@
     <v-snackbar
       :value="copied"
       absolute
-      top
-      text
       color="success"
       right
+      text
+      top
     >
       Copié dans le presse-papier avec succès !
     </v-snackbar>
@@ -233,7 +243,10 @@ export default {
   created () {
     if (this.$route.path.endsWith('/')) {
       const tmp = this.$route.params.slug
-      this.$router.replace({ path: `/flag/${tmp}#`, params: { noTransition: 'true' } })
+      this.$router.replace({
+        path: `/flag/${tmp}#`,
+        params: { noTransition: 'true' }
+      })
     }
   },
   methods: {

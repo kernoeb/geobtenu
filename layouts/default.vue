@@ -2,12 +2,12 @@
   <v-app dark>
     <v-navigation-drawer
       v-model="drawer"
-      style="z-index: 100"
-      width="300"
       app
       clipped
       disable-resize-watcher
+      style="z-index: 100"
       temporary
+      width="300"
     >
       <v-list>
         <v-list-item class="px-2">
@@ -122,7 +122,7 @@
       style="font-size: 10px"
     >
       <span>
-        Géobtenu | <a style="color: #00ACEE" href="https://twitter.com/kernoeb">@kernoeb</a></span>
+        Géobtenu | <a href="https://twitter.com/kernoeb" style="color: #00ACEE">@kernoeb</a></span>
       <v-spacer />
       <span>&copy; {{ new Date().getFullYear() }}
       </span>

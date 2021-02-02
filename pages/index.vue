@@ -4,12 +4,12 @@
       <v-btn
         v-if="showS2T"
         absolute
+        bottom
+        fab
         fixed
+        right
         small
         style="margin-bottom: 58px"
-        bottom
-        right
-        fab
         @click="scrollToTop()"
       >
         <v-icon>mdi-arrow-up</v-icon>
@@ -22,23 +22,23 @@
         offset-lg="2"
       >
         <v-row>
-          <v-col style="position: fixed; z-index: 50;" :style="width">
+          <v-col :style="width" style="position: fixed; z-index: 50;">
             <transition name="fade">
               <v-badge
                 v-if="width"
                 :content="countriesFiltered.length"
                 class="d-block"
                 color="green"
-                overlap
                 offset-x="18"
+                overlap
               >
                 <v-text-field
                   v-model="search"
-                  background-color="#121212"
-                  clearable
-                  clear-icon="mdi-close-circle"
-                  hide-details
                   :append-icon="finishedCountries ? 'mdi-filter-off' : 'mdi-filter'"
+                  background-color="#121212"
+                  clear-icon="mdi-close-circle"
+                  clearable
+                  hide-details
                   outlined
                   placeholder="Rechercher un pays ou une capitale"
                   @click:click:clear="search = ''"
@@ -50,21 +50,21 @@
         </v-row>
         <v-row
           v-resize="onResize"
-          style="margin-top: 100px;"
           align="center"
           justify="center"
+          style="margin-top: 100px;"
         >
           <transition-group id="vRowFlags" class="row justifyCenter" name="flip-list">
             <v-col
               v-for="value in countriesFiltered"
               :key="`flag_${value.id}`"
+              class="flip-list-item"
               cols="5"
               md="4"
               xl="3"
-              class="flip-list-item"
             >
               <nuxt-link :to="{name: 'flag-slug', params: {slug: value.id}}" class="noDecoration">
-                <FlagCard :lang="lang" :value="value" :finished="isFinished(value.id)" />
+                <FlagCard :finished="isFinished(value.id)" :lang="lang" :value="value" />
               </nuxt-link>
             </v-col>
           </transition-group>
@@ -128,7 +128,10 @@ export default {
   },
   methods: {
     scrollToTop () {
-      window.scrollTo({ top: 0, behavior: 'smooth' })
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      })
     },
     onResize () {
       this.width = `width: ${document.getElementById('vRowFlags').offsetWidth - 30}px`
@@ -154,6 +157,7 @@ export default {
 .v-input__icon--append > .v-icon {
   color: purple;
 }
+
 .v-input__icon--append > .v-icon:hover {
   color: deeppink;
 }
@@ -164,7 +168,9 @@ export default {
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */
+{
   opacity: 0;
 }
 

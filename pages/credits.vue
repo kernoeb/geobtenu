@@ -2,24 +2,31 @@
   <v-container>
     <v-row class="justifyCenter" style="text-align: center">
       <v-col
+        class="mt-5"
         cols="12"
         lg="8"
         offset-lg="2"
-        class="mt-5"
       >
         <v-row
           align="center"
           justify="center"
           style="word-break: break-word;"
         >
-          Merci à&nbsp;<a target="_blank" href="https://www.twitch.tv/armire37">Armire</a>,&nbsp;<a target="_blank" href="https://www.twitch.tv/letakamari">Takamari</a>,&nbsp;<a target="_blank" href="https://www.twitch.tv/jussetain">Jussetain</a>&nbsp;pour les informations et métas !
+          Merci à&nbsp;<a href="https://www.twitch.tv/armire37" target="_blank">Armire</a>,&nbsp;<a
+            href="https://www.twitch.tv/letakamari"
+            target="_blank"
+          >Takamari</a>,&nbsp;<a href="https://www.twitch.tv/jussetain" target="_blank">Jussetain</a>&nbsp;pour les
+          informations et métas !
         </v-row>
-        <v-row align="center" justify="center" class="title mb-3" style="color: #f693b4;">
-          Réalisé par&nbsp;<a target="_blank" href="https://www.twitter.com/kernoeb">@kernoeb</a>
+        <v-row align="center" class="title mb-3" justify="center" style="color: #f693b4;">
+          Réalisé par&nbsp;<a href="https://www.twitter.com/kernoeb" target="_blank">@kernoeb</a>
         </v-row>
-        <v-row align="center" justify="center" class="d-flex justify-center flex-column">
+        <v-row align="center" class="d-flex justify-center flex-column" justify="center">
           <div>
-            Ce site est <i>open-source</i> ! Le projet est sur&nbsp;<a target="_blank" href="https://github.com/kernoeb/geobtenu">GitHub</a>.
+            Ce site est <i>open-source</i> ! Le projet est sur&nbsp;<a
+              href="https://github.com/kernoeb/geobtenu"
+              target="_blank"
+            >GitHub</a>.
           </div>
           <div>
             N'hésitez pas à faire une petite <i>pull request</i> pour participer au projet :)
