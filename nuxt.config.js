@@ -25,8 +25,7 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    titleTemplate: '%s - Géobtenu',
-    title: 'Géobtenu',
+    title: 'Géobtenu | Outil de géographie',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

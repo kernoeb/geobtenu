@@ -218,6 +218,11 @@ export default {
       }
     }
   },
+  head () {
+    return {
+      title: `Géobtenu | ${this.article.title}`
+    }
+  },
   computed: {
     productionMode () {
       return process.env.NODE_ENV === 'production'
