@@ -63,14 +63,9 @@
               xl="3"
               class="flip-list-item"
             >
-              <v-lazy
-                v-model="value.isActive"
-                height="170"
-              >
-                <nuxt-link :to="{name: 'flag-slug', params: {slug: value.id}}" class="noDecoration">
-                  <FlagCard :lang="lang" :value="value" :finished="isFinished(value.id)" />
-                </nuxt-link>
-              </v-lazy>
+              <nuxt-link :to="{name: 'flag-slug', params: {slug: value.id}}" class="noDecoration">
+                <FlagCard :lang="lang" :value="value" :finished="isFinished(value.id)" />
+              </nuxt-link>
             </v-col>
           </transition-group>
         </v-row>
@@ -107,7 +102,14 @@ export default {
   },
   computed: {
     countriesFiltered () {
-      return this.getCountries()
+      if (!this.search || (this.search && !this.search.length)) {
+        return this.filterFinish(this.countries)
+      } else {
+        const tmp = this.countries.filter(country =>
+          this.sanitize(country.country[this.lang]).includes(this.sanitize(this.search)) ||
+          (country.capital[this.lang] && this.sanitize(country.capital[this.lang]).includes(this.sanitize(this.search))))
+        return this.filterFinish(tmp)
+      }
     },
     productionMode () {
       return process.env.NODE_ENV === 'production'
@@ -131,27 +133,11 @@ export default {
     onResize () {
       this.width = `width: ${document.getElementById('vRowFlags').offsetWidth - 30}px`
     },
-    getCountries () {
-      if (!this.search) {
-        const c = this.countries
-        for (let i = 0; i < 16; i++) {
-          c[i].isActive = true
-        }
-        return this.filterFinish(c)
-      } else if (!this.search.length) {
-        return this.filterFinish(this.countries)
-      } else {
-        const tmp = this.countries.filter(country =>
-          this.sanitize(country.country[this.lang]).includes(this.sanitize(this.search)) ||
-          (country.capital[this.lang] && this.sanitize(country.capital[this.lang]).includes(this.sanitize(this.search))))
-        return this.filterFinish(tmp)
-      }
-    },
     isFinished (id) {
       return finished.includes(id)
     },
     filterFinish (d) {
-      if (this.finishedCountries) { return d.filter(c => finished.includes(c.id)) } else { return d }
+      return this.finishedCountries ? d.filter(c => finished.includes(c.id)) : d
     },
     sanitize (text) {
       return removeAccents(text).replace(/[-‘’']/g, ' ').replace(/[.*?!]/g, '').toUpperCase().trim()
@@ -196,6 +182,7 @@ export default {
 
 .flip-list-leave-active {
   position: absolute;
+  bottom: 140vh;
 }
 
 .flip-list-enter {
@@ -204,7 +191,6 @@ export default {
 
 .flip-list-leave-to {
   opacity: 0;
-  transform: translateY(100vh);
 }
 
 .page-enter-active, .page-leave-active {

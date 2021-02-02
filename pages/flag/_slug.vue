@@ -219,8 +219,10 @@ export default {
     }
   },
   head () {
-    return {
-      title: `Géobtenu | ${this.article.title}`
+    if (this.article) {
+      return {
+        title: `Géobtenu | ${this.article.title}`
+      }
     }
   },
   computed: {
