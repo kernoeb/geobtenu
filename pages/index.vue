@@ -22,10 +22,10 @@
         offset-lg="2"
       >
         <v-row>
-          <v-col :style="width" style="position: fixed; z-index: 50;">
+          <v-col :style="`width: ${width}px`" style="position: fixed; z-index: 50;">
             <transition name="fade">
               <v-badge
-                v-if="width"
+                v-if="width && countries"
                 :content="countriesFiltered.length"
                 class="d-block"
                 color="green"
@@ -34,7 +34,6 @@
               >
                 <v-text-field
                   v-model="search"
-                  :append-icon="finishedCountries ? 'mdi-filter-off' : 'mdi-filter'"
                   background-color="#121212"
                   clear-icon="mdi-close-circle"
                   clearable
@@ -42,31 +41,26 @@
                   outlined
                   placeholder="Rechercher un pays ou une capitale"
                   @click:click:clear="search = ''"
-                  @click:append="finishedCountries = !finishedCountries; scrollToTop()"
                 />
               </v-badge>
             </transition>
           </v-col>
         </v-row>
         <v-row
+          v-if="countries"
           v-resize="onResize"
           align="center"
           justify="center"
           style="margin-top: 100px;"
         >
-          <transition-group id="vRowFlags" class="row justifyCenter" name="flip-list">
-            <v-col
+          <transition-group ref="vRowFlags" class="row justifyCenter" name="flip-list">
+            <FlagCard
               v-for="value in countriesFiltered"
               :key="`flag_${value.id}`"
-              class="flip-list-item"
-              cols="5"
-              md="4"
-              xl="3"
-            >
-              <nuxt-link :to="{name: 'flag-slug', params: {slug: value.id}}" class="noDecoration">
-                <FlagCard :finished="isFinished(value.id)" :lang="lang" :value="value" />
-              </nuxt-link>
-            </v-col>
+              :finished="isFinished(value.id)"
+              :lang="lang"
+              :value="value"
+            />
           </transition-group>
         </v-row>
       </v-col>
@@ -75,20 +69,21 @@
 </template>
 
 <script>
-import countries from '~/assets/countries.json'
 import finished from '~/assets/finished.json'
 import flagCard from '~/components/flag-card'
-
-const removeAccents = require('remove-accents')
 
 export default {
   name: 'Index',
   components: { flagCard },
   transition: 'page',
+  async asyncData ({ $content }) {
+    return {
+      countries: await $content('json').fetch()
+    }
+  },
   data () {
     return {
       lang: 'fr',
-      countries,
       search: null,
       finishedCountries: false,
       width: null,
@@ -101,18 +96,17 @@ export default {
     }
   },
   computed: {
-    countriesFiltered () {
-      if (!this.search || (this.search && !this.search.length)) {
-        return this.filterFinish(this.countries)
-      } else {
-        const tmp = this.countries.filter(country =>
-          this.sanitize(country.country[this.lang]).includes(this.sanitize(this.search)) ||
-          (country.capital[this.lang] && this.sanitize(country.capital[this.lang]).includes(this.sanitize(this.search))))
-        return this.filterFinish(tmp)
-      }
-    },
     productionMode () {
       return process.env.NODE_ENV === 'production'
+    },
+    countriesFiltered () {
+      if (this.search && this.search.length) {
+        const sanitized = this.sanitize(this.search)
+        return this.countries.filter(c => (this.sanitize(c.country[this.lang]).includes(sanitized)) ||
+          (c.capital[this.lang] && this.sanitize(c.capital[this.lang]).includes(sanitized)))
+      } else {
+        return this.countries
+      }
     }
   },
   watch: {
@@ -121,10 +115,10 @@ export default {
     }
   },
   mounted () {
+    this.onResize()
     window.onscroll = () => {
       this.showS2T = document.documentElement.scrollTop > 240
     }
-    this.onResize()
   },
   methods: {
     scrollToTop () {
@@ -134,16 +128,21 @@ export default {
       })
     },
     onResize () {
-      this.width = `width: ${document.getElementById('vRowFlags').offsetWidth - 30}px`
+      this.width = this.$refs.vRowFlags.$el.clientWidth - 30
     },
     isFinished (id) {
       return finished.includes(id)
     },
-    filterFinish (d) {
-      return this.finishedCountries ? d.filter(c => finished.includes(c.id)) : d
+    removeAccents (text) {
+      return text.replace(/[ÁÀÂÃ]/gi, 'a')
+        .replace(/[ÉÈÊ]/gi, 'e')
+        .replace(/[ÍÌÎ]/gi, 'i')
+        .replace(/[ÓÒÔÕ]/gi, 'o')
+        .replace(/[ÚÙÛ]/gi, 'u')
+        .replace(/[Ç]/gi, 'c')
     },
     sanitize (text) {
-      return removeAccents(text).replace(/[-‘’']/g, ' ').replace(/[.*?!]/g, '').toUpperCase().trim()
+      return this.removeAccents(text).replace(/[-‘’']/g, ' ').replace(/[.*?!]/g, '').toUpperCase().trim()
     }
   }
 }

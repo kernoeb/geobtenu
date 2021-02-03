@@ -28,6 +28,7 @@
         <v-divider />
         <v-list-item
           v-for="(item, i) in items"
+          v-once
           :key="i"
           :to="item.to"
           exact
@@ -52,7 +53,7 @@
           </v-list-item-content>
         </v-list-item>
         <v-divider />
-        <v-list-item href="https://fr.wikipedia.org/wiki/Sens_de_circulation_(route)" target="_blank">
+        <v-list-item v-once href="https://fr.wikipedia.org/wiki/Sens_de_circulation_(route)" target="_blank">
           <v-list-item-action>
             <v-icon>mdi-road</v-icon>
           </v-list-item-action>
@@ -61,7 +62,7 @@
           </v-list-item-content>
         </v-list-item>
         <v-divider />
-        <v-list-item v-for="(d, index) in itemsMenu" :key="`itemsmenu_${index}`" :href="d.href" target="_blank">
+        <v-list-item v-for="(d, index) in itemsMenu" v-once :key="`itemsmenu_${index}`" :href="d.href" target="_blank">
           <v-list-item-action>
             <v-icon>{{ d.icon }}</v-icon>
           </v-list-item-action>
@@ -79,20 +80,6 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
-      <!--      <template #append>
-        <div class="pa-2 d-flex align-center justify-center">
-          <v-btn
-            :dark="!$vuetify.theme.dark"
-            :light="$vuetify.theme.dark"
-            @click="$vuetify.theme.dark = !$vuetify.theme.dark"
-          >
-            <v-icon left>
-              mdi-theme-light-dark
-            </v-icon>
-            {{ $vuetify.theme.dark ? 'Thème blanc' : 'Thème noir' }}
-          </v-btn>
-        </div>
-      </template>-->
     </v-navigation-drawer>
     <v-app-bar
       app
@@ -116,6 +103,7 @@
       </v-container>
     </v-main>
     <v-footer
+      v-once
       app
       fixed
       height=" 25"
@@ -175,12 +163,6 @@ export default {
       this.randomCountryElement = this.randomCountry()
     }
   },
-  mounted () {
-    /* if (this.$cookies.get('theme') !== undefined) {
-      this.$vuetify.theme.dark = this.$cookies.get('theme')
-    } */
-    // this.$watch('$vuetify.theme.dark', this.watchTheme)
-  },
   methods: {
     randomCountry () {
       let tmp = finished[Math.floor(Math.random() * finished.length)]
@@ -189,9 +171,6 @@ export default {
       }
       return tmp
     }
-    /* watchTheme () {
-      this.$cookies.set('theme', this.$vuetify.theme.dark)
-    } */
   }
 }
 </script>
