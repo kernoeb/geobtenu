@@ -6,7 +6,7 @@ continent: OC
 hemisphere: S
 languages: eng
 alphabet: lat
-traffic: L
+direction: L
 ---
 
 # Emplacement

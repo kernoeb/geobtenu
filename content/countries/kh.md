@@ -6,7 +6,7 @@ continent: AS
 hemisphere: N
 languages: khm
 alphabet: khm
-traffic: R
+direction: R
 ---
 
 # Emplacement

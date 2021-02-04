@@ -6,7 +6,7 @@ continent: EU
 hemisphere: N
 languages: bul
 alphabet: cyrl
-traffic: R
+direction: R
 ---
 
 # Emplacement

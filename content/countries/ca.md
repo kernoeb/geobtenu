@@ -6,7 +6,7 @@ continent: NA
 hemisphere: N
 languages: "fra,eng"
 alphabet: lat
-traffic: L
+direction: L
 ---
 
 # Emplacement

@@ -6,7 +6,7 @@ continent: AS
 hemisphere: N
 languages: dzo
 alphabet: tibt
-traffic: L
+direction: L
 ---
 
 # Emplacement

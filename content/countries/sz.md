@@ -6,7 +6,7 @@ continent: AF
 hemisphere: S
 languages: "ssw,eng"
 alphabet: lat
-traffic: L
+direction: L
 ---
 
 # Emplacement

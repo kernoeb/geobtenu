@@ -6,7 +6,7 @@ continent: EU
 hemisphere: N
 languages: alb
 alphabet: lat
-traffic: R
+direction: R
 ---
 
 # Emplacement

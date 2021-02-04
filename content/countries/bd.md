@@ -6,7 +6,7 @@ continent: AS
 hemisphere: N
 languages: ben
 alphabet: san
-traffic: L
+direction: L
 ---
 
 # Emplacement

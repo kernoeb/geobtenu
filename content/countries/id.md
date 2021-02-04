@@ -6,7 +6,7 @@ continent: AS
 hemisphere: N,S
 languages: ind
 alphabet: lat
-traffic: L
+direction: L
 ---
 
 # Emplacement

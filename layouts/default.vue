@@ -15,7 +15,7 @@
             icon
             @click.stop="drawer = !drawer"
           >
-            <v-icon>mdi-window-close</v-icon>
+            <v-icon>{{ mdiWindowClose }}</v-icon>
           </v-btn>
           <v-list-item-title
             :class="!$vuetify.theme.dark ? 'geoTitleColor' : 'geoTitleColorDark'"
@@ -46,7 +46,7 @@
         </v-list-item>
         <v-list-item :to="{name: 'flag-slug', params: {slug: randomCountryElement}}">
           <v-list-item-action>
-            <v-icon>mdi-map-marker-circle</v-icon>
+            <v-icon>{{ mdiMapMarkerCircle }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title style="font-size: 13px" v-text="'Pays aléatoire'" />
@@ -55,7 +55,7 @@
         <v-divider />
         <v-list-item v-once href="https://fr.wikipedia.org/wiki/Sens_de_circulation_(route)" target="_blank">
           <v-list-item-action>
-            <v-icon>mdi-road</v-icon>
+            <v-icon>{{ mdiRoad }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title style="font-size: 13px" v-text="'Sens de circulation (W)'" />
@@ -73,7 +73,7 @@
         <v-divider />
         <v-list-item to="/credits">
           <v-list-item-action>
-            <v-icon>mdi-information</v-icon>
+            <v-icon>{{ mdiInformation }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title style="font-size: 13px" v-text="'Crédits'" />
@@ -86,7 +86,9 @@
       clipped-left
       dense
     >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+      <v-icon @click.stop="drawer = !drawer">
+        {{ mdiMenu }}
+      </v-icon>
       <v-spacer />
       <nuxt-link :to="{name: 'index'}" class="noDecoration">
         <v-toolbar-title
@@ -119,37 +121,46 @@
 </template>
 
 <script>
+import { mdiCamera, mdiGoogleSpreadsheet, mdiHome, mdiWindowClose, mdiMapMarkerCircle, mdiRoad, mdiInformation, mdiMenu } from '@mdi/js'
 import finished from '~/assets/finished.json'
 
 export default {
   data () {
     return {
+      // ICONS
+      mdiWindowClose,
+      mdiMapMarkerCircle,
+      mdiRoad,
+      mdiInformation,
+      mdiMenu,
+
+      // OTHERS
       drawer: false,
       itemsMenu: [
         {
           href: 'https://docs.google.com/spreadsheets/d/1SUcuQkmDgVZMqNLe7XuNEhmJulonpnSQuSiJAOqfhtY',
-          icon: 'mdi-camera',
+          icon: mdiCamera,
           text: 'Générations de caméras'
         },
         {
           href: 'https://docs.google.com/spreadsheets/d/1x7SfoMvNILkkzT8feYqgku0qaiI-UcVvC2YfPIIvG-g',
-          icon: 'mdi-google-spreadsheet',
+          icon: mdiGoogleSpreadsheet,
           text: 'Geo-Astuces (Redneho)'
         },
         {
           href: 'https://docs.google.com/document/d/1mkof2V97hVqlDsG0NrJKOJLMC40-5BHvMVDQgj4Qvu8',
-          icon: 'mdi-google-spreadsheet',
+          icon: mdiGoogleSpreadsheet,
           text: 'La Méta (Armire)'
         },
         {
           href: 'https://docs.google.com/spreadsheets/d/1eN1X7fa-zjR2AR2CUbb_KCjGfSWS2PZZocIqn_wtnxs',
-          icon: 'mdi-google-spreadsheet',
+          icon: mdiGoogleSpreadsheet,
           text: 'Guess The Country (LeTakamari)'
         }
       ],
       items: [
         {
-          icon: 'mdi-home',
+          icon: mdiHome,
           title: 'Accueil',
           to: '/'
         }

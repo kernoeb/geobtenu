@@ -6,7 +6,7 @@ continent: xx
 hemisphere: N/S
 languages: "xxxx,xxxx"
 alphabet: xxx
-traffic: R/L
+direction: R/L
 ---
 
 # Emplacement

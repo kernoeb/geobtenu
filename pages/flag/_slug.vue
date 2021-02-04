@@ -1,18 +1,18 @@
 <template>
-  <article v-if="article">
+  <article>
     <div class="mb-0">
-      <div style="text-align: center">
-        <h1 class="slugTitle d-flex justify-center">
-          {{ article && article.title && article.title.split('|')[0] }}
+      <div v-once style="text-align: center">
+        <h1 v-if="title && title.length" class="slugTitle d-flex justify-center">
+          {{ title && title[0] }}
         </h1>
-        <h5 v-if="article.title.split('|').length > 1" class="d-flex mb-2 justify-center grey--text">
-          {{ article.title.split('|').slice(1).join(', ') }}
+        <h5 v-if="title && title.length > 1" class="d-flex mb-2 justify-center grey--text">
+          {{ title.slice(1).join(', ') }}
         </h5>
-        <h4 class="d-flex justify-center mb-2">
-          {{ getCapital() }}
+        <h4 v-if="capital" class="d-flex justify-center mb-2">
+          {{ capital }}
         </h4>
       </div>
-      <div class="d-flex justify-center">
+      <div v-once class="d-flex justify-center">
         <div style="display: inline-block; max-width: 200px; max-height: 200px;">
           <img
             :src="require(`~/assets/flags/png/${$route.params.slug}.png`)"
@@ -25,7 +25,7 @@
       </div>
     </div>
 
-    <v-container v-if="article">
+    <v-container v-once>
       <v-row :style="productionMode ? 'justify-content: center' : null">
         <v-col
           cols="12"
@@ -39,29 +39,29 @@
             justify="center"
           >
             <v-col>
-              <v-card class="rounded-xl">
+              <v-card v-if="content" class="rounded-xl">
                 <v-card-title>Informations sur le pays</v-card-title>
                 <v-card-text style="text-align: justify; font-size: 15px">
-                  <div v-if="article.domain">
-                    <b>Domaine :</b> .{{ article.domain }}
+                  <div v-if="content.domain">
+                    <b>Domaine :</b> .{{ content.domain }}
                   </div>
-                  <div v-if="article.continent">
-                    <b>Continent :</b> {{ getContinent(article.continent) }}
+                  <div v-if="content.continent">
+                    <b>Continent :</b> {{ content.continent }} ({{ content.continentPrefix }})
                   </div>
-                  <div v-if="article.hemisphere">
-                    <b>Hémisphère :</b> {{ getHemisphere(article.hemisphere) }}
+                  <div v-if="content.hemisphere">
+                    <b>Hémisphère :</b> {{ content.hemisphere }}
                   </div>
-                  <div v-if="article.languages">
-                    <b>Langues :</b> {{ getLanguage(article.languages) }}
+                  <div v-if="content.languages">
+                    <b>Langues :</b> {{ content.languages }}
                   </div>
-                  <div v-if="article.alphabet">
-                    <b>Alphabet :</b> {{ getAlphabet(article.alphabet) }}
+                  <div v-if="content.alphabet">
+                    <b>Alphabet :</b> {{ content.alphabet }}
                   </div>
-                  <div v-if="article.traffic">
-                    <b>Sens de circulation :</b> {{ getTraffic(article.traffic) }}
+                  <div v-if="content.direction">
+                    <b>Sens de circulation :</b> {{ content.direction }}
                   </div>
                   <div
-                    v-if="!(article.domain || article.continent || article.hemisphere || article.languages || article.alphabet || article.traffic)"
+                    v-if="!(content.domain || content.continent || content.hemisphere || content.languages || content.alphabet || content.direction)"
                   >
                     Aucune donnée n'a été saisie
                   </div>
@@ -73,7 +73,7 @@
       </v-row>
     </v-container>
 
-    <v-container v-if="wiki">
+    <v-container v-if="wikipedia && wikipedia.content">
       <v-row :style="productionMode ? 'justify-content: center' : null">
         <v-col
           cols="12"
@@ -90,16 +90,16 @@
               <v-card class="rounded-xl">
                 <v-card-title>
                   <span>Wikipédia </span>
-                  <v-btn v-if="link" :href="link" class="ml-1" icon target="_blank">
+                  <v-btn v-if="wikipedia.link" :href="wikipedia.link" class="ml-1" icon target="_blank">
                     <v-icon color="#00bfff">
-                      mdi-open-in-new
+                      {{ mdiOpenInNew }}
                     </v-icon>
                   </v-btn>
                 </v-card-title>
                 <v-card-text style="text-align: justify">
-                  {{ getWiki() }}<span v-if="!more && wiki.slice(0, length).length < wiki.length">...</span>
+                  {{ getWiki() }}<span v-if="!more && wikipedia.size">...</span>
                   <span
-                    v-if="wiki.slice(0, length).length < wiki.length"
+                    v-if="wikipedia.size"
                     style="color: #00bfff; cursor: pointer"
                     @click="more = !more"
                   > {{ more ? 'Voir moins' : 'Voir plus' }}</span>
@@ -111,7 +111,7 @@
       </v-row>
     </v-container>
 
-    <v-container v-if="article && article.body && article.body.children && article.body.children.length">
+    <v-container v-if="article && article.body && article.body.children && article.body.children.length" v-once>
       <v-row :style="productionMode ? 'justify-content: center' : null">
         <v-col
           cols="12"
@@ -149,10 +149,10 @@
           fab
         >
           <v-icon v-if="fab">
-            mdi-close
+            {{ mdiClose }}
           </v-icon>
           <v-icon v-else>
-            mdi-tools
+            {{ mdiTools }}
           </v-icon>
         </v-btn>
       </template>
@@ -163,7 +163,7 @@
         small
         @click="copyUrl()"
       >
-        <v-icon>mdi-content-copy</v-icon>
+        <v-icon>{{ mdiContentCopy }}</v-icon>
       </v-btn>
       <v-btn
         v-if="maps"
@@ -174,7 +174,7 @@
         small
         target="_blank"
       >
-        <v-icon>mdi-google-maps</v-icon>
+        <v-icon>{{ mdiGoogleMaps }}</v-icon>
       </v-btn>
     </v-speed-dial>
     <v-snackbar
@@ -191,41 +191,65 @@
 </template>
 
 <script>
-const countries = require('~/assets/countries.json')
-const content = require('~/assets/content.json')
+import { mdiOpenInNew, mdiClose, mdiTools, mdiContentCopy, mdiGoogleMaps } from '@mdi/js'
 
 export default {
   transition: 'page',
-  data () {
+  async asyncData ({ $content, route, $axios }) {
+    const [article, countries, content] = await Promise.all([
+      await $content('countries', route.params.slug).fetch(),
+      (await $content('countriesData').where({ id: route.params.slug }).fetch())[0],
+      await $content('content', 'content').fetch()
+    ])
+
+    const lang = 'fr'
+
+    let wikipedia
+    if (countries?.wikipedia?.[lang]) {
+      const url = `https://${lang}.wikipedia.org/w/api.php?format=json&action=query`
+      const id = countries.wikipedia[lang]
+      const pageId = `&pageids=${id}`
+
+      try {
+        wikipedia = await Promise.all([
+          (await $axios.$get(`${url}&prop=extracts&exintro&explaintext&redirects=1${pageId}`)).query?.pages?.[id]?.extract,
+          (await $axios.$get(`${url}&prop=info&inprop=url${pageId}`)).query?.pages?.[id]?.fullurl
+        ])
+      } catch (err) {}
+    }
+
+    const title = countries?.country?.[lang]?.split('|')
+
     return {
-      lang: 'fr',
-      more: false,
-      wiki: null,
-      link: null,
-      article: null,
-      length: 450,
-      fab: false,
-      copied: false,
-      maps: null
+      article,
+      wikipedia: {
+        content: wikipedia?.[0],
+        link: wikipedia?.[1],
+        size: wikipedia?.[0].slice(0, 450).length < wikipedia?.[0].length
+      },
+      title,
+      capital: countries?.capital?.[lang]?.split('|').join(', '),
+      content: {
+        domain: article.domain,
+        continent: content?.continent?.[article.continent]?.[lang],
+        continentPrefix: article?.continent?.toUpperCase(),
+        hemisphere: article?.hemisphere?.split(',').map(v => content.hemisphere[v][lang]).join(', '),
+        languages: article?.languages?.split(',').map(v => content.languages[v][lang]).join(', '),
+        alphabet: article?.alphabet?.split(',').map(v => content.alphabet[v][lang]).join(', '),
+        direction: article?.direction?.split(',').map(v => content.direction[v][lang]).join(', ')
+      },
+      maps: title && title.length ? `${content.urls.maps}${encodeURIComponent(title[0])}` : null
     }
   },
-  async fetch () {
-    this.article = await this.$content('countries', this.$route.params.slug).fetch()
+  data () {
+    return {
+      more: false,
+      fab: false,
+      copied: false,
+      maps: null,
 
-    const c = countries.find(c => c.id === this.$route.params.slug)
-    if (c) {
-      this.maps = content.urls.maps + encodeURIComponent(c.country[this.lang])
-
-      const id = c.wikipedia && c.wikipedia[this.lang]
-
-      if (id) {
-        const url = `https://${this.lang}.wikipedia.org/w/api.php?format=json&action=query`
-        const pageId = `&pageids=${id}`
-        this.wiki = (await this.$axios.$get(`${url}&prop=extracts&exintro&explaintext&redirects=1${pageId}`))
-          .query.pages[id].extract
-        this.link = (await this.$axios.$get(`${url}&prop=info&inprop=url${pageId}`))
-          .query.pages[id].fullurl
-      }
+      // ICONS
+      mdiOpenInNew, mdiClose, mdiTools, mdiContentCopy, mdiGoogleMaps
     }
   },
   head () {
@@ -266,44 +290,9 @@ export default {
     },
     getWiki () {
       if (this.more) {
-        return this.wiki
+        return this.wikipedia.content
       } else {
-        return this.wiki.slice(0, this.length)
-      }
-    },
-    getContinent (continent) {
-      return content.continent[continent][this.lang] + ' (' + continent + ')'
-    },
-    getHemisphere (hemisphere) {
-      const tmp = []
-      for (const i of hemisphere.split(',')) {
-        tmp.push(content.hemisphere[i.trim()][this.lang])
-      }
-      return tmp.join(', ')
-    },
-    getTraffic (traffic) {
-      return content.traffic[traffic][this.lang]
-    },
-    getLanguage (language) {
-      const tmp = []
-      for (const i of language.split(',')) {
-        tmp.push(content.languages[i.trim()][this.lang])
-      }
-      return tmp.join(', ')
-    },
-    getAlphabet (alphabet) {
-      const tmp = []
-      for (const i of alphabet.split(',')) {
-        tmp.push(content.alphabet[i.trim()][this.lang])
-      }
-      return tmp.join(', ')
-    },
-    getCapital () {
-      const tmp = countries.find(c => c.id === this.$route.params.slug).capital[this.lang]
-      if (tmp) {
-        return tmp.split('|').join(', ')
-      } else {
-        return 'Aucune capitale'
+        return this.wikipedia.content.slice(0, 450)
       }
     }
   }

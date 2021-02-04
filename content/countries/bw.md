@@ -5,7 +5,7 @@ domain: bw
 continent: AF
 hemisphere: S
 languages: "tsn,eng"
-traffic: L
+direction: L
 ---
 
 # Emplacement

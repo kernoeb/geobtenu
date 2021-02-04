@@ -5,7 +5,7 @@ domain: af
 continent: AS
 hemisphere: N
 languages: "prs,pus"
-traffic: R
+direction: R
 ---
 
 # Emplacement

@@ -2,7 +2,7 @@ import colors from 'vuetify/es5/util/colors'
 const { NODE_ENV = 'production' } = process.env
 const isDev = NODE_ENV === 'development'
 // eslint-disable-next-line nuxt/no-cjs-in-config
-const countries = require('./assets/countries.json')
+const countries = require('./content/countriesData/countries.json')
 
 const t = []
 for (const i of countries) {
@@ -32,11 +32,7 @@ export default {
       { hid: 'description', name: 'description', content: 'Un outil simple et efficace pour obtenir des informations sur un pays !' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Secular%20One'
-      }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
 
@@ -56,7 +52,13 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
+    ['@nuxtjs/google-fonts', {
+      families: {
+        Roboto: true,
+        'Secular+One': true
+      }
+    }]
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -84,6 +86,7 @@ export default {
 
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
   vuetify: {
+    defaultAssets: false,
     customVariables: ['~/assets/variables.scss'],
     theme: {
       dark: true,

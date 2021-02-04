@@ -6,7 +6,7 @@ continent: AS
 hemisphere: N
 languages: mon
 alphabet: cyrl
-traffic: R
+direction: R
 ---
 
 # Emplacement

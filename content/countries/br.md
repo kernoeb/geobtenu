@@ -6,7 +6,7 @@ continent: SA
 hemisphere: S
 languages: por
 alphabet: lat
-traffic: R
+direction: R
 ---
 
 # Emplacement

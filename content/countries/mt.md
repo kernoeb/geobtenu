@@ -6,7 +6,7 @@ continent: EU
 hemisphere: N
 languages: "mlt,eng"
 alphabet: lat
-traffic: L
+direction: L
 ---
 
 # Emplacement

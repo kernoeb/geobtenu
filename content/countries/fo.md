@@ -6,7 +6,7 @@ continent: EU
 hemisphere: N
 languages: "dan,fao"
 alphabet: lat
-traffic: R
+direction: R
 ---
 
 # Emplacement

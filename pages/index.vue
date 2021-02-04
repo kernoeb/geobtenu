@@ -12,7 +12,7 @@
         style="margin-bottom: 58px"
         @click="scrollToTop()"
       >
-        <v-icon>mdi-arrow-up</v-icon>
+        <v-icon>{{ mdiArrowUp }}</v-icon>
       </v-btn>
     </transition>
     <v-row :class="productionMode ? 'justifyCenter' : null">
@@ -35,7 +35,7 @@
                 <v-text-field
                   v-model="search"
                   background-color="#121212"
-                  clear-icon="mdi-close-circle"
+                  :clear-icon="mdiCloseCircle"
                   clearable
                   hide-details
                   outlined
@@ -54,13 +54,25 @@
           style="margin-top: 100px;"
         >
           <transition-group ref="vRowFlags" class="row justifyCenter" name="flip-list">
-            <FlagCard
+            <v-col
               v-for="value in countriesFiltered"
               :key="`flag_${value.id}`"
-              :finished="isFinished(value.id)"
-              :lang="lang"
-              :value="value"
-            />
+              class="flip-list-item"
+              cols="5"
+              md="4"
+              xl="3"
+            >
+              <v-lazy
+                v-model="value.actived"
+                height="181"
+              >
+                <FlagCard
+                  :finished="value.finished"
+                  :lang="lang"
+                  :value="value"
+                />
+              </v-lazy>
+            </v-col>
           </transition-group>
         </v-row>
       </v-col>
@@ -69,6 +81,7 @@
 </template>
 
 <script>
+import { mdiArrowUp, mdiCloseCircle } from '@mdi/js'
 import finished from '~/assets/finished.json'
 import flagCard from '~/components/flag-card'
 
@@ -77,9 +90,14 @@ export default {
   components: { flagCard },
   transition: 'page',
   async asyncData ({ $content }) {
-    return {
-      countries: await $content('json').fetch()
+    const limit = 20
+    const countries = (await $content('countriesData').only(['country', 'capital', 'id']).fetch()).map(v => ({ ...v, finished: finished.includes(v.id) }))
+
+    for (let i = 0; i < (limit < 16 ? limit : 16); i++) {
+      countries[i].actived = true
     }
+
+    return { countries }
   },
   data () {
     return {
@@ -87,7 +105,11 @@ export default {
       search: null,
       finishedCountries: false,
       width: null,
-      showS2T: false
+      showS2T: false,
+
+      // ICONS
+      mdiArrowUp,
+      mdiCloseCircle
     }
   },
   head: {

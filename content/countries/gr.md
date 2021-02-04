@@ -6,7 +6,7 @@ continent: EU
 hemisphere: N
 languages: gre
 alphabet: gre
-traffic: R
+direction: R
 ---
 
 # Emplacement

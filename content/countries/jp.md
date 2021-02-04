@@ -6,7 +6,7 @@ continent: AS
 hemisphere: N
 languages: jpn
 alphabet: jpn
-traffic: L
+direction: L
 ---
 
 # Emplacement

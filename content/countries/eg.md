@@ -6,7 +6,7 @@ continent: AF
 hemisphere: N
 languages: arb
 alphabet: ara
-traffic: R
+direction: R
 ---
 
 # Emplacement
