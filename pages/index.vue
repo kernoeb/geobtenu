@@ -91,7 +91,7 @@ export default {
   transition: 'page',
   async asyncData ({ $content }) {
     const limit = 20
-    const countries = (await $content('countriesData').only(['country', 'capital', 'id']).fetch()).map(v => ({ ...v, finished: finished.includes(v.id) }))
+    const countries = (await $content('countriesData').only(['country', 'capital', 'id']).limit(limit).fetch()).map(v => ({ ...v, finished: finished.includes(v.id) }))
 
     for (let i = 0; i < (limit < 16 ? limit : 16); i++) {
       countries[i].actived = true
@@ -141,6 +141,14 @@ export default {
     window.onscroll = () => {
       this.showS2T = document.documentElement.scrollTop > 240
     }
+    setTimeout(() => {
+      fetch('/content/countries.json').then(response => response.json()).then((data) => {
+        for (let i = 0; i < 20; i++) {
+          data[i].actived = true
+        }
+        this.countries = data
+      })
+    }, 500)
   },
   methods: {
     scrollToTop () {

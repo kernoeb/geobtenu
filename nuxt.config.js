@@ -36,14 +36,6 @@ export default {
     ]
   },
 
-  // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [
-  ],
-
-  // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [
-  ],
-
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
 
@@ -64,16 +56,12 @@ export default {
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     '@nuxtjs/component-cache',
-    // 'cookie-universal-nuxt',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     'vue-plausible'
   ],
-
-  // Axios module configuration (https://go.nuxtjs.dev/config-axios)
-  axios: {},
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {
@@ -87,7 +75,6 @@ export default {
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
   vuetify: {
     defaultAssets: false,
-    customVariables: ['~/assets/variables.scss'],
     theme: {
       dark: true,
       themes: {
@@ -107,7 +94,6 @@ export default {
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
     extractCSS: true,
-
     postcss:
       {
         // disable postcss plugins in development
@@ -141,7 +127,8 @@ export default {
               },
               'css-byebye': {
                 rulesToRemove: [
-                  /.*\.v-application--is-rtl.*/
+                  /.*\.v-application--is-rtl.*/,
+                  /.*light.*/
                 ]
               }
             }

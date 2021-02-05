@@ -6,19 +6,18 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
+    "generate": "nuxt generate && mkdir -p dist/content/ && cp ./content/countriesData/countries.json dist/content/",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint": "yarn lint:js"
   },
   "dependencies": {
-    "@nuxt/content": "^1.12.0",
-    "@nuxtjs/axios": "^5.13.0",
     "@nuxtjs/component-cache": "^1.1.6",
-    "core-js": "^3.8.3",
     "nuxt": "^2.14.12",
     "vue-plausible": "^1.1.2"
   },
   "devDependencies": {
+    "@nuxt/content": "^1.12.0",
+    "@nuxtjs/axios": "^5.13.0",
     "@fullhuman/postcss-purgecss": "3.1.3",
     "@mdi/js": "^5.9.55",
     "@nuxtjs/eslint-config": "^5.0.0",

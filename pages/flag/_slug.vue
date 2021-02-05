@@ -206,14 +206,14 @@ export default {
 
     let wikipedia
     if (countries?.wikipedia?.[lang]) {
-      const url = `https://${lang}.wikipedia.org/w/api.php?format=json&action=query`
+      const url = `https://${lang}.wikipedia.org/w/api.php?format=json&action=query&prop=`
       const id = countries.wikipedia[lang]
       const pageId = `&pageids=${id}`
 
       try {
         wikipedia = await Promise.all([
-          (await $axios.$get(`${url}&prop=extracts&exintro&explaintext&redirects=1${pageId}`)).query?.pages?.[id]?.extract,
-          (await $axios.$get(`${url}&prop=info&inprop=url${pageId}`)).query?.pages?.[id]?.fullurl
+          (await $axios.$get(url + 'extracts&exintro&explaintext&redirects=1' + pageId)).query?.pages?.[id]?.extract,
+          (await $axios.$get(url + 'info&inprop=url' + pageId)).query?.pages?.[id]?.fullurl
         ])
       } catch (err) {}
     }
@@ -249,7 +249,11 @@ export default {
       maps: null,
 
       // ICONS
-      mdiOpenInNew, mdiClose, mdiTools, mdiContentCopy, mdiGoogleMaps
+      mdiOpenInNew,
+      mdiClose,
+      mdiTools,
+      mdiContentCopy,
+      mdiGoogleMaps
     }
   },
   head () {
@@ -268,8 +272,7 @@ export default {
     if (this.$route.path.endsWith('/')) {
       const tmp = this.$route.params.slug
       this.$router.replace({
-        path: `/flag/${tmp}#`,
-        params: { noTransition: 'true' }
+        path: `/flag/${tmp}#`
       })
     }
   },
