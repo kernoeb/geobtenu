@@ -26,7 +26,7 @@
             <transition name="fade">
               <v-badge
                 v-if="width && countries"
-                :content="countriesFiltered.length"
+                :content="countries.length === 20 ? '246' : countriesFiltered.length"
                 class="d-block"
                 color="green"
                 offset-x="18"
