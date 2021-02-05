@@ -18,16 +18,15 @@
             <v-icon>{{ mdiWindowClose }}</v-icon>
           </v-btn>
           <v-list-item-title
-            :class="!$vuetify.theme.dark ? 'geoTitleColor' : 'geoTitleColorDark'"
-            class="geoTitle"
+            class="geoTitle geoTitleColorDark"
           >
-            {{ title }}
+            {{ $options.title }}
           </v-list-item-title>
         </v-list-item>
 
         <v-divider />
         <v-list-item
-          v-for="(item, i) in items"
+          v-for="(item, i) in $options.items"
           v-once
           :key="i"
           :to="item.to"
@@ -62,7 +61,7 @@
           </v-list-item-content>
         </v-list-item>
         <v-divider />
-        <v-list-item v-for="(d, index) in itemsMenu" v-once :key="`itemsmenu_${index}`" :href="d.href" target="_blank">
+        <v-list-item v-for="(d, index) in $options.itemsMenu" v-once :key="`itemsmenu_${index}`" :href="d.href" target="_blank">
           <v-list-item-action>
             <v-icon>{{ d.icon }}</v-icon>
           </v-list-item-action>
@@ -92,9 +91,8 @@
       <v-spacer />
       <nuxt-link :to="{name: 'index'}" class="noDecoration">
         <v-toolbar-title
-          :class="!$vuetify.theme.dark ? 'geoTitleColor' : 'geoTitleColorDark'"
-          class="geoTitle"
-          v-text="title"
+          class="geoTitle geoTitleColorDark"
+          v-text="$options.title"
         />
       </nuxt-link>
       <v-spacer />
@@ -125,6 +123,36 @@ import { mdiCamera, mdiGoogleSpreadsheet, mdiHome, mdiWindowClose, mdiMapMarkerC
 import finished from '~/assets/finished.json'
 
 export default {
+  itemsMenu: [
+    {
+      href: 'https://docs.google.com/spreadsheets/d/1SUcuQkmDgVZMqNLe7XuNEhmJulonpnSQuSiJAOqfhtY',
+      icon: mdiCamera,
+      text: 'Générations de caméras'
+    },
+    {
+      href: 'https://docs.google.com/spreadsheets/d/1x7SfoMvNILkkzT8feYqgku0qaiI-UcVvC2YfPIIvG-g',
+      icon: mdiGoogleSpreadsheet,
+      text: 'Geo-Astuces (Redneho)'
+    },
+    {
+      href: 'https://docs.google.com/document/d/1mkof2V97hVqlDsG0NrJKOJLMC40-5BHvMVDQgj4Qvu8',
+      icon: mdiGoogleSpreadsheet,
+      text: 'La Méta (Armire)'
+    },
+    {
+      href: 'https://docs.google.com/spreadsheets/d/1eN1X7fa-zjR2AR2CUbb_KCjGfSWS2PZZocIqn_wtnxs',
+      icon: mdiGoogleSpreadsheet,
+      text: 'Guess The Country (LeTakamari)'
+    }
+  ],
+  items: [
+    {
+      icon: mdiHome,
+      title: 'Accueil',
+      to: '/'
+    }
+  ],
+  title: 'GÉOBTENU',
   data () {
     return {
       // ICONS
@@ -136,36 +164,6 @@ export default {
 
       // OTHERS
       drawer: false,
-      itemsMenu: [
-        {
-          href: 'https://docs.google.com/spreadsheets/d/1SUcuQkmDgVZMqNLe7XuNEhmJulonpnSQuSiJAOqfhtY',
-          icon: mdiCamera,
-          text: 'Générations de caméras'
-        },
-        {
-          href: 'https://docs.google.com/spreadsheets/d/1x7SfoMvNILkkzT8feYqgku0qaiI-UcVvC2YfPIIvG-g',
-          icon: mdiGoogleSpreadsheet,
-          text: 'Geo-Astuces (Redneho)'
-        },
-        {
-          href: 'https://docs.google.com/document/d/1mkof2V97hVqlDsG0NrJKOJLMC40-5BHvMVDQgj4Qvu8',
-          icon: mdiGoogleSpreadsheet,
-          text: 'La Méta (Armire)'
-        },
-        {
-          href: 'https://docs.google.com/spreadsheets/d/1eN1X7fa-zjR2AR2CUbb_KCjGfSWS2PZZocIqn_wtnxs',
-          icon: mdiGoogleSpreadsheet,
-          text: 'Guess The Country (LeTakamari)'
-        }
-      ],
-      items: [
-        {
-          icon: mdiHome,
-          title: 'Accueil',
-          to: '/'
-        }
-      ],
-      title: 'GÉOBTENU',
       randomCountryElement: this.randomCountry()
     }
   },
