@@ -16,7 +16,7 @@
         <div style="display: inline-block; max-width: 200px; max-height: 200px;">
           <img
             :src="require(`~/assets/flags/png/${$route.params.slug}.png`)"
-            alt="flag"
+            :alt="`flag_${$route.params.slug}`"
             class="rounded"
             height="auto"
             style="max-width: 100%"
