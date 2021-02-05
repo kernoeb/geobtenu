@@ -178,8 +178,8 @@
       </v-btn>
     </v-speed-dial>
     <v-snackbar
+      style="position: fixed"
       :value="copied"
-      absolute
       color="success"
       right
       text
