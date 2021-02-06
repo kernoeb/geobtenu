@@ -185,6 +185,9 @@
     },
     "ltz": {
       "fr": "Luxembourgeois"
+    },
+    "kor": {
+      "fr": "Coréen"
     }
   },
   "alphabet": {
@@ -214,6 +217,9 @@
     },
     "tha": {
       "fr": "Thaï"
+    },
+    "hang": {
+      "fr": "Hangeul"
     }
   }
 }
