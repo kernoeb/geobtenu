@@ -297,9 +297,9 @@ export default {
     }
   },
   head () {
-    if (this.article) {
+    if (this.title) {
       return {
-        title: `Géobtenu | ${this.article.title}`
+        title: `Géobtenu | ${this.title}`
       }
     }
   },
