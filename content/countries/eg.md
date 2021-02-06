@@ -1,6 +1,4 @@
 ---
-title: Égypte
-id: eg
 domain: eg
 continent: AF
 hemisphere: N

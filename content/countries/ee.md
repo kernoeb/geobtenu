@@ -1,6 +1,4 @@
 ---
-title: Estonie
-id: ee
 domain: ee
 continent: EU
 hemisphere: N

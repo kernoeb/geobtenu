@@ -1,6 +1,4 @@
 ---
-title: Italie
-id: it
 domain: it
 continent: EU
 hemisphere: N

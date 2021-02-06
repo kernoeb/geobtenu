@@ -1,6 +1,4 @@
 ---
-title: Chili
-id: cl
 domain: cl
 continent: SA
 hemisphere: S

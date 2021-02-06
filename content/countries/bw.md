@@ -1,6 +1,4 @@
 ---
-title: Botswana
-id: bw
 domain: bw
 continent: AF
 hemisphere: S

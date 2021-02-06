@@ -1,6 +1,4 @@
 ---
-title: Australie
-id: au
 domain: au
 continent: OC
 hemisphere: S

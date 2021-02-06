@@ -1,6 +1,4 @@
 ---
-title: Autriche
-id: at
 domain: at
 continent: EU
 hemisphere: N

@@ -1,6 +1,4 @@
 ---
-title: Bhoutan
-id: bt
 domain: bt
 continent: AS
 hemisphere: N

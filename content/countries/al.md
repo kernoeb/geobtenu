@@ -1,6 +1,4 @@
 ---
-title: Albanie
-id: al
 domain: al
 continent: EU
 hemisphere: N

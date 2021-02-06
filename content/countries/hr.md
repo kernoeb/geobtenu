@@ -1,6 +1,4 @@
 ---
-title: Croatie
-id: hr
 domain: hr
 continent: EU
 hemisphere: N

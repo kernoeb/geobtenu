@@ -1,6 +1,4 @@
 ---
-title: Bulgarie
-id: bg
 domain: bg
 continent: EU
 hemisphere: N

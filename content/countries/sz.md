@@ -1,6 +1,4 @@
 ---
-title: Eswatini
-id: sz
 domain: sz
 continent: AF
 hemisphere: S

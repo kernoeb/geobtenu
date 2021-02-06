@@ -1,6 +1,4 @@
 ---
-title: Ghana
-id: gh
 domain: gh
 continent: AF
 hemisphere: N

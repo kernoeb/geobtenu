@@ -1,6 +1,4 @@
 ---
-title: Andorre
-id: ad
 domain: ad
 continent: EU
 hemisphere: N

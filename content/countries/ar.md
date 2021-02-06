@@ -1,6 +1,4 @@
 ---
-title: Argentine
-id: ar
 domain: ar
 continent: SA
 hemisphere: S

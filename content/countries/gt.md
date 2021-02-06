@@ -1,6 +1,4 @@
 ---
-title: Guatemala
-id: gt
 domain: gt
 continent: CA
 hemisphere: N

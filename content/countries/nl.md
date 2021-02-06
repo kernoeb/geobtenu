@@ -1,6 +1,4 @@
 ---
-title: Pays-Bas
-id: nl
 domain: nl
 continent: EU
 hemisphere: N

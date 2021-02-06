@@ -1,6 +1,4 @@
 ---
-title: Indonésie
-id: id
 domain: id
 continent: AS
 hemisphere: N,S

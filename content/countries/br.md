@@ -1,6 +1,4 @@
 ---
-title: Brésil
-id: br
 domain: br
 continent: SA
 hemisphere: S

@@ -1,6 +1,4 @@
 ---
-title: Canada
-id: ca
 domain: ca
 continent: NA
 hemisphere: N

@@ -1,6 +1,4 @@
 ---
-title: Émirats Arabes Unis
-id: ae
 domain: ae
 continent: AS
 hemisphere: N

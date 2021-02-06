@@ -1,6 +1,4 @@
 ---
-title: Bangladesh
-id: bd
 domain: bd
 continent: AS
 hemisphere: N

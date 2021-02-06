@@ -1,6 +1,4 @@
 ---
-title: Afghanistan
-id: af
 domain: af
 continent: AS
 hemisphere: N

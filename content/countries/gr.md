@@ -1,6 +1,4 @@
 ---
-title: Grèce
-id: gr
 domain: gr
 continent: EU
 hemisphere: N

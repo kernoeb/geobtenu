@@ -1,6 +1,4 @@
 ---
-title: Colombie
-id: co
 domain: co
 continent: SA
 hemisphere: N

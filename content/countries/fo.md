@@ -1,6 +1,4 @@
 ---
-title: Îles Féroé
-id: fo
 domain: fo
 continent: EU
 hemisphere: N

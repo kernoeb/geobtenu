@@ -7,6 +7,7 @@
           :width="width"
           :height="height"
           style="border:0;border-radius: 15px"
+          :class="marginBottom ? 'mt-2' : null"
           allowfullscreen=""
           aria-hidden="false"
           tabindex="0"
@@ -31,6 +32,10 @@ export default {
     height: {
       type: Number,
       default: 300
+    },
+    marginBottom: {
+      type: Boolean,
+      default: false
     }
   }
 }

@@ -1,6 +1,4 @@
 ---
-title: Espagne
-id: es
 domain: es
 continent: EU
 hemisphere: N

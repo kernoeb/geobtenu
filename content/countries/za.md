@@ -1,6 +1,4 @@
 ---
-title: Afrique du Sud
-id: za
 domain: za
 continent: AF
 hemisphere: S

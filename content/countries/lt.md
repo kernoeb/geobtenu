@@ -1,6 +1,4 @@
 ---
-title: Lituanie
-id: lt
 domain: lt
 continent: EU
 hemisphere: N

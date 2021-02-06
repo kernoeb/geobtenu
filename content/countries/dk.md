@@ -1,6 +1,4 @@
 ---
-title: Danemark
-id: dk
 domain: dk
 continent: EU
 hemisphere: N

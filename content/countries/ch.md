@@ -1,6 +1,4 @@
 ---
-title: Suisse
-id: ch
 domain: ch
 continent: EU
 hemisphere: N

@@ -1,6 +1,4 @@
 ---
-title: Hongrie
-id: hu
 domain: hu
 continent: EU
 hemisphere: N

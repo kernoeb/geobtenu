@@ -1,6 +1,4 @@
 ---
-title: Antarctique
-id: aq
 domain: aq
 continent: AN
 hemisphere: S

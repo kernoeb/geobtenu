@@ -1,6 +1,4 @@
 ---
-title: Japon
-id: jp
 domain: jp
 continent: AS
 hemisphere: N

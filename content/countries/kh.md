@@ -1,6 +1,4 @@
 ---
-title: Cambodge
-id: kh
 domain: kh
 continent: AS
 hemisphere: N

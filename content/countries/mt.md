@@ -1,6 +1,4 @@
 ---
-title: Malte
-id: mt
 domain: mt
 continent: EU
 hemisphere: N

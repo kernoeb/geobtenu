@@ -1,6 +1,4 @@
 ---
-title: Lesotho
-id: ls
 domain: ls
 continent: AF
 hemisphere: S
@@ -29,8 +27,7 @@ gmapslocation: "!1m18!1m12!1m3!1d7018225.855306482!2d18.738415108106395!3d-30.80
 <br/>
 
 - Montagnes très **spécifiques**  
-  <custom-iframe link="!4v1612614387648!6m8!1m7!1sYc35n6eIWtDL372cxYkpbw!2m2!1d-29.65609174357786!2d27.83261761678391!3f345.0954602359849!4f-5.743947617088409!5f0.4000000000000002" type="maps"></custom-iframe>
-  
+  <custom-iframe link="https://www.google.com/maps/embed?pb=!4v1612614387648!6m8!1m7!1sYc35n6eIWtDL372cxYkpbw!2m2!1d-29.65609174357786!2d27.83261761678391!3f345.0954602359849!4f-5.743947617088409!5f0.4000000000000002"></custom-iframe>
 <br/>
 
 - Arrière de la Google car **blanche** pas nette  

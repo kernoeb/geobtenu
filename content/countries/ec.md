@@ -1,6 +1,4 @@
 ---
-title: Équateur
-id: ec
 domain: ec
 continent: SA
 hemisphere: "N,S"

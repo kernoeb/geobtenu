@@ -1,6 +1,4 @@
 ---
-title: Mongolie
-id: mn
 domain: mn
 continent: AS
 hemisphere: N

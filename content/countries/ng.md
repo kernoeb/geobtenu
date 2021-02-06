@@ -1,6 +1,4 @@
 ---
-title: Nigéria
-id: ng
 domain: ng
 continent: AF
 hemisphere: N

@@ -1,6 +1,4 @@
 ---
-title: Algérie
-id: dz
 domain: dz
 continent: AF
 hemisphere: N

@@ -1,6 +1,4 @@
 ---
-title: France
-id: fr
 domain: fr
 continent: EU
 hemisphere: N

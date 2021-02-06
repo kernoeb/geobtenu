@@ -1,6 +1,4 @@
 ---
-title: Lettonie
-id: lv
 domain: lv
 continent: EU
 hemisphere: N

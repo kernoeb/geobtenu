@@ -1,6 +1,4 @@
 ---
-title: Bolivie
-id: bo
 domain: bo
 continent: SA
 hemisphere: S

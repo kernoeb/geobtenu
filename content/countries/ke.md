@@ -1,6 +1,4 @@
 ---
-title: Kenya
-id: ke
 domain: ke
 continent: AF
 hemisphere: "N,S"

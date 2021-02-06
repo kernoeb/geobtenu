@@ -1,6 +1,4 @@
 ---
-title: Irlande
-id: ie
 domain: ie
 continent: EU
 hemisphere: N

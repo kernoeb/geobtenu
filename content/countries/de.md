@@ -1,6 +1,4 @@
 ---
-title: Allemagne
-id: de
 domain: de
 continent: EU
 hemisphere: N

@@ -1,6 +1,4 @@
 ---
-title: Belgique
-id: be
 domain: be
 continent: EU
 hemisphere: N

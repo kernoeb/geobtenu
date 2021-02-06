@@ -1,6 +1,4 @@
 ---
-title: Kirghizistan
-id: kg
 domain: kg
 continent: AS
 hemisphere: N

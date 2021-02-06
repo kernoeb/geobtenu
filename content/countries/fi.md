@@ -1,6 +1,4 @@
 ---
-title: Finlande
-id: fi
 domain: fi
 continent: EU
 hemisphere: N
