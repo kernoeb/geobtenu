@@ -57,9 +57,6 @@
     "roh": {
       "fr": "Romanche"
     },
-    "ita": {
-      "fr": "Italien"
-    },
     "afr": {
       "fr": "Afrikaans"
     },
@@ -203,6 +200,15 @@
     },
     "heb": {
       "fr": "Hébreu"
+    },
+    "cnr": {
+      "fr": "Monténégrin"
+    },
+    "srp": {
+      "fr": "Serbe"
+    },
+    "bos": {
+      "fr": "Bosnien"
     }
   },
   "alphabet": {
