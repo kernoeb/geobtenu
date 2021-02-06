@@ -164,11 +164,11 @@ export default {
       this.width = this.$refs.vRowFlags.$el.clientWidth - 30
     },
     removeAccents (text) {
-      return text.replace(/[ÁÀÂÃ]/gi, 'a')
-        .replace(/[ÉÈÊ]/gi, 'e')
-        .replace(/[ÍÌÎ]/gi, 'i')
-        .replace(/[ÓÒÔÕ]/gi, 'o')
-        .replace(/[ÚÙÛ]/gi, 'u')
+      return text.replace(/[ÁÀÂÃÄ]/gi, 'a')
+        .replace(/[ÉÈÊË]/gi, 'e')
+        .replace(/[ÍÌÎÏ]/gi, 'i')
+        .replace(/[ÓÒÔÕÖ]/gi, 'o')
+        .replace(/[ÚÙÛÜ]/gi, 'u')
         .replace(/[Ç]/gi, 'c')
     },
     sanitize (text) {
