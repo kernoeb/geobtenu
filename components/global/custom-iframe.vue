@@ -1,13 +1,13 @@
 <template>
   <div class="maps-responsive">
-    <div style="min-height: 300px">
+    <div style="min-height: 300px" :style="marginTopBottom ? 'margin-bottom: 15px' : null">
       <client-only>
         <iframe
           :src="link"
           :width="width"
           :height="height"
           style="border:0;border-radius: 15px"
-          :class="marginBottom ? 'mt-2' : null"
+          :class="marginTopBottom ? 'mt-2' : null"
           allowfullscreen=""
           aria-hidden="false"
           tabindex="0"
@@ -33,7 +33,7 @@ export default {
       type: Number,
       default: 300
     },
-    marginBottom: {
+    marginTopBottom: {
       type: Boolean,
       default: false
     }

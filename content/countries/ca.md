@@ -5,6 +5,7 @@ hemisphere: N
 languages: "fra,eng"
 alphabet: lat
 direction: L
+zoom: 3
 ---
 
 # Langue

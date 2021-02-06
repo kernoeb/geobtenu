@@ -25,4 +25,4 @@ zoom: 4
 <br/>
 
 - Google Street View (exemple)
-  <custom-iframe margin-bottom link="https://www.google.com/maps/embed?pb=!4v1612626524216!6m8!1m7!1svoAK3edGJNfCO-VGFVtcbg!2m2!1d60.26669683806479!2d10.66994176762482!3f282.8586158722267!4f-2.384138241821958!5f0.7820865974627469"></custom-iframe>
+  <custom-iframe margin-top-bottom link="https://www.google.com/maps/embed?pb=!4v1612626524216!6m8!1m7!1svoAK3edGJNfCO-VGFVtcbg!2m2!1d60.26669683806479!2d10.66994176762482!3f282.8586158722267!4f-2.384138241821958!5f0.7820865974627469"></custom-iframe>
