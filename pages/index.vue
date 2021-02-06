@@ -67,7 +67,7 @@
                 height="181"
               >
                 <FlagCard
-                  :finished="value.finished"
+                  :finished="value.finished || false"
                   :lang="lang"
                   :value="value"
                 />
@@ -88,6 +88,7 @@ import flagCard from '~/components/flag-card'
 export default {
   name: 'Index',
   components: { flagCard },
+  scrollToTop: true,
   transition: 'page',
   async asyncData ({ $content }) {
     const limit = 20
@@ -143,12 +144,14 @@ export default {
     }
     setTimeout(() => {
       fetch('/content/countries.json').then(response => response.json()).then((data) => {
-        for (let i = 0; i < 20; i++) {
-          data[i].actived = true
+        for (let i = 0; i < data.length; i++) {
+          if (i < 20) { data[i].actived = true }
+          if (finished.includes(data[i].id)) { data[i].finished = true }
+          delete data[i].wikipedia
         }
         this.countries = data
       })
-    }, 500)
+    }, 350)
   },
   methods: {
     scrollToTop () {
@@ -159,9 +162,6 @@ export default {
     },
     onResize () {
       this.width = this.$refs.vRowFlags.$el.clientWidth - 30
-    },
-    isFinished (id) {
-      return finished.includes(id)
     },
     removeAccents (text) {
       return text.replace(/[ÁÀÂÃ]/gi, 'a')

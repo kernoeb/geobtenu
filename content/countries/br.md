@@ -7,14 +7,8 @@ hemisphere: S
 languages: por
 alphabet: lat
 direction: R
+zoom: 3
 ---
-
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Brazil_%28orthographic_projection%29.svg/200px-Brazil_%28orthographic_projection%29.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/2/2e/Br%C3%A9sil.jpg)
-
-<br/>
 
 # Langue
 

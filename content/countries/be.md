@@ -9,13 +9,6 @@ alphabet: lat
 direction: R
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/EU-Belgium.svg/500px-EU-Belgium.svg.png)
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/8/8c/Be-map-fr.png)
-
-<br/>
-
 # Langue
 
 ##### Ressources :

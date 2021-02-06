@@ -9,13 +9,6 @@ alphabet: lat
 direction: R
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Kingdom_of_Denmark_%28orthographic_projection%29.svg/300px-Kingdom_of_Denmark_%28orthographic_projection%29.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/a/a5/Da-carte.png)
-
-<br/>
-
 # Langue
 
 ##### Ressources :

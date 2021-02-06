@@ -9,13 +9,6 @@ alphabet: lat
 direction: R
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Ghana_%28orthographic_projection%29.svg/300px-Ghana_%28orthographic_projection%29.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/9/9e/Ghana_carte.png)
-
-<br/>
-
 # Langue
 
 ##### Ressources :

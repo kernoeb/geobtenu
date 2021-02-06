@@ -9,13 +9,6 @@ alphabet: lat
 direction: R
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/EU-Latvia.svg/300px-EU-Latvia.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/b/b2/Carte_de_Lettonie.png)
-
-<br/>
-
 # Langue
 
 ##### Ressources :

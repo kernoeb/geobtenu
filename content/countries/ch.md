@@ -8,11 +8,6 @@ languages: "fra,deu,ita,roh"
 alphabet: lat
 direction: R
 ---
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Europe-Switzerland.svg/713px-Europe-Switzerland.svg.png)
-
-<br/>
 
 # Langue
 

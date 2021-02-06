@@ -9,14 +9,6 @@ alphabet: lat
 direction: R
 ---
 
-# Emplacement
-
-![empacement](https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/EU-Germany.svg/500px-EU-Germany.svg.png)
-
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/5/58/Allemagne_carte.png)
-
-<br/>
-
 # Langue
 
 ##### Ressources :

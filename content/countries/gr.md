@@ -9,13 +9,6 @@ alphabet: gre
 direction: R
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/EU-Greece.svg/328px-EU-Greece.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/8/81/Gr-map.gif)
-
-<br/>
-
 # Langue
 
 ##### Ressources :

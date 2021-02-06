@@ -9,14 +9,6 @@ alphabet: lat
 direction: R
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Europe-Albania.svg/500px-Europe-Albania.svg.png)
-
-![info_emplacement](https://upload.wikimedia.org/wikipedia/commons/6/66/Albanie_carte.png)
-
-<br/>
-
 # Langue
 
 ##### Ressources :

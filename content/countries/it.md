@@ -9,15 +9,6 @@ alphabet: lat
 direction: R
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/EU-Italy.svg/300px-EU-Italy.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/7/76/Italie-carte.png)
-
-[Wikipédia : Italie #Subdivisions](https://fr.wikipedia.org/wiki/Italie#Subdivisions)
-
-<br/>
-
 # Langue
 
 ##### Ressources :
@@ -34,3 +25,7 @@ direction: R
 - Deux liserés bleus à chaque extrémité d'une petite plaque d'immatriculation  
   ![meta](/images/it_geoguessr.png)
 - Seuls pays streetviewé qui parle Italien
+
+<br/>
+
+[Wikipédia : Italie #Subdivisions](https://fr.wikipedia.org/wiki/Italie#Subdivisions)

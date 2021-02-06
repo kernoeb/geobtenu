@@ -9,13 +9,6 @@ alphabet: xxx
 direction: R/L
 ---
 
-# Emplacement
-
-![emplacement]()  
-![emplacement2]()
-
-<br/>
-
 # Langue
 
 ##### Ressources :

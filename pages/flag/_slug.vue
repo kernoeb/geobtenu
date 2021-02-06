@@ -15,6 +15,7 @@
       <div v-once class="d-flex justify-center">
         <div style="display: inline-block; max-width: 200px; max-height: 200px;">
           <img
+            v-if="article"
             :src="require(`~/assets/flags/png/${$route.params.slug}.png`)"
             :alt="`flag_${$route.params.slug}`"
             class="rounded"
@@ -111,7 +112,35 @@
       </v-row>
     </v-container>
 
-    <v-container v-if="article && article.body && article.body.children && article.body.children.length" v-once>
+    <v-container v-if="title && title.length">
+      <v-row :style="productionMode ? 'justify-content: center' : null">
+        <v-col
+          cols="12"
+          lg="8"
+          offset-lg="2"
+        >
+          <v-row
+            :style="productionMode ? 'justify-content: center' : null"
+            align="center"
+            class="mb-0"
+            justify="center"
+          >
+            <v-col>
+              <v-card class="rounded-xl">
+                <v-card-title>
+                  <span>Emplacement </span>
+                </v-card-title>
+                <v-card-text style="text-align: justify">
+                  <custom-iframe :link="`https://maps.google.com/maps?&output=embed&z=${(article && article.zoom) || 5}&q=${title}`" />
+                </v-card-text>
+              </v-card>
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
+    </v-container>
+
+    <v-container v-if="article && article.body && article.body.children && article.body.children.length" :v-once="productionMode">
       <v-row :style="productionMode ? 'justify-content: center' : null">
         <v-col
           cols="12"
@@ -194,10 +223,17 @@
 import { mdiOpenInNew, mdiClose, mdiTools, mdiContentCopy, mdiGoogleMaps } from '@mdi/js'
 
 export default {
+  scrollToTop: true,
   transition: 'page',
-  async asyncData ({ $content, route, $axios }) {
-    const [article, countries, content] = await Promise.all([
-      await $content('countries', route.params.slug).fetch(),
+  async asyncData ({ $content, route, redirect, $axios }) {
+    let article
+    try {
+      article = await $content('countries', route.params.slug).without(['createdAt', 'updatedAt']).fetch()
+    } catch (err) {
+      redirect('/')
+    }
+
+    const [countries, content] = await Promise.all([
       (await $content('countriesData').where({ id: route.params.slug }).fetch())[0],
       await $content('content', 'content').fetch()
     ])
@@ -208,7 +244,11 @@ export default {
     if (countries?.wikipedia?.[lang]) {
       const url = `https://${lang}.wikipedia.org/w/api.php?format=json&action=query&prop=`
       const id = countries.wikipedia[lang]
-      const pageId = `&pageids=${id}`
+      let pageId = `&pageids=${id}`
+
+      if (process.client) {
+        pageId += '&origin=*'
+      }
 
       try {
         wikipedia = await Promise.all([
@@ -230,8 +270,8 @@ export default {
       title,
       capital: countries?.capital?.[lang]?.split('|').join(', '),
       content: {
-        domain: article.domain,
-        continent: content?.continent?.[article.continent]?.[lang],
+        domain: article?.domain,
+        continent: content?.continent?.[article?.continent]?.[lang],
         continentPrefix: article?.continent?.toUpperCase(),
         hemisphere: article?.hemisphere?.split(',').map(v => content.hemisphere[v][lang]).join(', '),
         languages: article?.languages?.split(',').map(v => content.languages[v][lang]).join(', '),
@@ -350,6 +390,7 @@ export default {
 .nuxt-content img {
   max-width: 70%;
   margin-top: 5px;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 600px) {

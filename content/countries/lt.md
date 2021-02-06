@@ -9,13 +9,6 @@ alphabet: lat
 direction: R
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/EU-Lithuania.svg/300px-EU-Lithuania.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/2/21/Lh-map.jpg)
-
-<br/>
-
 # Langue
 
 ##### Ressources :

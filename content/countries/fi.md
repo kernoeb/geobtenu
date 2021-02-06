@@ -7,14 +7,8 @@ hemisphere: N
 languages: "fin,swe"
 alphabet: lat
 direction: R
+zoom: 4
 ---
-
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/EU-Finland.svg/300px-EU-Finland.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/e/e1/Carte_de_Finlande.png)
-
-<br/>
 
 # Langue
 

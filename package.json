@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "cp ./content/countriesData/countries.json static/content/ && nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate && mkdir -p dist/content/ && cp ./content/countriesData/countries.json dist/content/",

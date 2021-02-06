@@ -7,14 +7,8 @@ hemisphere: N
 languages: mon
 alphabet: cyrl
 direction: R
+zoom: 4
 ---
-
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Mongolia_%28orthographic_projection%29.svg/300px-Mongolia_%28orthographic_projection%29.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/c/c8/Mongolia_CIA_map.png)
-
-<br/>
 
 # Langue
 

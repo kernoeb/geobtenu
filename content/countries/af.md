@@ -8,13 +8,6 @@ languages: "prs,pus"
 direction: R
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Afghanistan_%28orthographic_projection%29.svg/300px-Afghanistan_%28orthographic_projection%29.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/4/4e/Carte_de_l%27Afghanistan_FR.png)
-
-<br/>
-
 # Langue
 
 ##### Ressources :

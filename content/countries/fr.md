@@ -8,11 +8,6 @@ languages: fra
 alphabet: lat
 direction: R
 ---
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Mapadefrancia.svg/langfr-800px-Mapadefrancia.svg.png)
-
-<br/>
 
 # Langue
 

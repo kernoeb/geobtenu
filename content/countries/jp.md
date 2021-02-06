@@ -9,13 +9,6 @@ alphabet: jpn
 direction: L
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Japan_%28orthographic_projection%29.svg/300px-Japan_%28orthographic_projection%29.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/a/a7/Cartedujapon.png)
-
-<br/>
-
 # Langue
 
 ##### Ressources :

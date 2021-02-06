@@ -9,13 +9,6 @@ alphabet: lat
 direction: R
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/EU-Estonia.svg/300px-EU-Estonia.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/6/64/En-map.jpg)
-
-<br/>
-
 # Langue
 
 ##### Ressources :

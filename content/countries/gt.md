@@ -9,13 +9,6 @@ alphabet: lat
 direction: R
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/GTM_orthographic.svg/300px-GTM_orthographic.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/6/65/Guatemala_carte.png)
-
-<br/>
-
 # Langue
 
 ##### Ressources :

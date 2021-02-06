@@ -8,13 +8,6 @@ languages: "tsn,eng"
 direction: L
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Botswana_%28centered_orthographic_projection%29.svg/200px-Botswana_%28centered_orthographic_projection%29.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/4/49/Bc-map-fr.png)
-
-<br/>
-
 # Langue
 
 ##### Ressources :

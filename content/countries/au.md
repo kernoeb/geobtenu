@@ -7,14 +7,8 @@ hemisphere: S
 languages: eng
 alphabet: lat
 direction: L
+zoom: 3
 ---
-
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Australia_with_AAT_%28orthographic_projection%29.svg/200px-Australia_with_AAT_%28orthographic_projection%29.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/c/cc/Carte_d%27Australie.png)
-
-<br/>
 
 # Langue
 

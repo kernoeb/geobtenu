@@ -9,12 +9,6 @@ alphabet: lat
 direction: R
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/c/c6/LocationFaroeIslands.png)  
-
-<br/>
-
 # Langue
 
 ##### Ressources :

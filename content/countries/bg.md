@@ -9,13 +9,6 @@ alphabet: cyrl
 direction: R
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/EU-Bulgaria.svg/500px-EU-Bulgaria.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/e/ed/Bu-map_FR.jpg)
-
-<br/>
-
 # Langue
 
 ##### Ressources :

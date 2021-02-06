@@ -9,13 +9,6 @@ alphabet: lat
 direction: R
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/EU-Hungary.svg/300px-EU-Hungary.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/0/03/Carte_de_Hongrie.png)
-
-<br/>
-
 # Langue
 
 ##### Ressources :

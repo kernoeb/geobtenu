@@ -9,9 +9,6 @@ alphabet: ara
 direction: R
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/United_Arab_Emirates_%28orthographic_projection%29.svg/300px-United_Arab_Emirates_%28orthographic_projection%29.svg.png)  
 ![emplacement2](https://destination-dubai.fr/img/cms/BLOG/CARTES%20PLANS%20DUBAI/CARTE%20EMIRATS%20ARABE%20UNIS.jpg)  
 *Source : [destination-dubai.fr](https://destination-dubai.fr/fr/blog/questions-pratiques-bon-a-savoir/dubai-cartes-et-plans)*
 

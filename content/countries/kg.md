@@ -9,12 +9,6 @@ alphabet: cyrl
 direction: R
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Kyrgyzstan_%28orthographic_projection%29.svg/300px-Kyrgyzstan_%28orthographic_projection%29.svg.png)
-
-<br/>
-
 # Langue
 
 ##### Ressources :

@@ -9,13 +9,6 @@ alphabet: lat
 direction: L
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Kenya_%28orthographic_projection%29.svg/300px-Kenya_%28orthographic_projection%29.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Kenya_-_Location_Map_%282013%29_-_KEN_-_UNOCHA.svg/300px-Kenya_-_Location_Map_%282013%29_-_KEN_-_UNOCHA.svg.png)
-
-<br/>
-
 # Langue
 
 ##### Ressources :

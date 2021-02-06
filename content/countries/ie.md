@@ -9,13 +9,6 @@ alphabet: lat
 direction: L
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/EU-Ireland.svg/300px-EU-Ireland.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/a/a8/Ei-map-fr.png)
-
-<br/>
-
 # Langue
 
 ##### Ressources :

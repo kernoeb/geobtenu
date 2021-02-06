@@ -9,13 +9,6 @@ alphabet: khm
 direction: R
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Location_Cambodia_ASEAN.svg/200px-Location_Cambodia_ASEAN.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Cambodia_1997_CIA_map.jpg/195px-Cambodia_1997_CIA_map.jpg)
-
-<br/>
-
 # Langue
 
 ##### Ressources :

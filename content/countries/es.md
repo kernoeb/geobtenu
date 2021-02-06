@@ -9,13 +9,6 @@ alphabet: lat
 direction: R
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/EU-Spain.svg/300px-EU-Spain.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/2/20/Espagne_carte.png)
-
-<br/>
-
 # Langue
 
 ##### Ressources :

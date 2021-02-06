@@ -7,14 +7,8 @@ hemisphere: N
 languages: dzo
 alphabet: tibt
 direction: L
+zoom: 6
 ---
-
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Bhutan_%28orthographic_projection%29.svg/200px-Bhutan_%28orthographic_projection%29.svg.png)  
-![carte](https://upload.wikimedia.org/wikipedia/commons/7/77/Carte_Bhoutan.png)
-
-<br/>
 
 # Langue
 

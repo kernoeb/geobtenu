@@ -9,13 +9,6 @@ alphabet: lat
 direction: R
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/EU-Austria.svg/500px-EU-Austria.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/f/f1/Au-map-FR.png)
-
-<br/>
-
 # Langues
 
 ##### Ressources :

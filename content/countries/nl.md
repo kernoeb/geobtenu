@@ -9,13 +9,6 @@ alphabet: lat
 direction: R
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Kingdom_of_the_Netherlands_%28orthographic_projection%29.svg/200px-Kingdom_of_the_Netherlands_%28orthographic_projection%29.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/EU-Netherlands.svg/300px-EU-Netherlands.svg.png)
-
-<br/>
-
 # Langue
 
 ##### Ressources :

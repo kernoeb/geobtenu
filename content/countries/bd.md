@@ -9,12 +9,6 @@ alphabet: san
 direction: L
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Bangladesh_%28orthographic_projection%29.svg/500px-Bangladesh_%28orthographic_projection%29.svg.png)
-
-<br/>
-
 # Langue
 
 ##### Ressources :

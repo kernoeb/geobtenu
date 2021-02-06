@@ -9,13 +9,6 @@ alphabet: lat
 direction: L
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/CAN_orthographic.svg/200px-CAN_orthographic.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/8/8d/Canada_carte.png)
-
-<br/>
-
 # Langue
 
 ##### Ressources :

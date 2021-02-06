@@ -9,13 +9,6 @@ alphabet: ara
 direction: R
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Algeria_%28centered_orthographic_projection%29.svg/500px-Algeria_%28centered_orthographic_projection%29.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Algeria%2C_administrative_divisions_%28%2Bnorthern%29_-_en_-_monochrome.svg/500px-Algeria%2C_administrative_divisions_%28%2Bnorthern%29_-_en_-_monochrome.svg.png)
-
-<br/>
-
 # Langue
 
 ##### Ressources :

@@ -4,9 +4,8 @@ id: aq
 domain: aq
 continent: AN
 hemisphere: S
+zoom: 2
 ---
-
-# Emplacement
 
 ![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Location_Antarctica.svg/langfr-280px-Location_Antarctica.svg.png)  
 

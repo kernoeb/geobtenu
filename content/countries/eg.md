@@ -9,13 +9,6 @@ alphabet: ara
 direction: R
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/EGY_orthographic.svg/300px-EGY_orthographic.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/5/53/Egypte_carte.png)
-
-<br/>
-
 # Langue
 
 ##### Ressources :

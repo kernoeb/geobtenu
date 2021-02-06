@@ -9,13 +9,6 @@ alphabet: lat
 direction: R
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/EU-Croatia.svg/300px-EU-Croatia.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/9/93/Carte_de_Croatie.png)
-
-<br/>
-
 # Langue
 
 ##### Ressources :

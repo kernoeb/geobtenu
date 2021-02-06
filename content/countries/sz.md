@@ -9,13 +9,6 @@ alphabet: lat
 direction: L
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Location_Eswatini_AU_Africa.svg/500px-Location_Eswatini_AU_Africa.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/7/7b/Eswatini_carte.png)
-
-<br/>
-
 # Langue
 
 ##### Ressources :

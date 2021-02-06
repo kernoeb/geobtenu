@@ -9,13 +9,6 @@ alphabet: lat
 direction: R
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/ECU_orthographic.svg/300px-ECU_orthographic.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/1/12/Carte_de_l%27%C3%89quateur_FR.png)
-
-<br/>
-
 # Langue
 
 ##### Ressources :

@@ -9,13 +9,6 @@ alphabet: lat
 direction: R
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/COL_orthographic_%28San_Andr%C3%A9s_and_Providencia_special%29.svg/300px-COL_orthographic_%28San_Andr%C3%A9s_and_Providencia_special%29.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/1/1e/Colombie_carte.png)
-
-<br/>
-
 # Langue
 
 ##### Ressources :

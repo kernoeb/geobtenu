@@ -9,13 +9,6 @@ alphabet: lat
 direction: R
 ---
 
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/CHL_orthographic.svg/200px-CHL_orthographic.svg.png)  
-![emplacement2](https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Chili_carte.png/275px-Chili_carte.png)
-
-<br/>
-
 # Langue
 
 ##### Ressources :

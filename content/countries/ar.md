@@ -7,13 +7,8 @@ hemisphere: S
 languages: spa
 alphabet: lat
 direction: R
+zoom: 3
 ---
-
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/ARG_orthographic_%28%2Ball_claims%29.svg/200px-ARG_orthographic_%28%2Ball_claims%29.svg.png)
-
-<br/>
 
 # Langue
 

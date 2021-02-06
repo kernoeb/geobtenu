@@ -7,13 +7,8 @@ hemisphere: N
 languages: "mlt,eng"
 alphabet: lat
 direction: L
+zoom: 10
 ---
-
-# Emplacement
-
-![emplacement](https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Europe_location_Malte.png/640px-Europe_location_Malte.png)  
-
-<br/>
 
 # Langue
 
