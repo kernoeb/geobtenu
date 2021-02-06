@@ -271,8 +271,8 @@ export default {
       capital: countries?.capital?.[lang]?.split('|').join(', '),
       content: {
         domain: article?.domain,
-        continent: content?.continent?.[article?.continent]?.[lang],
-        continentPrefix: article?.continent?.toUpperCase(),
+        continent: article?.continent?.split(',').map(v => content.continent[v][lang]).join(', '),
+        continentPrefix: article?.continent?.toUpperCase().split(',').join(', '),
         hemisphere: article?.hemisphere?.split(',').map(v => content.hemisphere[v][lang]).join(', '),
         languages: article?.languages?.split(',').map(v => content.languages[v][lang]).join(', '),
         alphabet: article?.alphabet?.split(',').map(v => content.alphabet[v][lang]).join(', '),
