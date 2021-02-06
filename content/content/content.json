@@ -200,6 +200,9 @@
     },
     "tam": {
       "fr": "Tamoul"
+    },
+    "heb": {
+      "fr": "Hébreu"
     }
   },
   "alphabet": {
@@ -232,6 +235,9 @@
     },
     "hang": {
       "fr": "Hangeul"
+    },
+    "heb": {
+      "fr": "Hébreu"
     }
   }
 }
