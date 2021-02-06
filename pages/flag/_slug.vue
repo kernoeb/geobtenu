@@ -131,7 +131,7 @@
                   <span>Emplacement </span>
                 </v-card-title>
                 <v-card-text style="text-align: justify">
-                  <custom-iframe :link="`https://maps.google.com/maps?&output=embed&z=${(article && article.zoom) || 5}&q=${title}`" />
+                  <custom-iframe :link="`https://maps.google.com/maps?&output=embed&z=${(article && article.zoom) || 5}&q=${title[0]}`" />
                 </v-card-text>
               </v-card>
             </v-col>
