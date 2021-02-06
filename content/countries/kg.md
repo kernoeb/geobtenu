@@ -21,7 +21,7 @@ direction: R
 # Reconnaître le pays / Métas
 
 - Cyrillique
-- Plaques d’immatriculation avec liserés rouges  
+- Plaques d'immatriculation avec liserés rouges  
   ![meta1](/images/kg_geoguessr2.png)
 - Google Car  
   ![meta2](/images/kg_geoguessr.png)

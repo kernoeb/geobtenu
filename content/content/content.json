@@ -173,6 +173,12 @@
     },
     "nor": {
       "fr": "Norvégien"
+    },
+    "ukr": {
+      "fr": "Ukraine"
+    },
+    "tha": {
+      "fr": "Thaï"
     }
   },
   "alphabet": {
@@ -199,6 +205,9 @@
     },
     "jpn": {
       "fr": "Japonais"
+    },
+    "tha": {
+      "fr": "Thaï"
     }
   }
 }
