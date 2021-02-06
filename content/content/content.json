@@ -188,6 +188,18 @@
     },
     "kor": {
       "fr": "Coréen"
+    },
+    "chi": {
+      "fr": "Chinois"
+    },
+    "cmn": {
+      "fr": "Mandarin"
+    },
+    "may": {
+      "fr": "Malais"
+    },
+    "tam": {
+      "fr": "Tamoul"
     }
   },
   "alphabet": {

@@ -15,7 +15,7 @@ zoom: 7
 [Wikipédia : Luxembourg #Langues](https://fr.wikipedia.org/wiki/Luxembourg#Langues)  
 [Wikipédia : Multilinguisme au Luxembourg](https://fr.wikipedia.org/wiki/Multilinguisme_au_Luxembourg)  
 [Wikipédia : Luxembourgeois](https://fr.wikipedia.org/wiki/Luxembourgeois)  
-[Wikipédia : Allemand](https://fr.wikipedia.org/wiki/Allemagne)
+[Wikipédia : Allemand](https://fr.wikipedia.org/wiki/Allemand)
 
 <br/>
 
