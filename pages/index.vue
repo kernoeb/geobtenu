@@ -95,7 +95,7 @@ export default {
     const limit = 30
     const countries = (await $content('countriesData').only(['country', 'capital', 'id']).limit(limit).fetch()).map(v => ({ ...v, finished: finished.includes(v.id) }))
 
-    for (let i = 0; i < (limit < 16 ? limit : 16); i++) {
+    for (let i = 0; i < limit; i++) {
       countries[i].actived = true
     }
 
