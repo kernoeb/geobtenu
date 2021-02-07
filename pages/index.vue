@@ -26,7 +26,7 @@
             <transition name="fade">
               <v-badge
                 v-if="width && countries"
-                :content="countries.length === 20 ? '246' : countriesFiltered.length"
+                :content="countries.length === 30 ? '246' : countriesFiltered.length"
                 class="d-block"
                 color="green"
                 offset-x="18"
@@ -34,6 +34,7 @@
               >
                 <v-text-field
                   v-model="search"
+                  :autofocus="!$vuetify.breakpoint.mobile"
                   background-color="#121212"
                   :clear-icon="mdiCloseCircle"
                   clearable
@@ -91,7 +92,7 @@ export default {
   scrollToTop: true,
   transition: 'page',
   async asyncData ({ $content }) {
-    const limit = 20
+    const limit = 30
     const countries = (await $content('countriesData').only(['country', 'capital', 'id']).limit(limit).fetch()).map(v => ({ ...v, finished: finished.includes(v.id) }))
 
     for (let i = 0; i < (limit < 16 ? limit : 16); i++) {
@@ -142,18 +143,31 @@ export default {
     window.onscroll = () => {
       this.showS2T = document.documentElement.scrollTop > 240
     }
+
     setTimeout(() => {
       fetch('/content/countries.json').then(response => response.json()).then((data) => {
+        data = data.slice(30, data.length)
         for (let i = 0; i < data.length; i++) {
-          if (i < 20) { data[i].actived = true }
           if (finished.includes(data[i].id)) { data[i].finished = true }
           delete data[i].wikipedia
         }
-        this.countries = data
+        this.countries = [...this.countries, ...data]
+
+        this.activateAll()
       })
-    }, 350)
+    }, 400)
   },
   methods: {
+    async activateAll () {
+      const timer = ms => new Promise(resolve => setTimeout(resolve, ms))
+
+      for (const i of this.countries) {
+        if (!i.actived) {
+          i.actived = true
+          await timer(50)
+        }
+      }
+    },
     scrollToTop () {
       window.scrollTo({
         top: 0,
