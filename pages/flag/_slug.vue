@@ -44,7 +44,7 @@
                 <v-card-title>Informations sur le pays</v-card-title>
                 <v-card-text style="text-align: justify; font-size: 15px">
                   <div v-if="content.domain">
-                    <b>Domaine :</b> .{{ content.domain }}
+                    <b>Domaine :</b> {{ content.domain }}
                   </div>
                   <div v-if="content.continent">
                     <b>Continent :</b> {{ content.continent }} ({{ content.continentPrefix }})
@@ -270,7 +270,7 @@ export default {
       title,
       capital: countries?.capital?.[lang]?.split('|').join(', '),
       content: {
-        domain: article?.domain,
+        domain: article?.domain.split(',').map(v => '.' + v).join(', '),
         continent: article?.continent?.split(',').map(v => content.continent[v][lang]).join(', '),
         continentPrefix: article?.continent?.toUpperCase().split(',').join(', '),
         hemisphere: article?.hemisphere?.split(',').map(v => content.hemisphere[v][lang]).join(', '),
