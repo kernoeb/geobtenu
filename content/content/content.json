@@ -233,6 +233,9 @@
     },
     "yue": {
       "fr": "Cantonais"
+    },
+    "sin": {
+      "fr": "Singhalais"
     }
   },
   "alphabet": {
@@ -268,6 +271,12 @@
     },
     "heb": {
       "fr": "Hébreu"
+    },
+    "sin": {
+      "fr": "Singhalais"
+    },
+    "tam": {
+      "fr": "Tamoul"
     }
   }
 }
