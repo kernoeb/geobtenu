@@ -270,7 +270,7 @@ export default {
       title,
       capital: countries?.capital?.[lang]?.split('|').join(', '),
       content: {
-        domain: article?.domain.split(',').map(v => '.' + v).join(', '),
+        domain: article?.domain?.split(',').map(v => '.' + v).join(', '),
         continent: article?.continent?.split(',').map(v => content.continent[v][lang]).join(', '),
         continentPrefix: article?.continent?.toUpperCase().split(',').join(', '),
         hemisphere: article?.hemisphere?.split(',').map(v => content.hemisphere[v][lang]).join(', '),
