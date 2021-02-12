@@ -78,6 +78,9 @@
     },
     "capital": {
       "fr": "Luanda"
+    },
+    "wikipedia": {
+      "fr": "54"
     }
   },
   {
@@ -87,6 +90,9 @@
     },
     "capital": {
       "fr": "The Valley"
+    },
+    "wikipedia": {
+      "fr": "55483"
     }
   },
   {
@@ -106,7 +112,8 @@
     },
     "capital": {
       "fr": "Saint John's"
-    }
+    },
+    "wikipedia": {}
   },
   {
     "id": "sa",
@@ -115,6 +122,9 @@
     },
     "capital": {
       "fr": "Riyad"
+    },
+    "wikipedia": {
+      "fr": "52"
     }
   },
   {
@@ -136,6 +146,9 @@
     },
     "capital": {
       "fr": "Erevan"
+    },
+    "wikipedia": {
+      "fr": "53"
     }
   },
   {
@@ -145,6 +158,9 @@
     },
     "capital": {
       "fr": "Oranjestad"
+    },
+    "wikipedia": {
+      "fr": "302"
     }
   },
   {
@@ -178,6 +194,9 @@
     },
     "capital": {
       "fr": "Bakou"
+    },
+    "wikipedia": {
+      "fr": "1536463"
     }
   },
   {
@@ -187,6 +206,9 @@
     },
     "capital": {
       "fr": "Nassau"
+    },
+    "wikipedia": {
+      "fr": "404"
     }
   },
   {
@@ -196,6 +218,9 @@
     },
     "capital": {
       "fr": "Manama"
+    },
+    "wikipedia": {
+      "fr": "484"
     }
   },
   {
@@ -217,6 +242,9 @@
     },
     "capital": {
       "fr": "Bridgetown"
+    },
+    "wikipedia": {
+      "fr": "494"
     }
   },
   {
@@ -238,6 +266,9 @@
     },
     "capital": {
       "fr": "Belmopan"
+    },
+    "wikipedia": {
+      "fr": "485"
     }
   },
   {
@@ -247,6 +278,9 @@
     },
     "capital": {
       "fr": "Porto-Novo"
+    },
+    "wikipedia": {
+      "fr": "405"
     }
   },
   {
@@ -256,6 +290,9 @@
     },
     "capital": {
       "fr": "Hamilton"
+    },
+    "wikipedia": {
+      "fr": "27561"
     }
   },
   {
@@ -277,6 +314,9 @@
     },
     "capital": {
       "fr": "Minsk"
+    },
+    "wikipedia": {
+      "fr": "3635589"
     }
   },
   {
@@ -298,6 +338,9 @@
     },
     "capital": {
       "fr": "Kralendijk"
+    },
+    "wikipedia": {
+      "fr": "207776"
     }
   },
   {
@@ -307,6 +350,9 @@
     },
     "capital": {
       "fr": "Sarajevo"
+    },
+    "wikipedia": {
+      "fr": "487"
     }
   },
   {
@@ -340,6 +386,9 @@
     },
     "capital": {
       "fr": "Bandar Seri Begawan"
+    },
+    "wikipedia": {
+      "fr": "489"
     }
   },
   {
@@ -361,6 +410,9 @@
     },
     "capital": {
       "fr": "Ouagadougou"
+    },
+    "wikipedia": {
+      "fr": "490"
     }
   },
   {
@@ -370,6 +422,9 @@
     },
     "capital": {
       "fr": "Gitega"
+    },
+    "wikipedia": {
+      "fr": "1865690"
     }
   },
   {
@@ -391,6 +446,9 @@
     },
     "capital": {
       "fr": "Yaoundé"
+    },
+    "wikipedia": {
+      "fr": "717"
     }
   },
   {
@@ -412,6 +470,9 @@
     },
     "capital": {
       "fr": "Praia"
+    },
+    "wikipedia": {
+      "fr": "793"
     }
   },
   {
@@ -445,6 +506,9 @@
     },
     "capital": {
       "fr": "Nicosie"
+    },
+    "wikipedia": {
+      "fr": "2826355"
     }
   },
   {
@@ -466,6 +530,9 @@
     },
     "capital": {
       "fr": "Moroni"
+    },
+    "wikipedia": {
+      "fr": "1889303"
     }
   },
   {
@@ -475,6 +542,9 @@
     },
     "capital": {
       "fr": "Brazzaville"
+    },
+    "wikipedia": {
+      "fr": "784"
     }
   },
   {
@@ -484,6 +554,9 @@
     },
     "capital": {
       "fr": "Kinshasa"
+    },
+    "wikipedia": {
+      "fr": "2627"
     }
   },
   {
@@ -493,6 +566,9 @@
     },
     "capital": {
       "fr": "Pyongyang"
+    },
+    "wikipedia": {
+      "fr": "4996"
     }
   },
   {
@@ -514,6 +590,9 @@
     },
     "capital": {
       "fr": "San José"
+    },
+    "wikipedia": {
+      "fr": "578"
     }
   },
   {
@@ -523,6 +602,9 @@
     },
     "capital": {
       "fr": "Yamoussoukro"
+    },
+    "wikipedia": {
+      "fr": "786"
     }
   },
   {
@@ -544,6 +626,9 @@
     },
     "capital": {
       "fr": "La Havane"
+    },
+    "wikipedia": {
+      "fr": "1295132"
     }
   },
   {
@@ -553,6 +638,9 @@
     },
     "capital": {
       "fr": "Willemstad"
+    },
+    "wikipedia": {
+      "fr": "90232"
     }
   },
   {
@@ -574,6 +662,9 @@
     },
     "capital": {
       "fr": "Djibouti"
+    },
+    "wikipedia": {
+      "fr": "4608785"
     }
   },
   {
@@ -583,6 +674,9 @@
     },
     "capital": {
       "fr": "Roseau"
+    },
+    "wikipedia": {
+      "fr": "99909"
     }
   },
   {
@@ -628,6 +722,9 @@
     },
     "capital": {
       "fr": "Asmara"
+    },
+    "wikipedia": {
+      "fr": "4072"
     }
   },
   {
@@ -685,6 +782,9 @@
     },
     "capital": {
       "fr": "Addis-Abeba"
+    },
+    "wikipedia": {
+      "fr": "6343"
     }
   },
   {
@@ -694,6 +794,9 @@
     },
     "capital": {
       "fr": "Suva"
+    },
+    "wikipedia": {
+      "fr": "1102"
     }
   },
   {
@@ -715,6 +818,9 @@
     },
     "capital": {
       "fr": "Paris"
+    },
+    "wikipedia": {
+      "fr": "1095"
     }
   },
   {
@@ -724,6 +830,9 @@
     },
     "capital": {
       "fr": "Libreville"
+    },
+    "wikipedia": {
+      "fr": "3129358"
     }
   },
   {
@@ -733,6 +842,9 @@
     },
     "capital": {
       "fr": "Banjul"
+    },
+    "wikipedia": {
+      "fr": "1318"
     }
   },
   {
@@ -742,6 +854,9 @@
     },
     "capital": {
       "fr": "Tbilissi"
+    },
+    "wikipedia": {
+      "fr": "126762"
     }
   },
   {
@@ -763,6 +878,9 @@
     },
     "capital": {
       "fr": "Gibraltar"
+    },
+    "wikipedia": {
+      "fr": "14397"
     }
   },
   {
@@ -784,6 +902,9 @@
     },
     "capital": {
       "fr": "Saint-Georges"
+    },
+    "wikipedia": {
+      "fr": "1320"
     }
   },
   {
@@ -793,6 +914,9 @@
     },
     "capital": {
       "fr": "Nuuk"
+    },
+    "wikipedia": {
+      "fr": "11958"
     }
   },
   {
@@ -802,6 +926,9 @@
     },
     "capital": {
       "fr": "Basse-Terre"
+    },
+    "wikipedia": {
+      "fr": "4481793"
     }
   },
   {
@@ -811,6 +938,9 @@
     },
     "capital": {
       "fr": "Hagåtña"
+    },
+    "wikipedia": {
+      "fr": "35050"
     }
   },
   {
@@ -820,6 +950,9 @@
     },
     "capital": {
       "fr": "Guatemala"
+    },
+    "wikipedia": {
+      "fr": "1231"
     }
   },
   {
@@ -829,6 +962,9 @@
     },
     "capital": {
       "fr": "Saint-Pierre-Port"
+    },
+    "wikipedia": {
+      "fr": "8255909"
     }
   },
   {
@@ -838,6 +974,9 @@
     },
     "capital": {
       "fr": "Conakry"
+    },
+    "wikipedia": {
+      "fr": "1321"
     }
   },
   {
@@ -847,6 +986,9 @@
     },
     "capital": {
       "fr": "Malabo"
+    },
+    "wikipedia": {
+      "fr": "1323"
     }
   },
   {
@@ -856,6 +998,9 @@
     },
     "capital": {
       "fr": "Bissau"
+    },
+    "wikipedia": {
+      "fr": "1322"
     }
   },
   {
@@ -865,6 +1010,9 @@
     },
     "capital": {
       "fr": "Georgetown"
+    },
+    "wikipedia": {
+      "fr": "1324"
     }
   },
   {
@@ -872,7 +1020,10 @@
     "country": {
       "fr": "Guyane Française"
     },
-    "capital": {}
+    "capital": {},
+    "wikipedia": {
+      "fr": "6764"
+    }
   },
   {
     "id": "ht",
@@ -881,6 +1032,9 @@
     },
     "capital": {
       "fr": "Port-au-Prince"
+    },
+    "wikipedia": {
+      "fr": "8674"
     }
   },
   {
@@ -890,6 +1044,9 @@
     },
     "capital": {
       "fr": "Tegucigalpa"
+    },
+    "wikipedia": {
+      "fr": "1368"
     }
   },
   {
@@ -897,7 +1054,10 @@
     "country": {
       "fr": "Hong Kong"
     },
-    "capital": {}
+    "capital": {},
+    "wikipedia": {
+      "fr": "12551"
+    }
   },
   {
     "id": "hu",
@@ -918,6 +1078,9 @@
     },
     "capital": {
       "fr": "Flying Fish Cove"
+    },
+    "wikipedia": {
+      "fr": "33330"
     }
   },
   {
@@ -927,6 +1090,9 @@
     },
     "capital": {
       "fr": "Kingston"
+    },
+    "wikipedia": {
+      "fr": "90248"
     }
   },
   {
@@ -936,6 +1102,9 @@
     },
     "capital": {
       "fr": "Douglas"
+    },
+    "wikipedia": {
+      "fr": "37879"
     }
   },
   {
@@ -945,6 +1114,9 @@
     },
     "capital": {
       "fr": "Mariehamn"
+    },
+    "wikipedia": {
+      "fr": "114461"
     }
   },
   {
@@ -954,6 +1126,9 @@
     },
     "capital": {
       "fr": "George Town"
+    },
+    "wikipedia": {
+      "fr": "104508"
     }
   },
   {
@@ -963,6 +1138,9 @@
     },
     "capital": {
       "fr": "West Island"
+    },
+    "wikipedia": {
+      "fr": "154880"
     }
   },
   {
@@ -972,6 +1150,9 @@
     },
     "capital": {
       "fr": "Avarua"
+    },
+    "wikipedia": {
+      "fr": "83727"
     }
   },
   {
@@ -993,6 +1174,9 @@
     },
     "capital": {
       "fr": "Port Stanley"
+    },
+    "wikipedia": {
+      "fr": "71736"
     }
   },
   {
@@ -1002,6 +1186,9 @@
     },
     "capital": {
       "fr": "Delap-Uliga-Darrit"
+    },
+    "wikipedia": {
+      "fr": "72593"
     }
   },
   {
@@ -1009,7 +1196,8 @@
     "country": {
       "fr": "Îles Mineures éloignées des États-Unis"
     },
-    "capital": {}
+    "capital": {},
+    "wikipedia": {}
   },
   {
     "id": "pn",
@@ -1018,6 +1206,9 @@
     },
     "capital": {
       "fr": "Adamstown"
+    },
+    "wikipedia": {
+      "fr": "40375"
     }
   },
   {
@@ -1027,6 +1218,9 @@
     },
     "capital": {
       "fr": "Honiara"
+    },
+    "wikipedia": {
+      "fr": "9447"
     }
   },
   {
@@ -1036,6 +1230,9 @@
     },
     "capital": {
       "fr": "Cockburn Town"
+    },
+    "wikipedia": {
+      "fr": "114084"
     }
   },
   {
@@ -1045,7 +1242,8 @@
     },
     "capital": {
       "fr": "Road Town"
-    }
+    },
+    "wikipedia": {}
   },
   {
     "id": "vi",
@@ -1054,6 +1252,9 @@
     },
     "capital": {
       "fr": "Charlotte Amélie"
+    },
+    "wikipedia": {
+      "fr": "107165"
     }
   },
   {
@@ -1087,6 +1288,9 @@
     },
     "capital": {
       "fr": "Bagdad"
+    },
+    "wikipedia": {
+      "fr": "470872"
     }
   },
   {
@@ -1096,6 +1300,9 @@
     },
     "capital": {
       "fr": "Téhéran"
+    },
+    "wikipedia": {
+      "fr": "1510"
     }
   },
   {
@@ -1129,6 +1336,9 @@
     },
     "capital": {
       "fr": "Jérusalem"
+    },
+    "wikipedia": {
+      "fr": "1276998"
     }
   },
   {
@@ -1150,6 +1360,9 @@
     },
     "capital": {
       "fr": "Kingston"
+    },
+    "wikipedia": {
+      "fr": "4704772"
     }
   },
   {
@@ -1171,6 +1384,9 @@
     },
     "capital": {
       "fr": "Saint-Helier"
+    },
+    "wikipedia": {
+      "fr": "76124"
     }
   },
   {
@@ -1180,6 +1396,9 @@
     },
     "capital": {
       "fr": "Amman"
+    },
+    "wikipedia": {
+      "fr": "1602"
     }
   },
   {
@@ -1189,6 +1408,9 @@
     },
     "capital": {
       "fr": "Noursoultan"
+    },
+    "wikipedia": {
+      "fr": "4991"
     }
   },
   {
@@ -1222,6 +1444,9 @@
     },
     "capital": {
       "fr": "Tarawa-Sud"
+    },
+    "wikipedia": {
+      "fr": "8676"
     }
   },
   {
@@ -1231,6 +1456,9 @@
     },
     "capital": {
       "fr": "Pristina"
+    },
+    "wikipedia": {
+      "fr": "3608791"
     }
   },
   {
@@ -1240,6 +1468,9 @@
     },
     "capital": {
       "fr": "Koweït"
+    },
+    "wikipedia": {
+      "fr": "8678"
     }
   },
   {
@@ -1249,6 +1480,9 @@
     },
     "capital": {
       "fr": "Saint-Denis"
+    },
+    "wikipedia": {
+      "fr": "7508"
     }
   },
   {
@@ -1294,6 +1528,9 @@
     },
     "capital": {
       "fr": "Beyrouth"
+    },
+    "wikipedia": {
+      "fr": "1741"
     }
   },
   {
@@ -1303,6 +1540,9 @@
     },
     "capital": {
       "fr": "Monrovia"
+    },
+    "wikipedia": {
+      "fr": "4986"
     }
   },
   {
@@ -1312,6 +1552,9 @@
     },
     "capital": {
       "fr": "Tripoli"
+    },
+    "wikipedia": {
+      "fr": "4600701"
     }
   },
   {
@@ -1321,6 +1564,9 @@
     },
     "capital": {
       "fr": "Vaduz"
+    },
+    "wikipedia": {
+      "fr": "8680"
     }
   },
   {
@@ -1352,7 +1598,10 @@
     "country": {
       "fr": "Macao"
     },
-    "capital": {}
+    "capital": {},
+    "wikipedia": {
+      "fr": "14255"
+    }
   },
   {
     "id": "mk",
@@ -1361,7 +1610,8 @@
     },
     "capital": {
       "fr": "Skopje"
-    }
+    },
+    "wikipedia": {}
   },
   {
     "id": "mg",
@@ -1370,6 +1620,9 @@
     },
     "capital": {
       "fr": "Antananarivo"
+    },
+    "wikipedia": {
+      "fr": "8645"
     }
   },
   {
@@ -1379,6 +1632,9 @@
     },
     "capital": {
       "fr": "Putrajaya"
+    },
+    "wikipedia": {
+      "fr": "4193481"
     }
   },
   {
@@ -1388,6 +1644,9 @@
     },
     "capital": {
       "fr": "Lilongwe"
+    },
+    "wikipedia": {
+      "fr": "8682"
     }
   },
   {
@@ -1397,6 +1656,9 @@
     },
     "capital": {
       "fr": "Malé"
+    },
+    "wikipedia": {
+      "fr": "8704"
     }
   },
   {
@@ -1406,6 +1668,9 @@
     },
     "capital": {
       "fr": "Bamako"
+    },
+    "wikipedia": {
+      "fr": "8666"
     }
   },
   {
@@ -1425,7 +1690,10 @@
     "country": {
       "fr": "Mariannes du Nord"
     },
-    "capital": {}
+    "capital": {},
+    "wikipedia": {
+      "fr": "106520"
+    }
   },
   {
     "id": "ma",
@@ -1434,6 +1702,9 @@
     },
     "capital": {
       "fr": "Rabat"
+    },
+    "wikipedia": {
+      "fr": "2494890"
     }
   },
   {
@@ -1441,7 +1712,10 @@
     "country": {
       "fr": "Martinique"
     },
-    "capital": {}
+    "capital": {},
+    "wikipedia": {
+      "fr": "3075409"
+    }
   },
   {
     "id": "mu",
@@ -1450,6 +1724,9 @@
     },
     "capital": {
       "fr": "Port-Louis"
+    },
+    "wikipedia": {
+      "fr": "95708"
     }
   },
   {
@@ -1459,6 +1736,9 @@
     },
     "capital": {
       "fr": "Nouakchott"
+    },
+    "wikipedia": {
+      "fr": "1381406"
     }
   },
   {
@@ -1468,6 +1748,9 @@
     },
     "capital": {
       "fr": "Mamoudzou"
+    },
+    "wikipedia": {
+      "fr": "33956"
     }
   },
   {
@@ -1489,6 +1772,9 @@
     },
     "capital": {
       "fr": "Palikir"
+    },
+    "wikipedia": {
+      "fr": "37002"
     }
   },
   {
@@ -1498,6 +1784,9 @@
     },
     "capital": {
       "fr": "Chisinau"
+    },
+    "wikipedia": {
+      "fr": "9463"
     }
   },
   {
@@ -1541,7 +1830,10 @@
     "country": {
       "fr": "Montserrat"
     },
-    "capital": {}
+    "capital": {},
+    "wikipedia": {
+      "fr": "118301"
+    }
   },
   {
     "id": "mz",
@@ -1550,6 +1842,9 @@
     },
     "capital": {
       "fr": "Maputo"
+    },
+    "wikipedia": {
+      "fr": "4749065"
     }
   },
   {
@@ -1559,6 +1854,9 @@
     },
     "capital": {
       "fr": "Naypyidaw"
+    },
+    "wikipedia": {
+      "fr": "665037"
     }
   },
   {
@@ -1568,6 +1866,9 @@
     },
     "capital": {
       "fr": "Windhoek"
+    },
+    "wikipedia": {
+      "fr": "8646"
     }
   },
   {
@@ -1577,6 +1878,9 @@
     },
     "capital": {
       "fr": "Yaren"
+    },
+    "wikipedia": {
+      "fr": "9407"
     }
   },
   {
@@ -1586,6 +1890,9 @@
     },
     "capital": {
       "fr": "Katmandou"
+    },
+    "wikipedia": {
+      "fr": "2159"
     }
   },
   {
@@ -1595,6 +1902,9 @@
     },
     "capital": {
       "fr": "Managua"
+    },
+    "wikipedia": {
+      "fr": "8651"
     }
   },
   {
@@ -1604,6 +1914,9 @@
     },
     "capital": {
       "fr": "Niamey"
+    },
+    "wikipedia": {
+      "fr": "1354946"
     }
   },
   {
@@ -1625,6 +1938,9 @@
     },
     "capital": {
       "fr": "Alofi"
+    },
+    "wikipedia": {
+      "fr": "74062"
     }
   },
   {
@@ -1644,7 +1960,10 @@
     "country": {
       "fr": "Nouvelle-Calédonie"
     },
-    "capital": {}
+    "capital": {},
+    "wikipedia": {
+      "fr": "573024"
+    }
   },
   {
     "id": "nz",
@@ -1665,6 +1984,9 @@
     },
     "capital": {
       "fr": "Mascate"
+    },
+    "wikipedia": {
+      "fr": "9237"
     }
   },
   {
@@ -1686,6 +2008,9 @@
     },
     "capital": {
       "fr": "Tachkent"
+    },
+    "wikipedia": {
+      "fr": "4992"
     }
   },
   {
@@ -1695,6 +2020,9 @@
     },
     "capital": {
       "fr": "Islamabad"
+    },
+    "wikipedia": {
+      "fr": "878111"
     }
   },
   {
@@ -1704,6 +2032,9 @@
     },
     "capital": {
       "fr": "Melekeok"
+    },
+    "wikipedia": {
+      "fr": "3881707"
     }
   },
   {
@@ -1713,6 +2044,9 @@
     },
     "capital": {
       "fr": "Jérusalem-Est"
+    },
+    "wikipedia": {
+      "fr": "4514117"
     }
   },
   {
@@ -1722,6 +2056,9 @@
     },
     "capital": {
       "fr": "Panama"
+    },
+    "wikipedia": {
+      "fr": "8650"
     }
   },
   {
@@ -1731,6 +2068,9 @@
     },
     "capital": {
       "fr": "Port Moresby"
+    },
+    "wikipedia": {
+      "fr": "9453"
     }
   },
   {
@@ -1740,6 +2080,9 @@
     },
     "capital": {
       "fr": "Asuncion"
+    },
+    "wikipedia": {
+      "fr": "4659"
     }
   },
   {
@@ -1797,6 +2140,9 @@
     },
     "capital": {
       "fr": "Papeete"
+    },
+    "wikipedia": {
+      "fr": "9218"
     }
   },
   {
@@ -1806,6 +2152,9 @@
     },
     "capital": {
       "fr": "San Juan"
+    },
+    "wikipedia": {
+      "fr": "16691"
     }
   },
   {
@@ -1827,6 +2176,9 @@
     },
     "capital": {
       "fr": "Doha"
+    },
+    "wikipedia": {
+      "fr": "2535"
     }
   },
   {
@@ -1836,6 +2188,9 @@
     },
     "capital": {
       "fr": "Bangui"
+    },
+    "wikipedia": {
+      "fr": "8698"
     }
   },
   {
@@ -1845,6 +2200,9 @@
     },
     "capital": {
       "fr": "Saint-Domingue"
+    },
+    "wikipedia": {
+      "fr": "2656"
     }
   },
   {
@@ -1890,6 +2248,9 @@
     },
     "capital": {
       "fr": "Kigali"
+    },
+    "wikipedia": {
+      "fr": "2871328"
     }
   },
   {
@@ -1899,6 +2260,9 @@
     },
     "capital": {
       "fr": "Laâyoune"
+    },
+    "wikipedia": {
+      "fr": "1279937"
     }
   },
   {
@@ -1908,6 +2272,9 @@
     },
     "capital": {
       "fr": "Gustavia"
+    },
+    "wikipedia": {
+      "fr": "20114"
     }
   },
   {
@@ -1917,6 +2284,9 @@
     },
     "capital": {
       "fr": "Basseterre"
+    },
+    "wikipedia": {
+      "fr": "8667"
     }
   },
   {
@@ -1926,6 +2296,9 @@
     },
     "capital": {
       "fr": "Saint-Marin"
+    },
+    "wikipedia": {
+      "fr": "2788"
     }
   },
   {
@@ -1933,14 +2306,20 @@
     "country": {
       "fr": "Saint-Martin"
     },
-    "capital": {}
+    "capital": {},
+    "wikipedia": {
+      "fr": "20111"
+    }
   },
   {
     "id": "pm",
     "country": {
       "fr": "Saint-Pierre-et-Miquelon"
     },
-    "capital": {}
+    "capital": {},
+    "wikipedia": {
+      "fr": "33916"
+    }
   },
   {
     "id": "vc",
@@ -1949,6 +2328,9 @@
     },
     "capital": {
       "fr": "Kingstown"
+    },
+    "wikipedia": {
+      "fr": "9450"
     }
   },
   {
@@ -1958,6 +2340,9 @@
     },
     "capital": {
       "fr": "Jamestown"
+    },
+    "wikipedia": {
+      "fr": "772474"
     }
   },
   {
@@ -1967,6 +2352,9 @@
     },
     "capital": {
       "fr": "Castries"
+    },
+    "wikipedia": {
+      "fr": "9451"
     }
   },
   {
@@ -1976,6 +2364,9 @@
     },
     "capital": {
       "fr": "San Salvador"
+    },
+    "wikipedia": {
+      "fr": "9402"
     }
   },
   {
@@ -1985,6 +2376,9 @@
     },
     "capital": {
       "fr": "Apia"
+    },
+    "wikipedia": {
+      "fr": "9440"
     }
   },
   {
@@ -1994,7 +2388,8 @@
     },
     "capital": {
       "fr": "Pago Pago"
-    }
+    },
+    "wikipedia": {}
   },
   {
     "id": "st",
@@ -2003,6 +2398,9 @@
     },
     "capital": {
       "fr": "São Tomé"
+    },
+    "wikipedia": {
+      "fr": "9442"
     }
   },
   {
@@ -2036,6 +2434,9 @@
     },
     "capital": {
       "fr": "Victoria"
+    },
+    "wikipedia": {
+      "fr": "8669"
     }
   },
   {
@@ -2045,6 +2446,9 @@
     },
     "capital": {
       "fr": "Freetown"
+    },
+    "wikipedia": {
+      "fr": "8663"
     }
   },
   {
@@ -2090,6 +2494,9 @@
     },
     "capital": {
       "fr": "Mogadiscio"
+    },
+    "wikipedia": {
+      "fr": "1230148"
     }
   },
   {
@@ -2099,6 +2506,9 @@
     },
     "capital": {
       "fr": "Khartoum"
+    },
+    "wikipedia": {
+      "fr": "2830"
     }
   },
   {
@@ -2108,6 +2518,9 @@
     },
     "capital": {
       "fr": "Djouba"
+    },
+    "wikipedia": {
+      "fr": "360244"
     }
   },
   {
@@ -2141,6 +2554,9 @@
     },
     "capital": {
       "fr": "Berne"
+    },
+    "wikipedia": {
+      "fr": "2719"
     }
   },
   {
@@ -2150,6 +2566,9 @@
     },
     "capital": {
       "fr": "Paramaribo"
+    },
+    "wikipedia": {
+      "fr": "8703"
     }
   },
   {
@@ -2157,7 +2576,10 @@
     "country": {
       "fr": "Svalbard et Jan Mayen"
     },
-    "capital": {}
+    "capital": {},
+    "wikipedia": {
+      "fr": "124476"
+    }
   },
   {
     "id": "sy",
@@ -2166,6 +2588,9 @@
     },
     "capital": {
       "fr": "Damas"
+    },
+    "wikipedia": {
+      "fr": "9395"
     }
   },
   {
@@ -2175,6 +2600,9 @@
     },
     "capital": {
       "fr": "Douchanbé"
+    },
+    "wikipedia": {
+      "fr": "4988"
     }
   },
   {
@@ -2184,6 +2612,9 @@
     },
     "capital": {
       "fr": "Taipei"
+    },
+    "wikipedia": {
+      "fr": "513798"
     }
   },
   {
@@ -2193,6 +2624,9 @@
     },
     "capital": {
       "fr": "Dodoma"
+    },
+    "wikipedia": {
+      "fr": "3004"
     }
   },
   {
@@ -2202,6 +2636,9 @@
     },
     "capital": {
       "fr": "N'Djaména"
+    },
+    "wikipedia": {
+      "fr": "4852"
     }
   },
   {
@@ -2221,14 +2658,18 @@
     "country": {
       "fr": "Terres Australes Françaises"
     },
-    "capital": {}
+    "capital": {},
+    "wikipedia": {
+      "fr": "3630697"
+    }
   },
   {
     "id": "io",
     "country": {
       "fr": "Territoire Britannique De L'océan Indien"
     },
-    "capital": {}
+    "capital": {},
+    "wikipedia": {}
   },
   {
     "id": "th",
@@ -2249,6 +2690,9 @@
     },
     "capital": {
       "fr": "Díli"
+    },
+    "wikipedia": {
+      "fr": "17188"
     }
   },
   {
@@ -2258,6 +2702,9 @@
     },
     "capital": {
       "fr": "Lomé"
+    },
+    "wikipedia": {
+      "fr": "4994"
     }
   },
   {
@@ -2265,7 +2712,10 @@
     "country": {
       "fr": "Tokelau"
     },
-    "capital": {}
+    "capital": {},
+    "wikipedia": {
+      "fr": "76881"
+    }
   },
   {
     "id": "to",
@@ -2274,6 +2724,9 @@
     },
     "capital": {
       "fr": "Nuku'alofa"
+    },
+    "wikipedia": {
+      "fr": "9411"
     }
   },
   {
@@ -2283,6 +2736,9 @@
     },
     "capital": {
       "fr": "Port-d'Espagne"
+    },
+    "wikipedia": {
+      "fr": "9414"
     }
   },
   {
@@ -2304,6 +2760,9 @@
     },
     "capital": {
       "fr": "Achgabat"
+    },
+    "wikipedia": {
+      "fr": "4990"
     }
   },
   {
@@ -2313,6 +2772,9 @@
     },
     "capital": {
       "fr": "Ankara"
+    },
+    "wikipedia": {
+      "fr": "1574253"
     }
   },
   {
@@ -2322,6 +2784,9 @@
     },
     "capital": {
       "fr": "Funafuti"
+    },
+    "wikipedia": {
+      "fr": "9408"
     }
   },
   {
@@ -2355,6 +2820,9 @@
     },
     "capital": {
       "fr": "Port-Vila"
+    },
+    "wikipedia": {
+      "fr": "9413"
     }
   },
   {
@@ -2364,6 +2832,9 @@
     },
     "capital": {
       "fr": "Cité du Vatican"
+    },
+    "wikipedia": {
+      "fr": "6667"
     }
   },
   {
@@ -2373,6 +2844,9 @@
     },
     "capital": {
       "fr": "Caracas"
+    },
+    "wikipedia": {
+      "fr": "3144"
     }
   },
   {
@@ -2382,6 +2856,9 @@
     },
     "capital": {
       "fr": "Hanoï"
+    },
+    "wikipedia": {
+      "fr": "4726798"
     }
   },
   {
@@ -2389,7 +2866,8 @@
     "country": {
       "fr": "Wallis-Et-Futuna"
     },
-    "capital": {}
+    "capital": {},
+    "wikipedia": {}
   },
   {
     "id": "ye",
@@ -2398,6 +2876,9 @@
     },
     "capital": {
       "fr": "Sanaa"
+    },
+    "wikipedia": {
+      "fr": "8658"
     }
   },
   {
@@ -2407,6 +2888,9 @@
     },
     "capital": {
       "fr": "Lusaka"
+    },
+    "wikipedia": {
+      "fr": "3368"
     }
   },
   {
@@ -2416,6 +2900,9 @@
     },
     "capital": {
       "fr": "Harare"
+    },
+    "wikipedia": {
+      "fr": "3367"
     }
   }
 ]
