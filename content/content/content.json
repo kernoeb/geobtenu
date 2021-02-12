@@ -236,6 +236,9 @@
     },
     "sin": {
       "fr": "Singhalais"
+    },
+    "lao": {
+      "fr": "Lao"
     }
   },
   "alphabet": {
@@ -277,6 +280,9 @@
     },
     "tam": {
       "fr": "Tamoul"
+    },
+    "lao": {
+      "fr": "Lao"
     }
   }
 }
