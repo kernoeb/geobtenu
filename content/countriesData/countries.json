@@ -113,7 +113,9 @@
     "capital": {
       "fr": "Saint John's"
     },
-    "wikipedia": {}
+    "wikipedia": {
+      "fr": "58"
+    }
   },
   {
     "id": "sa",
@@ -1197,7 +1199,9 @@
       "fr": "Îles Mineures éloignées des États-Unis"
     },
     "capital": {},
-    "wikipedia": {}
+    "wikipedia": {
+      "fr": "154873"
+    }
   },
   {
     "id": "pn",
@@ -1243,7 +1247,9 @@
     "capital": {
       "fr": "Road Town"
     },
-    "wikipedia": {}
+    "wikipedia": {
+      "fr": "113528"
+    }
   },
   {
     "id": "vi",
@@ -1611,7 +1617,9 @@
     "capital": {
       "fr": "Skopje"
     },
-    "wikipedia": {}
+    "wikipedia": {
+      "fr": "8644"
+    }
   },
   {
     "id": "mg",
@@ -2389,7 +2397,9 @@
     "capital": {
       "fr": "Pago Pago"
     },
-    "wikipedia": {}
+    "wikipedia": {
+      "fr": "108615"
+    }
   },
   {
     "id": "st",
@@ -2669,7 +2679,9 @@
       "fr": "Territoire Britannique De L'océan Indien"
     },
     "capital": {},
-    "wikipedia": {}
+    "wikipedia": {
+      "fr": "41203"
+    }
   },
   {
     "id": "th",
@@ -2867,7 +2879,9 @@
       "fr": "Wallis-Et-Futuna"
     },
     "capital": {},
-    "wikipedia": {}
+    "wikipedia": {
+      "fr": "6131384"
+    }
   },
   {
     "id": "ye",
