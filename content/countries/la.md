@@ -15,8 +15,8 @@ direction: R
 [Wikipédia : Langues au Laos](https://fr.wikipedia.org/wiki/Langues_au_Laos)  
 [Wikipédia : Lao / Laotien](https://fr.wikipedia.org/wiki/Lao_(langue))
 
-![http://www.axl.cefan.ulaval.ca/monde/images/alphabet-lao-cns.gif](http://www.axl.cefan.ulaval.ca/monde/images/alphabet-lao2.gif)
-![http://www.axl.cefan.ulaval.ca/monde/images/alphabet-lao2.gif](http://www.axl.cefan.ulaval.ca/monde/images/alphabet-lao2.gif)  
+![https://www.axl.cefan.ulaval.ca/monde/images/alphabet-lao-cns.gif](https://www.axl.cefan.ulaval.ca/monde/images/alphabet-lao2.gif)
+![https://www.axl.cefan.ulaval.ca/monde/images/alphabet-lao2.gif](https://www.axl.cefan.ulaval.ca/monde/images/alphabet-lao2.gif)  
 *Source : [axl.cefan.ulaval.ca](http://www.axl.cefan.ulaval.ca/asie/Laos.htm)*
 
 <br/>
