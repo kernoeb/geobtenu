@@ -65,6 +65,7 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     'vue-plausible',
+    '@nuxtjs/robots',
     '@nuxtjs/sitemap'
   ],
 
