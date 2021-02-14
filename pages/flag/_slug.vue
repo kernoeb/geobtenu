@@ -297,9 +297,41 @@ export default {
     }
   },
   head () {
-    if (this.title) {
+    if (this.title && this.wikipedia && this.wikipedia.content) {
       return {
-        title: `Géobtenu | ${this.title}`
+        title: `Géobtenu | ${this.title}`,
+        meta: [
+          {
+            hid: 'title',
+            name: 'title',
+            content: `Géobtenu | ${this.title}`
+          },
+          {
+            hid: 'og:title',
+            name: 'og:title',
+            content: `Géobtenu | ${this.title}`
+          },
+          {
+            hid: 'twitter:title',
+            name: 'twitter:title',
+            content: `Géobtenu | ${this.title}`
+          },
+          {
+            hid: 'description',
+            name: 'description',
+            content: this.wikipedia.content.slice(0, 450) + '...'
+          },
+          {
+            hid: 'og:description',
+            property: 'og:description',
+            content: this.wikipedia.content.slice(0, 450) + '...'
+          },
+          {
+            hid: 'twitter:description',
+            property: 'twitter:description',
+            content: this.wikipedia.content.slice(0, 450) + '...'
+          }
+        ]
       }
     }
   },

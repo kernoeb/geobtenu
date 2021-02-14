@@ -27,13 +27,30 @@ export default {
   head: {
     title: 'Géobtenu | Outil de géographie',
     meta: [
+      // Primary meta tags
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Un outil simple et efficace pour obtenir des informations sur un pays !' },
       { name: 'keywords', content: 'geobtenu,géobtenu,geography,géographie,geoguessr' },
       { name: 'author', content: 'kernoeb' },
       { name: 'language', content: 'French' },
-      { name: 'robots', content: 'index,follow' }
+      { name: 'robots', content: 'index,follow' },
+      { name: 'category', content: 'internet' },
+      { hid: 'title', name: 'title', content: 'Géobtenu | Outil de géographie' },
+
+      // Facebook
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://geobtenu.netlify.app/' },
+      { hid: 'og:title', property: 'og:title', content: 'Géobtenu | Outil de géographie' },
+      { hid: 'og:description', property: 'og:description', content: 'Un outil simple et efficace pour obtenir des informations sur un pays !' },
+      { property: 'og:image', content: 'https://geobtenu.netlify.app/banner.png' },
+
+      // Twitter
+      { property: 'twitter:card', content: 'summary_large_image' },
+      { property: 'twitter:url', content: 'https://geobtenu.netlify.app/' },
+      { hid: 'twitter:title', property: 'twitter:title', content: 'Géobtenu | Outil de géographie' },
+      { hid: 'twitter:description', property: 'twitter:description', content: 'Un outil simple et efficace pour obtenir des informations sur un pays !' },
+      { property: 'twitter:image', content: 'https://geobtenu.netlify.app/banner.png' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

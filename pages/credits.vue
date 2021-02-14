@@ -41,7 +41,12 @@
 
 export default {
   name: 'Credits',
-  transition: 'page'
+  transition: 'page',
+  head () {
+    return {
+      title: 'Géobtenu | Crédits'
+    }
+  }
 }
 </script>
 
