@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@nuxtjs/component-cache": "^1.1.6",
+    "@nuxtjs/sitemap": "^2.4.0",
     "nuxt": "^2.14.12",
     "vue-plausible": "^1.1.2"
   },

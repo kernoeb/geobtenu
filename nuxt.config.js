@@ -60,8 +60,14 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    'vue-plausible'
+    'vue-plausible',
+    '@nuxtjs/sitemap'
   ],
+
+  sitemap: {
+    hostname: 'https://geobtenu.netlify.app',
+    gzip: true
+  },
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {
