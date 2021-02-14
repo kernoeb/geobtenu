@@ -29,7 +29,11 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Un outil simple et efficace pour obtenir des informations sur un pays !' }
+      { hid: 'description', name: 'description', content: 'Un outil simple et efficace pour obtenir des informations sur un pays !' },
+      { name: 'keywords', content: 'geobtenu,géobtenu,geography,géographie,geoguessr' },
+      { name: 'author', content: 'kernoeb' },
+      { name: 'language', content: 'French' },
+      { name: 'robots', content: 'index,follow' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
