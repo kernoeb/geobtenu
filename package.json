@@ -28,7 +28,7 @@
     "@nuxtjs/vuetify": "^1.11.3",
     "babel-eslint": "^10.1.0",
     "css-byebye": "^2.0.2",
-    "eslint": "^7.19.0",
+    "eslint": "^7.20.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "remark-emoji": "^2.1.0"
   }
