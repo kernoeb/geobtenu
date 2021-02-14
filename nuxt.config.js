@@ -31,7 +31,7 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Un outil simple et efficace pour obtenir des informations sur un pays !' },
-      { name: 'keywords', content: 'geobtenu,géobtenu,geography,géographie,geoguessr' },
+      { name: 'keywords', content: 'geobtenu,géobtenu,geography,géographie,geoguessr,geo,wiki,meta,méta,metas,métas,info,capital,circulation,sens,direction,pays,informations,tips,conseils,continent,domaine,domain,language,langues,langue,alphabet' },
       { name: 'author', content: 'kernoeb' },
       { name: 'language', content: 'French' },
       { name: 'robots', content: 'index,follow' },
