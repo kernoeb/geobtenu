@@ -14,7 +14,7 @@
     "@nuxtjs/component-cache": "^1.1.6",
     "@nuxtjs/robots": "^2.4.2",
     "@nuxtjs/sitemap": "^2.4.0",
-    "nuxt": "^2.15.0",
+    "nuxt": "^2.15.1",
     "vue-plausible": "^1.1.2"
   },
   "devDependencies": {
