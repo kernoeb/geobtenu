@@ -26,3 +26,5 @@ direction: L
 
 - Asiatique + Roule à gauche + Plaques d'immatriculation blanches
 - Langue reconnaissable
+
+![meta_fr](/images/th_geoguessr.png)
