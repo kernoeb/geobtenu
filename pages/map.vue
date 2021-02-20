@@ -108,7 +108,7 @@ export default {
       title: 'Géobtenu | Carte du monde',
       script: [
         {
-          src: 'https://timmywil.com/panzoom/demo/panzoom.js'
+          src: 'https://cdn.jsdelivr.net/npm/@panzoom/panzoom@4.3.2/dist/panzoom.min.js'
         }
       ],
       meta: [
