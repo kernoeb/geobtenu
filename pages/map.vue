@@ -54,14 +54,11 @@
                   :to="{name: 'flag-slug', params: {slug: path['@id']}}"
                   class="noDecoration"
                 >
-                  <path
-                    :id="path['@id']"
-                    :d="path['@d']"
-                    :name="path['@name']"
-                    :style="`fill: ${getColor(path['@continent'])}`"
-                    class="path"
-                    @mouseleave="currentCountry = null"
-                    @mouseover="currentCountry = `${path['@name']} (${path['@id']})`"
+                  <country
+                    v-once
+                    :element="path"
+                    @mouseleave.native="currentCountry = null"
+                    @mouseover.native="currentCountry = `${path['@name']} (${path['@id']})`"
                   />
                 </nuxt-link>
               </svg>
@@ -87,9 +84,11 @@
 
 <script>
 import { mdiRestart } from '@mdi/js'
+import country from '~/components/country'
 
 export default {
   name: 'Map',
+  components: { country },
   scrollToTop: true,
   transition: 'page',
   data () {
@@ -158,23 +157,6 @@ export default {
         this.$refs.tooltip.style.left = el.pageX + 'px'
         this.$refs.tooltip.style.top = `${el.pageY - 30}px`
       }
-    },
-    getColor (continent) {
-      if (continent === 'EU') {
-        return '#eaff00'
-      } else if (continent === 'AN') {
-        return '#29997f'
-      } else if (continent === 'AF') {
-        return '#ffc600'
-      } else if (continent === 'NA') {
-        return '#00ccff'
-      } else if (continent === 'OC') {
-        return '#ff0000'
-      } else if (continent === 'SA') {
-        return '#00ffee'
-      } else if (continent === 'AS') {
-        return '#1ff18f'
-      }
     }
   }
 }
@@ -203,12 +185,6 @@ export default {
 
 .map {
   flex:1;
-}
-
-.path {
-  stroke-width: 0.5;
-  stroke: rgba(0, 0, 0, 0.5);
-  fill: #a1d99b;
 }
 
 .noDecoration {
