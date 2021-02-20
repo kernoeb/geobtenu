@@ -13,7 +13,7 @@
           <div v-show="entered && current" ref="tooltip" class="tooltip">
             {{ current }}
           </div>
-          <maps-info :elements="elements" :panzoom="panzoom" select="pays" title="Carte des pays" />
+          <maps-info :elements="elements" :panzoom="panzoom" :select="$vuetify.breakpoint.mobile ? 'pays (peut être lent sur mobile)' : 'pays'" title="Carte des pays" />
           <transition name="fade">
             <v-col
               v-show="panzoom"
