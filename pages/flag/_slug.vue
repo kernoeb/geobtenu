@@ -16,8 +16,8 @@
         <div style="display: inline-block; max-width: 200px; max-height: 200px;">
           <img
             v-if="article"
-            :src="require(`~/assets/flags/png/${$route.params.slug}.png`)"
             :alt="`flag_${$route.params.slug}`"
+            :src="require(`~/assets/flags/png/${$route.params.slug}.png`)"
             class="rounded"
             height="auto"
             style="max-width: 100%"
@@ -131,7 +131,9 @@
                   <span>Emplacement </span>
                 </v-card-title>
                 <v-card-text style="text-align: justify">
-                  <custom-iframe :link="`https://maps.google.com/maps?&output=embed&z=${(article && article.zoom) || 5}&q=${title[0]}`" />
+                  <custom-iframe
+                    :link="`https://maps.google.com/maps?&output=embed&z=${(article && article.zoom) || 5}&q=${title[0]}`"
+                  />
                 </v-card-text>
               </v-card>
             </v-col>
@@ -140,7 +142,10 @@
       </v-row>
     </v-container>
 
-    <v-container v-if="article && article.body && article.body.children && article.body.children.length" :v-once="productionMode">
+    <v-container
+      v-if="article && article.body && article.body.children && article.body.children.length"
+      :v-once="productionMode"
+    >
       <v-row :style="productionMode ? 'justify-content: center' : null">
         <v-col
           cols="12"
@@ -207,10 +212,10 @@
       </v-btn>
     </v-speed-dial>
     <v-snackbar
-      style="position: fixed"
       :value="copied"
       color="success"
       right
+      style="position: fixed"
       text
       top
     >
@@ -225,7 +230,12 @@ import { mdiOpenInNew, mdiClose, mdiTools, mdiContentCopy, mdiGoogleMaps } from 
 export default {
   scrollToTop: true,
   transition: 'page',
-  async asyncData ({ $content, route, redirect, $axios }) {
+  async asyncData ({
+    $content,
+    route,
+    redirect,
+    $axios
+  }) {
     let article
     try {
       article = await $content('countries', route.params.slug).without(['createdAt', 'updatedAt']).fetch()
@@ -255,7 +265,8 @@ export default {
           (await $axios.$get(url + 'extracts&exintro&explaintext&redirects=1' + pageId)).query?.pages?.[id]?.extract,
           (await $axios.$get(url + 'info&inprop=url' + pageId)).query?.pages?.[id]?.fullurl
         ])
-      } catch (err) {}
+      } catch (err) {
+      }
     }
 
     const title = countries?.country?.[lang]?.split('|')

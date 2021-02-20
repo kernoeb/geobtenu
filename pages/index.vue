@@ -35,8 +35,8 @@
                 <v-text-field
                   v-model="search"
                   :autofocus="!$vuetify.breakpoint.mobile"
-                  background-color="#121212"
                   :clear-icon="mdiCloseCircle"
+                  background-color="#121212"
                   clearable
                   hide-details
                   outlined
@@ -93,7 +93,10 @@ export default {
   transition: 'page',
   async asyncData ({ $content }) {
     const limit = 30
-    const countries = (await $content('countriesData').only(['country', 'capital', 'id']).limit(limit).fetch()).map(v => ({ ...v, finished: finished.includes(v.id) }))
+    const countries = (await $content('countriesData').only(['country', 'capital', 'id']).limit(limit).fetch()).map(v => ({
+      ...v,
+      finished: finished.includes(v.id)
+    }))
 
     for (let i = 0; i < limit; i++) {
       countries[i].actived = true
@@ -148,7 +151,9 @@ export default {
       fetch('/content/countries.json').then(response => response.json()).then((data) => {
         data = data.slice(30, data.length)
         for (let i = 0; i < data.length; i++) {
-          if (finished.includes(data[i].id)) { data[i].finished = true }
+          if (finished.includes(data[i].id)) {
+            data[i].finished = true
+          }
           delete data[i].wikipedia
         }
         this.countries = [...this.countries, ...data]
@@ -212,8 +217,7 @@ export default {
   transition: opacity .5s;
 }
 
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */
-{
+.fade-enter, .fade-leave-to {
   opacity: 0;
 }
 

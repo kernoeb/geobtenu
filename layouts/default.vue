@@ -69,7 +69,13 @@
           </v-list-item-content>
         </v-list-item>
         <v-divider />
-        <v-list-item v-for="(d, index) in $options.itemsMenu" v-once :key="`itemsmenu_${index}`" :href="d.href" target="_blank">
+        <v-list-item
+          v-for="(d, index) in $options.itemsMenu"
+          v-once
+          :key="`itemsmenu_${index}`"
+          :href="d.href"
+          target="_blank"
+        >
           <v-list-item-action>
             <v-icon>{{ d.icon }}</v-icon>
           </v-list-item-action>
@@ -127,7 +133,17 @@
 </template>
 
 <script>
-import { mdiMap, mdiCamera, mdiGoogleSpreadsheet, mdiHome, mdiWindowClose, mdiMapMarkerCircle, mdiRoad, mdiInformation, mdiMenu } from '@mdi/js'
+import {
+  mdiMap,
+  mdiCamera,
+  mdiGoogleSpreadsheet,
+  mdiHome,
+  mdiWindowClose,
+  mdiMapMarkerCircle,
+  mdiRoad,
+  mdiInformation,
+  mdiMenu
+} from '@mdi/js'
 import finished from '~/assets/finished.json'
 
 export default {

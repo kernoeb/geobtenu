@@ -14,37 +14,34 @@
           <div v-show="entered && currentCountry" ref="tooltip" class="tooltip">
             {{ currentCountry }}
           </div>
-          <v-progress-circular
-            v-if="!countries"
-            color="primary"
-            indeterminate
-          />
-          <svg
-            v-else
-            class="map"
-            viewBox="0 0 1010 666"
-            xmlns="http://www.w3.org/2000/svg"
-            @mousemove="moveTooltip"
-            @mouseleave="entered ? entered = false : null"
-            @mouseover="!entered ? entered = true : null"
-          >
-            <nuxt-link
-              v-for="path in countries"
-              :key="`path_${path['@id']}`"
-              :to="{name: 'flag-slug', params: {slug: path['@id']}}"
-              class="noDecoration"
+          <transition name="fade">
+            <svg
+              v-if="countries"
+              class="map"
+              viewBox="0 0 1010 666"
+              xmlns="http://www.w3.org/2000/svg"
+              @mouseleave="entered ? entered = false : null"
+              @mousemove="moveTooltip"
+              @mouseover="!entered ? entered = true : null"
             >
-              <path
-                :id="path['@id']"
-                :d="path['@d']"
-                :name="path['@name']"
-                :style="`fill: ${getColor(path['@continent'])}`"
-                class="path"
-                @mouseleave="currentCountry = null"
-                @mouseover="currentCountry = `${path['@name']} (${path['@id']})`"
-              />
-            </nuxt-link>
-          </svg>
+              <nuxt-link
+                v-for="path in countries"
+                :key="`path_${path['@id']}`"
+                :to="{name: 'flag-slug', params: {slug: path['@id']}}"
+                class="noDecoration"
+              >
+                <path
+                  :id="path['@id']"
+                  :d="path['@d']"
+                  :name="path['@name']"
+                  :style="`fill: ${getColor(path['@continent'])}`"
+                  class="path"
+                  @mouseleave="currentCountry = null"
+                  @mouseover="currentCountry = `${path['@name']} (${path['@id']})`"
+                />
+              </nuxt-link>
+            </svg>
+          </transition>
         </v-row>
       </v-col>
     </v-row>
@@ -65,7 +62,24 @@ export default {
   },
   head () {
     return {
-      title: 'Géobtenu | Carte'
+      title: 'Géobtenu | Carte du monde',
+      meta: [
+        {
+          hid: 'title',
+          name: 'title',
+          content: 'Géobtenu | Carte du monde'
+        },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: 'Géobtenu | Carte du monde'
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: 'Géobtenu | Carte du monde'
+        }
+      ]
     }
   },
   computed: {
@@ -152,6 +166,14 @@ export default {
 }
 
 .page-enter, .page-leave-active {
+  opacity: 0;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to {
   opacity: 0;
 }
 </style>
