@@ -59,6 +59,14 @@
             <v-list-item-title style="font-size: 13px" v-text="'Carte du monde'" />
           </v-list-item-content>
         </v-list-item>
+        <v-list-item :to="{name: 'continent'}">
+          <v-list-item-action>
+            <v-icon>{{ mdiEarth }}</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title style="font-size: 13px" v-text="'Carte des continents'" />
+          </v-list-item-content>
+        </v-list-item>
         <v-divider />
         <v-list-item v-once href="https://fr.wikipedia.org/wiki/Sens_de_circulation_(route)" target="_blank">
           <v-list-item-action>
@@ -142,7 +150,8 @@ import {
   mdiMapMarkerCircle,
   mdiRoad,
   mdiInformation,
-  mdiMenu
+  mdiMenu,
+  mdiEarth
 } from '@mdi/js'
 import finished from '~/assets/finished.json'
 
@@ -186,6 +195,7 @@ export default {
       mdiInformation,
       mdiMenu,
       mdiMap,
+      mdiEarth,
 
       // OTHERS
       drawer: false,

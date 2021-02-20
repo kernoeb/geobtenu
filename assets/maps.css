@@ -1,0 +1,49 @@
+.tooltip {
+  z-index: 1000;
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color: #111010;
+  color: white;
+  min-height: 50px;
+  min-width: 110px;
+  padding: 3px;
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.justifyCenter {
+  justify-content: center
+}
+
+.map {
+  flex: 1;
+}
+
+.noDecoration {
+  text-decoration: none;
+  color: inherit;
+}
+
+.map path:hover {
+  fill: white !important;
+}
+
+
+.page-enter-active, .page-leave-active {
+  transition: opacity .2s;
+}
+
+.page-enter, .page-leave-active {
+  opacity: 0;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 1s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
