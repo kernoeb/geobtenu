@@ -2,7 +2,6 @@
   <v-container>
     <v-row :style="productionMode ? 'justify-content: center' : null" class="justifyCenter" style="text-align: center">
       <v-col
-        class="mt-5"
         cols="12"
         lg="8"
       >
@@ -14,9 +13,18 @@
           <div v-show="entered && currentCountry" ref="tooltip" class="tooltip">
             {{ currentCountry }}
           </div>
+          <div class="d-flex justify-center align-content-center flex-column">
+            <div class="mapTitle mb-0">
+              Carte du monde
+            </div>
+            <div class="mb-3">
+              <small v-if="countries === null" style="color: darkgrey">Chargement de la carte...</small>
+              <small v-else style="color: darkgrey">Sélectionnez un pays</small>
+            </div>
+          </div>
           <transition name="fade">
             <svg
-              v-if="countries"
+              v-if="countries && countries.length"
               class="map"
               viewBox="0 0 1010 666"
               xmlns="http://www.w3.org/2000/svg"
@@ -90,6 +98,8 @@ export default {
   mounted () {
     fetch('/maps/world.json').then(response => response.json()).then((data) => {
       this.countries = data
+    }).catch(() => {
+      this.countries = []
     })
   },
   methods: {
@@ -159,6 +169,17 @@ export default {
 
 .map path:hover {
   fill: white !important;
+}
+
+.mapTitle {
+  font-size: 2.4vw;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1000px) {
+  .mapTitle {
+    font-size: 7vw;
+  }
 }
 
 .page-enter-active, .page-leave-active {
