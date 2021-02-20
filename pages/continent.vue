@@ -38,6 +38,7 @@
                   to=""
                 >
                   <g
+                    :class="`continent_${index}`"
                     :fill="getColor(continent['@id'])"
                     :transform="continent['@transform']"
                     @mouseleave="current = null"

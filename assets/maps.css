@@ -31,6 +31,9 @@
   fill: white !important;
 }
 
+g[class^="continent_"]:hover {
+  fill: white!important;
+}
 
 .page-enter-active, .page-leave-active {
   transition: opacity .2s;
