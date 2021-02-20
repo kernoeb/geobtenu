@@ -51,6 +51,14 @@
             <v-list-item-title style="font-size: 13px" v-text="'Pays aléatoire'" />
           </v-list-item-content>
         </v-list-item>
+        <v-list-item :to="{name: 'map'}">
+          <v-list-item-action>
+            <v-icon>{{ mdiMap }}</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title style="font-size: 13px" v-text="'Carte du monde'" />
+          </v-list-item-content>
+        </v-list-item>
         <v-divider />
         <v-list-item v-once href="https://fr.wikipedia.org/wiki/Sens_de_circulation_(route)" target="_blank">
           <v-list-item-action>
@@ -119,7 +127,7 @@
 </template>
 
 <script>
-import { mdiCamera, mdiGoogleSpreadsheet, mdiHome, mdiWindowClose, mdiMapMarkerCircle, mdiRoad, mdiInformation, mdiMenu } from '@mdi/js'
+import { mdiMap, mdiCamera, mdiGoogleSpreadsheet, mdiHome, mdiWindowClose, mdiMapMarkerCircle, mdiRoad, mdiInformation, mdiMenu } from '@mdi/js'
 import finished from '~/assets/finished.json'
 
 export default {
@@ -161,6 +169,7 @@ export default {
       mdiRoad,
       mdiInformation,
       mdiMenu,
+      mdiMap,
 
       // OTHERS
       drawer: false,
