@@ -8,51 +8,64 @@
           :style="productionMode ? 'justify-content: center' : null"
           align="center"
           justify="center"
+          class="flex-column"
         >
           <div v-show="entered && currentCountry" ref="tooltip" class="tooltip">
             {{ currentCountry }}
           </div>
-          <div class="d-flex justify-center align-content-center flex-column">
+          <v-col class="d-flex justify-center align-content-center flex-column">
             <div class="mapTitle mb-0">
               Carte du monde
             </div>
             <div class="mb-3">
-              <small v-if="countries === null" style="color: darkgrey">Chargement de la carte...</small>
-              <small v-else style="color: darkgrey">Sélectionnez un pays</small>
+              <transition name="fade2" mode="out-in">
+                <div v-if="countries === null && panzoom === null" key="1">
+                  <small style="color: darkgrey">Chargement de la carte...</small>
+                </div>
+                <div v-else-if="countries && countries.length && panzoom !== null" key="2">
+                  <small style="color: darkgrey">Sélectionnez un pays</small>
+                </div>
+                <div v-else key="3">
+                  <small style="color: darkgrey">Erreur...</small>
+                </div>
+              </transition>
             </div>
-          </div>
+          </v-col>
           <transition name="fade">
-            <svg
-              v-show="countries && countries.length"
-              id="worldmap"
-              v-resize="onResize"
+            <v-col
+              v-show="panzoom"
+              style="border: 1px solid #6d6d6d; border-radius: 10px"
               class="map"
-              height="calc((100vh - (7vh + 182px))"
-              style="border: 1px solid #6d6d6d; border-radius: 10px;"
-              viewBox="0 0 1010 666"
-              xmlns="http://www.w3.org/2000/svg"
-              @mouseleave="entered ? entered = false : null"
-              @mousemove="moveTooltip"
-              @mouseover="!entered ? entered = true : null"
             >
-              <nuxt-link
-                v-for="path in countries"
-                v-show="show"
-                :key="`path_${path['@id']}`"
-                :to="{name: 'flag-slug', params: {slug: path['@id']}}"
-                class="noDecoration"
+              <svg
+                v-show="countries && countries.length"
+                id="worldmap"
+                height="calc(100vh - (7vh + 200px))"
+                style="height: calc(100vh - (7vh + 200px)); width: 100%"
+                viewBox="0 0 1010 666"
+                xmlns="http://www.w3.org/2000/svg"
+                @mouseleave="entered ? entered = false : null"
+                @mousemove="moveTooltip"
+                @mouseover="!entered ? entered = true : null"
               >
-                <path
-                  :id="path['@id']"
-                  :d="path['@d']"
-                  :name="path['@name']"
-                  :style="`fill: ${getColor(path['@continent'])}`"
-                  class="path"
-                  @mouseleave="currentCountry = null"
-                  @mouseover="currentCountry = `${path['@name']} (${path['@id']})`"
-                />
-              </nuxt-link>
-            </svg>
+                <nuxt-link
+                  v-for="path in countries"
+                  :key="`path_${path['@id']}`"
+                  :to="{name: 'flag-slug', params: {slug: path['@id']}}"
+                  class="noDecoration"
+                >
+                  <path
+                    :id="path['@id']"
+                    :d="path['@d']"
+                    :name="path['@name']"
+                    :style="`fill: ${getColor(path['@continent'])}`"
+                    class="path"
+                    @mouseleave="currentCountry = null"
+                    @mouseover="currentCountry = `${path['@name']} (${path['@id']})`"
+                  />
+                </nuxt-link>
+              </svg>
+            </v-col>
           </transition>
         </v-row>
       </v-col>
@@ -77,6 +90,7 @@ import { mdiRestart } from '@mdi/js'
 
 export default {
   name: 'Map',
+  scrollToTop: true,
   transition: 'page',
   data () {
     return {
@@ -85,7 +99,7 @@ export default {
       entered: false,
       currentCountry: null,
       mdiRestart,
-      svgPanZoom: null,
+      panzoom: null,
       show: false
     }
   },
@@ -94,7 +108,7 @@ export default {
       title: 'Géobtenu | Carte du monde',
       script: [
         {
-          src: 'https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js'
+          src: 'https://timmywil.com/panzoom/demo/panzoom.js'
         }
       ],
       meta: [
@@ -125,26 +139,19 @@ export default {
     fetch('/maps/world.json').then(response => response.json()).then((data) => {
       this.countries = data
 
-      setTimeout(() => {
-        // eslint-disable-next-line no-undef
-        this.svgPanZoom = svgPanZoom('#worldmap', { center: false })
-        this.reset()
-        this.show = true
-      }, 200)
+      const elem = document.getElementById('worldmap')
+      const parent = elem.parentElement
+
+      // eslint-disable-next-line no-undef
+      this.panzoom = Panzoom(elem, { canvas: true, maxScale: 8, isSVG: true })
+      parent.addEventListener('wheel', this.panzoom.zoomWithWheel)
     }).catch(() => {
       this.countries = []
     })
   },
   methods: {
-    onResize () {
-      if (this.svgPanZoom) {
-        this.reset()
-      }
-    },
     reset () {
-      this.svgPanZoom.resize()
-      this.svgPanZoom.reset()
-      this.svgPanZoom.center()
+      this.panzoom.reset()
     },
     moveTooltip (el) {
       if (this.$refs.tooltip) {
@@ -195,8 +202,7 @@ export default {
 }
 
 .map {
-  width: 100%;
-  height: auto;
+  flex:1;
 }
 
 .path {
@@ -219,7 +225,19 @@ export default {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (min-width: 845px) and (max-width: 1015px) {
+  .mapTitle {
+    font-size: 5vw;
+  }
+}
+
+@media only screen and (min-width: 717px) and (max-width: 844px) {
+  .mapTitle {
+    font-size: 6vw;
+  }
+}
+
+@media only screen and (max-width: 716px) {
   .mapTitle {
     font-size: 7vw;
   }
@@ -238,6 +256,14 @@ export default {
 }
 
 .fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+.fade2-enter-active, .fade2-leave-active {
+  transition: opacity 0.3s;
+}
+
+.fade2-enter, .fade2-leave-to {
   opacity: 0;
 }
 </style>
