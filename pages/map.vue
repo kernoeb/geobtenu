@@ -50,6 +50,9 @@
         </v-row>
       </v-col>
     </v-row>
+    <transition name="fade">
+      <span v-if="panzoom" style="position: absolute; margin-top: 13px; color: gray; font-size: 11px;">Source : <a target="_blank" href="https://github.com/VictorCazanave/svg-maps/tree/master/packages/world">svg-maps</a></span>
+    </transition>
     <maps-fab @click="reset()" />
   </v-container>
 </template>
