@@ -98,6 +98,9 @@ export default {
       ]
     }
   },
+  created () {
+    this.zoom = true
+  },
   mounted () {
     this.fetchData('/maps/continents.json')
   }

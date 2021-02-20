@@ -35,7 +35,7 @@ export default {
       default: null
     },
     panzoom: {
-      type: Function,
+      type: Object,
       default: null
     }
   }

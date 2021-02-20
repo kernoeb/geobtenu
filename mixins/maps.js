@@ -7,7 +7,8 @@ export default {
       entered: false,
       current: null,
       panzoom: null,
-      show: false
+      show: false,
+      zoom: false
     }
   },
   computed: {
@@ -16,7 +17,7 @@ export default {
     }
   },
   methods: {
-    fetchData (url) {
+    fetchData (url, zoom) {
       // noinspection JSUnresolvedFunction
       fetch(url).then(response => response.json()).then((data) => {
         this.elements = data
@@ -30,6 +31,7 @@ export default {
           maxScale: 8,
           isSVG: true
         })
+        if (this.zoom && this.$vuetify.breakpoint.mobile) { this.panzoom.zoom(1.2) }
         parent.addEventListener('wheel', this.panzoom.zoomWithWheel)
       }).catch(() => {
         this.elements = []
@@ -54,6 +56,7 @@ export default {
     },
     reset () {
       this.panzoom.reset()
+      if (this.zoom && this.$vuetify.breakpoint.mobile) { this.panzoom.zoom(1.2, { animate: true }) }
     },
     moveTooltip (el) {
       if (this.$refs.tooltip) {
