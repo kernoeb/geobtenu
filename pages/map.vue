@@ -1,9 +1,8 @@
 <template>
-  <v-container>
+  <v-container fluid>
     <v-row :style="productionMode ? 'justify-content: center' : null" class="justifyCenter" style="text-align: center">
       <v-col
         cols="12"
-        lg="8"
       >
         <v-row
           :style="productionMode ? 'justify-content: center' : null"
@@ -24,8 +23,12 @@
           </div>
           <transition name="fade">
             <svg
-              v-if="countries && countries.length"
+              v-show="countries && countries.length"
+              id="worldmap"
+              v-resize="onResize"
               class="map"
+              height="calc((100vh - (7vh + 182px))"
+              style="border: 1px solid #6d6d6d; border-radius: 10px;"
               viewBox="0 0 1010 666"
               xmlns="http://www.w3.org/2000/svg"
               @mouseleave="entered ? entered = false : null"
@@ -34,6 +37,7 @@
             >
               <nuxt-link
                 v-for="path in countries"
+                v-show="show"
                 :key="`path_${path['@id']}`"
                 :to="{name: 'flag-slug', params: {slug: path['@id']}}"
                 class="noDecoration"
@@ -53,10 +57,24 @@
         </v-row>
       </v-col>
     </v-row>
+    <v-btn
+      absolute
+      bottom
+      fab
+      fixed
+      right
+      small
+      style="margin-bottom: 58px"
+      @click="reset()"
+    >
+      <v-icon>{{ mdiRestart }}</v-icon>
+    </v-btn>
   </v-container>
 </template>
 
 <script>
+import { mdiRestart } from '@mdi/js'
+
 export default {
   name: 'Map',
   transition: 'page',
@@ -65,12 +83,20 @@ export default {
       countries: null,
       selectedLocation: null,
       entered: false,
-      currentCountry: null
+      currentCountry: null,
+      mdiRestart,
+      svgPanZoom: null,
+      show: false
     }
   },
   head () {
     return {
       title: 'Géobtenu | Carte du monde',
+      script: [
+        {
+          src: 'https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js'
+        }
+      ],
       meta: [
         {
           hid: 'title',
@@ -98,11 +124,28 @@ export default {
   mounted () {
     fetch('/maps/world.json').then(response => response.json()).then((data) => {
       this.countries = data
+
+      setTimeout(() => {
+        // eslint-disable-next-line no-undef
+        this.svgPanZoom = svgPanZoom('#worldmap', { center: false })
+        this.reset()
+        this.show = true
+      }, 200)
     }).catch(() => {
       this.countries = []
     })
   },
   methods: {
+    onResize () {
+      if (this.svgPanZoom) {
+        this.reset()
+      }
+    },
+    reset () {
+      this.svgPanZoom.resize()
+      this.svgPanZoom.reset()
+      this.svgPanZoom.center()
+    },
     moveTooltip (el) {
       if (this.$refs.tooltip) {
         this.$refs.tooltip.style.left = el.pageX + 'px'
@@ -191,7 +234,7 @@ export default {
 }
 
 .fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
+  transition: opacity 1s;
 }
 
 .fade-enter, .fade-leave-to {
