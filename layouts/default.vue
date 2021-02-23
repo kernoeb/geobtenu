@@ -56,7 +56,7 @@
             <v-icon>{{ mdiMap }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title style="font-size: 13px" v-text="'Carte du monde'" />
+            <v-list-item-title style="font-size: 13px" v-text="'Carte des pays'" />
           </v-list-item-content>
         </v-list-item>
         <v-list-item :to="{name: 'continent'}">

@@ -21,7 +21,15 @@ direction: R
 
 # Reconnaître le pays / Métas
 
-- `ð` et `Þ`
+- On y emploie les caractères : `Á É Í Ó Ú Ý Æ Ö`
+- `Ð` (`ð` en minuscule) : prononcé *eth* -> à ne pas confondre avec le d barré, `đ`, dont la majuscule est la même
+- `Þ`, prononcé *thorn*
+- Les lettres C Q W Z n'apparaissent jamais à l'exception, évidemment, des mots d'origines étrangères.
+
+<br/>
+
+:warning: Attention ! Le `Ð` (ð) est aussi utilisé pour écrire le [Féroïen](/flag/fo), mais le `Þ` (þ) n'est utilisé qu'en islandais)
+
 - Longue antenne (**pas** valable **que** pour l'Islande)
 
 <br/>
@@ -29,3 +37,8 @@ direction: R
 ![meta](/images/is_geoguessr.png)
 
 ![meta2](/images/is_geoguessr2.png)
+
+![meta3](/images/is_geoguessr3.png)
+
+#### Panneau d'entrée de ville :  
+![meta3](/images/is_geoguessr4.png)

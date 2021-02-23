@@ -18,6 +18,15 @@
           >Takamari</a>,&nbsp;<a href="https://www.twitch.tv/jussetain" target="_blank">Jussetain</a>&nbsp;pour les
           informations et métas !
         </v-row>
+        <v-row
+          align="center"
+          justify="center"
+          style="word-break: break-word;"
+        >
+          <div class="font-italic">
+            Autres remerciements : Mlle la Marquise de Sade
+          </div>
+        </v-row>
         <v-row align="center" class="title mb-3" justify="center" style="color: #f693b4;">
           Réalisé par&nbsp;<a href="https://www.twitter.com/kernoeb" target="_blank">@kernoeb</a>
         </v-row>
