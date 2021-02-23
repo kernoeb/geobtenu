@@ -39,16 +39,21 @@
           <v-list-item-content>
             <v-list-item-title
               style="font-size: 13px"
-              v-text="item.title"
-            />
+            >
+              {{ item.title }}
+            </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item :to="{name: 'flag-slug', params: {slug: randomCountryElement}}">
           <v-list-item-action>
-            <v-icon>{{ mdiMapMarkerCircle }}</v-icon>
+            <v-icon color="#c15260">
+              {{ mdiMapMarkerCircle }}
+            </v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title style="font-size: 13px" v-text="'Pays aléatoire'" />
+            <v-list-item-title style="font-size: 13px">
+              Pays aléatoire
+            </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item :to="{name: 'map'}">
@@ -56,7 +61,9 @@
             <v-icon>{{ mdiMap }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title style="font-size: 13px" v-text="'Carte des pays'" />
+            <v-list-item-title style="font-size: 13px">
+              Carte des pays
+            </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item :to="{name: 'continent'}">
@@ -64,7 +71,21 @@
             <v-icon>{{ mdiEarth }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title style="font-size: 13px" v-text="'Carte des continents'" />
+            <v-list-item-title style="font-size: 13px">
+              Carte des continents
+            </v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item :to="{name: 'languages'}">
+          <v-list-item-action>
+            <v-icon color="blue">
+              {{ mdiTranslate }}
+            </v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title style="font-size: 13px">
+              Langues
+            </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-divider />
@@ -73,7 +94,9 @@
             <v-icon>{{ mdiRoad }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title style="font-size: 13px" v-text="'Sens de circulation (W)'" />
+            <v-list-item-title style="font-size: 13px">
+              Sens de circulation (W)
+            </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-divider />
@@ -85,19 +108,37 @@
           target="_blank"
         >
           <v-list-item-action>
-            <v-icon>{{ d.icon }}</v-icon>
+            <v-icon color="#00a559">
+              {{ d.icon }}
+            </v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title style="font-size: 13px" v-text="d.text" />
+            <v-list-item-title style="font-size: 13px">
+              {{ d.text }}
+            </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-divider />
+        <v-list-item href="https://discord.gg/sWYWyqZGAj" target="_blank">
+          <v-list-item-action>
+            <v-icon color="#7289da">
+              {{ mdiDiscord }}
+            </v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title style="font-size: 13px">
+              Discord Géobtenu
+            </v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
         <v-list-item to="/credits">
           <v-list-item-action>
             <v-icon>{{ mdiInformation }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title style="font-size: 13px" v-text="'Crédits'" />
+            <v-list-item-title style="font-size: 13px">
+              Crédits
+            </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -114,8 +155,9 @@
       <nuxt-link :to="{name: 'index'}" class="noDecoration">
         <v-toolbar-title
           class="geoTitle geoTitleColorDark"
-          v-text="$options.title"
-        />
+        >
+          {{ $options.title }}
+        </v-toolbar-title>
       </nuxt-link>
       <v-spacer />
     </v-app-bar>
@@ -151,7 +193,9 @@ import {
   mdiRoad,
   mdiInformation,
   mdiMenu,
-  mdiEarth
+  mdiEarth,
+  mdiTranslate,
+  mdiDiscord
 } from '@mdi/js'
 import finished from '~/assets/finished.json'
 
@@ -196,6 +240,8 @@ export default {
       mdiMenu,
       mdiMap,
       mdiEarth,
+      mdiTranslate,
+      mdiDiscord,
 
       // OTHERS
       drawer: false,
