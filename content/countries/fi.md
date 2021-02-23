@@ -21,6 +21,17 @@ zoom: 4
 [Wikipédia : Finnois](https://fr.wikipedia.org/wiki/Finnois)  
 [Wikipédia : Suédois](https://fr.wikipedia.org/wiki/Su%C3%A9dois)
 
+Le Finlandais utilise les mêmes caractères que le [suédois](/flag/se), mais les langues sont très différentes.
+Pour reconnaître le finnois :
+- Présence de doublons : `tt`, `mm`, `kk`, `aa`, `ää`, … (ex : Virtta, Ämmälänkylä, Pukkila, Niinimaa, Hyvinkää, …), 
+- `h` devant des consonnes (ex : Pyhtää, Lokalahti, Vehmaa, …)
+
+<br/>
+
+:warning: Attention ! Sur l'île finlandaise d'[Åland](/flag/ax) on parle 100% suédois !
+
+Contrairement à la plupart des langues européennes, le finnois n'est pas une langue indo-européenne _(comme le français ou le suédois par exemple)_ mais une langue **ouralienne** _(comme le hongrois ou l'estonien)_, on trouve donc très peu de mot transparent par rapport aux langues voisines.
+
 <br/>
 
 # Reconnaître le pays / Métas
