@@ -2,7 +2,7 @@
   <div>
     <div id="map-wrap" style="height: calc(100vh - (25px + 48px + 24px))">
       <client-only>
-        <l-map :zoom="4" :center="[47, -1]">
+        <l-map :zoom="4" :center="[47, -1]" :style="darkTheme ? 'filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);' : null">
           <l-tile-layer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png" />
           <l-geo-json
             v-if="geojson && showBorders"
@@ -16,6 +16,19 @@
               Afficher les contours
             </v-btn>
           </l-control>
+          <l-control position="bottomright">
+            <v-btn
+              absolute
+              bottom
+              fab
+              right
+              small
+              style="margin-bottom: 20px; margin-right: -15px;"
+              @click="darkTheme = !darkTheme"
+            >
+              <v-icon>{{ mdiThemeLightDark }}</v-icon>
+            </v-btn>
+          </l-control>
         </l-map>
       </client-only>
     </div>
@@ -23,12 +36,16 @@
 </template>
 
 <script>
+import { mdiThemeLightDark } from '@mdi/js'
+
 export default {
   name: 'Maps',
   data () {
     return {
       geojson: null,
-      showBorders: false
+      showBorders: false,
+      darkTheme: false,
+      mdiThemeLightDark
     }
   },
   head: {
@@ -75,5 +92,9 @@ export default {
 
 .hoverButton:hover {
   opacity: 1;
+}
+
+.disableDarkTheme {
+  z-index: -1;
 }
 </style>
