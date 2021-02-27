@@ -27,4 +27,4 @@ zoom: 4
 - Panneau stop = `Alto`
 - Espagnol + Soleil au sud + pas de plaque européennes + pas de meta voiture ([Guatemala](/flag/gt)) ou pas de street-view trottoirs ([Costa-Rica](/flag/cr)) = Mexique
 - Arrière de Google Car bleue (pas partout)  
-  ![meta](/images/mx_geoguessr.png)
+  ![Google Car Mexique](/images/countries/mx/googlecar.png)

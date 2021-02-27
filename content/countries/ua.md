@@ -24,4 +24,4 @@ Ukrainien : Є є Ґ ґ І і
 
 - Lettres en plus (voir ci-dessus)
 - La voiture est parfois **rouge** avec une longue antenne  
-  ![meta](/images/ua_geoguessr.png)
+  ![Google Car Ukraine](/images/countries/ua/googlecar.png)

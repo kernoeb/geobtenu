@@ -27,7 +27,7 @@ Le swati (appelé siSwati dans la langue elle-même, isiSwazi en zoulou) est une
 - Soleil au nord + anglais + roule à gauche  
   *(Valide aussi pour [Afrique du Sud](/flag/za), [Botswana](/flag/bw), [Lesotho](/flag/ls), [Australie](/flag/au) et [Nouvelle Zélande](/flag/nz))*
 - Petites collines enherbées  
-  ![meta1](/images/sz_geoguessr.png)
+  ![Vue Eswatini](/images/countries/sz/vue.png)
 - Arrière de la Google car blanche pas nette  
   *(comme au [Botswana](/flag/bw) et [Lesotho](/flag/ls))*  
-  ![meta2](/images/sz_geoguessr2.png)
+  ![Google Car Eswatini](/images/countries/sz/googlecar.png)

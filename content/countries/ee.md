@@ -25,6 +25,6 @@ Estonien : Proche Finnois et õ
 
 - Rues qui se terminent par -tee
 - Fleurs blanches (méta valable pour la couverture Street View actuelle)  
-  ![meta1](/images/ee_geoguessr.png)  
+  ![Fleur blanche Estonie](/images/countries/ee/fleur_blanche.png)  
   *Note : cette photo est un peu abusive, c'est pas partout comme ça*  
   `j u s s e t a i n`

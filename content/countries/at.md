@@ -35,7 +35,7 @@ Aéroport : Airport/Flughafen
 
 - Panneaux "**EINBAHN**" (rues à sens unique)
 
-![meta1](/images/at_geoguessr.png)
+![Panneau Einbahn Autriche](/images/countries/at/einbahn.png)
 
 - Caméra jolie *(Caméra moche en [Allemagne](/flag/de), caméra basse en [Suisse](/flag/ch))*
 
@@ -46,4 +46,4 @@ Aéroport : Airport/Flughafen
 - **Police** d'écriture très typique
 - Souvent un **numéro** avant le texte de rue
 
-![meta2](/images/at_geoguessr2.png)
+![Panneau Rue Autriche](/images/countries/at/panneau_rue.png)

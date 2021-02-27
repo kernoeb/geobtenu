@@ -34,11 +34,11 @@ direction: R
 
 <br/>
 
-![meta](/images/is_geoguessr.png)
+![Route Islande](/images/countries/is/route.png)
 
-![meta2](/images/is_geoguessr2.png)
+![Panneau Islande 1](/images/countries/is/panneau1.png)
 
-![meta3](/images/is_geoguessr3.png)
+![Panneau Islande 2](/images/countries/is/panneau2.png)
 
 #### Panneau d'entrée de ville :  
-![meta3](/images/is_geoguessr4.png)
+![Panneau entrée ville Islande](/images/countries/is/panneau_entree_ville.png)

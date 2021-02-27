@@ -30,7 +30,7 @@ Mongol : Ө ө
 - Монгол = Mongol
 - Voiture Google Street View : 
   - Barres de toits  
-    ![meta1](/images/mn_geoguessr.png)
+    ![Google Car Mongolie 1](/images/countries/mn/googlecar1.png)
   - Tente  
-    ![meta2](/images/mn_geoguessr2.png)
+    ![Google Car Mongolie 2](/images/countries/mn/googlecar2.png)
 

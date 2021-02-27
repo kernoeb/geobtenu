@@ -21,7 +21,7 @@ direction: R
 # Reconnaître le pays / Métas
 
 - Deux liserés bleus à chaque extrémité d'une petite plaque d'immatriculation  
-  ![meta](/images/it_geoguessr.png)
+  ![Plaque d'immatriculation Italie](/images/countries/it/plaque.png)
 - Seuls pays streetviewé qui parle Italien
 
 <br/>

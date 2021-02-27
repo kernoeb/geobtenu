@@ -30,19 +30,19 @@ Vert clair : Pays où il n'a pas de statut officiel
 - Plaques européennes systématiques + **cyrillique** = Grandes chances de Bulgarie  
   *(Peut aussi être Serbie, Macédoine, Monténégro, mais souvent les plaques avec liserés européens sont moins fréquentes)*
 
-![meta1](/images/bg_geoguessr3.png)
+![Plaque d'immatriculation Bulgarie](/images/countries/bg/plaque.png)
 
 - Drapeau de l'union européenne + **cyrillique** = Bulgarie  
   *(Seul pays de l'UE à utiliser l'alphabet cyrillique)*
 
-![meta2](/images/bg_geoguessr2.png) 
+![Drapeau Union Européenne Bulgarie](/images/countries/bg/europe.png) 
 
 - **Scotch** sur antenne de la Google Car  
   *Aussi en Hongrie, Pologne et Roumanie, mais Scotch + cyrillique = Bulgarie*
   
-![meta3](/images/bg_geoguessr.png)
+![Antenne Bulgarie](/images/countries/bg/antenne.png)
 
 - Hiver  
   *(Aussi en Hongrie et en Corée du Sud, mais paysage complètement différent)*
 
-![meta4](/images/bg_geoguessr4.png)
+![Hiver Bulgarie](/images/countries/bg/hiver.png)

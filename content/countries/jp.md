@@ -21,10 +21,10 @@ direction: L
 # Reconnaître le pays / Métas
 
 - Voitures cubiques à plaques jaunes  
-  ![meta1.1](/images/jp_geoguessr.png)  
-  ![meta1.2](/images/jp_geoguessr2.png)
+  ![Voiture Japon 1](/images/countries/jp/voiture.png)  
+  ![Voiture Japon 2](/images/countries/jp/voiture2.png)
 
 - Caméra basse
 
 - Panneaux bleus  
-  ![meta2](/images/jp_geoguessr3.png)
+  ![Panneau Japon](/images/countries/jp/panneau.png)

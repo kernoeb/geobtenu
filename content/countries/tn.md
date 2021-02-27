@@ -22,6 +22,6 @@ direction: R
 # Reconnaître le pays / Métas
 
 - Plaques d’immatriculation **noires**  
-  ![meta1](/images/tn_geoguessr2.png)
+  ![Plaque d'immatriculation Tunisie](/images/countries/tn/plaque.png)
 - **Français** sur les panneaux  
-  ![meta2](/images/tn_geoguessr.png)
+  ![Panneau ville Tunisie](/images/countries/tn/panneau_ville.png)

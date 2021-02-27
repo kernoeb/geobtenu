@@ -23,4 +23,4 @@ Source : [republiquetcheque.fr](https://www.republiquetcheque.fr/langue/alphabet
 
 - Le <span style="font-size: 18px;">Ů</span>
 - Panneaux de rues  
-  ![meta](/images/cz_geoguessr.png)
+  ![Panneau rue Tchéquie](/images/countries/cz/panneau_rue.png)

@@ -30,6 +30,6 @@ Slovaque : `ä dz dž ĺ ľ ô ŕ`
 # Reconnaître le pays / Métas
 
 - Panneau de parking : `RÉSERVÉ` (aussi en [Tchéquie](/flag/cz))  
-  ![meta1](/images/sk_geoguessr2.png)
+  ![Panneau de parking Slovaquie](/images/countries/sk/panneau_reserve.png)
 - Panneaux de rues entourés de rouge  
-  ![meta2](/images/sk_geoguessr.png)
+  ![Panneau rue Slovaquie](/images/countries/sk/panneau_rue.png)

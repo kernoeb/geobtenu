@@ -17,7 +17,7 @@ direction: R
 [Wikipédia : Langues au Portugal](https://fr.wikipedia.org/wiki/Langues_au_Portugal)  
 [Wikipédia : Portugais](https://fr.wikipedia.org/wiki/Portugais)
 
-- **Portugais :** Possède les `ñ ã ç`
+- **Portugais :** Possède les `ã ç`
 - De = do  
 - Et = e
 
@@ -26,4 +26,4 @@ direction: R
 # Reconnaître le pays / Métas
 
 - Plaque d’immatriculation européenne (**bleu**) + **jaune** à droite  
-  ![meta](/images/pt_geoguessr.png)
+  ![Plaque Portugal](/images/countries/pt/plaque.png)

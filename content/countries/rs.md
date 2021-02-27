@@ -20,6 +20,6 @@ direction: R
 # Reconnaître le pays / Métas
 
 - Cyrillique + pas cyrillique (Aussi en [Macédoine du Nord](/flag/mk))  
-  ![meta](/images/rs_geoguessr.png)
+  ![Panneau Macédoine du Nord](/images/countries/rs/panneau.png)
 - Plaques européennes et non européennes (Aussi en [Macédoine du Nord](/flag/mk))
 

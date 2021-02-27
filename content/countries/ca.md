@@ -28,7 +28,7 @@ Les deux langues officielles du Canada, l'anglais et le français, sont respecti
 # Reconnaître le pays / Métas
 
 - Panneaux de limitation de vitesse avec marqué "**Maximum**" au dessus de la limite (et pas Speed Limit comme aux [USA](/flag/us))  
-  ![meta1](/images/ca_geoguessr2.png)
+  ![Panneau vitesse Canada](/images/countries/ca/panneau_vitesse.png)
   
 - Panneau STOP : "**ARRÊT**" (Français/20)  
-  ![meta2](/images/ca_geoguessr.png)
+  ![Panneau Arrêt Canada](/images/countries/ca/stop.png)

@@ -23,4 +23,4 @@ direction: L
 
 <br/>
 
-![meta](/images/nz_geoguessr.png)
+![Vue Nouvelle-Zélande](/images/countries/nz/vue.png)

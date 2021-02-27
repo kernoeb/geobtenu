@@ -31,13 +31,13 @@ Aéroport : Aeroporti
 
 - Plaques d'immatriculation européennes de taille normale avec 2 **liserés bleus aux extrémités** 
   _(Aussi en Italie, mais plaques plus étroites)_  
-  ![meta1](/images/al_geoguessr2.png)
+  ![Plaque bleue Albanie](/images/countries/al/plaque_bleue.png)
 
 - Plaques d'immatriculation avec un liséré **rouge** à gauche  
-  ![meta2](/images/al_geoguessr3.png)
+  ![Plaque rouge Albanie](/images/countries/al/plaque_rouge.png)
 
 - Rue : Rruga  
-  ![meta3](/images/al_geoguessr4.png)
+  ![Panneau de rue Albanie](/images/countries/al/panneau.png)
 
 - **Glitch** dans le ciel (pas systématique, aussi présent au [Monténégro](/flag/me))  
-  ![meta4](/images/al_geoguessr.png)
+  ![Glitch Albanie](/images/countries/al/glitch.png)

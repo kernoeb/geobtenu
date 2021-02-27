@@ -25,7 +25,7 @@ Letton :
 
 - LV : Latvija (rip le V)
 - Rue = **iela**  
-  ![meta](/images/lv_geoguessr.png)
+  ![Panneau rue Lettonie](/images/countries/lv/panneau_rue.png)
   
 
 - [Macron](https://fr.wikipedia.org/wiki/Macron_(diacritique)) : `ā ē ī ū`  

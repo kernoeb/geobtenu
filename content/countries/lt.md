@@ -27,5 +27,5 @@ Lituanien : ė uniquement ici
 # Reconnaître le pays / Métas
 
 - Rues = gatvé (souvent écrit `G.` ou `G-VÉ`)  
-  ![meta](/images/lt_geoguessr.png)
+  ![Panneau rue Lituanie](/images/countries/lt/panneau_rue.png)
 

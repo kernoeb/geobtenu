@@ -24,8 +24,8 @@ direction: R
 # Reconnaître le pays / Métas
 
 - Rues qui se terminent par `gade`  
-  ![meta2](/images/dk_geoguessr2.png)
+  ![Panneau rue Danemark](/images/countries/dk/panneau_rue.png)
   
 - Panneaux de directions vers des communes écrits en rouges sur fond blanc  
-  ![meta2](/images/dk_geoguessr.png)
+  ![Panneau direction Danemark](/images/countries/dk/panneau_direction.png)
 

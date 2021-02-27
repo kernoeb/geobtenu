@@ -28,7 +28,7 @@ Et = y
 - Soleil au nord + parle espagnol  
   *(Valable pour tous les pays d'Amérique du Sud sous l'équateur, sauf le Brésil)*
 - Plaques de rues noires. Flèches indiquant les sens de circulation à gauche dans un cadre distinct de celui du nom de la rue.  
-  ![meta1](/images/cl_geoguessr.png)
+  ![Panneau Rue Chili](/images/countries/cl/panneau_rue.png)
 
 - Arrière de voiture blanche nette _(pas floue)_ + Amérique Latine + Soleil au nord = Chili  
-  ![meta2](/images/cl_geoguessr2.png)
+  ![Google Car Chili](/images/countries/cl/googlecar.png)

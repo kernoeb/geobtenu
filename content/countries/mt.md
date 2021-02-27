@@ -101,7 +101,7 @@ td {
 
 - Roule à gauche
 - Rue = `Triq`  
-  ![meta](/images/mt_geoguessr.png)
+  ![Panneau rue Malte](/images/countries/mt/panneau_rue.png)
 - Méditerranéen mais parle **anglais**
 - `Ta-` `Is-` `Tal-` `Ix-` *(quartiers)*
 - [Géologie](https://fr.wikipedia.org/wiki/G%C3%A9ologie_de_Malte)

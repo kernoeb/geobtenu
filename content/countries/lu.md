@@ -23,6 +23,6 @@ zoom: 7
 
 - Plaques jaunes
 - Panneaux de rue  
-  ![meta1](/images/lu_geoguessr.png)
+  ![Panneau rue Luxembourg](/images/countries/lu/panneau_rue.png)
 - Panneaux jaunes  
-  ![meta2](/images/lu_geoguessr2.png)
+  ![Panneau jaune Luxembourg](/images/countries/lu/panneau.png)

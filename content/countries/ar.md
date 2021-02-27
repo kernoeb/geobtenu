@@ -32,11 +32,13 @@ Et = y
 # Reconnaître le pays / Métas
 
 - **Plaques d'immatriculations avec un point noir central (plaques noires floutées)**  
-  ![meta1](/images/ar_geoguessr.png)  
-  ![meta1.1](/images/ar_geoguessr2.png)
+  ![Plaque noire Argentine](/images/countries/ar/plaque_noire.png)  
+  
+- **Plaques d'immatriculations bleues en haut**  
+  ![Plaque bleue Argentine](/images/countries/ar/plaque_bleue.png)
 
 - **Buenos Aires**  
-  ![meta2](/images/ar_geoguessr3.png)
+  ![Panneau ](/images/countries/ar/panneau_rue_BA.png)
 
 **Panneaux de rue noirs en un seul bloc avec :**
 1) Le nom de la rue en première ligne
@@ -46,6 +48,6 @@ Et = y
 <br/>
 
 - **Arrière** de la Google Car **noire** (majoritaire) ou **bleue** (minoritaire)  
-  ![meta2](/images/ar_geoguessr4.png)  
+  ![Voiture Argentine 1](/images/countries/ar/googlecar1.png)  
   _Note : Arrière noir aussi en [Uruguay](/flag/uy)_  
-  ![meta2](/images/ar_geoguessr5.png)  
+  ![Voiture Argentine 2](/images/countries/ar/googlecar2.png)  

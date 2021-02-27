@@ -23,7 +23,7 @@ direction: L
 # Reconnaître le pays / Métas
 
 - [Safaricom](https://www.safaricom.co.ke/) ([Wikipédia](https://en.wikipedia.org/wiki/Safaricom))  
-  ![meta1](/images/ke_geoguessr3.png)
+  ![Safaricom Kenya](/images/countries/ke/safaricom.png)
 - Google Car  
-  ![meta2.1](/images/ke_geoguessr.png)  
-  ![meta2.2](/images/ke_geoguessr2.png)
+  ![Google Car Kenya 2](/images/countries/ke/googlecar1.png)  
+  ![Google Car Kenya 2](/images/countries/ke/googlecar2.png)

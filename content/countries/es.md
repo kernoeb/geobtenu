@@ -33,11 +33,11 @@ direction: R
 
 [Liste des autoroutes en Espagne](https://fr.wikipedia.org/wiki/Liste_des_autoroutes_en_Espagne)  
 
-![meta1.1](/images/es_geoguessr.png)
-![meta1.2](/images/es_geoguessr4.png)
+![Panneau Espagne 1](/images/countries/es/panneau1.png)
+![Panneau Espagne 2](/images/countries/es/panneau2.png)
 
-![meta2.1](/images/es_geoguessr2.png)
-![meta2.2](/images/es_geoguessr3.png)
+![Carte des routes Espagne](/images/countries/es/route_carte.png)
+![Panneau autoroute Espagne](/images/countries/es/panneau_autoroute.png)
 
 - Rue = Calle (aussi en Amérique Latine où l'Espagnol est la langue officielle)
 - Plaques d'immatriculation Européennes + Espagnol = Espagne
@@ -46,5 +46,5 @@ direction: R
 
 #### [Catalogne](https://fr.wikipedia.org/wiki/Catalogne)  
 - Rue = Carrer  
-  ![meta1.2](/images/es_geoguessr5.png)  
+  ![Panneau rue Catalogne Espagne](/images/countries/es/panneau_rue_catalogne.png)  
   ![catalogne](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Cataluna_in_Spain_%28including_Canarias%29.svg/200px-Cataluna_in_Spain_%28including_Canarias%29.svg.png)

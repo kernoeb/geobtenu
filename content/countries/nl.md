@@ -21,8 +21,8 @@ direction: R
 # Reconnaître le pays / Métas
 
 - Rue qui se terminent par `-straat`  
-  ![meta](/images/nl_geoguessr2.png)
+  ![Panneau rue Pays-Bas](/images/countries/nl/panneau_rue.png)
 - Plaques jaunes européennes  
-  ![meta](/images/nl_geoguessr.png)
+  ![Plaque Pays-Bas](/images/countries/nl/plaque.png)
 - Briques et pavés rouges  
   *(aussi en [France](/flag/fr) (Nord), en [Belgique](/flag/be) et au [Danemark](/flag/dk))*

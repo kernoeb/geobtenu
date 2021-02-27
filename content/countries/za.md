@@ -22,4 +22,4 @@ direction: L
 
 <br/>
 
-![geoguessr](/images/za_geoguessr.png)
+![Google Car Afrique du Sud](/images/countries/za/googlecar.png)

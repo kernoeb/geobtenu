@@ -21,6 +21,6 @@ direction: R
 
 - [Français](https://fr.wikipedia.org/wiki/Association_internationale_des_r%C3%A9gions_francophones)
 - **Barres** de toit  
-  ![meta1](/images/sn_geoguessr.png)
+  ![Google Car Sénégal](/images/countries/sn/googlecar.png)
 - **Glitch** dans ciel (pas tout le temps)  
-  ![meta2](/images/sn_geoguessr2.png)
+  ![Glitch ciel Sénégal](/images/countries/sn/glitch.png)

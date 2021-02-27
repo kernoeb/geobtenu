@@ -24,7 +24,7 @@ direction: R
   *(Aussi au [Brésil](/flag/br), présence moindre en [Thaïlande](/flag/th) et dans les pays d'Afrique équatoriale)*
 - Asie + Plaques blanches + Circule à droite
   
-![meta1](/images/kh_geoguessr.png)
+![Plaque d'immatriculation Cambodge](/images/countries/kh/plaque.png)
 
 - Écriture spécifique (il y a des petits symboles sur certains caractères) : ខ្ញុំគិតថាអ្នកធុញទ្រាន់ណាស់
 
@@ -33,9 +33,9 @@ direction: R
 
 - Angkor / Anchor / Cambodia
 
-![meta2.1](/images/kh_geoguessr2.png)
-![meta2.2](/images/kh_geoguessr3.png)
-![meta2.3](/images/kh_geoguessr4.png)
+![Angkor Cambodge](/images/countries/kh/angkor.png)
+![Cambodia Cambodge](/images/countries/kh/cambodia.png)
+![Anchor Cambodge](/images/countries/kh/anchor.png)
 
 
 - [Cambodian People Party](https://fr.wikipedia.org/wiki/Parti_du_peuple_cambodgien)

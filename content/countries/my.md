@@ -26,7 +26,7 @@ Le malaisien \[...] est l'appellation couramment utilisée de la langue national
 
 - Roule à gauche
 - **Stickers noirs** sur certains pylônes électriques  
-  ![meta1](/images/my_geoguessr.png)
+  ![Sticker noir Malaisie](/images/countries/my/sticker_noir.png)
 - Comme en [Indonésie](/flag/id), parfois il y a de l'**arabe** et, ou du **mandarin**  
-  ![meta2.1](/images/my_geoguessr2.png)  
-  ![meta2.2](/images/my_geoguessr3.png)  
+  ![Mandarin en Malaisie](/images/countries/my/mandarin.png)  
+  ![Arabe en Malaisie](/images/countries/my/arabe.png)  

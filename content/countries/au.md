@@ -40,4 +40,4 @@ _(Valide pour Afrique du Sud, Botswana, Eswatini, Lesotho, Australie et Nouvelle
 - **Caméra**
 
 Parfois, on tombe sur ce genre d'endroits avec une caméra de qualité affreuse  
-![meta1](/images/au_geoguessr.png)
+![Route Australie](/images/countries/au/route.png)

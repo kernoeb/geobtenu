@@ -28,4 +28,4 @@ Et = y
 
 - Espagnol
 - Plaques jaunes  
-  ![meta1](/images/co_geoguessr.png)
+  ![Plaque d'immatriculation Colombie](/images/countries/co/plaque.png)

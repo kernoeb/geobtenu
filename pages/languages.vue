@@ -200,7 +200,7 @@
                             Allemand
                           </td>
                           <td class="colored">
-                            heiße
+                            heiße*
                           </td>
                           <td class="colored">
                             möchte
@@ -220,6 +220,7 @@
                       </tbody>
                     </table>
                   </div>
+                  * Pas dans toute la germanophonie
                 </v-card-text>
               </v-card>
               <v-card class="rounded-xl mt-3">

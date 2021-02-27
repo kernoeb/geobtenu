@@ -41,5 +41,5 @@ Contrairement à la plupart des langues européennes, le finnois n'est pas une l
 
 <br/>
 
-![image_fi](/images/fi_geoguessr.png)  
-![image_fi](/images/fi_geoguessr2.png)
+![Vue Finlande](/images/countries/fi/vue.png)  
+![Route Finlande](/images/countries/fi/route.png)

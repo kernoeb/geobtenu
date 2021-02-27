@@ -23,4 +23,4 @@ direction: R
 
 - Alphabet Cyrillique
 - Glitch dans le ciel  
-  ![meta](/images/me_geoguessr.png)
+  ![Glitch ciel Monténégro](/images/countries/me/glitch.png)

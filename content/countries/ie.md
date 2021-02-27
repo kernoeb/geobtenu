@@ -28,5 +28,5 @@ Il existe deux langues officielles en Irlande. La constitution dispose que la pr
 - Roule à [gauche](https://fr.wikipedia.org/wiki/Sens_de_circulation_(route)#%C3%80_gauche)
 - Panneaux de rue en `anglais` / `gaëlique`
 
-![meta1.1](/images/ie_geoguessr.png)
-![meta1.2](/images/ie_geoguessr2.png)
+![Panneau Irlande 1](/images/countries/ie/panneau1.png)
+![Panneau Irlande 2](/images/countries/ie/panneau2.png)

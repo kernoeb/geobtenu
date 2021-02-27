@@ -27,4 +27,4 @@ direction: L
 
 - Souvent : barres de toit
 
-![meta](/images/bd_geoguessr.png)
+![Voiture Bangladesh](/images/countries/bd/googlecar.png)

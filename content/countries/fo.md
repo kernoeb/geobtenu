@@ -21,4 +21,4 @@ Danois : `Danois :  æ, å et ø`
 # Reconnaître le pays / Métas
 
 - Barres de toit + décor *(c'est beau, non?)*  
-  ![meta](/images/fo_geoguessr.png)
+  ![Google Car Îles Féroé](/images/countries/fo/googlecar.png)

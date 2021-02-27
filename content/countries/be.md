@@ -26,14 +26,14 @@ direction: R
 
 - Plaques européennes écrites en **rouge** (teinte rouge sous le flou)
 
-![meta1](/images/be_geoguessr.png)
+![Plaques rouges Belgique](/images/countries/be/plaque_rouge.png)
 
 - Les petits panneaux "**H**"
   
-![meta2](/images/be_geoguessr2.png)
+![Panneau H Belgique](/images/countries/be/panneau_h.png)
 
 ### Bruxelles (Brussels)
 
 - Plaque de rues en français-néerlandais
   
-![meta2](/images/be_geoguessr3.png)
+![Panneau rue Belgique](/images/countries/be/panneau_rue.png)

@@ -23,5 +23,5 @@ direction: R
 - Afrique équatoriale + parle anglais  
   *([Ghana](/flag/gh), [Ouganda](/flag/ug) et [Kenya](/flag/ke))*
 - Voiture de police ([Abuja](https://fr.wikipedia.org/wiki/Abuja), [Onitsha](https://fr.wikipedia.org/wiki/Onitsha), [Enugu](https://fr.wikipedia.org/wiki/Enugu))  
-  ![meta](/images/ng_geoguessr.png)
+  ![Voiture Police Nigéria](/images/countries/ng/police.png)
 - Pas de méta Google Car

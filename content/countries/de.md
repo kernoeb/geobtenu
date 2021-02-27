@@ -34,13 +34,13 @@ Aéroport : Airport/Flughafen
 - Plaques européennes (blanches + liseré bleu)
 - Rue : Straße
 
-![meta1](/images/de_geoguessr.png)
+![Panneau rue Allemagne](/images/countries/de/panneau_rue.png)
 
 - Maison souvent floutées ([explication sur fredzone.org](https://www.fredzone.org/mais-au-fait-pourquoi-certaines-maisons-sont-floues-dans-google-street-view-887))
 
-![meta2](/images/de_geoguessr2.png)  
+![Maison floutée Allemagne 1](/images/countries/de/maison_floue.png)  
 _Et souvent floutées à l'arrache..._  
-![meta2.1](/images/de_geoguessr3.png)  
+![Maison floutée Allemagne 2](/images/countries/de/batiment_flou.png)  
 _C'est de l'art_
 
 - Caméra souvent ancienne et de mauvaise qualité [Voir doc *Cameras and Cars*](https://docs.google.com/spreadsheets/d/1SUcuQkmDgVZMqNLe7XuNEhmJulonpnSQuSiJAOqfhtY)

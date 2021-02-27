@@ -27,5 +27,5 @@ Alphabet en Suédois : [learn101.org](http://learn101.org/fr/suedois_alphabet.ph
 # Reconnaître le pays / Métas
 
 - Rues qui se terminent par `-gatan`  
-  ![meta](/images/se_geoguessr.png)
+  ![Panneau rue Suède](/images/countries/se/panneau_rue.png)
 

@@ -25,15 +25,15 @@ Et = y
 
 - Montagnes vertes avec zones enherbées  
   *(Aussi en Colombie)*  
-  ![meta1](/images/ec_geoguessr3.png)
+  ![Montagnes Équateur](/images/countries/ec/montagnes.png)
 
 - Briques en béton gris  
-  ![meta3](/images/ec_geoguessr4.png)
+  ![Béton Équateur](/images/countries/ec/beton.png)
 
 #### Taxis
 - Plaques oranges parfois *(aussi au Pérou)*  
-  ![meta4.1](/images/ec_geoguessr.png)  
-  ![meta4.2](/images/ec_geoguessr2.png)
+  ![Plaque d'immatriculation Équateur 1](/images/countries/ec/plaque1.png)  
+  ![Plaque d'immatriculation Équateur 2](/images/countries/ec/plaque2.png)
 
 #### Quito
 - Montagne à l'ouest

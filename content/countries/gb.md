@@ -21,4 +21,4 @@ direction: L
 - Roule à gauche + Soleil au Sud  
   <small>(Aussi en Irlande)</small>
   
-![meta](/images/gb_geoguessr.png)
+![Route Royaume-Uni](/images/countries/gb/route.png)

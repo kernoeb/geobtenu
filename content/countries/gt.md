@@ -38,4 +38,4 @@ Et = y
   *(Amérique Centrale : [Mexique](/flag/mx), [Costa Rica](/flag/cr) et [Guatemala](#))*
 - Seul pays qui parle espagnol avec les rétros de la Google Car visible
 - Barres de toit sans anti-grip noir au milieu  
-  ![meta](/images/gt_geoguessr.png)
+  ![Google Car Guatemala](/images/countries/gt/googlecar.png)

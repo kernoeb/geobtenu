@@ -22,7 +22,7 @@ direction: R
 
 - Cyrillique
 - Plaques d'immatriculation avec liserés rouges  
-  ![meta1](/images/kg_geoguessr2.png)
+  ![Plaque d'immatriculation Kirghizistan](/images/countries/kg/plaque.png)
 - Google Car  
-  ![meta2](/images/kg_geoguessr.png)
+  ![Google Car Kirghizistan](/images/countries/kg/googlecar.png)
 

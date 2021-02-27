@@ -11,7 +11,7 @@ zoom: 2
 
 # Reconnaître le pays / Métas
 
-![meta](/images/aq_geoguessr.png)
+![Neige Antarctique](/images/countries/aq/neige.png)
 
 #### Ressources vidéos
 

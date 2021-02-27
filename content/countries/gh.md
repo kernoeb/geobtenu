@@ -28,4 +28,4 @@ Le haoussa est largement utilisé comme lingua franca chez les musulmans du Ghan
 - Afrique équatoriale + parle anglais  
   *(aussi [Nigéria](/flag/ng), [Ouganda](/flag/ug) et [Kenya](/flag/ke))*
 - Barres de toit avec **scotch noir** sur la barre **avant droite**  
-  ![meta1](/images/gh_geoguessr.png)
+  ![Google Car Ghana](/images/countries/gh/googlecar.png)

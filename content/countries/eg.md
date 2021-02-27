@@ -21,7 +21,7 @@ direction: R
 # Reconnaître le pays / Métas
 
 - Parfois il y a des pyramides  
-  ![meta1](/images/eg_geoguessr.png)  
+  ![Pyramide Égypte](/images/countries/eg/pyramide.png)  
   *(Très utile comme illustration)*
   
 - Plaques d'immatriculations blanches avec liseré bleu horizontal sur le dessus  

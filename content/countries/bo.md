@@ -29,4 +29,4 @@ Et = y
   *(Aussi au Pérou)*
 - Pylônes de panneaux de signalisation : Base bleue, corps blanc
 
-![meta1](/images/bo_geoguessr.png)
+![Pylône Bolivie](/images/countries/bo/pylone.png)

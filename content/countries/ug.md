@@ -23,4 +23,4 @@ direction: L
 - Terre rouge  
   *(aussi en [Argentine](/flag/ar), au [Cambodge](/flag/kh) et en [Thaïlande](/flag/th))*
 - Google Car  
-  ![meta](/images/ug_geoguessr.png)
+  ![Google Car Ouganda](/images/countries/ug/googlecar.png)

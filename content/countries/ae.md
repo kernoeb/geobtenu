@@ -29,14 +29,14 @@ direction: R
 
 [Géographie des Émirats Arabes Unis](https://fr.wikipedia.org/wiki/G%C3%A9ographie_des_%C3%89mirats_arabes_unis)
 
-![meta_img](/images/ae_geoguessr2.png)  
-![meta_img.2](/images/ae_geoguessr3.png)  
-![meta_img.3](/images/ae_geoguessr4.png)  
+![Route Émirats Arabes Unis](/images/countries/ae/route.png)  
+![Route Émirats Arabes Unis](/images/countries/ae/route2.png)  
+![Vue eau Émirats Arabes Unis](/images/countries/ae/eau.png)  
 
 - Affichage public en arabe et en anglais *(Aussi en Jordanie)*
 - Trottoirs blancs et noirs *(Aussi en Malaisie, à Singapour, en Indonésie…)*
 - Gratte-ciels
 - Majorité de voitures blanches dans la rue
 - Arrière de la Google Car blanche  
-  ![meta](/images/ae_geoguessr.png)
+  ![Voiture Street View Émirats Arabes Unis](/images/countries/ae/googlecar.png)
 

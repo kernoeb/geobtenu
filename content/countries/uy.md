@@ -17,5 +17,5 @@ direction: R
 # Reconnaître le pays / Métas
 
 - Panneaux de rues **verts** foncés (et parfois **sponsorisés** !)  
-  ![meta1](/images/uy_geoguessr.png)  
-  ![meta2](/images/uy_geoguessr2.png)
+  ![Panneau sponsorisé Uruguay](/images/countries/uy/panneau_pub.png)  
+  ![Panneau sponsorisé Uruguay ](/images/countries/uy/panneau_pub2.png)

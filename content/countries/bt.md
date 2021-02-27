@@ -33,4 +33,4 @@ La langue officielle du Bhoutan est le dzongkha, un dialecte du tibétain. Les a
 
 - Montagnes très spécifiques
 
-![meta1](/images/bt_geoguessr.png)
+![Vue Bhoutan](/images/countries/bt/vue.png)

@@ -26,7 +26,7 @@ direction: L
   *(Même genre de paysages au Sénégal, mais si soleil au nord : Botswana)*
   
 - Poteaux supports de panneaux de signalisation avec alternance de jaune et de noir  
-![meta1](/images/bw_geoguessr.png)
+![Panneau stop Botswana](/images/countries/bw/stop.png)
 
 - Arrière de la Google Car blanche pas nette *(la même que Botswana, Eswatini et Lesotho)*  
-![meta2](/images/bw_geoguessr2.png)
+![Google Car Botswana](/images/countries/bw/googlecar.png)

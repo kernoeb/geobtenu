@@ -20,7 +20,7 @@ zoom: 4
 # Reconnaître le pays / Métas
 
 - Rue qui se terminent par `-gate` (et parfois `gata`)  
-  ![meta](/images/no_geoguessr.png)
+  ![Panneau rue Norvège](/images/countries/no/panneau_rue.png)
 
 <br/>
 
