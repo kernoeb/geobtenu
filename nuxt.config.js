@@ -14,6 +14,8 @@ export default {
   target: 'static',
   ssr: true,
 
+  plugins: [{ src: '~/plugins/leaflet.js', ssr: false }],
+
   generate: {
     routes: t,
     fallback: true

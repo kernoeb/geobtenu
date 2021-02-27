@@ -5,7 +5,7 @@
       app
       clipped
       disable-resize-watcher
-      style="z-index: 100"
+      style="z-index: 1400"
       temporary
       width="300"
     >
@@ -56,7 +56,7 @@
             </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item :to="{name: 'map'}">
+        <v-list-item :to="{name: 'country'}">
           <v-list-item-action>
             <v-icon>{{ mdiMap }}</v-icon>
           </v-list-item-action>
@@ -73,6 +73,16 @@
           <v-list-item-content>
             <v-list-item-title style="font-size: 13px">
               Carte des continents
+            </v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item :to="{name: 'maps'}">
+          <v-list-item-action>
+            <v-icon>{{ mdiMapCheckOutline }}</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title style="font-size: 13px">
+              Carte générale
             </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
@@ -162,7 +172,7 @@
       <v-spacer />
     </v-app-bar>
     <v-main>
-      <v-container>
+      <v-container fluid>
         <nuxt />
       </v-container>
     </v-main>
@@ -171,7 +181,7 @@
       app
       fixed
       height=" 25"
-      style="font-size: 10px"
+      style="font-size: 10px; z-index: 1450;"
     >
       <span>
         Géobtenu | <a href="https://twitter.com/kernoeb" style="color: #00ACEE">@kernoeb</a></span>
@@ -195,7 +205,8 @@ import {
   mdiMenu,
   mdiEarth,
   mdiTranslate,
-  mdiDiscord
+  mdiDiscord,
+  mdiMapCheckOutline
 } from '@mdi/js'
 import finished from '~/assets/finished.json'
 
@@ -242,6 +253,7 @@ export default {
       mdiEarth,
       mdiTranslate,
       mdiDiscord,
+      mdiMapCheckOutline,
 
       // OTHERS
       drawer: false,
