@@ -61,7 +61,6 @@ export default {
     const response = await fetch('/content/countries-land-5km.geo.json')
     const data = await response.json()
     this.geojson = data
-    if (!this.$vuetify.breakpoint.mobile) { this.showBorders = true }
   },
   methods: {
 

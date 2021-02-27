@@ -25,14 +25,16 @@ export default {
         const elem = document.getElementById('worldmap')
         const parent = elem.parentElement
 
-        // eslint-disable-next-line no-undef
-        this.panzoom = Panzoom(elem, {
-          canvas: true,
-          maxScale: 8,
-          isSVG: true
-        })
-        if (this.zoom && this.$vuetify.breakpoint.mobile) { this.panzoom.zoom(1.2) }
-        parent.addEventListener('wheel', this.panzoom.zoomWithWheel)
+        setTimeout(() => {
+          // eslint-disable-next-line no-undef
+          this.panzoom = Panzoom(elem, {
+            canvas: true,
+            maxScale: 8,
+            isSVG: true
+          })
+          if (this.zoom && this.$vuetify.breakpoint.mobile) { this.panzoom.zoom(1.2) }
+          parent.addEventListener('wheel', this.panzoom.zoomWithWheel)
+        }, 100)
       }).catch(() => {
         this.elements = []
       })
