@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@nuxtjs/component-cache": "^1.1.6",
-    "@nuxtjs/robots": "^2.4.2",
+    "@nuxtjs/robots": "^2.5.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "leaflet": "^1.7.1",
     "nuxt": "^2.15.2",
