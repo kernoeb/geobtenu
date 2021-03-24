@@ -1,6 +1,6 @@
 ---
 domain: uy
-continent: AS
+continent: SA
 hemisphere: S
 languages: spa
 alphabet: lat
