@@ -18,9 +18,9 @@ Pas de `ã` et `ç`
 
 # Informations sur le pays
 
-Monnaie : `Peso uruguayen ($, $U)`  
-Unité distance : `KM`  
-Indicatif téléphonique : `+598`
+**Monnaie :*  `Peso uruguayen ($, $U)`  
+**Unité distance :** `KM`  
+**Indicatif téléphonique :** `+598`
 
 # Reconnaître le pays / Métas
 
