@@ -9,20 +9,21 @@ for (const i of countries) {
   t.push('/flag/' + i.id)
 }
 
+const PLAUSIBLE_DOMAIN = 'plausible.noewen.com'
+const DOMAIN = 'geobtenu.netlify.app'
+
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
   ssr: true,
 
-  plugins: [{ src: '~/plugins/leaflet.js', ssr: false }],
+  plugins: [
+    { src: '~/plugins/leaflet.js', ssr: false }
+  ],
 
   generate: {
     routes: t,
     fallback: true
-  },
-
-  plausible: {
-    apiHost: 'https://plausible.noewen.com'
   },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
@@ -73,7 +74,9 @@ export default {
         Roboto: true,
         'Secular+One': true
       }
-    }]
+    }],
+    // https://github.com/moritzsternemann/vue-plausible
+    'vue-plausible'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -83,7 +86,6 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    'vue-plausible',
     '@nuxtjs/robots',
     '@nuxtjs/sitemap'
   ],
@@ -91,6 +93,20 @@ export default {
   sitemap: {
     hostname: 'https://geobtenu.netlify.app',
     gzip: true
+  },
+
+  plausible: { // Use as fallback if no runtime config is available at runtime
+    domain: DOMAIN,
+    enableAutoPageviews: true,
+    enableAutoOutboundTracking: true
+  },
+  publicRuntimeConfig: {
+    plausible: {
+      domain: DOMAIN,
+      apiHost: 'https://' + PLAUSIBLE_DOMAIN,
+      enableAutoPageviews: true,
+      enableAutoOutboundTracking: true
+    }
   },
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)

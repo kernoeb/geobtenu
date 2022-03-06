@@ -48,7 +48,6 @@
           </v-col>
         </v-row>
         <v-row
-          v-if="countries"
           v-resize="onResize"
           align="center"
           justify="center"
@@ -83,6 +82,7 @@
 
 <script>
 import { mdiArrowUp, mdiCloseCircle } from '@mdi/js'
+import { debounce } from '~/util/helpers'
 import finished from '~/assets/finished.json'
 import flagCard from '~/components/flag-card'
 
@@ -108,6 +108,7 @@ export default {
     return {
       lang: 'fr',
       search: null,
+      debouncedSearch: null,
       finishedCountries: false,
       width: null,
       showS2T: false,
@@ -127,8 +128,8 @@ export default {
       return process.env.NODE_ENV === 'production'
     },
     countriesFiltered () {
-      if (this.search && this.search.length) {
-        const sanitized = this.sanitize(this.search)
+      if (this.debouncedSearch && this.debouncedSearch.length) {
+        const sanitized = this.sanitize(this.debouncedSearch)
         return this.countries.filter(c => (this.sanitize(c.country[this.lang]).includes(sanitized)) ||
           (c.capital[this.lang] && this.sanitize(c.capital[this.lang]).includes(sanitized)))
       } else {
@@ -137,7 +138,10 @@ export default {
     }
   },
   watch: {
-    search () {
+    search: debounce(function (newVal) {
+      this.debouncedSearch = newVal
+    }, 200),
+    debouncedSearch () {
       this.scrollToTop()
     }
   },
