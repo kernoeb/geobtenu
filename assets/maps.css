@@ -31,6 +31,10 @@
   fill: white !important;
 }
 
+.map.col {
+  overflow: hidden;
+}
+
 g[class^="continent_"]:hover {
   fill: white!important;
 }

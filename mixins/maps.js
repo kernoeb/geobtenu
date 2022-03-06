@@ -1,3 +1,5 @@
+import Panzoom from 'panzoom'
+
 export default {
   scrollToTop: true,
   transition: 'page',
@@ -8,7 +10,7 @@ export default {
       current: null,
       panzoom: null,
       show: false,
-      zoom: false
+      moving: false
     }
   },
   computed: {
@@ -16,27 +18,24 @@ export default {
       return process.env.NODE_ENV === 'production'
     }
   },
+  mounted () {
+    this.$nextTick(() => {
+      this.initPanzoom()
+    })
+  },
   methods: {
-    fetchData (url, zoom) {
-      // noinspection JSUnresolvedFunction
-      fetch(url).then(response => response.json()).then((data) => {
-        this.elements = data
+    initPanzoom () {
+      const elem = document.getElementById('worldmap')
 
-        const elem = document.getElementById('worldmap')
-        const parent = elem.parentElement
-
-        setTimeout(() => {
-          // eslint-disable-next-line no-undef
-          this.panzoom = Panzoom(elem, {
-            canvas: true,
-            maxScale: 8,
-            isSVG: true
-          })
-          if (this.zoom && this.$vuetify.breakpoint.mobile) { this.panzoom.zoom(1.2) }
-          parent.addEventListener('wheel', this.panzoom.zoomWithWheel)
-        }, 100)
-      }).catch(() => {
-        this.elements = []
+      this.panzoom = Panzoom(elem, {
+        maxZoom: 8,
+        zoomDoubleClickSpeed: 1
+      })
+      this.panzoom.on('pan', () => {
+        this.moving = true
+      })
+      this.panzoom.on('panend', () => {
+        setTimeout(() => { this.moving = false }, 500)
       })
     },
     getColor (continent) {
@@ -57,8 +56,10 @@ export default {
       }
     },
     reset () {
-      this.panzoom.reset()
-      if (this.zoom && this.$vuetify.breakpoint.mobile) { this.panzoom.zoom(1.2, { animate: true }) }
+      this.panzoom.moveTo(0, 0)
+      setTimeout(() => {
+        this.panzoom.zoomAbs(0, 0, 1)
+      }, 10)
     },
     moveTooltip (el) {
       if (this.$refs.tooltip) {

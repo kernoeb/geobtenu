@@ -3,8 +3,9 @@
     :id="element['@id']"
     :d="element['@d']"
     :name="element['@name']"
-    :style="`fill: ${getColor(element['@continent'])}`"
+    :style="{fill: getColor(element['@continent'])}"
     class="path"
+    @click="$emit('click', element['@id'])"
   />
 </template>
 <script>
@@ -41,6 +42,7 @@ export default {
 
 <style scoped>
 .path {
+  cursor: pointer;
   stroke-width: 0.5;
   stroke: rgba(0, 0, 0, 0.5);
   fill: #a1d99b;

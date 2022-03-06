@@ -13,18 +13,18 @@
           <div v-show="entered && current" ref="tooltip" class="tooltip">
             {{ current }}
           </div>
-          <maps-info :elements="elements" :panzoom="panzoom" :select="$vuetify.breakpoint.mobile ? 'pays (peut être lent sur mobile)' : 'pays'" title="Carte des pays" />
+          <maps-info :elements="elements" :panzoom="panzoom" select="pays" title="Carte des pays" />
           <transition name="fade">
             <v-col
               v-show="panzoom"
               class="map"
-              style="border: 1px solid #6d6d6d; border-radius: 10px"
+              style="border: 1px solid #6d6d6d; border-radius: 10px; min-height: calc(100vh - (7vh + 200px));;"
             >
               <svg
-                v-show="elements && elements.length"
+                v-if="elements && elements.length"
                 id="worldmap"
                 height="calc(100vh - (7vh + 200px))"
-                style="height: calc(100vh - (7vh + 200px)); width: 100%"
+                style="width: 100%"
                 viewBox="0 0 1010 666"
                 xmlns="http://www.w3.org/2000/svg"
                 @mouseleave="entered ? entered = false : null"
@@ -34,11 +34,10 @@
                 <nuxt-link
                   v-for="path in elements"
                   :key="`path_${path['@id']}`"
-                  :to="{name: 'flag-slug', params: {slug: path['@id']}}"
+                  :to="!moving && {name: 'flag-slug', params: {slug: path['@id']}}"
                   class="noDecoration"
                 >
                   <country
-                    v-once
                     :element="path"
                     @mouseleave.native="current = null"
                     @mouseover.native="current = `${path['@name']} (${path['@id']})`"
@@ -71,14 +70,12 @@ export default {
     mapsFab
   },
   mixins: [maps],
+  asyncData () {
+    return { elements: require('~/static/maps/countries.json') }
+  },
   head () {
     return {
       title: 'Géobtenu | Carte des pays',
-      script: [
-        {
-          src: 'https://cdn.jsdelivr.net/npm/@panzoom/panzoom@4.3.2/dist/panzoom.min.js'
-        }
-      ],
       meta: [
         {
           hid: 'title',
@@ -97,9 +94,6 @@ export default {
         }
       ]
     }
-  },
-  mounted () {
-    this.fetchData('/maps/countries.json')
   }
 }
 </script>

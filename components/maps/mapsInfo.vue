@@ -5,10 +5,10 @@
     </div>
     <div class="mb-3">
       <transition mode="out-in" name="fade2">
-        <div v-if="elements === null && panzoom === null" key="1">
+        <div v-if="elements === null || panzoom === null" key="1">
           <small style="color: darkgrey">Chargement de la carte...</small>
         </div>
-        <div v-else-if="elements && elements.length && panzoom !== null" key="2">
+        <div v-else-if="elements && elements.length" key="2">
           <small style="color: darkgrey">Sélectionnez un {{ select }}</small>
         </div>
         <div v-else key="3">

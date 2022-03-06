@@ -18,10 +18,10 @@
             <v-col
               v-show="panzoom"
               class="map"
-              style="border: 1px solid #6d6d6d; border-radius: 10px"
+              style="border: 1px solid #6d6d6d; border-radius: 10px;"
             >
               <svg
-                v-show="elements && elements.length"
+                v-if="elements && elements.length"
                 id="worldmap"
                 height="calc(100vh - (7vh + 200px))"
                 style="height: calc(100vh - (7vh + 200px)); width: 100%"
@@ -31,22 +31,17 @@
                 @mousemove="moveTooltip"
                 @mouseover="!entered ? entered = true : null"
               >
-                <nuxt-link
+                <g
                   v-for="(continent, index) in elements"
                   :key="`continent_${index}`"
-                  class="noDecoration"
-                  to=""
+                  :class="`continent_${index}`"
+                  :fill="getColor(continent['@id'])"
+                  :transform="continent['@transform']"
+                  @mouseleave="current = null"
+                  @mouseover="current = `${continent['@name']} (${continent['@id']})`"
                 >
-                  <g
-                    :class="`continent_${index}`"
-                    :fill="getColor(continent['@id'])"
-                    :transform="continent['@transform']"
-                    @mouseleave="current = null"
-                    @mouseover="current = `${continent['@name']} (${continent['@id']})`"
-                  >
-                    <path v-for="(c, cIndex) in continent.path" v-once :key="`continent_path_${cIndex}`" :d="c['@d']" />
-                  </g>
-                </nuxt-link>
+                  <path v-for="(c, cIndex) in continent.path" :key="`continent_path_${cIndex}`" :d="c['@d']" />
+                </g>
               </svg>
             </v-col>
           </transition>
@@ -72,14 +67,14 @@ export default {
     mapsFab
   },
   mixins: [maps],
+  asyncData () {
+    return {
+      elements: require('~/static/maps/continents.json')
+    }
+  },
   head () {
     return {
       title: 'Géobtenu | Carte des continents',
-      script: [
-        {
-          src: 'https://cdn.jsdelivr.net/npm/@panzoom/panzoom@4.3.2/dist/panzoom.min.js'
-        }
-      ],
       meta: [
         {
           hid: 'title',
@@ -98,12 +93,6 @@ export default {
         }
       ]
     }
-  },
-  created () {
-    this.zoom = true
-  },
-  mounted () {
-    this.fetchData('/maps/continents.json')
   }
 }
 </script>
