@@ -32,7 +32,7 @@
     "@nuxtjs/vuetify": "^1.12.3",
     "babel-eslint": "^10.1.0",
     "css-byebye": "^3.1.0",
-    "eslint": "^8.10.0",
+    "eslint": "^9.39.2",
     "eslint-plugin-nuxt": "^3.1.0",
     "remark-emoji": "^2.2.0"
   },
