@@ -1,0 +1,4 @@
+[build]
+  # Netlify detects bun.lockb and uses Bun natively.
+  command = "bun run generate"
+  publish = ".output/public"

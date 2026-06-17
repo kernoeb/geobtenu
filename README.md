@@ -4,24 +4,47 @@
 
 ## Informations
 
-Site web réalisé en [Nuxt.js](https://nuxtjs.org/) pour obtenir (d'où le jeu de mot dans le nom) rapidement des informations sur un pays, pour GeoGuessr ou la géographie en général.
+Site web pour obtenir (d'où le jeu de mot dans le nom) rapidement des informations
+sur un pays, pour GeoGuessr ou la géographie en général.
 
-Le site final est statique, mais au moment du build, le summary de la page Wikipédia est fetch et ajouté dans la page du pays.
+Le site est **entièrement statique**. Au moment du build, le résumé de la page
+Wikipédia de chaque pays est récupéré et intégré directement dans la page (pré-rendu),
+donc aucune requête n'est faite côté client.
 
-J'utilise [Nuxt Content](https://content.nuxtjs.org/fr/) pour afficher le contenu des markdown (c'est d'ailleurs sur ces markdown que vous pouvez réaliser une pull request : regardez par exemple le fichier `content/countries/al.md`)
+Le contenu de chaque pays vient des fichiers markdown dans `content/countries/` —
+c'est sur ces markdown que vous pouvez faire une pull request (voir par exemple
+`content/countries/al.md`).
 
+## Stack
 
-## Build
+- [Nuxt 4](https://nuxt.com) (Vue 3) en mode statique (`nuxt generate` + Nitro prerender)
+- [Bun](https://bun.sh) comme runtime et gestionnaire de paquets
+- [Tailwind CSS v4](https://tailwindcss.com) pour le style
+- [Nuxt Content v3](https://content.nuxt.com) pour le markdown des pays
+- [@nuxt/icon](https://github.com/nuxt/icon) (Material Design Icons) et [@nuxt/fonts](https://fonts.nuxt.com)
+- [@nuxtjs/leaflet](https://github.com/nuxt-modules/leaflet) + [panzoom](https://github.com/anvaka/panzoom) pour les cartes
+
+## Développement
 
 ```bash
-# install dependencies
-$ yarn install
+# Installer les dépendances
+bun install
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+# Serveur de développement (http://localhost:3000)
+bun run dev
 
-# generate static project
-$ yarn generate
+# Récupérer les résumés Wikipédia (écrit app/data/wikipedia.json)
+bun run fetch:wikipedia
+
+# Générer le site statique dans .output/public
+#   (lance d'abord fetch:wikipedia, puis nuxt generate)
+bun run generate
+
+# Prévisualiser le build statique
+bunx serve .output/public
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## Déploiement (Netlify)
+
+- Build command : `bun run generate`
+- Publish directory : `.output/public`
