@@ -24,15 +24,18 @@ const capitalName = computed(() => props.value.capital[props.lang]?.split('|')[0
 <template>
   <NuxtLink :to="`/flag/${value.id}`" class="flag-card">
     <div class="flag-card__inner">
-      <!-- Native lazy loading: off-screen flags aren't fetched until scrolled near.
-           All critical layout lives in this component's (inlined) scoped CSS so the
-           image is sized correctly on first paint, with no flash of intrinsic size. -->
+      <!-- width/height give the img an intrinsic box matching the card aspect, and
+           decoding="sync" makes the decoded bitmap commit in the same paint as the
+           object-fit:cover layout. Without both, the img paints one frame at the
+           flag's natural aspect (letterboxed "contain") before snapping to cover. -->
       <img
         :src="`/flags/png/${value.id}.png`"
         :alt="`flag_${value.id}`"
+        width="247"
+        height="180"
         :loading="priority ? 'eager' : 'lazy'"
         :fetchpriority="priority ? 'high' : undefined"
-        decoding="async"
+        decoding="sync"
         class="flag"
         :style="finished ? undefined : 'opacity:0.5'"
       >
