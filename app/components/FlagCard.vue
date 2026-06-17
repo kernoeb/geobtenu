@@ -24,10 +24,12 @@ const capitalName = computed(() => props.value.capital[props.lang]?.split('|')[0
 <template>
   <NuxtLink :to="`/flag/${value.id}`" class="flag-card">
     <div class="flag-card__inner">
-      <!-- width/height give the img an intrinsic box matching the card aspect, and
-           decoding="sync" makes the decoded bitmap commit in the same paint as the
-           object-fit:cover layout. Without both, the img paints one frame at the
-           flag's natural aspect (letterboxed "contain") before snapping to cover. -->
+      <!-- object-fit + aspect-ratio are set INLINE on the element (not only via the
+           scoped .flag rule) so they apply the instant the tag parses. Before the
+           scoped stylesheet applies (pre-hydration window), the browser would size
+           the img from the flag's natural aspect (247x165 → a ~15px letterbox
+           "contain" flash); the inline aspect-ratio:247/180 forces the card box so
+           there is never a letterboxed frame. -->
       <img
         :src="`/flags/png/${value.id}.png`"
         :alt="`flag_${value.id}`"
@@ -35,9 +37,9 @@ const capitalName = computed(() => props.value.capital[props.lang]?.split('|')[0
         height="180"
         :loading="priority ? 'eager' : 'lazy'"
         :fetchpriority="priority ? 'high' : undefined"
-        decoding="sync"
+        decoding="async"
         class="flag"
-        :style="finished ? undefined : 'opacity:0.5'"
+        :style="{ objectFit: 'cover', aspectRatio: '247 / 180', opacity: finished ? undefined : 0.5 }"
       >
       <div class="flag-card__gradient" />
       <div class="flag-card__text">
