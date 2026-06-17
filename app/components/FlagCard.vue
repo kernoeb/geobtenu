@@ -91,7 +91,7 @@ onMounted(() => {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: opacity 0.12s ease, filter 0.15s ease;
+  transition: opacity 0.45s ease-out, filter 0.15s ease;
 }
 
 .flag-card:hover .flag {
