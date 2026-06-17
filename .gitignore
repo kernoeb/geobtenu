@@ -28,3 +28,6 @@ dist
 # Misc
 .eslintcache
 *.tgz
+
+# Local Netlify folder
+.netlify
