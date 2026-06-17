@@ -38,9 +38,14 @@ export default defineNuxtConfig({
   },
 
   fonts: {
+    // The content is French, so only the Latin subsets are needed. Preload the
+    // body (Roboto) and display (Secular One) fonts so they don't visibly swap
+    // in on first load — by default @nuxt/fonts skips preloading any face that
+    // has a unicode-range (i.e. all of them), which left no font preloads.
+    defaults: { subsets: ['latin', 'latin-ext'] },
     families: [
-      { name: 'Roboto', provider: 'google' },
-      { name: 'Secular One', provider: 'google' }
+      { name: 'Roboto', provider: 'google', preload: true },
+      { name: 'Secular One', provider: 'google', preload: true }
     ]
   },
 

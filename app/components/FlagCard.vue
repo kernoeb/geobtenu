@@ -9,9 +9,12 @@ const props = withDefaults(defineProps<{
   value: CountryValue
   lang?: string
   finished?: boolean
+  /** Above-the-fold cards load eagerly with high priority (avoids pop-in / better LCP). */
+  priority?: boolean
 }>(), {
   lang: 'fr',
-  finished: true
+  finished: true,
+  priority: false
 })
 
 const countryName = computed(() => props.value.country[props.lang]?.split('|')[0] ?? '')
@@ -27,7 +30,8 @@ const capitalName = computed(() => props.value.capital[props.lang]?.split('|')[0
       <img
         :src="`/flags/png/${value.id}.png`"
         :alt="`flag_${value.id}`"
-        loading="lazy"
+        :loading="priority ? 'eager' : 'lazy'"
+        :fetchpriority="priority ? 'high' : undefined"
         decoding="async"
         class="flag"
         :style="finished ? undefined : 'opacity:0.5'"
