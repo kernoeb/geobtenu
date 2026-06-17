@@ -1,4 +1,6 @@
 [build]
   # Netlify detects bun.lockb and uses Bun natively.
   command = "bun run generate"
-  publish = ".output/public"
+  # On Netlify, Nitro auto-selects the `netlify-static` preset, which outputs the
+  # prerendered site to `dist/` (locally, `nuxt generate` uses `.output/public`).
+  publish = "dist"
