@@ -49,9 +49,6 @@ const capitalName = computed(() => props.value.capital[props.lang]?.split('|')[0
 .flag-card {
   display: block;
   text-decoration: none;
-  /* Skip rendering off-screen cards while keeping them in the DOM / prerendered HTML. */
-  content-visibility: auto;
-  contain-intrinsic-size: auto 180px;
 }
 
 .flag-card__inner {
