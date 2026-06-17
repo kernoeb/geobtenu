@@ -84,11 +84,12 @@ useHead({ bodyAttrs: { class: 'bg-bg' } })
     <!-- Grid -->
     <div class="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-4">
       <FlagCard
-        v-for="value in countriesFiltered"
+        v-for="(value, i) in countriesFiltered"
         :key="`flag_${value.id}`"
         :value="value"
         :finished="value.finished"
         :lang="lang"
+        :priority="i < 8"
       />
     </div>
   </div>
