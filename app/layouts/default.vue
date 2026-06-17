@@ -39,7 +39,10 @@ watch(() => route.path, () => {
 <template>
   <div class="flex min-h-screen flex-col">
     <!-- App bar -->
-    <header class="fixed inset-x-0 top-0 z-50 flex h-12 items-center bg-[#272727] px-3 shadow">
+    <header
+      class="fixed inset-x-0 top-0 z-50 flex h-12 items-center bg-[#272727] px-3 shadow"
+      style="position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: 3rem; background: #272727"
+    >
       <button type="button" aria-label="Menu" class="inline-flex items-center justify-center rounded p-1 text-white transition hover:bg-white/10" @click.stop="drawer = !drawer">
         <Icon name="mdi:menu" size="24" />
       </button>
@@ -137,6 +140,7 @@ watch(() => route.path, () => {
     <!-- Footer -->
     <footer
       class="fixed inset-x-0 bottom-0 z-[1450] flex h-[25px] items-center bg-[#272727] px-3 text-[10px]"
+      style="position: fixed; bottom: 0; left: 0; right: 0; z-index: 1450; height: 25px; background: #272727; display: flex; align-items: center"
     >
       <span>Géobtenu | <a href="https://twitter.com/kernoeb" class="text-[#00ACEE]">@kernoeb</a></span>
       <span class="flex-1" />

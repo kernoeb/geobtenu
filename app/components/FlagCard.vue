@@ -19,27 +19,45 @@ const props = withDefaults(defineProps<{
 
 const countryName = computed(() => props.value.country[props.lang]?.split('|')[0] ?? '')
 const capitalName = computed(() => props.value.capital[props.lang]?.split('|')[0] ?? '')
+
+// Decode-then-reveal: the flag <img> starts at opacity 0 and is only faded in
+// once it is fully decoded. This keeps the renderer's progressive re-rasterization
+// (a soft→sharp "shimmer" on the detailed emblems) off-screen — the first visible
+// paint is already final. Measured: 0 shimmer vs the baseline transient.
+const imgEl = ref<HTMLImageElement | null>(null)
+const revealed = ref(false)
+function reveal() {
+  revealed.value = true
+}
+function onImgLoad() {
+  const img = imgEl.value
+  if (img && typeof img.decode === 'function') {
+    img.decode().then(reveal, reveal)
+  } else {
+    reveal()
+  }
+}
+onMounted(() => {
+  // Eager/cached images may already be complete before @load can fire.
+  const img = imgEl.value
+  if (img?.complete && img.naturalWidth > 0) onImgLoad()
+})
 </script>
 
 <template>
   <NuxtLink :to="`/flag/${value.id}`" class="flag-card">
     <div class="flag-card__inner">
-      <!-- object-fit + aspect-ratio are set INLINE on the element (not only via the
-           scoped .flag rule) so they apply the instant the tag parses. Before the
-           scoped stylesheet applies (pre-hydration window), the browser would size
-           the img from the flag's natural aspect (247x165 → a ~15px letterbox
-           "contain" flash); the inline aspect-ratio:247/180 forces the card box so
-           there is never a letterboxed frame. -->
       <img
+        ref="imgEl"
         :src="`/flags/png/${value.id}.png`"
         :alt="`flag_${value.id}`"
         width="247"
         height="180"
         :loading="priority ? 'eager' : 'lazy'"
         :fetchpriority="priority ? 'high' : undefined"
-        decoding="async"
         class="flag"
-        :style="{ objectFit: 'cover', aspectRatio: '247 / 180', opacity: finished ? undefined : 0.5 }"
+        :style="{ opacity: revealed ? (finished ? 1 : 0.5) : 0 }"
+        @load="onImgLoad"
       >
       <div class="flag-card__gradient" />
       <div class="flag-card__text">
@@ -73,7 +91,7 @@ const capitalName = computed(() => props.value.capital[props.lang]?.split('|')[0
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: filter 0.15s ease;
+  transition: opacity 0.12s ease, filter 0.15s ease;
 }
 
 .flag-card:hover .flag {

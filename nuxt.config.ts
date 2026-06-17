@@ -60,6 +60,9 @@ export default defineNuxtConfig({
     head: {
       htmlAttrs: { lang: 'fr' },
       title: 'Géobtenu | Outil de géographie',
+      // Flags are hidden (opacity:0) until JS decodes+reveals them; show them
+      // unconditionally when JS is disabled.
+      noscript: [{ innerHTML: '<style>.flag{opacity:1!important}</style>' }],
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
