@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+/* ---- Theme tokens (replaces the old Vuetify dark theme) ---- */
+@theme {
+  --color-bg: #121212;
+  --color-surface: #1e1e1e;
+  --color-surface-2: #272727;
+  --color-primary: #1565c0;
+  --color-accent: #424242;
+  --font-display: "Secular One", sans-serif;
+}
+
+/* ---- Base ---- */
+html,
+body {
+  background-color: var(--color-bg);
+  color: #fff;
+  font-family: "Roboto", system-ui, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Tailwind v4's preflight resets buttons to `cursor: default`.
+   Restore the pointer cursor for interactive elements. */
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled),
+  a {
+    cursor: pointer;
+  }
+
+  /* @nuxt/icon renders icons as inline-block spans with baseline alignment,
+     which sits slightly above center next to text. Middle-align them. */
+  .iconify {
+    vertical-align: middle;
+  }
+}
+
+a {
+  color: inherit;
+}
+
+/* App title font */
+.geo-title {
+  font-family: var(--font-display);
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+/* Reusable card matching the old Vuetify v-card dark look */
+.geo-card {
+  background-color: var(--color-surface);
+  border-radius: 1.25rem; /* rounded-xl equivalent */
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* Page transition (was Nuxt 2 `transition: 'page'`) */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.2s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+}
+
+/* Generic fade */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
